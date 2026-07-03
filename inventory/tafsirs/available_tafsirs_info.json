@@ -171,6 +171,66 @@
         "langName": "Kurdish",
         "slug": "kurd-tafsir-rebar"
       }
+    ],
+    "fr": [
+      {
+        "key": "french-mokhtasar",
+        "name": "French Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "fr",
+        "langName": "Français",
+        "slug": "french-mokhtasar"
+      }
+    ],
+    "es": [
+      {
+        "key": "spanish-mokhtasar",
+        "name": "Spanish Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "es",
+        "langName": "Español",
+        "slug": "spanish-mokhtasar"
+      }
+    ],
+    "tr": [
+      {
+        "key": "turkish-mokhtasar",
+        "name": "Turkish Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "tr",
+        "langName": "Türkçe",
+        "slug": "turkish-mokhtasar"
+      }
+    ],
+    "ta": [
+      {
+        "key": "tamil-mokhtasar",
+        "name": "Tamil Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "ta",
+        "langName": "தமிழ்",
+        "slug": "tamil-mokhtasar"
+      }
+    ],
+    "hi": [
+      {
+        "key": "hindi-mokhtasar",
+        "name": "Hindi Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "hi",
+        "langName": "हिंदी",
+        "slug": "hindi-mokhtasar"
+      }
+    ],
+    "id": [
+      {
+        "key": "indonesian-mokhtasar",
+        "name": "Indonesian Mokhtasar",
+        "author": "Mokhtasar",
+        "langCode": "id",
+        "langName": "Bahasa Indonesia",
+        "slug": "indonesian-mokhtasar"
+      }
     ]
   }
 }
