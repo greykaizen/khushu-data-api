@@ -8,14 +8,12 @@
     {
       "id": 1030,
       "display_name": "Ibn Ashur",
-      "author_name": "Muhammad al-Tahir ibn Ashur",
-      "language_name": "English"
+      "author_name": "Muhammad al-Tahir ibn Ashur"
     },
     {
       "id": 58,
       "display_name": "A. Maududi",
-      "author_name": "Sayyid Abul Ala Maududi",
-      "language_name": "english"
+      "author_name": "Sayyid Abul Ala Maududi"
     }
   ]
 }
