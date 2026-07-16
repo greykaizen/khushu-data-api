@@ -30,7 +30,7 @@ def get_tafsirs_list():
         return []
 
 def download_chapter_tafsir(slug, ch_num):
-    url = f"https://api.qurancdn.com/api/v4/tafsirs/{slug}/by_chapter/{ch_num}"
+    url = f"https://api.qurancdn.com/api/v4/tafsirs/{slug}/by_chapter/{ch_num}?per_page=300"
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
     for attempt in range(4):
         try:
@@ -122,8 +122,15 @@ def process_tafsir_book(tafsir_info):
     return True
 
 def main():
+    import sys
+    target_langs = sys.argv[1:] if len(sys.argv) > 1 else []
+    
     tafsirs = get_tafsirs_list()
-    print(f"Found {len(tafsirs)} total Tafsir books on Quran.com.")
+    if target_langs:
+        tafsirs = [item for item in tafsirs if LANG_MAP.get(item["language_name"].lower()) in target_langs]
+        print(f"Filtering for languages {target_langs}. Found {len(tafsirs)} matching Tafsir books.")
+    else:
+        print(f"Found {len(tafsirs)} total Tafsir books on Quran.com.")
     
     # Process all books
     successful_slugs = set()
@@ -132,8 +139,17 @@ def main():
         if success:
             successful_slugs.add(item["slug"])
             
-    # Rebuild available_tafsirs_info.json with successfully processed books
+    # Rebuild available_tafsirs_info.json with successfully processed books (merging with existing)
     manifest_data = {"tafsirs": {}}
+    if os.path.exists(MANIFEST_PATH):
+        try:
+            with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+                manifest_data = json.load(f)
+                if "tafsirs" not in manifest_data:
+                    manifest_data["tafsirs"] = {}
+        except Exception as e:
+            print(f"Warning reading existing manifest: {e}")
+            
     for item in tafsirs:
         slug = item["slug"]
         if slug not in successful_slugs:
@@ -155,7 +171,15 @@ def main():
         
         if lang_code not in manifest_data["tafsirs"]:
             manifest_data["tafsirs"][lang_code] = []
-        manifest_data["tafsirs"][lang_code].append(manifest_item)
+            
+        # Avoid duplicates
+        existing_keys = [x["key"] for x in manifest_data["tafsirs"][lang_code]]
+        if slug not in existing_keys:
+            manifest_data["tafsirs"][lang_code].append(manifest_item)
+        else:
+            # Update/overwrite existing one
+            idx = existing_keys.index(slug)
+            manifest_data["tafsirs"][lang_code][idx] = manifest_item
         
     with open(MANIFEST_PATH, "w", encoding="utf-8") as f:
         json.dump(manifest_data, f, ensure_ascii=False, indent=2)
