@@ -1,0 +1,1402 @@
+{
+  "categories": [
+    {
+      "id": 129,
+      "name": "Muharram",
+      "slug": "muharram",
+      "count": 2,
+      "articles": [
+        {
+          "id": 4156,
+          "title": "ʿAshura’: The 10th of Muharram",
+          "slug": "ashura-the-10th-of-muharram",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/muharram/ashura-the-10th-of-muharram/",
+          "file_path": "articles/muharram/ashura-the-10th-of-muharram.json"
+        },
+        {
+          "id": 4112,
+          "title": "Muharram: The Month of Allah",
+          "slug": "muharram-the-month-of-allah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/muharram/muharram-the-month-of-allah/",
+          "file_path": "articles/muharram/muharram-the-month-of-allah.json"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "The Pure Heart",
+      "slug": "the-pure-heart",
+      "count": 12,
+      "articles": [
+        {
+          "id": 26913,
+          "title": "Tasting the Sweetness of Iman",
+          "slug": "tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey-2",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey-2/",
+          "file_path": "articles/the-pure-heart/tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey-2.json"
+        },
+        {
+          "id": 19997,
+          "title": "Loving Allah – Part 2",
+          "slug": "loving-allah-part-2",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/loving-allah-part-2/",
+          "file_path": "articles/knowing-allah/loving-allah-part-2.json"
+        },
+        {
+          "id": 19993,
+          "title": "Loving Allah – Part 1",
+          "slug": "loving-allah-2",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/loving-allah-2/",
+          "file_path": "articles/knowing-allah/loving-allah-2.json"
+        },
+        {
+          "id": 18363,
+          "title": "Hoping in Allah",
+          "slug": "hope-in-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/hope-in-allah/",
+          "file_path": "articles/knowing-allah/hope-in-allah.json"
+        },
+        {
+          "id": 7263,
+          "title": "Fearing Allah",
+          "slug": "fearing-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/fearing-allah/",
+          "file_path": "articles/knowing-allah/fearing-allah.json"
+        },
+        {
+          "id": 14104,
+          "title": "Ikhlas",
+          "slug": "ikhlas",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/ikhlas/",
+          "file_path": "articles/the-pure-heart/ikhlas.json"
+        },
+        {
+          "id": 14087,
+          "title": "Muhasabah (Self-Evaluation)",
+          "slug": "muhasabah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/muhasabah/",
+          "file_path": "articles/the-pure-heart/muhasabah.json"
+        },
+        {
+          "id": 26886,
+          "title": "Knowing Allah: The Soul’s Greatest Need",
+          "slug": "knowing-allah-the-souls-greatest-need",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/knowing-allah-the-souls-greatest-need/",
+          "file_path": "articles/knowing-allah/knowing-allah-the-souls-greatest-need.json"
+        },
+        {
+          "id": 14091,
+          "title": "The Purification of The Soul",
+          "slug": "and-purification-of-the-soul",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/and-purification-of-the-soul/",
+          "file_path": "articles/the-pure-heart/and-purification-of-the-soul.json"
+        },
+        {
+          "id": 26894,
+          "title": "ʿUbudiyyah: Servitude to Allah",
+          "slug": "ubudiyyah-servitude-to-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/ubudiyyah-servitude-to-allah/",
+          "file_path": "articles/the-pure-heart/ubudiyyah-servitude-to-allah.json"
+        },
+        {
+          "id": 7888,
+          "title": "Allah Wants You To Give Your Heart To Him",
+          "slug": "allah-wants-you-to-give-your-heart-to-him",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/allah-wants-you-to-give-your-heart-to-him/",
+          "file_path": "articles/the-pure-heart/allah-wants-you-to-give-your-heart-to-him.json"
+        },
+        {
+          "id": 19909,
+          "title": "The Good Life: Life With Allah",
+          "slug": "the-good-life-life-with-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/the-good-life-life-with-allah/",
+          "file_path": "articles/the-pure-heart/the-good-life-life-with-allah.json"
+        }
+      ]
+    },
+    {
+      "id": 233,
+      "name": "Other",
+      "slug": "other",
+      "count": 7,
+      "articles": [
+        {
+          "id": 36315,
+          "title": "10 Tips to Wake up for Tahajjud",
+          "slug": "10-tips-to-wake-up-for-tahajjud",
+          "link": "https://lifewithallah.com/articles/other/10-tips-to-wake-up-for-tahajjud/",
+          "file_path": "articles/other/10-tips-to-wake-up-for-tahajjud.json"
+        },
+        {
+          "id": 35170,
+          "title": "Tahajjud: The Worldly Paradise",
+          "slug": "tahajjud-the-worldly-paradise",
+          "link": "https://lifewithallah.com/articles/other/tahajjud-the-worldly-paradise/",
+          "file_path": "articles/other/tahajjud-the-worldly-paradise.json"
+        },
+        {
+          "id": 35175,
+          "title": "How to Pray Tahajjud",
+          "slug": "how-to-pray-tahajjud",
+          "link": "https://lifewithallah.com/articles/other/how-to-pray-tahajjud/",
+          "file_path": "articles/other/how-to-pray-tahajjud.json"
+        },
+        {
+          "id": 1697,
+          "title": "How to Sleep Like The Messenger of Allah  ﷺ",
+          "slug": "how-to-sleep-like-the-messenger-%ef%b7%ba",
+          "link": "https://lifewithallah.com/articles/other/how-to-sleep-like-the-messenger-%ef%b7%ba/",
+          "file_path": "articles/other/how-to-sleep-like-the-messenger-%ef%b7%ba.json"
+        },
+        {
+          "id": 19798,
+          "title": "Etiquettes of the Masjid",
+          "slug": "etiquettes-of-the-masjid",
+          "link": "https://lifewithallah.com/articles/other/etiquettes-of-the-masjid/",
+          "file_path": "articles/other/etiquettes-of-the-masjid.json"
+        },
+        {
+          "id": 19700,
+          "title": "Responding to the Adhan",
+          "slug": "act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan-2",
+          "link": "https://lifewithallah.com/articles/other/act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan-2/",
+          "file_path": "articles/other/act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan-2.json"
+        },
+        {
+          "id": 3225,
+          "title": "Winter: The Believer’s Season",
+          "slug": "the-believers-season",
+          "link": "https://lifewithallah.com/articles/other/the-believers-season/",
+          "file_path": "articles/seasons-of-worship/the-believers-season.json"
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Dhul Hijjah",
+      "slug": "dhul-hijjah",
+      "count": 15,
+      "articles": [
+        {
+          "id": 6991,
+          "title": "Actions to Attain the Reward of Hajj",
+          "slug": "attain-the-reward-of-hajj-without-actually-performing-it",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/attain-the-reward-of-hajj-without-actually-performing-it/",
+          "file_path": "articles/seasons-of-worship/attain-the-reward-of-hajj-without-actually-performing-it.json"
+        },
+        {
+          "id": 6997,
+          "title": "The Best Days Come to An End",
+          "slug": "the-best-days-come-to-an-end",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-best-days-come-to-an-end/",
+          "file_path": "articles/seasons-of-worship/the-best-days-come-to-an-end.json"
+        },
+        {
+          "id": 6973,
+          "title": "Remember Allah in the Days of Tashriq",
+          "slug": "remember-allah-in-the-days-of-tashriq",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/remember-allah-in-the-days-of-tashriq/",
+          "file_path": "articles/seasons-of-worship/remember-allah-in-the-days-of-tashriq.json"
+        },
+        {
+          "id": 6976,
+          "title": "The Days of Tashriq",
+          "slug": "the-days-of-tashriq",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-days-of-tashriq/",
+          "file_path": "articles/seasons-of-worship/the-days-of-tashriq.json"
+        },
+        {
+          "id": 2748,
+          "title": "Qurbani: More Than Just Tender Meat",
+          "slug": "qurbani-more-than-just-tender-meat",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/qurbani-more-than-just-tender-meat/",
+          "file_path": "articles/dhul-hijjah/qurbani-more-than-just-tender-meat.json"
+        },
+        {
+          "id": 6981,
+          "title": "Eid al-Adha: A Symbol of True Faith and Submission",
+          "slug": "eid-al-adha-a-symbol-of-true-faith-and-submission",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/eid-al-adha-a-symbol-of-true-faith-and-submission/",
+          "file_path": "articles/seasons-of-worship/eid-al-adha-a-symbol-of-true-faith-and-submission.json"
+        },
+        {
+          "id": 2750,
+          "title": "The Day of ‘Arafah:</br>The Ultimate Day of Mercy",
+          "slug": "the-day-of-arafah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-day-of-arafah/",
+          "file_path": "articles/dhul-hijjah/the-day-of-arafah.json"
+        },
+        {
+          "id": 11441,
+          "title": "Al-Kabir (The Most Great) &  Al-Azim (The Magnificent)",
+          "slug": "al-kabir-the-most-great-and-al-azim-the-magnificent",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/al-kabir-the-most-great-and-al-azim-the-magnificent/",
+          "file_path": "articles/knowing-allah/al-kabir-the-most-great-and-al-azim-the-magnificent.json"
+        },
+        {
+          "id": 11472,
+          "title": "Allahu Akbar: A Magnificent Phrase",
+          "slug": "allahu-akbar-a-magnificent-phrase",
+          "link": "https://lifewithallah.com/articles/dhikr/allahu-akbar-a-magnificent-phrase/",
+          "file_path": "articles/knowing-allah/allahu-akbar-a-magnificent-phrase.json"
+        },
+        {
+          "id": 11468,
+          "title": "A Selection Of Takbirat",
+          "slug": "a-selection-of-the-days-of-takbirat",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/a-selection-of-the-days-of-takbirat/",
+          "file_path": "articles/dhul-hijjah/a-selection-of-the-days-of-takbirat.json"
+        },
+        {
+          "id": 11457,
+          "title": "Dhikr: The Hallmark Of The Days Of Dhul Hijjah",
+          "slug": "dhikr-the-hallmark-of-the-days-of-dhul-hijjah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/dhikr-the-hallmark-of-the-days-of-dhul-hijjah/",
+          "file_path": "articles/dhul-hijjah/dhikr-the-hallmark-of-the-days-of-dhul-hijjah.json"
+        },
+        {
+          "id": 11503,
+          "title": "The Days of Dhul Hijjah: To-Do List",
+          "slug": "the-days-of-dhul-hijjah-to-do-list",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-days-of-dhul-hijjah-to-do-list/",
+          "file_path": "articles/dhul-hijjah/the-days-of-dhul-hijjah-to-do-list.json"
+        },
+        {
+          "id": 2752,
+          "title": "What Should You Do In The 10 Days of Dhul Hijjah",
+          "slug": "what-should-you-do-in-the-10-days-of-dhul-hijjah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/what-should-you-do-in-the-10-days-of-dhul-hijjah/",
+          "file_path": "articles/dhul-hijjah/what-should-you-do-in-the-10-days-of-dhul-hijjah.json"
+        },
+        {
+          "id": 6986,
+          "title": "Why Are The 10 Days Of Dhul Hijjah Extremely Special?",
+          "slug": "why-are-these-10-days-extremely-special",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/why-are-these-10-days-extremely-special/",
+          "file_path": "articles/seasons-of-worship/why-are-these-10-days-extremely-special.json"
+        },
+        {
+          "id": 2754,
+          "title": "Seasons of Mercy",
+          "slug": "seasons-of-mercy",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/seasons-of-mercy/",
+          "file_path": "articles/seasons-of-worship/seasons-of-mercy.json"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Ruqyah",
+      "slug": "ruqyah",
+      "count": 10,
+      "articles": [
+        {
+          "id": 3162,
+          "title": "Visiting The Sick",
+          "slug": "visiting-the-sick",
+          "link": "https://lifewithallah.com/articles/ruqyah/visiting-the-sick/",
+          "file_path": "articles/ruqyah/visiting-the-sick.json"
+        },
+        {
+          "id": 3106,
+          "title": "Prevention is Better than Cure",
+          "slug": "prevention-is-better-than-cure",
+          "link": "https://lifewithallah.com/articles/ruqyah/prevention-is-better-than-cure/",
+          "file_path": "articles/ruqyah/prevention-is-better-than-cure.json"
+        },
+        {
+          "id": 3102,
+          "title": "Sunnah Medicine",
+          "slug": "sunnah-medicine",
+          "link": "https://lifewithallah.com/articles/ruqyah/sunnah-medicine/",
+          "file_path": "articles/ruqyah/sunnah-medicine.json"
+        },
+        {
+          "id": 3075,
+          "title": "FAQs about Ruqyah",
+          "slug": "faqs-about-ruqyah",
+          "link": "https://lifewithallah.com/articles/ruqyah/faqs-about-ruqyah/",
+          "file_path": "articles/ruqyah/faqs-about-ruqyah.json"
+        },
+        {
+          "id": 3094,
+          "title": "Your Shield:</br>The Last 3 Surahs of the Qur’an",
+          "slug": "your-shield-the-last-3-surahs-of-the-quran",
+          "link": "https://lifewithallah.com/articles/ruqyah/your-shield-the-last-3-surahs-of-the-quran/",
+          "file_path": "articles/ruqyah/your-shield-the-last-3-surahs-of-the-quran.json"
+        },
+        {
+          "id": 3062,
+          "title": "Magic and Jinn",
+          "slug": "magic-and-jinn",
+          "link": "https://lifewithallah.com/articles/ruqyah/magic-and-jinn/",
+          "file_path": "articles/ruqyah/magic-and-jinn.json"
+        },
+        {
+          "id": 3042,
+          "title": "5 Ways to Protect Your Children",
+          "slug": "5-ways-to-protect-your-children",
+          "link": "https://lifewithallah.com/articles/ruqyah/5-ways-to-protect-your-children/",
+          "file_path": "articles/ruqyah/5-ways-to-protect-your-children.json"
+        },
+        {
+          "id": 3022,
+          "title": "Envy and Evil Eye",
+          "slug": "envy-and-evil-eye",
+          "link": "https://lifewithallah.com/articles/ruqyah/envy-and-evil-eye/",
+          "file_path": "articles/ruqyah/envy-and-evil-eye.json"
+        },
+        {
+          "id": 2993,
+          "title": "The Method of Ruqyah",
+          "slug": "the-method-of-ruqyah",
+          "link": "https://lifewithallah.com/articles/ruqyah/the-method-of-ruqyah/",
+          "file_path": "articles/ruqyah/the-method-of-ruqyah.json"
+        },
+        {
+          "id": 2972,
+          "title": "What is Ruqyah?",
+          "slug": "what-is-ruqyah",
+          "link": "https://lifewithallah.com/articles/ruqyah/what-is-ruqyah/",
+          "file_path": "articles/ruqyah/what-is-ruqyah.json"
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Ramadan (& Fasting)",
+      "slug": "ramadan",
+      "count": 45,
+      "articles": [
+        {
+          "id": 27547,
+          "title": "Post-Ramadan: The Journey Continues",
+          "slug": "post-ramadan-the-journey-continues",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/post-ramadan-the-journey-continues/",
+          "file_path": "articles/ramadan/post-ramadan-the-journey-continues.json"
+        },
+        {
+          "id": 27543,
+          "title": "Eid: A Day of Gratitude & Glory",
+          "slug": "eid-a-day-of-gratitude-and-glory",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/eid-a-day-of-gratitude-and-glory/",
+          "file_path": "articles/ramadan/eid-a-day-of-gratitude-and-glory.json"
+        },
+        {
+          "id": 27536,
+          "title": "Bidding Farewell to Ramadan",
+          "slug": "bidding-farewell-to-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/bidding-farewell-to-ramadan/",
+          "file_path": "articles/ramadan/bidding-farewell-to-ramadan.json"
+        },
+        {
+          "id": 27174,
+          "title": "Ramadan: The Month of Forgiveness & Repentance",
+          "slug": "the-month-of-forgiveness-and-repentance",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/the-month-of-forgiveness-and-repentance/",
+          "file_path": "articles/ramadan/the-month-of-forgiveness-and-repentance.json"
+        },
+        {
+          "id": 10476,
+          "title": "Laylat al-Qadr & The Last 10 Nights",
+          "slug": "laylat-al-qadr-the-last-10-days",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/laylat-al-qadr-the-last-10-days/",
+          "file_path": "articles/seasons-of-worship/laylat-al-qadr-the-last-10-days.json"
+        },
+        {
+          "id": 27530,
+          "title": "Longing to Meet Allah",
+          "slug": "longing-to-meet-allah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/longing-to-meet-allah/",
+          "file_path": "articles/ramadan/longing-to-meet-allah.json"
+        },
+        {
+          "id": 27134,
+          "title": "Iʿtikaf: The Sweetness of Solitude",
+          "slug": "itikaf-the-sweetness-of-solitude",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/itikaf-the-sweetness-of-solitude/",
+          "file_path": "articles/ramadan/itikaf-the-sweetness-of-solitude.json"
+        },
+        {
+          "id": 27525,
+          "title": "Jannah",
+          "slug": "jannah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/jannah/",
+          "file_path": "articles/ramadan/jannah.json"
+        },
+        {
+          "id": 27555,
+          "title": "Ramadan and Illness",
+          "slug": "illness",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/illness/",
+          "file_path": "articles/ramadan/illness.json"
+        },
+        {
+          "id": 10348,
+          "title": "Ramadan: Charity & Service",
+          "slug": "ramadan-charity-service",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-charity-service/",
+          "file_path": "articles/ramadan/ramadan-charity-service.json"
+        },
+        {
+          "id": 27522,
+          "title": "Jahannam",
+          "slug": "jahannam",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/jahannam/",
+          "file_path": "articles/ramadan/jahannam.json"
+        },
+        {
+          "id": 27551,
+          "title": "Ramadan and Menstruation",
+          "slug": "menstruation",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/menstruation/",
+          "file_path": "articles/ramadan/menstruation.json"
+        },
+        {
+          "id": 27508,
+          "title": "The Journey to The Hereafter",
+          "slug": "the-journey-to-the-hereafter",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/the-journey-to-the-hereafter/",
+          "file_path": "articles/ramadan/the-journey-to-the-hereafter.json"
+        },
+        {
+          "id": 27051,
+          "title": "Ramadan: A Month of Victory",
+          "slug": "ramadan-a-month-of-victory",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-a-month-of-victory/",
+          "file_path": "articles/ramadan/ramadan-a-month-of-victory.json"
+        },
+        {
+          "id": 10049,
+          "title": "Ramadan & Our Families",
+          "slug": "fasting-and-our-families",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fasting-and-our-families/",
+          "file_path": "articles/ramadan/fasting-and-our-families.json"
+        },
+        {
+          "id": 27501,
+          "title": "Ramadan: In the Company of Angels",
+          "slug": "in-the-company-of-the-angels",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/in-the-company-of-the-angels/",
+          "file_path": "articles/ramadan/in-the-company-of-the-angels.json"
+        },
+        {
+          "id": 2526,
+          "title": "How to Connect to the Qur’an This Ramadan",
+          "slug": "how-to-connect-to-the-quran-this-ramadan",
+          "link": "https://lifewithallah.com/articles/quran/how-to-connect-to-the-quran-this-ramadan/",
+          "file_path": "articles/ramadan/how-to-connect-to-the-quran-this-ramadan.json"
+        },
+        {
+          "id": 10395,
+          "title": "Ramadan: A Month of Muhasabah (Self-Evaluation)",
+          "slug": "ramadan-a-month-of-muhasabah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-a-month-of-muhasabah/",
+          "file_path": "articles/ramadan/ramadan-a-month-of-muhasabah.json"
+        },
+        {
+          "id": 10308,
+          "title": "Ramadan and Dhikr",
+          "slug": "ramadan-and-dhikr",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-and-dhikr/",
+          "file_path": "articles/ramadan/ramadan-and-dhikr.json"
+        },
+        {
+          "id": 9222,
+          "title": "Welcome, O Blessed Month!",
+          "slug": "welcome-o-blessed-month",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/welcome-o-blessed-month/",
+          "file_path": "articles/ramadan/welcome-o-blessed-month.json"
+        },
+        {
+          "id": 27496,
+          "title": "Loving Allah’s Beloved ﷺ",
+          "slug": "loving-allahs-beloved-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/loving-allahs-beloved-ramadan/",
+          "file_path": "articles/ramadan/loving-allahs-beloved-ramadan.json"
+        },
+        {
+          "id": 26743,
+          "title": "Beware of The Sinister Thief: Social Media",
+          "slug": "beware-of-the-sinister-thief",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/beware-of-the-sinister-thief/",
+          "file_path": "articles/ramadan/beware-of-the-sinister-thief.json"
+        },
+        {
+          "id": 10319,
+          "title": "Ramadan and Duʿa’",
+          "slug": "ramadan-and-dua",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-and-dua/",
+          "file_path": "articles/ramadan/ramadan-and-dua.json"
+        },
+        {
+          "id": 27319,
+          "title": "Loving Allah",
+          "slug": "loving-allah-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/loving-allah-ramadan/",
+          "file_path": "articles/ramadan/loving-allah-ramadan.json"
+        },
+        {
+          "id": 10297,
+          "title": "Ramadan: Salah with Khushu",
+          "slug": "ramadan-salah-with-khushu",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-salah-with-khushu/",
+          "file_path": "articles/ramadan/ramadan-salah-with-khushu.json"
+        },
+        {
+          "id": 8832,
+          "title": "Plan Your Ramadan Timetable",
+          "slug": "plan-your-ramadan-timetable",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/plan-your-ramadan-timetable/",
+          "file_path": "articles/ramadan/plan-your-ramadan-timetable.json"
+        },
+        {
+          "id": 27181,
+          "title": "Fearing & Hoping in Allah",
+          "slug": "fearing-and-hoping-in-allah",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fearing-and-hoping-in-allah/",
+          "file_path": "articles/ramadan/fearing-and-hoping-in-allah.json"
+        },
+        {
+          "id": 26905,
+          "title": "Tasting the Sweetness of Iman & Worship: A Beautiful Journey",
+          "slug": "tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey/",
+          "file_path": "articles/ramadan/tasting-the-sweetness-of-ima-and-worship-a-beautiful-journey.json"
+        },
+        {
+          "id": 10388,
+          "title": "Ramadan and Qiyam",
+          "slug": "ramadan-and-qiyam",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ramadan-and-qiyam/",
+          "file_path": "articles/ramadan/ramadan-and-qiyam.json"
+        },
+        {
+          "id": 3301,
+          "title": "Set Your Goals For Ramadan",
+          "slug": "set-your-goals-for-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/set-your-goals-for-ramadan/",
+          "file_path": "articles/ramadan/set-your-goals-for-ramadan.json"
+        },
+        {
+          "id": 3250,
+          "title": "Shaʿban: Preparation For Ramadan",
+          "slug": "shaban-preparation-for-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/shaban-preparation-for-ramadan/",
+          "file_path": "articles/ramadan/shaban-preparation-for-ramadan.json"
+        },
+        {
+          "id": 10286,
+          "title": "Ramadan: The Month of Reflecting on The Qur’an",
+          "slug": "ramadan-the-month-of-reflecting-on-the-quran",
+          "link": "https://lifewithallah.com/articles/quran/ramadan-the-month-of-reflecting-on-the-quran/",
+          "file_path": "articles/ramadan/ramadan-the-month-of-reflecting-on-the-quran.json"
+        },
+        {
+          "id": 26889,
+          "title": "ʿUbudiyyah: Speed Up Your Journey",
+          "slug": "ubudiyyah-speed-up-your-journey",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/ubudiyyah-speed-up-your-journey/",
+          "file_path": "articles/ramadan/ubudiyyah-speed-up-your-journey.json"
+        },
+        {
+          "id": 10377,
+          "title": "Ramadan: The Month of the Qur’an",
+          "slug": "ramadan-the-month-of-quran",
+          "link": "https://lifewithallah.com/articles/quran/ramadan-the-month-of-quran/",
+          "file_path": "articles/ramadan/ramadan-the-month-of-quran.json"
+        },
+        {
+          "id": 26696,
+          "title": "Journey to Allah in Ramadan",
+          "slug": "journey-to-allah-in-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/journey-to-allah-in-ramadan/",
+          "file_path": "articles/ramadan/journey-to-allah-in-ramadan.json"
+        },
+        {
+          "id": 26882,
+          "title": "Knowing Allah: The Beginning of the Journey",
+          "slug": "knowing-allah-the-beginning-of-the-journey",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/knowing-allah-the-beginning-of-the-journey/",
+          "file_path": "articles/ramadan/knowing-allah-the-beginning-of-the-journey.json"
+        },
+        {
+          "id": 8787,
+          "title": "40 Virtues of Ramadan",
+          "slug": "the-virtues-of-ramadan",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/the-virtues-of-ramadan/",
+          "file_path": "articles/ramadan/the-virtues-of-ramadan.json"
+        },
+        {
+          "id": 3278,
+          "title": "7 Must-Watch Du’a Clips (English/Subtitles)",
+          "slug": "7-must-watch-dua-clips-english-subtitles",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/7-must-watch-dua-clips-english-subtitles/",
+          "file_path": "articles/ramadan/7-must-watch-dua-clips-english-subtitles.json"
+        },
+        {
+          "id": 9322,
+          "title": "5. Fasting & The Purification of The Soul",
+          "slug": "fasting-and-purification-of-the-soul",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fasting-and-purification-of-the-soul/",
+          "file_path": "articles/ramadan/fasting-and-purification-of-the-soul.json"
+        },
+        {
+          "id": 10026,
+          "title": "4. Fasting & Ikhlas",
+          "slug": "fasting-and-ikhlas",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fasting-and-ikhlas/",
+          "file_path": "articles/ramadan/fasting-and-ikhlas.json"
+        },
+        {
+          "id": 10022,
+          "title": "3. Fasting & Shukr: The Blessing of Iftar and Suhur",
+          "slug": "fasting-and-shukr",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fasting-and-shukr/",
+          "file_path": "articles/ramadan/fasting-and-shukr.json"
+        },
+        {
+          "id": 9393,
+          "title": "2. Fasting & Sabr: A Training Programme to Stop Sinning",
+          "slug": "fasting-and-sabr",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/fasting-and-sabr/",
+          "file_path": "articles/ramadan/fasting-and-sabr.json"
+        },
+        {
+          "id": 9372,
+          "title": "1: The Purpose of Fasting",
+          "slug": "taqwa-the-purpose-of-fasting",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/taqwa-the-purpose-of-fasting/",
+          "file_path": "articles/ramadan/taqwa-the-purpose-of-fasting.json"
+        },
+        {
+          "id": 2052,
+          "title": "10 Must-Listen to (short) Qur’an Clips",
+          "slug": "10-must-listen-short-clips-of-quranic-recitation",
+          "link": "https://lifewithallah.com/articles/quran/10-must-listen-short-clips-of-quranic-recitation/",
+          "file_path": "articles/ramadan/10-must-listen-short-clips-of-quranic-recitation.json"
+        },
+        {
+          "id": 2046,
+          "title": "10 Must-Listen to (long) Qur’an Clips",
+          "slug": "10-must-listen-to-quran-clips",
+          "link": "https://lifewithallah.com/articles/quran/10-must-listen-to-quran-clips/",
+          "file_path": "articles/ramadan/10-must-listen-to-quran-clips.json"
+        }
+      ]
+    },
+    {
+      "id": 240,
+      "name": "Taste the Sweetness of Salah",
+      "slug": "taste-the-sweetness-of-salah",
+      "count": 45,
+      "articles": [
+        {
+          "id": 18707,
+          "title": "15: Salam: The End of An Epic Journey",
+          "slug": "salam-the-end-of-an-epic-journey",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/salam-the-end-of-an-epic-journey/",
+          "file_path": "articles/taste-the-sweetness-of-salah/salam-the-end-of-an-epic-journey.json"
+        },
+        {
+          "id": 18520,
+          "title": "14: The Final Sitting (Salawat & Dua)",
+          "slug": "the-final-sitting-salawat-dua",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/the-final-sitting-salawat-dua/",
+          "file_path": "articles/taste-the-sweetness-of-salah/the-final-sitting-salawat-dua.json"
+        },
+        {
+          "id": 18510,
+          "title": "13: The Final Sitting (Tahiyyat)",
+          "slug": "tahiyyat-the-final-sitting",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/tahiyyat-the-final-sitting/",
+          "file_path": "articles/taste-the-sweetness-of-salah/tahiyyat-the-final-sitting.json"
+        },
+        {
+          "id": 18422,
+          "title": "12: Sitting Between the Two Sajdahs",
+          "slug": "sitting-between-the-two-sajdahs",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/sitting-between-the-two-sajdahs/",
+          "file_path": "articles/taste-the-sweetness-of-salah/sitting-between-the-two-sajdahs.json"
+        },
+        {
+          "id": 17839,
+          "title": "11: Sujud: The Greatest Pillar of Salah",
+          "slug": "sujud-the-gretest-pillar-of-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/sujud-the-gretest-pillar-of-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/sujud-the-gretest-pillar-of-salah.json"
+        },
+        {
+          "id": 17790,
+          "title": "10: Standing up from Ruku: A Pillar of Praise",
+          "slug": "standing-up-from-ruku-a-pillar-of-praise-2",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/standing-up-from-ruku-a-pillar-of-praise-2/",
+          "file_path": "articles/taste-the-sweetness-of-salah/standing-up-from-ruku-a-pillar-of-praise-2.json"
+        },
+        {
+          "id": 17431,
+          "title": "9: Ruku: A Pillar of Glorification",
+          "slug": "ruku-a-pillar-of-glorification",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/ruku-a-pillar-of-glorification/",
+          "file_path": "articles/taste-the-sweetness-of-salah/ruku-a-pillar-of-glorification.json"
+        },
+        {
+          "id": 17372,
+          "title": "8: Al-Fatihah – The Greatest Surah",
+          "slug": "journey-through-salah-surah-al-fatiha",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-surah-al-fatiha/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-surah-al-fatiha.json"
+        },
+        {
+          "id": 17241,
+          "title": "7: Reciting Qur’an",
+          "slug": "journey-through-salah-reciting-quran",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-reciting-quran/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-reciting-quran.json"
+        },
+        {
+          "id": 14117,
+          "title": "6: Istiʿadhah & Basmalah",
+          "slug": "journey-through-salah-istiadhah-basmalah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-istiadhah-basmalah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-istiadhah-basmalah.json"
+        },
+        {
+          "id": 14006,
+          "title": "5: Istiftah (Opening Duʿa’)",
+          "slug": "journey-through-salah-istiftah-opening-dua",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-istiftah-opening-dua/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-istiftah-opening-dua.json"
+        },
+        {
+          "id": 13964,
+          "title": "4: Qiyam (Standing)",
+          "slug": "journey-through-salah-qiyam-standing",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-qiyam-standing/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-qiyam-standing.json"
+        },
+        {
+          "id": 13774,
+          "title": "3: Takbir: Glorifying Allah",
+          "slug": "journey-through-salah-takbir-glorifying-allah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-takbir-glorifying-allah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-takbir-glorifying-allah.json"
+        },
+        {
+          "id": 13140,
+          "title": "2: Facing The Qiblah & Raising The Hands",
+          "slug": "journey-through-salah-facing-the-qiblah-and-raising-the-hands",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-facing-the-qiblah-and-raising-the-hands/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-facing-the-qiblah-and-raising-the-hands.json"
+        },
+        {
+          "id": 13100,
+          "title": "1: Wudu: Inner and Outer Purification",
+          "slug": "journey-through-salah-wudu",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-wudu/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-wudu.json"
+        },
+        {
+          "id": 13092,
+          "title": "Attending The Court Of The Almighty",
+          "slug": "journey-through-salah-attending-the-court-of-the-almighty",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/journey-through-salah-attending-the-court-of-the-almighty/",
+          "file_path": "articles/taste-the-sweetness-of-salah/journey-through-salah-attending-the-court-of-the-almighty.json"
+        },
+        {
+          "id": 13080,
+          "title": "A Journey Through Salah",
+          "slug": "a-journey-through-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/a-journey-through-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/a-journey-through-salah.json"
+        },
+        {
+          "id": 12007,
+          "title": "20: The Secret Of Salah: Focus Your Heart On Him",
+          "slug": "20-focus-your-heart-on-him",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/20-focus-your-heart-on-him/",
+          "file_path": "articles/taste-the-sweetness-of-salah/20-focus-your-heart-on-him.json"
+        },
+        {
+          "id": 11778,
+          "title": "19: Bring Your Heart To Salah: Love, Hope & Fear",
+          "slug": "19-bring-your-heart-to-salah-love-hope-fear",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/19-bring-your-heart-to-salah-love-hope-fear/",
+          "file_path": "articles/taste-the-sweetness-of-salah/19-bring-your-heart-to-salah-love-hope-fear.json"
+        },
+        {
+          "id": 11401,
+          "title": "18: Always Be Mindful That You Are Talking To Allah & That He Is Responding To You",
+          "slug": "18-always-be-mindful-that-you-are-talking-to-allah-and-that-he-is-responding-to-you",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/18-always-be-mindful-that-you-are-talking-to-allah-and-that-he-is-responding-to-you/",
+          "file_path": "articles/taste-the-sweetness-of-salah/18-always-be-mindful-that-you-are-talking-to-allah-and-that-he-is-responding-to-you.json"
+        },
+        {
+          "id": 11335,
+          "title": "17: Remember Death & The Hereafter In & Outside Salah",
+          "slug": "17-remember-death-and-the-hereafter-in-and-outside-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/17-remember-death-and-the-hereafter-in-and-outside-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/17-remember-death-and-the-hereafter-in-and-outside-salah.json"
+        },
+        {
+          "id": 11331,
+          "title": "16: Be Calm & Lengthen Your Salah",
+          "slug": "16-be-calm-and-lengthen-your-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/16-be-calm-and-lengthen-your-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/16-be-calm-and-lengthen-your-salah.json"
+        },
+        {
+          "id": 11255,
+          "title": "15: Recite the Qur’an Slowly And Beautifully",
+          "slug": "15-recite-the-quran-slowly-and-beautifully-2",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/15-recite-the-quran-slowly-and-beautifully-2/",
+          "file_path": "articles/taste-the-sweetness-of-salah/15-recite-the-quran-slowly-and-beautifully-2.json"
+        },
+        {
+          "id": 11039,
+          "title": "14: Reflect & Interact With The Qur’an",
+          "slug": "14-reflect-and-interact-with-the-quran",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/14-reflect-and-interact-with-the-quran/",
+          "file_path": "articles/taste-the-sweetness-of-salah/14-reflect-and-interact-with-the-quran.json"
+        },
+        {
+          "id": 10991,
+          "title": "13: Vary The Adhkar & Surahs You Recite",
+          "slug": "13-vary-the-adhkar-and-surahs-you-recite",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/13-vary-the-adhkar-and-surahs-you-recite/",
+          "file_path": "articles/taste-the-sweetness-of-salah/13-vary-the-adhkar-and-surahs-you-recite.json"
+        },
+        {
+          "id": 10985,
+          "title": "12: Understand The Meaning & Loftiness Of What You Are Saying",
+          "slug": "12-understand-the-meaning-and-loftiness-of-what-you-are-saying",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/12-understand-the-meaning-and-loftiness-of-what-you-are-saying/",
+          "file_path": "articles/taste-the-sweetness-of-salah/12-understand-the-meaning-and-loftiness-of-what-you-are-saying.json"
+        },
+        {
+          "id": 10980,
+          "title": "11: Fight Shaytan & His Whispers",
+          "slug": "11-fight-shaytan-and-his-whispers",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/11-fight-shaytan-and-his-whispers/",
+          "file_path": "articles/taste-the-sweetness-of-salah/11-fight-shaytan-and-his-whispers.json"
+        },
+        {
+          "id": 8488,
+          "title": "10: Eliminate Distractions",
+          "slug": "eliminate-distractions-10",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/eliminate-distractions-10/",
+          "file_path": "articles/taste-the-sweetness-of-salah/eliminate-distractions-10.json"
+        },
+        {
+          "id": 8482,
+          "title": "9: Be Punctual With Your Sunnah Prayers",
+          "slug": "be-punctual-with-your-sunnah-prayers",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/be-punctual-with-your-sunnah-prayers/",
+          "file_path": "articles/taste-the-sweetness-of-salah/be-punctual-with-your-sunnah-prayers.json"
+        },
+        {
+          "id": 8478,
+          "title": "8: Pray in the Congregation & Do Not Delay",
+          "slug": "pray-in-the-congregation-and-do-not-delay-8",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/pray-in-the-congregation-and-do-not-delay-8/",
+          "file_path": "articles/taste-the-sweetness-of-salah/pray-in-the-congregation-and-do-not-delay-8.json"
+        },
+        {
+          "id": 8470,
+          "title": "7: Act Upon the Etiquettes of the Masjid & Respond to the Adhan",
+          "slug": "act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan/",
+          "file_path": "articles/taste-the-sweetness-of-salah/act-upon-the-etiquettes-of-the-masjid-and-respond-to-the-adhan.json"
+        },
+        {
+          "id": 8273,
+          "title": "6: Persistently Ask Allah for Khushuʿ</br>and Do Not Give Up",
+          "slug": "persistently-ask-allah-for-khushu-6",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/persistently-ask-allah-for-khushu-6/",
+          "file_path": "articles/taste-the-sweetness-of-salah/persistently-ask-allah-for-khushu-6.json"
+        },
+        {
+          "id": 8268,
+          "title": "5: Increase Your Time in Private Worship",
+          "slug": "increase-your-time-in-private-worship-5",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/increase-your-time-in-private-worship-5/",
+          "file_path": "articles/taste-the-sweetness-of-salah/increase-your-time-in-private-worship-5.json"
+        },
+        {
+          "id": 8262,
+          "title": "4: Soften Your Heart",
+          "slug": "soften-your-heart-4",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/soften-your-heart-4/",
+          "file_path": "articles/taste-the-sweetness-of-salah/soften-your-heart-4.json"
+        },
+        {
+          "id": 8170,
+          "title": "3: Stop Sinning",
+          "slug": "stop-sinning-3",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/stop-sinning-3/",
+          "file_path": "articles/taste-the-sweetness-of-salah/stop-sinning-3.json"
+        },
+        {
+          "id": 8092,
+          "title": "2: Attain the Maʿrifah of Allah",
+          "slug": "attain-the-marifah-of-allah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/attain-the-marifah-of-allah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/attain-the-marifah-of-allah.json"
+        },
+        {
+          "id": 8048,
+          "title": "1: Appreciate The Importance Of Salah",
+          "slug": "appreciate-the-importance-of-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/appreciate-the-importance-of-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/appreciate-the-importance-of-salah.json"
+        },
+        {
+          "id": 8044,
+          "title": "Why Do We Lack Khushuʿ?",
+          "slug": "why-do-we-lack-khushu",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/why-do-we-lack-khushu/",
+          "file_path": "articles/taste-the-sweetness-of-salah/why-do-we-lack-khushu.json"
+        },
+        {
+          "id": 8035,
+          "title": "Measure Your Salah",
+          "slug": "measure-your-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/measure-your-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/measure-your-salah.json"
+        },
+        {
+          "id": 8028,
+          "title": "The Salah and Khushuʿ of The Prophet ﷺ",
+          "slug": "salah-and-khushu-of-the-prophet",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/salah-and-khushu-of-the-prophet/",
+          "file_path": "articles/taste-the-sweetness-of-salah/salah-and-khushu-of-the-prophet.json"
+        },
+        {
+          "id": 8024,
+          "title": "Salah With Khushuʿ: Pure Joy & Comfort",
+          "slug": "pure-joy-and-comfort",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/pure-joy-and-comfort/",
+          "file_path": "articles/taste-the-sweetness-of-salah/pure-joy-and-comfort.json"
+        },
+        {
+          "id": 7931,
+          "title": "The Benefits of Khushuʿ in Salah",
+          "slug": "benefits-of-khushu-in-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/benefits-of-khushu-in-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/benefits-of-khushu-in-salah.json"
+        },
+        {
+          "id": 7925,
+          "title": "The Virtues of Khushu in Salah",
+          "slug": "virtues-of-khushu-in-salah",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/virtues-of-khushu-in-salah/",
+          "file_path": "articles/taste-the-sweetness-of-salah/virtues-of-khushu-in-salah.json"
+        },
+        {
+          "id": 7855,
+          "title": "The Importance of Khushu in Salah",
+          "slug": "importance-of-khushu-2",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/importance-of-khushu-2/",
+          "file_path": "articles/taste-the-sweetness-of-salah/importance-of-khushu-2.json"
+        },
+        {
+          "id": 6565,
+          "title": "What is Khushu?",
+          "slug": "what-is-khushu",
+          "link": "https://lifewithallah.com/articles/taste-the-sweetness-of-salah/what-is-khushu/",
+          "file_path": "articles/taste-the-sweetness-of-salah/what-is-khushu.json"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Istighfar",
+      "slug": "istighfar",
+      "count": 3,
+      "articles": [
+        {
+          "id": 2579,
+          "title": "Sayyid al-Istighfar: The Best Way to Seek Forgiveness",
+          "slug": "sayyid-al-istighfarthe-best-way-to-seek-forgiveness",
+          "link": "https://lifewithallah.com/articles/morning-evening/sayyid-al-istighfarthe-best-way-to-seek-forgiveness/",
+          "file_path": "articles/istighfar/sayyid-al-istighfarthe-best-way-to-seek-forgiveness.json"
+        },
+        {
+          "id": 7005,
+          "title": "Seeking Forgiveness (Istighfar) and Repenting",
+          "slug": "seeking-forgiveness-istighfar-and-repenting",
+          "link": "https://lifewithallah.com/articles/dhikr/seeking-forgiveness-istighfar-and-repenting/",
+          "file_path": "articles/istighfar/seeking-forgiveness-istighfar-and-repenting.json"
+        },
+        {
+          "id": 7002,
+          "title": "10 Steps to Seek Forgiveness & Repent",
+          "slug": "10-steps-to-seek-forgiveness-repent",
+          "link": "https://lifewithallah.com/articles/dhikr/10-steps-to-seek-forgiveness-repent/",
+          "file_path": "articles/istighfar/10-steps-to-seek-forgiveness-repent.json"
+        }
+      ]
+    },
+    {
+      "id": 243,
+      "name": "Knowing Allah",
+      "slug": "knowing-allah",
+      "count": 12,
+      "articles": [
+        {
+          "id": 19499,
+          "title": "In the Company of Angels",
+          "slug": "in-the-company-of-angels",
+          "link": "https://lifewithallah.com/articles/knowing-allah/in-the-company-of-angels/",
+          "file_path": "articles/knowing-allah/in-the-company-of-angels.json"
+        },
+        {
+          "id": 19997,
+          "title": "Loving Allah – Part 2",
+          "slug": "loving-allah-part-2",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/loving-allah-part-2/",
+          "file_path": "articles/knowing-allah/loving-allah-part-2.json"
+        },
+        {
+          "id": 19993,
+          "title": "Loving Allah – Part 1",
+          "slug": "loving-allah-2",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/loving-allah-2/",
+          "file_path": "articles/knowing-allah/loving-allah-2.json"
+        },
+        {
+          "id": 18363,
+          "title": "Hoping in Allah",
+          "slug": "hope-in-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/hope-in-allah/",
+          "file_path": "articles/knowing-allah/hope-in-allah.json"
+        },
+        {
+          "id": 7263,
+          "title": "Fearing Allah",
+          "slug": "fearing-allah",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/fearing-allah/",
+          "file_path": "articles/knowing-allah/fearing-allah.json"
+        },
+        {
+          "id": 17285,
+          "title": "al-Halim: The Most Forbearing",
+          "slug": "al-halim-the-most-forbearing",
+          "link": "https://lifewithallah.com/articles/knowing-allah/al-halim-the-most-forbearing/",
+          "file_path": "articles/knowing-allah/al-halim-the-most-forbearing.json"
+        },
+        {
+          "id": 26886,
+          "title": "Knowing Allah: The Soul’s Greatest Need",
+          "slug": "knowing-allah-the-souls-greatest-need",
+          "link": "https://lifewithallah.com/articles/the-pure-heart/knowing-allah-the-souls-greatest-need/",
+          "file_path": "articles/knowing-allah/knowing-allah-the-souls-greatest-need.json"
+        },
+        {
+          "id": 11441,
+          "title": "Al-Kabir (The Most Great) &  Al-Azim (The Magnificent)",
+          "slug": "al-kabir-the-most-great-and-al-azim-the-magnificent",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/al-kabir-the-most-great-and-al-azim-the-magnificent/",
+          "file_path": "articles/knowing-allah/al-kabir-the-most-great-and-al-azim-the-magnificent.json"
+        },
+        {
+          "id": 11472,
+          "title": "Allahu Akbar: A Magnificent Phrase",
+          "slug": "allahu-akbar-a-magnificent-phrase",
+          "link": "https://lifewithallah.com/articles/dhikr/allahu-akbar-a-magnificent-phrase/",
+          "file_path": "articles/knowing-allah/allahu-akbar-a-magnificent-phrase.json"
+        },
+        {
+          "id": 6687,
+          "title": "Who is Allah?",
+          "slug": "who-is-allah",
+          "link": "https://lifewithallah.com/articles/knowing-allah/who-is-allah/",
+          "file_path": "articles/knowing-allah/who-is-allah.json"
+        },
+        {
+          "id": 8721,
+          "title": "al-Wakīl: The Ultimate Trustee",
+          "slug": "al-wakil-the-ultimate-trustee",
+          "link": "https://lifewithallah.com/articles/knowing-allah/al-wakil-the-ultimate-trustee/",
+          "file_path": "articles/knowing-allah/al-wakil-the-ultimate-trustee.json"
+        },
+        {
+          "id": 3736,
+          "title": "The Names of Allah",
+          "slug": "the-names-of-allah",
+          "link": "https://lifewithallah.com/articles/knowing-allah/the-names-of-allah/",
+          "file_path": "articles/knowing-allah/the-names-of-allah.json"
+        }
+      ]
+    },
+    {
+      "id": 248,
+      "name": "Seasons of Worship",
+      "slug": "seasons-of-worship",
+      "count": 9,
+      "articles": [
+        {
+          "id": 10476,
+          "title": "Laylat al-Qadr & The Last 10 Nights",
+          "slug": "laylat-al-qadr-the-last-10-days",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/ramadan/laylat-al-qadr-the-last-10-days/",
+          "file_path": "articles/seasons-of-worship/laylat-al-qadr-the-last-10-days.json"
+        },
+        {
+          "id": 6991,
+          "title": "Actions to Attain the Reward of Hajj",
+          "slug": "attain-the-reward-of-hajj-without-actually-performing-it",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/attain-the-reward-of-hajj-without-actually-performing-it/",
+          "file_path": "articles/seasons-of-worship/attain-the-reward-of-hajj-without-actually-performing-it.json"
+        },
+        {
+          "id": 6997,
+          "title": "The Best Days Come to An End",
+          "slug": "the-best-days-come-to-an-end",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-best-days-come-to-an-end/",
+          "file_path": "articles/seasons-of-worship/the-best-days-come-to-an-end.json"
+        },
+        {
+          "id": 6973,
+          "title": "Remember Allah in the Days of Tashriq",
+          "slug": "remember-allah-in-the-days-of-tashriq",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/remember-allah-in-the-days-of-tashriq/",
+          "file_path": "articles/seasons-of-worship/remember-allah-in-the-days-of-tashriq.json"
+        },
+        {
+          "id": 6976,
+          "title": "The Days of Tashriq",
+          "slug": "the-days-of-tashriq",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/the-days-of-tashriq/",
+          "file_path": "articles/seasons-of-worship/the-days-of-tashriq.json"
+        },
+        {
+          "id": 6981,
+          "title": "Eid al-Adha: A Symbol of True Faith and Submission",
+          "slug": "eid-al-adha-a-symbol-of-true-faith-and-submission",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/eid-al-adha-a-symbol-of-true-faith-and-submission/",
+          "file_path": "articles/seasons-of-worship/eid-al-adha-a-symbol-of-true-faith-and-submission.json"
+        },
+        {
+          "id": 6986,
+          "title": "Why Are The 10 Days Of Dhul Hijjah Extremely Special?",
+          "slug": "why-are-these-10-days-extremely-special",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/why-are-these-10-days-extremely-special/",
+          "file_path": "articles/seasons-of-worship/why-are-these-10-days-extremely-special.json"
+        },
+        {
+          "id": 2754,
+          "title": "Seasons of Mercy",
+          "slug": "seasons-of-mercy",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/dhul-hijjah/seasons-of-mercy/",
+          "file_path": "articles/seasons-of-worship/seasons-of-mercy.json"
+        },
+        {
+          "id": 3225,
+          "title": "Winter: The Believer’s Season",
+          "slug": "the-believers-season",
+          "link": "https://lifewithallah.com/articles/other/the-believers-season/",
+          "file_path": "articles/seasons-of-worship/the-believers-season.json"
+        }
+      ]
+    },
+    {
+      "id": 890,
+      "name": "Tafsir & Tadabbur",
+      "slug": "tafsir-tadabbur",
+      "count": 7,
+      "articles": [
+        {
+          "id": 45022,
+          "title": "Surah an-Nabaʾ Reflections",
+          "slug": "surah-an-naba",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-an-naba/",
+          "file_path": "articles/tafsir-tadabbur/surah-an-naba.json"
+        },
+        {
+          "id": 44520,
+          "title": "Surah al-Mursalat Reflections",
+          "slug": "surah-al-mursalat-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-mursalat-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-mursalat-reflections.json"
+        },
+        {
+          "id": 44415,
+          "title": "Surah al-Insan Reflections",
+          "slug": "surah-al-insan-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-insan-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-insan-reflections.json"
+        },
+        {
+          "id": 45060,
+          "title": "Surah al-Maʿarij Reflections",
+          "slug": "surah-al-maarij-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-maarij-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-maarij-reflections.json"
+        },
+        {
+          "id": 42073,
+          "title": "Surah al-Haqqah Reflections",
+          "slug": "surah-al-haqqah-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-haqqah-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-haqqah-reflections.json"
+        },
+        {
+          "id": 42039,
+          "title": "Surah al-Qalam Reflections",
+          "slug": "surah-al-qalam-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-qalam-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-qalam-reflections.json"
+        },
+        {
+          "id": 41524,
+          "title": "Surah al-Mulk Reflections",
+          "slug": "surah-al-mulk-reflections",
+          "link": "https://lifewithallah.com/articles/quran/tafsir-tadabbur/surah-al-mulk-reflections/",
+          "file_path": "articles/tafsir-tadabbur/surah-al-mulk-reflections.json"
+        }
+      ]
+    },
+    {
+      "id": 191,
+      "name": "Loving the Prophet ﷺ",
+      "slug": "loving-the-prophet",
+      "count": 19,
+      "articles": [
+        {
+          "id": 44924,
+          "title": "13. Uhud",
+          "slug": "13-uhud",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/13-uhud/",
+          "file_path": "articles/loving-the-prophet/13-uhud.json"
+        },
+        {
+          "id": 44907,
+          "title": "12. Masjid Quba’",
+          "slug": "12-masjid-quba",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/12-masjid-quba/",
+          "file_path": "articles/loving-the-prophet/12-masjid-quba.json"
+        },
+        {
+          "id": 44900,
+          "title": "11. The Ansar: People of  Faith and Selflessness",
+          "slug": "11-the-ansar-people-of-faith-and-selflessness",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/11-the-ansar-people-of-faith-and-selflessness/",
+          "file_path": "articles/loving-the-prophet/11-the-ansar-people-of-faith-and-selflessness.json"
+        },
+        {
+          "id": 44885,
+          "title": "10. The Streets of Madinah",
+          "slug": "10-the-streets-of-madinah",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/10-the-streets-of-madinah/",
+          "file_path": "articles/loving-the-prophet/10-the-streets-of-madinah.json"
+        },
+        {
+          "id": 44882,
+          "title": "9. Visiting al-Baqiʿ",
+          "slug": "9-visiting-al-baqi",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/9-visiting-al-baqi/",
+          "file_path": "articles/loving-the-prophet/9-visiting-al-baqi.json"
+        },
+        {
+          "id": 44878,
+          "title": "8. The Rawdah:  A Piece of Jannah",
+          "slug": "8-the-rawdah-a-piece-of-jannah",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/8-the-rawdah-a-piece-of-jannah/",
+          "file_path": "articles/loving-the-prophet/8-the-rawdah-a-piece-of-jannah.json"
+        },
+        {
+          "id": 44855,
+          "title": "7. The House of the Beloved: ʿA’ishah b. Abi Bakr (radiy Allāhu ʿanhumā)",
+          "slug": "7-the-house-of-the-beloved-aishah-b-abi-bakr",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/7-the-house-of-the-beloved-aishah-b-abi-bakr/",
+          "file_path": "articles/loving-the-prophet/7-the-house-of-the-beloved-aishah-b-abi-bakr.json"
+        },
+        {
+          "id": 44843,
+          "title": "6. The Beacon of Justice: ʿUmar b. al-Khattab (raḍiy Allahu ʿanhu)",
+          "slug": "6-the-beacon-of-justice-umar-b-al-khattab",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/6-the-beacon-of-justice-umar-b-al-khattab/",
+          "file_path": "articles/loving-the-prophet/6-the-beacon-of-justice-umar-b-al-khattab.json"
+        },
+        {
+          "id": 44840,
+          "title": "5. The Closest Companion: Abu Bakr al-Siddiq (raḍiy Allahu ʿanhu)",
+          "slug": "5-the-closest-companion-abu-bakr-al-siddiq",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/5-the-closest-companion-abu-bakr-al-siddiq/",
+          "file_path": "articles/loving-the-prophet/5-the-closest-companion-abu-bakr-al-siddiq.json"
+        },
+        {
+          "id": 44671,
+          "title": "4. Visiting the Grave: In the Company of the Prophet ﷺ",
+          "slug": "4-visiting-the-grave-in-the-company-of-the-prophet",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/4-visiting-the-grave-in-the-company-of-the-prophet/",
+          "file_path": "articles/loving-the-prophet/4-visiting-the-grave-in-the-company-of-the-prophet.json"
+        },
+        {
+          "id": 44664,
+          "title": "3. Entering the Masjid of the Prophet ﷺ",
+          "slug": "3-entering-the-masjid-of-the-prophet",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/3-entering-the-masjid-of-the-prophet/",
+          "file_path": "articles/loving-the-prophet/3-entering-the-masjid-of-the-prophet.json"
+        },
+        {
+          "id": 44661,
+          "title": "2. Madinah",
+          "slug": "2-madinah",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/2-madinah/",
+          "file_path": "articles/loving-the-prophet/2-madinah.json"
+        },
+        {
+          "id": 44658,
+          "title": "1. On the Way to Madinah",
+          "slug": "1-on-the-way-to-madinah",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/1-on-the-way-to-madinah/",
+          "file_path": "articles/loving-the-prophet/1-on-the-way-to-madinah.json"
+        },
+        {
+          "id": 19613,
+          "title": "Loving Allah’s Beloved ﷺ",
+          "slug": "loving-allahs-beloved",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/loving-allahs-beloved/",
+          "file_path": "articles/loving-the-prophet/loving-allahs-beloved.json"
+        },
+        {
+          "id": 8028,
+          "title": "The Salah and Khushuʿ of The Prophet ﷺ",
+          "slug": "salah-and-khushu-of-the-prophet",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/salah-and-khushu-of-the-prophet/",
+          "file_path": "articles/taste-the-sweetness-of-salah/salah-and-khushu-of-the-prophet.json"
+        },
+        {
+          "id": 8014,
+          "title": "Can You Visualise The Prophet ﷺ?",
+          "slug": "can-you-visualise-the-prophet",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/can-you-visualise-the-prophet/",
+          "file_path": "articles/loving-the-prophet/can-you-visualise-the-prophet.json"
+        },
+        {
+          "id": 8006,
+          "title": "The Best of Men ﷺ",
+          "slug": "the-best-of-men",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/the-best-of-men/",
+          "file_path": "articles/loving-the-prophet/the-best-of-men.json"
+        },
+        {
+          "id": 6639,
+          "title": "The Prophet’s Love for Us",
+          "slug": "the-prophets-love-for-us",
+          "link": "https://lifewithallah.com/articles/loving-the-prophet/the-prophets-love-for-us/",
+          "file_path": "articles/loving-the-prophet/the-prophets-love-for-us.json"
+        },
+        {
+          "id": 4845,
+          "title": "40 Benefits of Sending Salawat Upon the Prophet ﷺ",
+          "slug": "40-benefits-of-sending-salah-upon-the-prophet",
+          "link": "https://lifewithallah.com/articles/seasons-of-worship/jumuah/40-benefits-of-sending-salah-upon-the-prophet/",
+          "file_path": "articles/loving-the-prophet/40-benefits-of-sending-salah-upon-the-prophet.json"
+        }
+      ]
+    }
+  ]
+}
