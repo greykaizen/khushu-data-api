@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "الرحمن",
+                "translation": "الرحمن",
+                "meaning": "كثير الرحمة، وهو اسم مقصور على الله عز وجل ولا يجوز أن يسمى به غيره.",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "الرحيم",
+                "translation": "الرحيم",
+                "meaning": "هو المنعم أبدا، المتفضل دوما، وفرحمته لا تنتهي.",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "الملك",
+                "translation": "الملك",
+                "meaning": "هو الله، ملك الملوك، له الملك، وهو مالك يوم الدين.",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "القدوس",
+                "translation": "القدوس",
+                "meaning": "هو المنزه عن العيوب والنقائص وكل ما يحيط بالخلق من أوصاف النقص.",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "السلام",
+                "translation": "السلام",
+                "meaning": "هو الذي سلم من العيوب والنقائص، وسلم خلقه من ظلمه.",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "المؤمن",
+                "translation": "المؤمن",
+                "meaning": "هو الذي أمن خلقه من عذابه، وصدق عباده ما وعدهم.",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "المهيمن",
+                "translation": "المهيمن",
+                "meaning": "هو الرقيب الحافظ لكل شيء، القائم على خلقه بأعمالهم، وأرزاقهم وآجالهم.",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "العزيز",
+                "translation": "العزيز",
+                "meaning": "هو الغالب الذي لا يغلب، فالجميع مقهورون تحت مشيئته وقدرته.",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "الجبار",
+                "translation": "الجبار",
+                "meaning": "هو الذي يجبر المنكسر، ويغني الفقير، وييسر العسير، ويجبر المصاب.",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "المتكبر",
+                "translation": "المتكبر",
+                "meaning": "هو العظيم المتعالي عن صفات الخلق، المنفرد بالعظمة والكبرياء.",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "الخالق",
+                "translation": "الخالق",
+                "meaning": "هو الذي أوجد الأشياء من العدم، وقدرها بمقياس دقيق.",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "البارئ",
+                "translation": "البارئ",
+                "meaning": "هو الذي خلق الخلق بقدرته لا عن مثال سابق.",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "المصور",
+                "translation": "المصور",
+                "meaning": "هو الذي صور جميع الموجودات، ورتبها فأعطى كل شيء منها صورة خاصة.",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "الغفار",
+                "translation": "الغفار",
+                "meaning": "هو الذي يغفر الذنوب ويستر العيوب في الدنيا والآخرة.",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "القهار",
+                "translation": "القهار",
+                "meaning": "هو الغالب الذي قهر كل شيء، وخضعت له الرقاب.",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "الوهاب",
+                "translation": "الوهاب",
+                "meaning": "هو المنعم على العباد، الذي يهب بغير عوض ويعطي الحاجة بغير سؤال.",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "الرزاق",
+                "translation": "الرزاق",
+                "meaning": "هو الذي خلق الأرزاق وأعطى كل الخلائق أرزاقها.",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "الفتاح",
+                "translation": "الفتاح",
+                "meaning": "هو الذي يفتح مغلق الأمور، ويسهل العسير، وبيده مفاتيح السماوات والأرض.",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "العليم",
+                "translation": "العليم",
+                "meaning": "هو الذي أحاط علمه بكل شيء، ظاهره وباطنه، دقيقه وجليله.",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "القابض",
+                "translation": "القابض",
+                "meaning": "هو الذي يقبض الرزق عمن يشاء من الخلق بحكمته وقدرته.",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "الباسط",
+                "translation": "الباسط",
+                "meaning": "هو الذي يبسط الرزق لمن يشاء من عباده بجوده ورحمته.",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "الخافض",
+                "translation": "الخافض",
+                "meaning": "هو الذي يخفض الجبابرة ويذل الطغاة والمستكبرين.",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "الرافع",
+                "translation": "الرافع",
+                "meaning": "هو الذي يرفع عباده المؤمنين بالطاعات، ويرفع درجاتهم.",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "المعز",
+                "translation": "المعز",
+                "meaning": "هو الذي يهب العز لمن يشاء، فقد أعز أولياءه بطاعته.",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "المذل",
+                "translation": "المذل",
+                "meaning": "هو الذي يذل من يشاء من أعدائه وعصاته.",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "السميع",
+                "translation": "السميع",
+                "meaning": "هو الذي لا يخفى عليه شيء في الأرض ولا في السماء، يسمع دبيب النملة السوداء.",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "البصير",
+                "translation": "البصير",
+                "meaning": "هو الذي أحاط بصره بجميع المبصرات في أقطار الأرض والسماوات.",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "الحكم",
+                "translation": "الحكم",
+                "meaning": "هو الذي يحكم بين الخلق بالعدل، ولا راد لقضائه.",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "العدل",
+                "translation": "العدل",
+                "meaning": "هو الذي حرم الظلم على نفسه، وجعله بين عباده محرما.",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "اللطيف",
+                "translation": "اللطيف",
+                "meaning": "هو البر بعباده، الذي يلطف بهم من حيث لا يعلمون، ويرزقهم من حيث لا يحتسبون.",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "الخبير",
+                "translation": "الخبير",
+                "meaning": "هو العالم بدقائق الأمور، لا تخفى عليه خافية في الأرض ولا في السماء.",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "الحليم",
+                "translation": "الحليم",
+                "meaning": "هو الصبور الذي يمهل ولا يهمل، ويستر الذنوب، ويؤخر العقوبة.",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "العظيم",
+                "translation": "العظيم",
+                "meaning": "هو الذي ليس لعظمته بداية ولا لنهايته نهاية، جاوز حدود العقل والتصور.",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "الغفور",
+                "translation": "الغفور",
+                "meaning": "هو الذي يغفر الذنوب ويتجاوز عن السيئات.",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "الشكور",
+                "translation": "الشكور",
+                "meaning": "هو الذي يزكو عنده القليل من الأعمال، فيضاعف أجرها.",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "العلي",
+                "translation": "العلي",
+                "meaning": "هو الرفيع القدر، فلا يحيط به وصف الواصفين.",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "الكبير",
+                "translation": "الكبير",
+                "meaning": "هو الجليل الشأن، الذي صغر دونه كل كبير.",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "الحفيظ",
+                "translation": "الحفيظ",
+                "meaning": "هو الذي يحفظ السماوات والأرض وما فيهما، ويحفظ عباده من المهالك.",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "المقيت",
+                "translation": "المقيت",
+                "meaning": "هو المتكفل بإيصال الأقوات إلى الخلق، وهو الحفيظ والمقتدر.",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "الحسيب",
+                "translation": "الحسيب",
+                "meaning": "هو الكافي الذي منه كفاية العباد، وهو الذي يحاسب العباد على أعمالهم.",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "الجليل",
+                "translation": "الجليل",
+                "meaning": "هو العظيم المطلق المتصف بجميع صفات الكمال.",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "الكريم",
+                "translation": "الكريم",
+                "meaning": "هو الكثير الخير، الجواد المعطي الذي لا ينفد عطاؤه.",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "الرقيب",
+                "translation": "الرقيب",
+                "meaning": "هو المطلع على ما في الضمائر، الذي لا يخفى عليه شيء.",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "المجيب",
+                "translation": "المجيب",
+                "meaning": "هو الذي يقابل الدعاء والسؤال بالعطاء والقبول.",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "الواسع",
+                "translation": "الواسع",
+                "meaning": "هو الذي وسع رزقه جميع خلقه، ووسعت رحمته كل شيء.",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "الحكيم",
+                "translation": "الحكيم",
+                "meaning": "هو الذي يضع الأشياء في مواضعها، ولا يفعل إلا الصواب.",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "الودود",
+                "translation": "الودود",
+                "meaning": "هو المحب لعباده، والمحبوب في قلوب أولياءه.",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "المجيد",
+                "translation": "المجيد",
+                "meaning": "هو البالغ النهاية في المجد، الكثير الإحسان.",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "الباعث",
+                "translation": "الباعث",
+                "meaning": "هو الذي يبعث الخلق بعد الموت للحساب والجزاء.",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "الشهيد",
+                "translation": "الشهيد",
+                "meaning": "هو الحاضر المطلع على جميع الأشياء، الذي لا يغيب عنه شيء.",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "الحق",
+                "translation": "الحق",
+                "meaning": "هو الذي يحق الحق بكلماته، ووجوده هو الوجود الحقيقي.",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "الوكيل",
+                "translation": "الوكيل",
+                "meaning": "هو الكفيل بأرزاق العباد، والقائم بمصالحهم.",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "القوي",
+                "translation": "القوي",
+                "meaning": "هو صاحب القدرة التامة البالغة الكمال.",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "المتين",
+                "translation": "المتين",
+                "meaning": "هو الشديد الذي لا يحتاج في إمضاء حكمه إلى جند أو مدد.",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "الولي",
+                "translation": "الولي",
+                "meaning": "هو المحب الناصر لمن أطاعه، ينصر أولياءه.",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "الحميد",
+                "translation": "الحميد",
+                "meaning": "هو المستحق للحمد والثناء، الذي يحمده جميع خلقه.",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "المحصي",
+                "translation": "المحصي",
+                "meaning": "هو الذي أحصى كل شيء عددا، وأحاط بكل شيء علما.",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "المبدئ",
+                "translation": "المبدئ",
+                "meaning": "هو الذي أنشأ الأشياء واخترعها ابتداء من غير سابق مثال.",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "المعيد",
+                "translation": "المعيد",
+                "meaning": "هو الذي يعيد الخلق بعد الحياة إلى الممات، ثم يعيدهم بعد الموت إلى الحياة.",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "المحيي",
+                "translation": "المحيي",
+                "meaning": "هو خالق الحياة في كل شيء حي.",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "المميت",
+                "translation": "المميت",
+                "meaning": "هو مقدر الموت على كل من أماته ولا مميت سواه.",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "الحي",
+                "translation": "الحي",
+                "meaning": "هو المتصف بالحياة الأبدية التي لا بداية لها ولا نهاية.",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "القيوم",
+                "translation": "القيوم",
+                "meaning": "هو القائم بنفسه، المقيم لغيره، الغني عن كل شيء.",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "الواجد",
+                "translation": "الواجد",
+                "meaning": "هو الذي لا يعوزه شيء، ولا يغيب عنه شيء.",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "الماجد",
+                "translation": "الماجد",
+                "meaning": "هو الذي له الكمال المتناهي، والعز الباهي.",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "الواحد",
+                "translation": "الواحد",
+                "meaning": "هو الفرد المتفرد في ذاته وصفاته وأفعاله.",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "الأحد",
+                "translation": "الأحد",
+                "meaning": "هو الذي لا شبيه له ولا نظير.",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "الصمد",
+                "translation": "الصمد",
+                "meaning": "هو المطاع الذي لا يقضى دونه أمر، والذي يقصد في الحوائج.",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "القادر",
+                "translation": "القادر",
+                "meaning": "هو الذي يقدر على إيجاد المعدوم وإعدام الموجود.",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "المقتدر",
+                "translation": "المقتدر",
+                "meaning": "هو الذي يقدر على إصلاح الخلائق على وجه لا يقدر عليه غيره.",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "المقدم",
+                "translation": "المقدم",
+                "meaning": "هو الذي يقدم الأشياء ويضعها في مواضعها.",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "المؤخر",
+                "translation": "المؤخر",
+                "meaning": "هو الذي يؤخر الأشياء فيضعها في مواضعها.",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "الأول",
+                "translation": "الأول",
+                "meaning": "هو الذي لم يسبقه في الوجود شيء.",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "الآخر",
+                "translation": "الآخر",
+                "meaning": "هو الباقي بعد فناء خلقه، البقاء الأبدي.",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "الظاهر",
+                "translation": "الظاهر",
+                "meaning": "هو الذي ظهر فوق كل شيء وعلا عليه.",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "الباطن",
+                "translation": "الباطن",
+                "meaning": "هو العالم ببواطن الأمور وخفاياها.",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "الوالي",
+                "translation": "الوالي",
+                "meaning": "هو المالك للأشياء المتصرف فيها.",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "المتعالي",
+                "translation": "المتعالي",
+                "meaning": "هو الذي جل عن إفك المفترين، وتنزه عن وساوس المتحيرين.",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "البر",
+                "translation": "البر",
+                "meaning": "هو العطوف على عباده، المحسن إليهم، الذي عم ببره جميع خلقه.",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "التواب",
+                "translation": "التواب",
+                "meaning": "هو الذي ييسر أسباب التوبة لعباده، ويقبلها منهم.",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "المنتقم",
+                "translation": "المنتقم",
+                "meaning": "هو الذي يقسم ظهور الطغاة، ويشدد العقوبة على العصاة.",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "العفو",
+                "translation": "العفو",
+                "meaning": "هو الذي يترك المؤاخذة على الذنوب ولا يعاقب عليها.",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "الرؤوف",
+                "translation": "الرؤوف",
+                "meaning": "هو المتصف بالرأفة، وهي الرحمة الخاصة.",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "مالك الملك",
+                "translation": "مالك الملك",
+                "meaning": "هو الذي ينفذ مشيئته في ملكه كيف يشاء.",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "ذو الجلال والإكرام",
+                "translation": "ذو الجلال والإكرام",
+                "meaning": "هو المنفرد بصفات الجلال والكمال والعظمة.",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "المقسط",
+                "translation": "المقسط",
+                "meaning": "هو العادل في حكمه، الذي ينتصف للمظلوم من الظالم.",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "الجامع",
+                "translation": "الجامع",
+                "meaning": "هو الذي جمع الكمالات كلها، وجامع الخلق يوم القيامة.",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "الغني",
+                "translation": "الغني",
+                "meaning": "هو الذي لا يحتاج إلى شيء، وكل شيء محتاج إليه.",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "المغني",
+                "translation": "المغني",
+                "meaning": "هو معطي الغنى لعباده.",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "المانع",
+                "translation": "المانع",
+                "meaning": "هو الذي يمنع العطاء عمن يشاء ابتلاء أو حماية.",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "الضار",
+                "translation": "الضار",
+                "meaning": "هو المقدر للضر على من أراد كيف أراد.",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "النافع",
+                "translation": "النافع",
+                "meaning": "هو المقدر للنفع لمن أراد كيف أراد.",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "النور",
+                "translation": "النور",
+                "meaning": "هو الهادي الرشيد الذي يرشد بهدايته من يشاء.",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "الهادي",
+                "translation": "الهادي",
+                "meaning": "هو المبين للخلق طريق الحق، والهادي إلى الصراط المستقيم.",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "البديع",
+                "translation": "البديع",
+                "meaning": "هو الذي لا مثيل له في ذاته ولا في صفاته ولا في أفعاله.",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "الباقي",
+                "translation": "الباقي",
+                "meaning": "هو وحده له البقاء، الدائم الوجود الموصوف بالبقاء الأزلي.",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "الوارث",
+                "translation": "الوارث",
+                "meaning": "هو الباقي بعد فناء الخلق، وإليه مرجع كل شيء.",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "الرشيد",
+                "translation": "الرشيد",
+                "meaning": "هو الذي أسعد من شاء بإرشاده، وأشقى من شاء بإبعاده.",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "الصبور",
+                "translation": "الصبور",
+                "meaning": "هو الذي لا يعاجل العصاة بالعقوبة، بل يمهلهم.",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "Arabic",
+        "language_code": "ar",
+        "title": "أسماء الله الحسنى",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "نظرة عامة على أسماء الله الحسنى الـ 99 كما وردت في التراث الإسلامي.",
+        "recitation_benefits": "قراءة هذه الأسماء وفهمها يقرب العبد من الله، وهي وسيلة للعبادة والذكر.",
+        "hadith": "قال النبي محمد (صلى الله عليه وسلم): \"إن لله تسعة وتسعين اسما، مائة إلا واحدا، من أحصاها دخل الجنة.\" (رواه البخاري ومسلم)"
+    }
+}

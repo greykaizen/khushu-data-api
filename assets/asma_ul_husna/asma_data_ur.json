@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "Ar-Rahman",
+                "translation": "الرحمٰن",
+                "meaning": "دنیا میں تمام مخلوقات پر رحم کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "Ar-Rahim",
+                "translation": "الرحیم",
+                "meaning": "آخرت میں صرف مومنوں پر رحم کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "Al-Malik",
+                "translation": "الملک",
+                "meaning": "حقیقی بادشاہ، کائنات کا مالک۔",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "Al-Quddus",
+                "translation": "القدوس",
+                "meaning": "ہر عیب اور نقص سے پاک۔",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "As-Salam",
+                "translation": "السلام",
+                "meaning": "سلامتی دینے والا، ہر آفت سے محفوظ رکھنے والا۔",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "Al-Mu'min",
+                "translation": "المومن",
+                "meaning": "امن و امان دینے والا، پناہ دینے والا۔",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "Al-Muhaymin",
+                "translation": "المہیمن",
+                "meaning": "نگہبان، محافظ، ہر چیز کا نگران۔",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "Al-Aziz",
+                "translation": "العزیز",
+                "meaning": "سب پر غالب، زبردست عزت والا۔",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "Al-Jabbar",
+                "translation": "الجبار",
+                "meaning": "زبردست قوت والا، بگڑے کام بنانے والا۔",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "Al-Mutakabbir",
+                "translation": "المتکبر",
+                "meaning": "بڑائی والا، عظمت والا۔",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "Al-Khaliq",
+                "translation": "الخالق",
+                "meaning": "پیدا کرنے والا، خالق۔",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "Al-Bari",
+                "translation": "الباری",
+                "meaning": "جان ڈالنے والا، ٹھیک ٹھیک پیدا کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "Al-Musawwir",
+                "translation": "المصور",
+                "meaning": "صورت گری کرنے والا، شکل و صورت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "Al-Ghaffar",
+                "translation": "الغفار",
+                "meaning": "بہت زیادہ بخشنے والا۔",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "Al-Qahhar",
+                "translation": "القہار",
+                "meaning": "سب کو اپنے قابو میں رکھنے والا، زبردست۔",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "Al-Wahhab",
+                "translation": "الوہاب",
+                "meaning": "بہت زیادہ عطا کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "Ar-Razzaq",
+                "translation": "الرزاق",
+                "meaning": "روزی دینے والا۔",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "Al-Fattah",
+                "translation": "الفتاح",
+                "meaning": "کھولنے والا، مشکل کشا۔",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "Al-Alim",
+                "translation": "العلیم",
+                "meaning": "سب کچھ جاننے والا۔",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "Al-Qabid",
+                "translation": "القابض",
+                "meaning": "روزی تنگ کرنے والا، قبض کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "Al-Basit",
+                "translation": "الباسط",
+                "meaning": "روزی کشادہ کرنے والا، پھیلانے والا۔",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "Al-Khafid",
+                "translation": "الخافض",
+                "meaning": "پست کرنے والا، نیچے کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "Ar-Rafi",
+                "translation": "الرافع",
+                "meaning": "بلند کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "Al-Mu'izz",
+                "translation": "المعز",
+                "meaning": "عزت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "Al-Mudhill",
+                "translation": "المذل",
+                "meaning": "ذلت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "As-Sami",
+                "translation": "السمیع",
+                "meaning": "سب کچھ سننے والا۔",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "Al-Basir",
+                "translation": "البصیر",
+                "meaning": "سب کچھ دیکھنے والا۔",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "Al-Hakam",
+                "translation": "الحکم",
+                "meaning": "فیصلہ کرنے والا، حاکم۔",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "Al-Adl",
+                "translation": "العدل",
+                "meaning": "سراپا انصاف، منصف۔",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "Al-Latif",
+                "translation": "اللطیف",
+                "meaning": "مہربان، باریک بین۔",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "Al-Khabir",
+                "translation": "الخبیر",
+                "meaning": "باخبر، جاننے والا۔",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "Al-Halim",
+                "translation": "الحلیم",
+                "meaning": "بردبار، تحمل والا۔",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "Al-Azim",
+                "translation": "العظیم",
+                "meaning": "عظمت والا، بہت بڑا۔",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "Al-Ghafur",
+                "translation": "الغفور",
+                "meaning": "بہت بخشنے والا۔",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "Ash-Shakur",
+                "translation": "الشکور",
+                "meaning": "قدردان، شکر قبول کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "Al-Ali",
+                "translation": "العلی",
+                "meaning": "بہت بلند، برتر۔",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "Al-Kabir",
+                "translation": "الکبیر",
+                "meaning": "بہت بڑا، بزرگ۔",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "Al-Hafiz",
+                "translation": "الحفیظ",
+                "meaning": "حفاظت کرنے والا، نگہبان۔",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "Al-Muqit",
+                "translation": "المقیت",
+                "meaning": "روزی پہنچانے والا، قوت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "Al-Hasib",
+                "translation": "الحسیب",
+                "meaning": "حساب لینے والا، کافی۔",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "Al-Jalil",
+                "translation": "الجلیل",
+                "meaning": "جلال والا، بزرگ۔",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "Al-Karim",
+                "translation": "الکریم",
+                "meaning": "کرم کرنے والا، سخی۔",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "Ar-Raqib",
+                "translation": "الرقیب",
+                "meaning": "نگہبان، خیال رکھنے والا۔",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "Al-Mujib",
+                "translation": "المجیب",
+                "meaning": "دعا قبول کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "Al-Wasi",
+                "translation": "الواسع",
+                "meaning": "وسعت والا، کشائش والا۔",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "Al-Hakim",
+                "translation": "الحکیم",
+                "meaning": "حکمت والا، دانا۔",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "Al-Wadud",
+                "translation": "الودود",
+                "meaning": "محبت کرنے والا، دوست رکھنے والا۔",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "Al-Majid",
+                "translation": "المجید",
+                "meaning": "بزرگی والا، شرف والا۔",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "Al-Ba'ith",
+                "translation": "الباعث",
+                "meaning": "اٹھانے والا، مردوں کو زندہ کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "Ash-Shahid",
+                "translation": "الشہید",
+                "meaning": "گواہ، حاضر۔",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "Al-Haqq",
+                "translation": "الحق",
+                "meaning": "سچا، برحق۔",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "Al-Wakil",
+                "translation": "الوکیل",
+                "meaning": "کارساز، ذمہ دار۔",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "Al-Qawi",
+                "translation": "القوی",
+                "meaning": "قوت والا، طاقتور۔",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "Al-Matin",
+                "translation": "المتین",
+                "meaning": "مضبوط، زبردست۔",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "Al-Wali",
+                "translation": "الولی",
+                "meaning": "دوست، مددگار۔",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "Al-Hamid",
+                "translation": "الحمید",
+                "meaning": "تعریف کے لائق۔",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "Al-Muhsi",
+                "translation": "المحصی",
+                "meaning": "شمار کرنے والا، گھیرنے والا۔",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "Al-Mubdi",
+                "translation": "المبدی",
+                "meaning": "پہلی بار پیدا کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "Al-Mu'id",
+                "translation": "المعید",
+                "meaning": "دوبارہ پیدا کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "Al-Muhyi",
+                "translation": "المحیی",
+                "meaning": "زندگی دینے والا۔",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "Al-Mumit",
+                "translation": "الممیت",
+                "meaning": "موت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "Al-Hayy",
+                "translation": "الحی",
+                "meaning": "زندہ، ہمیشہ رہنے والا۔",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "Al-Qayyum",
+                "translation": "القیوم",
+                "meaning": "قائم رہنے والا، سب کو تھامنے والا۔",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "Al-Wajid",
+                "translation": "الواجد",
+                "meaning": "پانے والا، موجود۔",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "Al-Majid",
+                "translation": "الماجد",
+                "meaning": "بزرگی والا، عظمت والا۔",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "Al-Wahid",
+                "translation": "الواحد",
+                "meaning": "اکیلا، ایک۔",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "Al-Ahad",
+                "translation": "الاحد",
+                "meaning": "یکتا، بے نیاز۔",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "As-Samad",
+                "translation": "الصمد",
+                "meaning": "بے نیاز، سب کا سہارا۔",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "Al-Qadir",
+                "translation": "القادر",
+                "meaning": "قدرت والا۔",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "Al-Muqtadir",
+                "translation": "المقتدر",
+                "meaning": "مقتدر، زبردست قدرت والا۔",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "Al-Muqaddim",
+                "translation": "المقدم",
+                "meaning": "آگے کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "Al-Mu'akhkhir",
+                "translation": "الموخر",
+                "meaning": "پیچھے کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "Al-Awwal",
+                "translation": "الاول",
+                "meaning": "سب سے پہلے۔",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "Al-Akhir",
+                "translation": "الآخر",
+                "meaning": "سب سے آخر۔",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "Az-Zahir",
+                "translation": "الظاہر",
+                "meaning": "ظاہر، آشکار۔",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "Al-Batin",
+                "translation": "الباطن",
+                "meaning": "چھپا ہوا، پوشیدہ۔",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "Al-Wali",
+                "translation": "الوالی",
+                "meaning": "مالک، کارساز۔",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "Al-Muta'ali",
+                "translation": "المتعالی",
+                "meaning": "سب سے بلند، برتر۔",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "Al-Barr",
+                "translation": "البر",
+                "meaning": "نیکی کرنے والا، احسان کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "At-Tawwab",
+                "translation": "التواب",
+                "meaning": "توبہ قبول کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "Al-Muntaqim",
+                "translation": "المنتقم",
+                "meaning": "بدلہ لینے والا۔",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "Al-Afuww",
+                "translation": "العفو",
+                "meaning": "معاف کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "Ar-Ra'uf",
+                "translation": "الرؤف",
+                "meaning": "بہت مہربان، شفقت کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "Malik-ul-Mulk",
+                "translation": "مالک الملک",
+                "meaning": "مُلک کا مالک، بادشاہوں کا بادشاہ۔",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "Dhul-Jalali wal-Ikram",
+                "translation": "ذوالجلال والاکرام",
+                "meaning": "عظمت اور جلال والا۔",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "Al-Muqsit",
+                "translation": "المقسط",
+                "meaning": "انصاف کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "Al-Jami",
+                "translation": "الجامع",
+                "meaning": "جمع کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "Al-Ghani",
+                "translation": "الغنی",
+                "meaning": "بے پرواہ، غنی۔",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "Al-Mughni",
+                "translation": "المغنی",
+                "meaning": "غنی کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "Al-Mani",
+                "translation": "المانع",
+                "meaning": "روکنے والا، منع کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "Ad-Darr",
+                "translation": "الضار",
+                "meaning": "نقصان پہنچانے والا (حکمت کے تحت)۔",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "An-Nafi",
+                "translation": "النافع",
+                "meaning": "نفع پہنچانے والا۔",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "An-Nur",
+                "translation": "النور",
+                "meaning": "نور، روشنی دینے والا۔",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "Al-Hadi",
+                "translation": "الہادی",
+                "meaning": "ہدایت دینے والا۔",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "Al-Badi",
+                "translation": "البدیع",
+                "meaning": "نئی طرح پیدا کرنے والا، انوکھا پیدا کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "Al-Baqi",
+                "translation": "الباقی",
+                "meaning": "ہمیشہ رہنے والا۔",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "Al-Warith",
+                "translation": "الوارث",
+                "meaning": "سب کا وارث۔",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "Ar-Rashid",
+                "translation": "الرشید",
+                "meaning": "ہدایت دینے والا، رہنمائی کرنے والا۔",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "As-Sabur",
+                "translation": "الصبور",
+                "meaning": "صبر کرنے والا، تحمل والا۔",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "Urdu",
+        "language_code": "ur",
+        "title": "اسماء الحسنیٰ",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "اللہ کے 99 خوبصورت نام (اسماء الحسنیٰ) اور ان کے معانی۔",
+        "recitation_benefits": "ان ناموں کو پڑھنا اور سمجھنا مومن کو اللہ کے قریب کرتا ہے اور یہ ایک عبادت ہے۔",
+        "hadith": "نبی کریم صلی اللہ علیہ وسلم نے فرمایا: \"اللہ کے ننانوے نام ہیں، ایک کم سو۔ جو شخص ان کو یاد کر لے گا وہ جنت میں داخل ہو گا۔\" (بخاری و مسلم)"
+    }
+}

@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "Ar-Rahman",
+                "translation": "Der Allerbarmer",
+                "meaning": "Derjenige, der barmherzig zu allen Geschöpfen in dieser Welt ist.",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "Ar-Rahim",
+                "translation": "Der Barmherzige",
+                "meaning": "Derjenige, der besonders barmherzig zu den Gläubigen im Jenseits ist.",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "Al-Malik",
+                "translation": "Der König",
+                "meaning": "Der absolute Herrscher über alles, der Herr des Jüngsten Gerichts.",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "Al-Quddus",
+                "translation": "Der Heilige",
+                "meaning": "Derjenige, der frei von jeglichem Mangel und Fehler ist.",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "As-Salam",
+                "translation": "Der Friede",
+                "meaning": "Derjenige, der makellos ist und Frieden und Sicherheit gewährt.",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "Al-Mu'min",
+                "translation": "Der Gewährer der Sicherheit",
+                "meaning": "Derjenige, der Sicherheit gibt und die Wahrheit bestätigt.",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "Al-Muhaymin",
+                "translation": "Der Beschützer",
+                "meaning": "Derjenige, der alles überwacht, bewacht und beschützt.",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "Al-Aziz",
+                "translation": "Der Allmächtige",
+                "meaning": "Derjenige, der allmächtig und unbesiegbar ist.",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "Al-Jabbar",
+                "translation": "Der Unterwerfer",
+                "meaning": "Derjenige, der Seinen Willen durchsetzt und den Zustand der Schöpfung verbessert.",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "Al-Mutakabbir",
+                "translation": "Der Stolze",
+                "meaning": "Derjenige, der über allem steht und dem alle Größe gebührt.",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "Al-Khaliq",
+                "translation": "Der Schöpfer",
+                "meaning": "Derjenige, der alles aus dem Nichts erschafft.",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "Al-Bari",
+                "translation": "Der Erschaffer",
+                "meaning": "Derjenige, der harmonisch und ohne Vorbild erschafft.",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "Al-Musawwir",
+                "translation": "Der Gestalter",
+                "meaning": "Derjenige, der jedem Geschöpf seine Form und Gestalt gibt.",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "Al-Ghaffar",
+                "translation": "Der Allvergebende",
+                "meaning": "Derjenige, der viel vergibt und Sünden verbirgt.",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "Al-Qahhar",
+                "translation": "Der Bezwingende",
+                "meaning": "Derjenige, der alles besiegt und dem sich alles unterwirft.",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "Al-Wahhab",
+                "translation": "Der Gewährer",
+                "meaning": "Derjenige, der reichlich gibt, ohne eine Gegenleistung zu erwarten.",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "Ar-Razzaq",
+                "translation": "Der Versorger",
+                "meaning": "Derjenige, der alle Geschöpfe versorgt.",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "Al-Fattah",
+                "translation": "Der Öffner",
+                "meaning": "Derjenige, der die Tore der Barmherzigkeit öffnet und alle Probleme löst.",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "Al-Alim",
+                "translation": "Der Allwissende",
+                "meaning": "Derjenige, der alles weiß, das Verborgene und das Offenkundige.",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "Al-Qabid",
+                "translation": "Der Zügelnde",
+                "meaning": "Derjenige, der die Versorgung einschränkt und die Seelen nimmt.",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "Al-Basit",
+                "translation": "Der Gewährende",
+                "meaning": "Derjenige, der reichlich Versorgung gibt und das Leben verlängert.",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "Al-Khafid",
+                "translation": "Der Erniedriger",
+                "meaning": "Derjenige, der die Ungläubigen und Hochmütigen erniedrigt.",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "Ar-Rafi",
+                "translation": "Der Erhöher",
+                "meaning": "Derjenige, der die Gläubigen erhöht und ihnen hohe Ränge verleiht.",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "Al-Mu'izz",
+                "translation": "Der Ehrende",
+                "meaning": "Derjenige, der Ehre und Macht verleiht, wem Er will.",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "Al-Mudhill",
+                "translation": "Der Entehrende",
+                "meaning": "Derjenige, der Macht nimmt und erniedrigt, wen Er will.",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "As-Sami",
+                "translation": "Der Allhörende",
+                "meaning": "Derjenige, der alles hört, selbst das leiseste Flüstern.",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "Al-Basir",
+                "translation": "Der Allsehende",
+                "meaning": "Derjenige, der alles sieht, das Offenkundige und das Verborgene.",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "Al-Hakam",
+                "translation": "Der Richter",
+                "meaning": "Derjenige, der gerecht richtet und dessen Urteil endgültig ist.",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "Al-Adl",
+                "translation": "Der Gerechte",
+                "meaning": "Derjenige, der absolut gerecht ist und niemandem Unrecht tut.",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "Al-Latif",
+                "translation": "Der Feinfühlige",
+                "meaning": "Derjenige, der gütig zu den Dienern ist und die feinsten Details kennt.",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "Al-Khabir",
+                "translation": "Der Kundige",
+                "meaning": "Derjenige, der über alles unterrichtet ist und dem nichts verborgen ist.",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "Al-Halim",
+                "translation": "Der Nachsichtige",
+                "meaning": "Derjenige, der nicht mit der Strafe eilt und geduldig ist.",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "Al-Azim",
+                "translation": "Der Großartige",
+                "meaning": "Derjenige, dessen Größe unermesslich ist.",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "Al-Ghafur",
+                "translation": "Der Vergebende",
+                "meaning": "Derjenige, der Sünden vergibt und Schande bedeckt.",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "Ash-Shakur",
+                "translation": "Der Dankbare",
+                "meaning": "Derjenige, der reichlich für wenige Taten belohnt.",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "Al-Ali",
+                "translation": "Der Höchste",
+                "meaning": "Derjenige, der über allem erhaben ist.",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "Al-Kabir",
+                "translation": "Der Große",
+                "meaning": "Derjenige, der größer ist als alles, was man sich vorstellen kann.",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "Al-Hafiz",
+                "translation": "Der Bewahrer",
+                "meaning": "Derjenige, der alles beschützt und erhält.",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "Al-Muqit",
+                "translation": "Der Ernährer",
+                "meaning": "Derjenige, der jedem Geschöpf Kraft und Versorgung gibt.",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "Al-Hasib",
+                "translation": "Der Abrechner",
+                "meaning": "Derjenige, der Abrechnung hält und der Seinen Dienern genügt.",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "Al-Jalil",
+                "translation": "Der Majestätische",
+                "meaning": "Derjenige, der Majestät und Macht besitzt.",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "Al-Karim",
+                "translation": "Der Großzügige",
+                "meaning": "Derjenige, der unendlich freigebig und edel ist.",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "Ar-Raqib",
+                "translation": "Der Wächter",
+                "meaning": "Derjenige, der alles beobachtet und dem nichts entgeht.",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "Al-Mujib",
+                "translation": "Der Erhörende",
+                "meaning": "Derjenige, der die Bittgebete derer erhört, die Ihn anrufen.",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "Al-Wasi",
+                "translation": "Der Allumfassende",
+                "meaning": "Derjenige, dessen Wissen, Barmherzigkeit und Macht alles umfassen.",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "Al-Hakim",
+                "translation": "Der Weise",
+                "meaning": "Derjenige, der alles mit Weisheit und Zweck tut.",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "Al-Wadud",
+                "translation": "Der Liebevolle",
+                "meaning": "Derjenige, der Seine guten Diener liebt und den sie lieben.",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "Al-Majid",
+                "translation": "Der Ruhmreiche",
+                "meaning": "Derjenige, der gepriesen wird und vollkommene Ehre besitzt.",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "Al-Ba'ith",
+                "translation": "Der Erwecker",
+                "meaning": "Derjenige, der die Menschen nach dem Tod auferwecken wird.",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "Ash-Shahid",
+                "translation": "Der Zeuge",
+                "meaning": "Derjenige, der Zeuge von allem ist und dem nichts verborgen ist.",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "Al-Haqq",
+                "translation": "Die Wahrheit",
+                "meaning": "Derjenige, der die Absolute Wahrheit ist und dessen Existenz unbestreitbar ist.",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "Al-Wakil",
+                "translation": "Der Vertraute",
+                "meaning": "Derjenige, auf den man vertraut und der die Angelegenheiten am besten regelt.",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "Al-Qawi",
+                "translation": "Der Starke",
+                "meaning": "Derjenige, der vollkommene Stärke besitzt.",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "Al-Matin",
+                "translation": "Der Feststehende",
+                "meaning": "Derjenige, dessen Kraft unerschütterlich ist.",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "Al-Wali",
+                "translation": "Der Schutzherr",
+                "meaning": "Der Freund und Beschützer der Gläubigen.",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "Al-Hamid",
+                "translation": "Der Preiswürdige",
+                "meaning": "Derjenige, dem alles Lob gebührt.",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "Al-Muhsi",
+                "translation": "Der Aufzeichnende",
+                "meaning": "Derjenige, der die Anzahl und Menge von allem kennt.",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "Al-Mubdi",
+                "translation": "Der Beginnende",
+                "meaning": "Derjenige, der von Anfang an erschafft.",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "Al-Mu'id",
+                "translation": "Der Wiederholende",
+                "meaning": "Derjenige, der das Leben nach dem Tod zurückgibt.",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "Al-Muhyi",
+                "translation": "Der Lebensspendende",
+                "meaning": "Derjenige, der Leben gibt.",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "Al-Mumit",
+                "translation": "Der Tötende",
+                "meaning": "Derjenige, der den Tod gibt.",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "Al-Hayy",
+                "translation": "Der Lebendige",
+                "meaning": "Derjenige, der ewig lebendig ist.",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "Al-Qayyum",
+                "translation": "Der Beständige",
+                "meaning": "Derjenige, der nur von Sich Selbst abhängt und von dem alles abhängt.",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "Al-Wajid",
+                "translation": "Der Findende",
+                "meaning": "Derjenige, der alles hat und dem nichts fehlt.",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "Al-Majid",
+                "translation": "Der Edle",
+                "meaning": "Derjenige, der edel und großartig ist.",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "Al-Wahid",
+                "translation": "Der Eine",
+                "meaning": "Derjenige, der Eins in Seinem Wesen und Seinen Eigenschaften ist.",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "Al-Ahad",
+                "translation": "Der Einzige",
+                "meaning": "Derjenige, der einzigartig und unteilbar ist.",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "As-Samad",
+                "translation": "Der Ewige",
+                "meaning": "Derjenige, an den sich alle wenden, und Er braucht niemanden.",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "Al-Qadir",
+                "translation": "Der Fähige",
+                "meaning": "Derjenige, der alles tun kann, was Er will.",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "Al-Muqtadir",
+                "translation": "Der Mächtige",
+                "meaning": "Derjenige, dessen Macht absolut ist.",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "Al-Muqaddim",
+                "translation": "Der Voranstellende",
+                "meaning": "Derjenige, der voranstellt, wen Er will.",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "Al-Mu'akhkhir",
+                "translation": "Der Aufschiebende",
+                "meaning": "Derjenige, der zurückstellt, wen Er will.",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "Al-Awwal",
+                "translation": "Der Erste",
+                "meaning": "Derjenige, der keinen Anfang hat.",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "Al-Akhir",
+                "translation": "Der Letzte",
+                "meaning": "Derjenige, der kein Ende hat.",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "Az-Zahir",
+                "translation": "Der Offenkundige",
+                "meaning": "Derjenige, dessen Existenz durch Seine Werke deutlich wird.",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "Al-Batin",
+                "translation": "Der Verborgene",
+                "meaning": "Derjenige, der den Blicken verborgen ist und Geheimnisse kennt.",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "Al-Wali",
+                "translation": "Der Regierende",
+                "meaning": "Derjenige, der über alle Dinge herrscht.",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "Al-Muta'ali",
+                "translation": "Der Hohe",
+                "meaning": "Derjenige, der über allen Mängeln steht.",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "Al-Barr",
+                "translation": "Der Gütige",
+                "meaning": "Derjenige, der die Quelle alles Guten ist.",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "At-Tawwab",
+                "translation": "Der Reue-Annehmende",
+                "meaning": "Derjenige, der die Reue der Diener annimmt.",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "Al-Muntaqim",
+                "translation": "Der Rächer",
+                "meaning": "Derjenige, der Übeltäter gerecht bestraft.",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "Al-Afuww",
+                "translation": "Der Vergebende",
+                "meaning": "Derjenige, der vergibt und Sünden löscht.",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "Ar-Ra'uf",
+                "translation": "Der Mitleidige",
+                "meaning": "Derjenige, der sanft und barmherzig ist.",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "Malik-ul-Mulk",
+                "translation": "Der Inhaber der Königsherrschaft",
+                "meaning": "Der absolute Eigentümer von allem.",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "Dhul-Jalali wal-Ikram",
+                "translation": "Der Herr der Majestät und Ehre",
+                "meaning": "Derjenige, der Größe und Ehre besitzt.",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "Al-Muqsit",
+                "translation": "Der Gerechte",
+                "meaning": "Derjenige, der Gerechtigkeit herstellt.",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "Al-Jami",
+                "translation": "Der Versammelnde",
+                "meaning": "Derjenige, der die Menschen am Tag des Gerichts versammeln wird.",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "Al-Ghani",
+                "translation": "Der Reiche",
+                "meaning": "Derjenige, der unabhängig und reich ist.",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "Al-Mughni",
+                "translation": "Der Bereichernde",
+                "meaning": "Derjenige, der Reichtum gibt, wem Er will.",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "Al-Mani",
+                "translation": "Der Verweigerer",
+                "meaning": "Derjenige, der Böses und Schaden verhindert.",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "Ad-Darr",
+                "translation": "Der Schadenbringende",
+                "meaning": "Derjenige, der Prüfungen und Schaden nach Seiner Weisheit gibt.",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "An-Nafi",
+                "translation": "Der Nützliche",
+                "meaning": "Derjenige, der Nutzen und Gutes gibt.",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "An-Nur",
+                "translation": "Das Licht",
+                "meaning": "Derjenige, der die Himmel und die Erde erleuchtet.",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "Al-Hadi",
+                "translation": "Der Führer",
+                "meaning": "Derjenige, der zum geraden Weg leitet.",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "Al-Badi",
+                "translation": "Der Urheber",
+                "meaning": "Derjenige, der ohne vorheriges Beispiel erschafft.",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "Al-Baqi",
+                "translation": "Der Ewigbleibende",
+                "meaning": "Derjenige, der ewig bleibt.",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "Al-Warith",
+                "translation": "Der Erbe",
+                "meaning": "Derjenige, der bleibt, wenn alles verschwindet.",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "Ar-Rashid",
+                "translation": "Der Rechtleitende",
+                "meaning": "Derjenige, der zum Guten und Wahren führt.",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "As-Sabur",
+                "translation": "Der Geduldige",
+                "meaning": "Derjenige, der unendlich geduldig ist.",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "German",
+        "language_code": "de",
+        "title": "Die 99 Namen Allahs",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "Übersicht über die 99 Namen Allahs (Asmaul Husna) nach islamischer Tradition.",
+        "recitation_benefits": "Das Rezitieren und Verstehen dieser Namen bringt den Gläubigen Allah näher und ist eine Form des Gottesdienstes.",
+        "hadith": "Der Prophet Muhammad (Friede sei mit ihm) sagte: \"Allah hat neunundneunzig Namen, einen weniger als hundert. Wer sie lernt (und danach handelt), wird ins Paradies eintreten.\" (Bukhari und Muslim)"
+    }
+}

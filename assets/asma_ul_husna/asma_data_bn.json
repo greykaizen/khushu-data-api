@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "আর-রাহমান",
+                "translation": "পরম দয়ালু",
+                "meaning": "যিনি দুনিয়াতে মুমিন ও কাফির নির্বিশেষে সকলের প্রতি দয়াশীল।",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "আর-রাহীম",
+                "translation": "অতি মেহেরবান",
+                "meaning": "যিনি আখিরাতে শুধুমাত্র মুমিনদের প্রতি বিশেষ দয়াবান।",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "আল-মালিক",
+                "translation": "মহারাজ / অধিপতি",
+                "meaning": "যিনি সমগ্র সৃষ্টির প্রকৃত মালিক ও শাসক।",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "আল-কুদ্দুস",
+                "translation": "মহা পবিত্র",
+                "meaning": "যিনি সকল প্রকার দোষ-ত্রুটি ও অপূর্ণতা থেকে সম্পূর্ণ পবিত্র।",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "আস-সালাম",
+                "translation": "শান্তিদাতা",
+                "meaning": "যিনি নিজে শান্তিময় এবং সৃষ্টির জন্য শান্তির উৎস।",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "আল-মুমিন",
+                "translation": "নিরাপত্তাদাতা",
+                "meaning": "যিনি তাঁর বান্দাদের নিরাপত্তা ও ঈমান দান করেন।",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "আল-মুহাইমিন",
+                "translation": "রক্ষণাবেক্ষণকারী",
+                "meaning": "যিনি সকল সৃষ্টির রক্ষণাবেক্ষণ ও তদারকি করেন।",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "আল-আযীয",
+                "translation": "পরাক্রমশালী",
+                "meaning": "যিনি সবার উপর বিজয়ী, যাকে কেউ পরাজিত করতে পারে না।",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "আল-জাব্বার",
+                "translation": "মহাপ্রতাপশালী",
+                "meaning": "যিনি নিজের ইচ্ছা সকলের উপর প্রয়োগ করতে সক্ষম এবং ভগ্ন হৃদয়ের সান্ত্বনাদাতা।",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "আল-মুতাকাব্বির",
+                "translation": "অহংকারের অধিকারী",
+                "meaning": "যিনি প্রকৃত বড়ত্বের অধিকারী এবং সকল সৃষ্টির চেয়ে মহান।",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "আল-খালিক",
+                "translation": "সৃষ্টিকর্তা",
+                "meaning": "যিনি কোন পূর্ব নমুনা ছাড়াই সবকিছু সৃষ্টি করেছেন।",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "আল-বারী",
+                "translation": "নির্ভুল স্রষ্টা",
+                "meaning": "যিনি সৃষ্টিজগতকে নিখুঁতভাবে ও সামঞ্জস্যপূর্ণভাবে তৈরি করেছেন।",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "আল-মুসাউইর",
+                "translation": "রূপদানকারী",
+                "meaning": "যিনি প্রতিটি সৃষ্টিকে তার নিজস্ব আকৃতি ও রূপ দান করেছেন।",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "আল-গাফফার",
+                "translation": "মহাক্ষমাশীল",
+                "meaning": "যিনি বান্দার গুনাহ বারবার ক্ষমা করেন ও গোপন রাখেন।",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "আল-কাহহার",
+                "translation": "মহাপরাক্রান্ত",
+                "meaning": "যিনি সকল কিছুর উপর প্রবল ও বিজয়ী, যার হুকুমের বাইরে কেউ যেতে পারে না।",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "আল-ওয়াহহাব",
+                "translation": "মহা দাতা",
+                "meaning": "যিনি কোন প্রতিদান ছাড়াই অঢেল নিয়ামত দান করেন।",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "আর-রাজ্জাক",
+                "translation": "রিজিকদাতা",
+                "meaning": "যিনি সকল সৃষ্টির রিজিকের ব্যবস্থা করেন।",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "আল-ফাত্তাহ",
+                "translation": "মহাবিজয়ী / উন্মোচনকারী",
+                "meaning": "যিনি রহমতের ভাণ্ডার খুলে দেন এবং সত্য ও মিথ্যার ফয়সালা করেন।",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "আল-আলীম",
+                "translation": "সর্বজ্ঞ",
+                "meaning": "যিনি প্রকাশ্য ও গোপন সবকিছু সম্পর্কে সম্যক অবগত।",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "আল-কাবিদ",
+                "translation": "সংকুচনকারী",
+                "meaning": "যিনি রিজিক সংকুচিত করেন এবং প্রাণ হরণ করেন।",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "আল-বাসিত",
+                "translation": "সম্প্রসারণকারী",
+                "meaning": "যিনি রিজিক প্রশস্ত করেন এবং জীবন দান করেন।",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "আল-খাফিদ",
+                "translation": "অবনতকারী",
+                "meaning": "যিনি কাফির ও অহংকারীদের নিচে নামিয়ে দেন বা অপমানিত করেন।",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "আর-রাফি",
+                "translation": "উন্নীতকারী",
+                "meaning": "যিনি মুমিনদের মর্যাদা বৃদ্ধি করেন এবং উপরে উঠান।",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "আল-মুইয",
+                "translation": "সম্মানদাতা",
+                "meaning": "যিনি যাকে ইচ্ছা সম্মান ও ইজ্জত দান করেন।",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "আল-মুযিল",
+                "translation": "অপমানকারী",
+                "meaning": "যিনি যাকে ইচ্ছা লাঞ্ছিত ও অপদস্থ করেন।",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "আস-সামি",
+                "translation": "সর্বশ্রোতা",
+                "meaning": "যিনি সবকিছু শোনেন, এমনকি মনের গোপন কথাও।",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "আল-বাসির",
+                "translation": "সর্বদ্রষ্টা",
+                "meaning": "যিনি সবকিছু দেখেন, কোন কিছুই তাঁর দৃষ্টির আড়ালে নয়।",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "আল-হাকাম",
+                "translation": "মহাবিচারক",
+                "meaning": "যিনি চূড়ান্ত ফয়সালাকারী এবং যার রায় অকাট্য।",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "আল-আদল",
+                "translation": "ন্যায়পরায়ণ",
+                "meaning": "যিনি পরম ন্যায়বিচারক এবং কারো প্রতি জুলুম করেন না।",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "আল-লাতীফ",
+                "translation": "সূক্ষ্মদর্শী / মেহেরবান",
+                "meaning": "যিনি বান্দার প্রতি অত্যন্ত সদয় এবং অতি সূক্ষ্ম বিষয় সম্পর্কেও অবগত।",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "আল-খাবীর",
+                "translation": "মহাজ্ঞানী",
+                "meaning": "যিনি সবকিছুর খবর রাখেন এবং কোন কিছুই তাঁর অজানা নয়।",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "আল-হালিম",
+                "translation": "মহা ধৈর্যশীল",
+                "meaning": "যিনি বান্দার পাপে তাৎক্ষণিক শাস্তি দেন না, বরং সংশোধনের সুযোগ দেন।",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "আল-আযীম",
+                "translation": "মহান / মর্যাদাবান",
+                "meaning": "যিনি সর্বোচ্চ মর্যাদার অধিকারী এবং মহানুভব।",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "আল-গফুর",
+                "translation": "পরম ক্ষমাশীল",
+                "meaning": "যিনি বান্দার তওবা কবুল করেন এবং গুনাহ মাফ করে দেন।",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "আশ-শাকুর",
+                "translation": "গুণগ্রাহী",
+                "meaning": "যিনি অল্প আমলে অধিক প্রতিদান দেন এবং কৃতজ্ঞতা পছন্দ করেন।",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "আল-আলী",
+                "translation": "মহিমান্বিত / উচ্চ",
+                "meaning": "যিনি সকল সৃষ্টির উপরে এবং সর্বোচ্চ সম্মানের অধিকারী।",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "আল-কাবীর",
+                "translation": "বিশাল / মহান",
+                "meaning": "যিনি সবার চেয়ে বড় এবং মহান।",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "আল-হাফীজ",
+                "translation": "মহা রক্ষণাবেক্ষণকারী",
+                "meaning": "যিনি আসমান ও জমিনের সবকিছু হেফাজত করেন।",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "আল-মুকীত",
+                "translation": "রিজিক ও শক্তি দাতা",
+                "meaning": "যিনি সকলের প্রয়োজন মেটান এবং শক্তি ও সামর্থ্য দান করেন।",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "আল-হাসীব",
+                "translation": "হিসাব গ্রহণকারী",
+                "meaning": "যিনি বান্দার আমলের হিসাব রাখেন এবং তাদের জন্য যথেষ্ট।",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "আল-জালীল",
+                "translation": "প্রতাপশালী",
+                "meaning": "যিনি মহান গুণাবলীর অধিকারী এবং মহিমাম্বিত।",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "আল-কারীম",
+                "translation": "মহা সম্মানিত / দাতা",
+                "meaning": "যিনি অত্যন্ত সম্মানিত এবং উদার দাতা।",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "আর-রাকীব",
+                "translation": "তত্ত্বাবধায়ক",
+                "meaning": "যিনি সর্বদা সবকিছু পর্যবেক্ষণ করেন।",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "আল-মুজিব",
+                "translation": "কবুলকারী",
+                "meaning": "যিনি বান্দার দোয়া ও আহ্বান কবুল করেন।",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "আল-ওয়াসি",
+                "translation": "সর্বব্যাপী",
+                "meaning": "যার জ্ঞান, রহমত ও কুদরত সবকিছুকে পরিবেষ্টন করে আছে।",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "আল-হাকীম",
+                "translation": "প্রজ্ঞাময়",
+                "meaning": "যিনি মহাজ্ঞানী এবং যার প্রতিটি কাজ প্রজ্ঞাপূর্ণ।",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "আল-ওয়াদুদ",
+                "translation": "প্রেমময়",
+                "meaning": "যিনি তাঁর নেক বান্দাদের ভালোবাসেন এবং তাদের প্রিয়পাত্র।",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "আল-মাজীদ",
+                "translation": "মহিমান্বিত",
+                "meaning": "যিনি অত্যন্ত মর্যাদাবান এবং শ্রেষ্ঠত্বের অধিকারী।",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "আল-বাইছ",
+                "translation": "পুনরুত্থানকারী",
+                "meaning": "যিনি মৃত্যুর পর মানুষকে পুনরায় জীবিত করবেন।",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "আশ-শহীদ",
+                "translation": "সর্ব সাক্ষী",
+                "meaning": "যিনি প্রতিটি ঘটনা ও অবস্থার প্রত্যক্ষদর্শী।",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "আল-হাক্ক",
+                "translation": "সত্য",
+                "meaning": "যিনি চিরসত্য এবং যার অস্তিত্ব ধ্রুব।",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "আল-ওয়াকীল",
+                "translation": "কর্মবিধায়ক / অভিভাবক",
+                "meaning": "যিনি সকল কাজের জিম্মাদার এবং উত্তম অভিভাবক।",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "আল-কাবি",
+                "translation": "শক্তিশালী",
+                "meaning": "যিনি অসীম শক্তির অধিকারী।",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "আল-মাতীন",
+                "translation": "দৃঢ়",
+                "meaning": "যিনি অত্যন্ত সুদৃঢ় এবং যার শক্তিতে কোন দুর্বলতা নেই।",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "আল-ওয়ালী",
+                "translation": "বন্ধু / অভিভাবক",
+                "meaning": "যিনি মুমিনদের বন্ধু, সাহায্যকারী এবং অভিভাবক।",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "আল-হামীদ",
+                "translation": "প্রশংসিত",
+                "meaning": "যিনি সকল প্রশংসা ও স্তুতির একমাত্র যোগ্য।",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "আল-মুহসী",
+                "translation": "গণনাকারী",
+                "meaning": "যিনি প্রতিটি জিনিসের সংখ্যা ও পরিমাণ সম্পর্কে অবগত।",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "আল-মুবদি",
+                "translation": "আদি স্রষ্টা",
+                "meaning": "যিনি প্রথমবার সৃষ্টি করেছেন।",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "আল-মুঈদ",
+                "translation": "পুনঃসৃষ্টিকারী",
+                "meaning": "যিনি সৃষ্টির বিনাশের পর পুনরায় সৃষ্টি করবেন।",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "আল-মুহী",
+                "translation": "জীবনদাতা",
+                "meaning": "যিনি মৃতকে জীবিত করেন এবং প্রাণ দান করেন।",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "আল-মুমীত",
+                "translation": "মৃত্যুদাতা",
+                "meaning": "যিনি প্রাণ হরণ করেন এবং মৃত্যু দান করেন।",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "আল-হাইয়্য",
+                "translation": "চিরঞ্জীব",
+                "meaning": "যিনি সর্বদা জীবিত এবং যার কোন মৃত্যু নেই।",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "আল-কাইয়ুম",
+                "translation": "চিরস্থায়ী / ধারক",
+                "meaning": "যিনি নিজে বিদ্যমান থেকে অন্য সবকিছুকে ধারণ করে আছেন।",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "আল-ওয়াজিদ",
+                "translation": "প্রাপ্তকারী",
+                "meaning": "যিনি সবকিছু পান এবং কোন কিছুই তাঁর নাগালের বাইরে নয়।",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "আল-মাজিদ",
+                "translation": "গৌরবান্বিত",
+                "meaning": "যিনি মহত্ত্ব ও গৌরবের অধিকারী।",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "আল-ওয়াহিদ",
+                "translation": "একক",
+                "meaning": "যিনি সত্তা ও গুণাবলীতে একক ও অদ্বিতীয়।",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "আল-আহাদ",
+                "translation": "এক",
+                "meaning": "যিনি এক এবং যার কোন শরিক নেই।",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "আস-সামাদ",
+                "translation": "অমুখাপেক্ষী",
+                "meaning": "যিনি কারো মুখাপেক্ষী নন, বরং সবাই তাঁর মুখাপেক্ষী।",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "আল-কাদির",
+                "translation": "সর্বশক্তিমান",
+                "meaning": "যিনি যা ইচ্ছা তাই করতে সক্ষম।",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "আল-মুকতাদির",
+                "translation": "প্রভাবশালী",
+                "meaning": "যিনি অসীম ক্ষমতার অধিকারী এবং সবকিছুর উপর প্রভাব বিস্তারকারী।",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "আল-মুকাদ্দিম",
+                "translation": "অগ্রবর্তীকারী",
+                "meaning": "যিনি যাকে ইচ্ছা সামনে বাড়িয়ে দেন বা মর্যাদা বৃদ্ধি করেন।",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "আল-মুয়াক্কির",
+                "translation": "পশ্চাদবর্তীকারী",
+                "meaning": "যিনি যাকে ইচ্ছা পিছনে ফেলে রাখেন বা শাস্তি বিলম্বিত করেন।",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "আল-আউয়াল",
+                "translation": "অনাদি / প্রথম",
+                "meaning": "যার কোন শুরু নেই, তিনি সবকিছুর আগে।",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "আল-আখির",
+                "translation": "অনন্ত / শেষ",
+                "meaning": "যার কোন শেষ নেই, তিনি সবকিছুর পরেও থাকবেন।",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "আজ-জাহির",
+                "translation": "প্রকাশ্য",
+                "meaning": "যিনি তাঁর নিদর্শনাবলীর মাধ্যমে প্রকাশিত।",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "আল-বাতিন",
+                "translation": "গোপন",
+                "meaning": "যিনি দৃষ্টির আড়ালে এবং গোপন বিষয় সম্পর্কে অবগত।",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "আল-ওয়ালী",
+                "translation": "অভিভাবক / শাসক",
+                "meaning": "যিনি মহাবিশ্বের শাসনকর্তা এবং কার্যনির্বাহক।",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "আল-মুতাআলী",
+                "translation": "সুমহান",
+                "meaning": "যিনি সৃষ্টির গুণাবলী থেকে অনেক ঊর্ধ্বে এবং পবিত্র।",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "আল-বার্",
+                "translation": "কল্যাণময় / সদাচারী",
+                "meaning": "যিনি সৃষ্টির প্রতি অত্যন্ত দয়ালু এবং কল্যাণকারী।",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "আত-তাওয়াব",
+                "translation": "তওবা কবুলকারী",
+                "meaning": "যিনি বান্দার তওবা বারবার কবুল করেন।",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "আল-মুনতাকিম",
+                "translation": "প্রতিশোধ গ্রহণকারী",
+                "meaning": "যিনি অপরাধীদের উপযুক্ত শাস্তি প্রদান করেন।",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "আল-আফুব",
+                "translation": "ক্ষমাশীল",
+                "meaning": "যিনি পাপ মোচন করেন এবং শাস্তি মওকুফ করেন।",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "আর-রাউফ",
+                "translation": "স্নেহশীল",
+                "meaning": "যিনি অত্যন্ত দয়ার্দ্র এবং স্নেহপরায়ণ।",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "মালিকুল মুলক",
+                "translation": "সার্বভৌম ক্ষমতার অধিকারী",
+                "meaning": "যিনি সমগ্র জগতের একচ্ছত্র অধিপতি।",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "জুল-জালালি ওয়াল-ইকরাম",
+                "translation": "মহিমাম্বিত ও মহানুভব",
+                "meaning": "যিনি মহিমা, প্রতাপ এবং সম্মানের অধিকারী।",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "আল-মুকসিত",
+                "translation": "ন্যায়পরায়ণ",
+                "meaning": "যিনি ইনসাফ কায়েম করেন এবং হকদারের হক আদায় করেন।",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "আল-জামি",
+                "translation": "একত্রকারী",
+                "meaning": "যিনি কিয়ামতের দিন সকলকে একত্রিত করবেন।",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "আল-গনী",
+                "translation": "ধনী / অমুখাপেক্ষী",
+                "meaning": "যিনি স্বয়ংসম্পূর্ণ এবং কারো মুখাপেক্ষী নন।",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "আল-মুগনী",
+                "translation": "সমৃদ্ধকারী",
+                "meaning": "যিনি যাকে ইচ্ছা অভাবমুক্ত ও ধনী করেন।",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "আল-মানি",
+                "translation": "প্রতিরোধকারী",
+                "meaning": "যিনি অকল্যাণ ও ক্ষতি থেকে রক্ষা করেন।",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "আদ-দার",
+                "translation": "ক্ষতিকারী",
+                "meaning": "যিনি তাঁর হিকমত অনুযায়ী যাকে ইচ্ছা ক্ষতি বা পরীক্ষার সম্মুখীন করেন।",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "আন-নাফি",
+                "translation": "উপকারী",
+                "meaning": "যিনি যাকে ইচ্ছা কল্যাণ ও উপকার দান করেন।",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "আন-নূর",
+                "translation": "জ্যোতি",
+                "meaning": "যিনি আসমান ও জমিনের আলো এবং হেদায়েতের আলো দানকারী।",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "আল-হাদী",
+                "translation": "পথপ্রদর্শক",
+                "meaning": "যিনি সত্য পথের দিশা দেন এবং হেদায়েত দান করেন।",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "আল-বাদী",
+                "translation": "অভিনব স্রষ্টা",
+                "meaning": "যিনি অতুলনীয়ভাবে এবং নতুনরূপে সৃষ্টি করেন।",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "আল-বাকী",
+                "translation": "অবিনশ্বর",
+                "meaning": "যিনি চিরস্থায়ী এবং যার কোন ধ্বংস নেই।",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "আল-ওয়ারিস",
+                "translation": "উত্তরাধিকারী",
+                "meaning": "সবকিছু ধ্বংস হওয়ার পর যিনি অবশিষ্ট থাকবেন এবং সবকিছুর মালিক হবেন।",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "আর-রাশীদ",
+                "translation": "সৎপথ প্রদর্শনকারী",
+                "meaning": "যিনি সঠিক পথে পরিচালনা করেন এবং যার প্রতিটি কাজ সঠিক।",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "আস-সাবুর",
+                "translation": "ধৈর্যশীল",
+                "meaning": "যিনি অসীম ধৈর্যের অধিকারী এবং পাপীদের শাস্তি দিতে তাড়াহুড়া করেন না।",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "Bengali",
+        "language_code": "bn",
+        "title": "আল্লাহর ৯৯টি নাম",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "ইসলামী ঐতিহ্য অনুযায়ী আল্লাহর ৯৯টি নাম (আসমাউল হুসনা) এর পরিচিতি।",
+        "recitation_benefits": "এই নামগুলো পাঠ করা ও অনুধাবন করা আল্লাহকে চেনার এবং তাঁর নৈকট্য লাভের মাধ্যম।",
+        "hadith": "রাসূলুল্লাহ (সা.) বলেছেন: \"আল্লাহর নিরানব্বইটি নাম আছে, এক কম একশত। যে ব্যক্তি এগুলো আয়ত্ত করবে (মুখস্থ করবে ও আমল করবে), সে জান্নাতে প্রবেশ করবে।\" (বুখারী ২৭৩৬ ও মুসলিম ২৬৭৭)"
+    }
+}

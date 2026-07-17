@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "Ar-Rahman",
+                "translation": "Yang Maha Pengasih",
+                "meaning": "Dia yang mengasihi semua makhluk di dunia ini.",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "Ar-Rahim",
+                "translation": "Yang Maha Penyayang",
+                "meaning": "Dia yang secara khusus menyayangi orang-orang beriman di akhirat.",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "Al-Malik",
+                "translation": "Yang Maha Merajai",
+                "meaning": "Penguasa mutlak segalanya, Tuhan Hari Pembalasan.",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "Al-Quddus",
+                "translation": "Yang Maha Suci",
+                "meaning": "Dia yang bebas dari segala cacat dan ketidaksempurnaan.",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "As-Salam",
+                "translation": "Yang Maha Memberi Kesejahteraan",
+                "meaning": "Dia yang bebas dari cacat dan memberikan kedamaian serta keamanan.",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "Al-Mu'min",
+                "translation": "Yang Maha Memberi Keamanan",
+                "meaning": "Dia yang memberikan keamanan dan membenarkan kebenaran.",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "Al-Muhaymin",
+                "translation": "Yang Maha Memelihara",
+                "meaning": "Dia yang mengawasi, menjaga, dan melindungi segalanya.",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "Al-Aziz",
+                "translation": "Yang Maha Perkasa",
+                "meaning": "Dia yang maha kuasa dan tak terkalahkan.",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "Al-Jabbar",
+                "translation": "Yang Maha Memaksa",
+                "meaning": "Dia yang memaksakan kehendak-Nya dan memperbaiki keadaan ciptaan.",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "Al-Mutakabbir",
+                "translation": "Yang Maha Memiliki Kebesaran",
+                "meaning": "Dia yang berada di atas segalanya dan kepada-Nya segala kebesaran.",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "Al-Khaliq",
+                "translation": "Yang Maha Pencipta",
+                "meaning": "Dia yang menciptakan segalanya dari ketiadaan.",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "Al-Bari",
+                "translation": "Yang Maha Mengadakan",
+                "meaning": "Dia yang menciptakan secara harmonis dan tanpa model sebelumnya.",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "Al-Musawwir",
+                "translation": "Yang Maha Membentuk Rupa",
+                "meaning": "Dia yang memberikan bentuk dan rupa pada setiap makhluk.",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "Al-Ghaffar",
+                "translation": "Yang Maha Pengampun",
+                "meaning": "Dia yang banyak mengampuni dan menutupi dosa.",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "Al-Qahhar",
+                "translation": "Yang Maha Menundukkan",
+                "meaning": "Dia yang menaklukkan segalanya dan kepada-Nya segalanya tunduk.",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "Al-Wahhab",
+                "translation": "Yang Maha Pemberi Karunia",
+                "meaning": "Dia yang memberi dengan berlimpah tanpa mengharapkan balasan.",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "Ar-Razzaq",
+                "translation": "Yang Maha Pemberi Rezeki",
+                "meaning": "Dia yang menyediakan rezeki bagi semua makhluk.",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "Al-Fattah",
+                "translation": "Yang Maha Pembuka Rahmat",
+                "meaning": "Dia yang membuka pintu rahmat dan menyelesaikan semua masalah.",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "Al-Alim",
+                "translation": "Yang Maha Mengetahui",
+                "meaning": "Dia yang mengetahui segalanya, yang tersembunyi dan yang nyata.",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "Al-Qabid",
+                "translation": "Yang Maha Menyempitkan",
+                "meaning": "Dia yang menyempitkan rezeki dan mengambil nyawa.",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "Al-Basit",
+                "translation": "Yang Maha Melapangkan",
+                "meaning": "Dia yang memberikan rezeki yang berlimpah dan memanjangkan umur.",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "Al-Khafid",
+                "translation": "Yang Maha Merendahkan",
+                "meaning": "Dia yang merendahkan orang-orang kafir dan sombong.",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "Ar-Rafi",
+                "translation": "Yang Maha Meninggikan",
+                "meaning": "Dia yang meninggikan orang-orang beriman dan memberi mereka derajat tinggi.",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "Al-Mu'izz",
+                "translation": "Yang Maha Memuliakan",
+                "meaning": "Dia yang memberikan kemuliaan dan kekuasaan kepada siapa yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "Al-Mudhill",
+                "translation": "Yang Maha Menghinakan",
+                "meaning": "Dia yang mencabut kekuasaan dan menghinakan siapa yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "As-Sami",
+                "translation": "Yang Maha Mendengar",
+                "meaning": "Dia yang mendengar segalanya, bahkan bisikan yang paling pelan.",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "Al-Basir",
+                "translation": "Yang Maha Melihat",
+                "meaning": "Dia yang melihat segalanya, yang nyata dan yang tersembunyi.",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "Al-Hakam",
+                "translation": "Yang Maha Menetapkan",
+                "meaning": "Dia yang menghakimi dengan adil dan keputusan-Nya adalah final.",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "Al-Adl",
+                "translation": "Yang Maha Adil",
+                "meaning": "Dia yang benar-benar adil dan tidak berbuat zalim kepada siapa pun.",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "Al-Latif",
+                "translation": "Yang Maha Lembut",
+                "meaning": "Dia yang lembut terhadap hamba-hamba-Nya dan mengetahui detail yang paling halus.",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "Al-Khabir",
+                "translation": "Yang Maha Mengenal",
+                "meaning": "Dia yang mengetahui segalanya dan tidak ada yang tersembunyi dari-Nya.",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "Al-Halim",
+                "translation": "Yang Maha Penyantun",
+                "meaning": "Dia yang tidak terburu-buru menghukum dan maha penyabar.",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "Al-Azim",
+                "translation": "Yang Maha Agung",
+                "meaning": "Dia yang keagungan-Nya tak terukur.",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "Al-Ghafur",
+                "translation": "Yang Maha Pengampun",
+                "meaning": "Dia yang mengampuni dosa dan menutupi aib.",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "Ash-Shakur",
+                "translation": "Yang Maha Mensyukuri",
+                "meaning": "Dia yang memberi balasan berlimpah untuk sedikit amal.",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "Al-Ali",
+                "translation": "Yang Maha Tinggi",
+                "meaning": "Dia yang ditinggikan di atas segalanya.",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "Al-Kabir",
+                "translation": "Yang Maha Besar",
+                "meaning": "Dia yang lebih besar dari apa pun yang dapat dibayangkan.",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "Al-Hafiz",
+                "translation": "Yang Maha Memelihara",
+                "meaning": "Dia yang melindungi dan memelihara segalanya.",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "Al-Muqit",
+                "translation": "Yang Maha Pemberi Kecukupan",
+                "meaning": "Dia yang memberi kekuatan dan rezeki kepada setiap makhluk.",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "Al-Hasib",
+                "translation": "Yang Maha Membuat Perhitungan",
+                "meaning": "Dia yang memperhitungkan amal dan cukup bagi hamba-hamba-Nya.",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "Al-Jalil",
+                "translation": "Yang Maha Mulia",
+                "meaning": "Dia yang memiliki kemuliaan dan kekuasaan.",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "Al-Karim",
+                "translation": "Yang Maha Pemurah",
+                "meaning": "Dia yang sangat murah hati dan mulia.",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "Ar-Raqib",
+                "translation": "Yang Maha Mengawasi",
+                "meaning": "Dia yang mengawasi segalanya dan tidak ada yang luput dari-Nya.",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "Al-Mujib",
+                "translation": "Yang Maha Mengabulkan",
+                "meaning": "Dia yang mengabulkan doa orang-orang yang memohon kepada-Nya.",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "Al-Wasi",
+                "translation": "Yang Maha Luas",
+                "meaning": "Dia yang ilmu, rahmat, dan kekuasaan-Nya meliputi segalanya.",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "Al-Hakim",
+                "translation": "Yang Maha Bijaksana",
+                "meaning": "Dia yang melakukan segalanya dengan hikmah dan tujuan.",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "Al-Wadud",
+                "translation": "Yang Maha Mengasihi",
+                "meaning": "Dia yang mencintai hamba-hamba-Nya yang saleh dan dicintai oleh mereka.",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "Al-Majid",
+                "translation": "Yang Maha Mulia",
+                "meaning": "Dia yang terpuji dan memiliki kehormatan yang sempurna.",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "Al-Ba'ith",
+                "translation": "Yang Maha Membangkitkan",
+                "meaning": "Dia yang akan membangkitkan manusia setelah kematian.",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "Ash-Shahid",
+                "translation": "Yang Maha Menyaksikan",
+                "meaning": "Dia yang menyaksikan segalanya dan tidak ada yang tersembunyi dari-Nya.",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "Al-Haqq",
+                "translation": "Yang Maha Benar",
+                "meaning": "Dia yang merupakan Kebenaran Mutlak dan keberadaan-Nya tidak dapat disangkal.",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "Al-Wakil",
+                "translation": "Yang Maha Memelihara",
+                "meaning": "Dia yang dipercaya dan yang mengurus segala urusan dengan sebaik-baiknya.",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "Al-Qawi",
+                "translation": "Yang Maha Kuat",
+                "meaning": "Dia yang memiliki kekuatan sempurna.",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "Al-Matin",
+                "translation": "Yang Maha Kokoh",
+                "meaning": "Dia yang kekuatan-Nya tak tergoyahkan.",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "Al-Wali",
+                "translation": "Yang Maha Melindungi",
+                "meaning": "Teman dan pelindung orang-orang beriman.",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "Al-Hamid",
+                "translation": "Yang Maha Terpuji",
+                "meaning": "Dia yang segala puji bagi-Nya.",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "Al-Muhsi",
+                "translation": "Yang Maha Menghitung",
+                "meaning": "Dia yang mengetahui jumlah dan kuantitas segalanya.",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "Al-Mubdi",
+                "translation": "Yang Maha Memulai",
+                "meaning": "Dia yang menciptakan dari permulaan.",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "Al-Mu'id",
+                "translation": "Yang Maha Mengembalikan Kehidupan",
+                "meaning": "Dia yang mengembalikan kehidupan setelah kematian.",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "Al-Muhyi",
+                "translation": "Yang Maha Menghidupkan",
+                "meaning": "Dia yang memberi kehidupan.",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "Al-Mumit",
+                "translation": "Yang Maha Mematikan",
+                "meaning": "Dia yang memberi kematian.",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "Al-Hayy",
+                "translation": "Yang Maha Hidup",
+                "meaning": "Dia yang hidup kekal abadi.",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "Al-Qayyum",
+                "translation": "Yang Maha Mandiri",
+                "meaning": "Dia yang berdiri sendiri dan kepada-Nya segala sesuatu bergantung.",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "Al-Wajid",
+                "translation": "Yang Maha Penemu",
+                "meaning": "Dia yang memiliki segalanya dan tidak kekurangan apa pun.",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "Al-Majid",
+                "translation": "Yang Maha Mulia",
+                "meaning": "Dia yang mulia dan agung.",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "Al-Wahid",
+                "translation": "Yang Maha Tunggal",
+                "meaning": "Dia yang Esa dalam zat dan sifat-Nya.",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "Al-Ahad",
+                "translation": "Yang Maha Esa",
+                "meaning": "Dia yang unik dan tak terbagi.",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "As-Samad",
+                "translation": "Yang Maha Dibutuhkan",
+                "meaning": "Dia yang kepada-Nya semua bergantung, dan Dia tidak membutuhkan siapa pun.",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "Al-Qadir",
+                "translation": "Yang Maha Menentukan",
+                "meaning": "Dia yang mampu melakukan apa saja yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "Al-Muqtadir",
+                "translation": "Yang Maha Berkuasa",
+                "meaning": "Dia yang kekuasaan-Nya mutlak.",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "Al-Muqaddim",
+                "translation": "Yang Maha Mendahulukan",
+                "meaning": "Dia yang mendahulukan siapa yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "Al-Mu'akhkhir",
+                "translation": "Yang Maha Mengakhirkan",
+                "meaning": "Dia yang menunda siapa yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "Al-Awwal",
+                "translation": "Yang Maha Awal",
+                "meaning": "Dia yang tidak memiliki permulaan.",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "Al-Akhir",
+                "translation": "Yang Maha Akhir",
+                "meaning": "Dia yang tidak memiliki akhir.",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "Az-Zahir",
+                "translation": "Yang Maha Nyata",
+                "meaning": "Dia yang keberadaan-Nya nyata melalui ciptaan-Nya.",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "Al-Batin",
+                "translation": "Yang Maha Ghaib",
+                "meaning": "Dia yang tersembunyi dari pandangan dan mengetahui rahasia.",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "Al-Wali",
+                "translation": "Yang Maha Memerintah",
+                "meaning": "Dia yang memerintah segala sesuatu.",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "Al-Muta'ali",
+                "translation": "Yang Maha Tinggi",
+                "meaning": "Dia yang berada di atas segala kekurangan.",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "Al-Barr",
+                "translation": "Yang Maha Penderma",
+                "meaning": "Dia yang merupakan sumber segala kebaikan.",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "At-Tawwab",
+                "translation": "Yang Maha Penerima Taubat",
+                "meaning": "Dia yang menerima taubat hamba-hamba-Nya.",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "Al-Muntaqim",
+                "translation": "Yang Maha Pemberi Balasan",
+                "meaning": "Dia yang menghukum orang-orang yang bersalah dengan adil.",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "Al-Afuww",
+                "translation": "Yang Maha Pemaaf",
+                "meaning": "Dia yang memaafkan dan menghapus dosa.",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "Ar-Ra'uf",
+                "translation": "Yang Maha Pengasuh",
+                "meaning": "Dia yang lembut dan penyayang.",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "Malik-ul-Mulk",
+                "translation": "Penguasa Kerajaan",
+                "meaning": "Pemilik mutlak segalanya.",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "Dhul-Jalali wal-Ikram",
+                "translation": "Pemilik Kebesaran dan Kemuliaan",
+                "meaning": "Dia yang memiliki kebesaran dan kehormatan.",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "Al-Muqsit",
+                "translation": "Yang Maha Pemberi Keadilan",
+                "meaning": "Dia yang menegakkan keadilan.",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "Al-Jami",
+                "translation": "Yang Maha Mengumpulkan",
+                "meaning": "Dia yang akan mengumpulkan manusia pada Hari Kiamat.",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "Al-Ghani",
+                "translation": "Yang Maha Kaya",
+                "meaning": "Dia yang mandiri dan kaya.",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "Al-Mughni",
+                "translation": "Yang Maha Pemberi Kekayaan",
+                "meaning": "Dia yang memberi kekayaan kepada siapa yang Dia kehendaki.",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "Al-Mani",
+                "translation": "Yang Maha Mencegah",
+                "meaning": "Dia yang mencegah kejahatan dan bahaya.",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "Ad-Darr",
+                "translation": "Yang Maha Penimpa Kemudharatan",
+                "meaning": "Dia yang memberikan ujian dan bahaya sesuai dengan hikmah-Nya.",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "An-Nafi",
+                "translation": "Yang Maha Memberi Manfaat",
+                "meaning": "Dia yang memberikan manfaat dan kebaikan.",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "An-Nur",
+                "translation": "Yang Maha Bercahaya",
+                "meaning": "Dia yang menerangi langit dan bumi.",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "Al-Hadi",
+                "translation": "Yang Maha Pemberi Petunjuk",
+                "meaning": "Dia yang membimbing ke jalan yang lurus.",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "Al-Badi",
+                "translation": "Yang Maha Pencipta",
+                "meaning": "Dia yang menciptakan tanpa contoh sebelumnya.",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "Al-Baqi",
+                "translation": "Yang Maha Kekal",
+                "meaning": "Dia yang kekal abadi.",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "Al-Warith",
+                "translation": "Yang Maha Pewaris",
+                "meaning": "Dia yang tetap ada ketika semuanya lenyap.",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "Ar-Rashid",
+                "translation": "Yang Maha Pandai",
+                "meaning": "Dia yang membimbing kepada kebaikan dan kebenaran.",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "As-Sabur",
+                "translation": "Yang Maha Sabar",
+                "meaning": "Dia yang sangat sabar.",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "Indonesian",
+        "language_code": "id",
+        "title": "99 Nama Allah",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "Ringkasan 99 nama Allah (Asmaul Husna) menurut tradisi Islam.",
+        "recitation_benefits": "Membaca dan memahami nama-nama ini mendekatkan seorang mukmin kepada Allah dan merupakan bentuk ibadah.",
+        "hadith": "Nabi Muhammad (SAW) bersabda: \"Allah memiliki sembilan puluh sembilan nama, seratus kurang satu. Barangsiapa yang menghafalnya (dan mengamalkannya) akan masuk Surga.\" (Bukhari dan Muslim)"
+    }
+}

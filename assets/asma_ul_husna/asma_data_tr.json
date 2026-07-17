@@ -1,0 +1,808 @@
+{
+    "code": 200,
+    "status": "success",
+    "data": {
+        "names": [
+            {
+                "number": 1,
+                "name": "الرَّحْمَنُ",
+                "transliteration": "Er-Rahmân",
+                "translation": "Rahmân",
+                "meaning": "Dünyada bütün mahlûkata merhamet eden, şefkat gösteren, ihsan eden.",
+                "audio": "/audio/asma-ul-husna/rahman.mp3"
+            },
+            {
+                "number": 2,
+                "name": "الرَّحِيمُ",
+                "transliteration": "Er-Rahîm",
+                "translation": "Rahîm",
+                "meaning": "Ahirette, sadece müminlere merhamet eden.",
+                "audio": "/audio/asma-ul-husna/rahim.mp3"
+            },
+            {
+                "number": 3,
+                "name": "الْمَلِكُ",
+                "transliteration": "El-Melik",
+                "translation": "Melik",
+                "meaning": "Mülkün, kâinatın sahibi, mülk ve saltanatı devamlı olan.",
+                "audio": "/audio/asma-ul-husna/malik.mp3"
+            },
+            {
+                "number": 4,
+                "name": "الْقُدُّوسُ",
+                "transliteration": "El-Kuddûs",
+                "translation": "Kuddûs",
+                "meaning": "Her türlü eksiklikten, ayıptan, kusurdan uzak ve pak olan.",
+                "audio": "/audio/asma-ul-husna/quddus.mp3"
+            },
+            {
+                "number": 5,
+                "name": "السَّلاَمُ",
+                "transliteration": "Es-Selâm",
+                "translation": "Selâm",
+                "meaning": "Her türlü tehlikeden kullarını selamete çıkaran, cennetteki bahtiyar kullarına selam eden.",
+                "audio": "/audio/asma-ul-husna/salam.mp3"
+            },
+            {
+                "number": 6,
+                "name": "الْمُؤْمِنُ",
+                "transliteration": "El-Mü'min",
+                "translation": "Mü'min",
+                "meaning": "Güven veren, emin kılan, koruyan, iman nurunu veren.",
+                "audio": "/audio/asma-ul-husna/mumin.mp3"
+            },
+            {
+                "number": 7,
+                "name": "الْمُهَيْمِنُ",
+                "transliteration": "El-Müheymin",
+                "translation": "Müheymin",
+                "meaning": "Her şeyi görüp gözeten, her varlığın yaptıklarından haberdar olan.",
+                "audio": "/audio/asma-ul-husna/muhaimin.mp3"
+            },
+            {
+                "number": 8,
+                "name": "الْعَزِيزُ",
+                "transliteration": "El-Azîz",
+                "translation": "Azîz",
+                "meaning": "İzzet sahibi, her şeye galip olan, karşı gelinemeyen.",
+                "audio": "/audio/asma-ul-husna/aziz.mp3"
+            },
+            {
+                "number": 9,
+                "name": "الْجَبَّارُ",
+                "transliteration": "El-Cebbâr",
+                "translation": "Cebbâr",
+                "meaning": "Azamet ve kudret sahibi, dilediğini mutlak yapan, kırılanları onaran.",
+                "audio": "/audio/asma-ul-husna/jabbar.mp3"
+            },
+            {
+                "number": 10,
+                "name": "الْمُتَكَبِّرُ",
+                "transliteration": "El-Mütekebbir",
+                "translation": "Mütekebbir",
+                "meaning": "Büyüklükte eşi, benzeri olmayan.",
+                "audio": "/audio/asma-ul-husna/mutakabbir.mp3"
+            },
+            {
+                "number": 11,
+                "name": "الْخَالِقُ",
+                "transliteration": "El-Hâlık",
+                "translation": "Hâlık",
+                "meaning": "Yaratan, yoktan var eden.",
+                "audio": "/audio/asma-ul-husna/khaliq.mp3"
+            },
+            {
+                "number": 12,
+                "name": "الْبَارِئُ",
+                "transliteration": "El-Bâri",
+                "translation": "Bâri",
+                "meaning": "Her şeyi kusursuz ve uyumlu yaratan.",
+                "audio": "/audio/asma-ul-husna/bari.mp3"
+            },
+            {
+                "number": 13,
+                "name": "الْمُصَوِّرُ",
+                "transliteration": "El-Musavvir",
+                "translation": "Musavvir",
+                "meaning": "Varlıklara şekil veren, onları birbirinden farklı özellikte yaratan.",
+                "audio": "/audio/asma-ul-husna/musawwir.mp3"
+            },
+            {
+                "number": 14,
+                "name": "الْغَفَّارُ",
+                "transliteration": "El-Gaffâr",
+                "translation": "Gaffâr",
+                "meaning": "Günahları örten ve çok mağfiret eden.",
+                "audio": "/audio/asma-ul-husna/ghaffar.mp3"
+            },
+            {
+                "number": 15,
+                "name": "الْقَهَّارُ",
+                "transliteration": "El-Kahhâr",
+                "translation": "Kahhâr",
+                "meaning": "Her şeye, her istediğini yapacak surette galip ve hakim olan.",
+                "audio": "/audio/asma-ul-husna/qahhar.mp3"
+            },
+            {
+                "number": 16,
+                "name": "الْوَهَّابُ",
+                "transliteration": "El-Vehhâb",
+                "translation": "Vehhâb",
+                "meaning": "Karşılıksız hibeler veren, çok fazla ihsan eden.",
+                "audio": "/audio/asma-ul-husna/wahhab.mp3"
+            },
+            {
+                "number": 17,
+                "name": "الرَّزَّاقُ",
+                "transliteration": "Er-Rezzâk",
+                "translation": "Rezzâk",
+                "meaning": "Bütün mahlûkatın rızkını veren ve ihtiyacını karşılayan.",
+                "audio": "/audio/asma-ul-husna/razzaq.mp3"
+            },
+            {
+                "number": 18,
+                "name": "الْفَتَّاحُ",
+                "transliteration": "El-Fettâh",
+                "translation": "Fettâh",
+                "meaning": "Her türlü müşkülleri açan ve kolaylaştıran, darlıktan kurtaran.",
+                "audio": "/audio/asma-ul-husna/fattah.mp3"
+            },
+            {
+                "number": 19,
+                "name": "اَلْعَلِيْمُ",
+                "transliteration": "El-Alîm",
+                "translation": "Alîm",
+                "meaning": "Gizli açık, geçmiş, gelecek, her şeyi en ince detaylarına kadar bilen.",
+                "audio": "/audio/asma-ul-husna/alim.mp3"
+            },
+            {
+                "number": 20,
+                "name": "الْقَابِضُ",
+                "transliteration": "El-Kâbıd",
+                "translation": "Kâbıd",
+                "meaning": "Dilediğinin rızkını daraltan, ruhları kabzeden.",
+                "audio": "/audio/asma-ul-husna/qabid.mp3"
+            },
+            {
+                "number": 21,
+                "name": "الْبَاسِطُ",
+                "transliteration": "El-Bâsıt",
+                "translation": "Bâsıt",
+                "meaning": "Dilediğinin rızkını genişleten, ruhları veren.",
+                "audio": "/audio/asma-ul-husna/basit.mp3"
+            },
+            {
+                "number": 22,
+                "name": "الْخَافِضُ",
+                "transliteration": "El-Hâfıd",
+                "translation": "Hâfıd",
+                "meaning": "Kâfirleri ve zalimleri alçaltan.",
+                "audio": "/audio/asma-ul-husna/khafid.mp3"
+            },
+            {
+                "number": 23,
+                "name": "الرَّافِعُ",
+                "transliteration": "Er-Râfi",
+                "translation": "Râfi",
+                "meaning": "Şeref verip yükselten.",
+                "audio": "/audio/asma-ul-husna/rafi.mp3"
+            },
+            {
+                "number": 24,
+                "name": "الْمُعِزُّ",
+                "transliteration": "El-Muizz",
+                "translation": "Muizz",
+                "meaning": "Dilediğini aziz eden, izzet veren.",
+                "audio": "/audio/asma-ul-husna/muizz.mp3"
+            },
+            {
+                "number": 25,
+                "name": "المُذِلُّ",
+                "transliteration": "El-Müzill",
+                "translation": "Müzill",
+                "meaning": "Dilediğini zillete düşüren, hor ve hakir eden.",
+                "audio": "/audio/asma-ul-husna/mudhill.mp3"
+            },
+            {
+                "number": 26,
+                "name": "السَّمِيعُ",
+                "transliteration": "Es-Semî",
+                "translation": "Semî",
+                "meaning": "Her şeyi en iyi işiten.",
+                "audio": "/audio/asma-ul-husna/sami.mp3"
+            },
+            {
+                "number": 27,
+                "name": "الْبَصِيرُ",
+                "transliteration": "El-Basîr",
+                "translation": "Basîr",
+                "meaning": "Gizli açık, her şeyi en iyi gören.",
+                "audio": "/audio/asma-ul-husna/basir.mp3"
+            },
+            {
+                "number": 28,
+                "name": "الْحَكَمُ",
+                "transliteration": "El-Hakem",
+                "translation": "Hakem",
+                "meaning": "Mutlak hakim, hakkı batıldan ayıran, hikmetle hükmeden.",
+                "audio": "/audio/asma-ul-husna/hakam.mp3"
+            },
+            {
+                "number": 29,
+                "name": "الْعَدْلُ",
+                "transliteration": "El-Adl",
+                "translation": "Adl",
+                "meaning": "Mutlak adil, çok adaletli.",
+                "audio": "/audio/asma-ul-husna/adl.mp3"
+            },
+            {
+                "number": 30,
+                "name": "اللَّطِيفُ",
+                "transliteration": "El-Latîf",
+                "translation": "Latîf",
+                "meaning": "Lütuf ve ihsan sahibi, her şeye vakıf.",
+                "audio": "/audio/asma-ul-husna/latif.mp3"
+            },
+            {
+                "number": 31,
+                "name": "الْخَبِيرُ",
+                "transliteration": "El-Habîr",
+                "translation": "Habîr",
+                "meaning": "Her şeyden haberdar olan, her şeyin iç yüzünü bilen.",
+                "audio": "/audio/asma-ul-husna/khabir.mp3"
+            },
+            {
+                "number": 32,
+                "name": "الْحَلِيمُ",
+                "transliteration": "El-Halîm",
+                "translation": "Halîm",
+                "meaning": "Hemen cezalandırmayan, yumuşak huylu, hilm sahibi.",
+                "audio": "/audio/asma-ul-husna/halim.mp3"
+            },
+            {
+                "number": 33,
+                "name": "الْعَظِيمُ",
+                "transliteration": "El-Azîm",
+                "translation": "Azîm",
+                "meaning": "Büyüklükte benzeri yok, pek yüce.",
+                "audio": "/audio/asma-ul-husna/azim.mp3"
+            },
+            {
+                "number": 34,
+                "name": "الْغَفُورُ",
+                "transliteration": "El-Gafûr",
+                "translation": "Gafûr",
+                "meaning": "Affı, mağfireti bol.",
+                "audio": "/audio/asma-ul-husna/ghafur.mp3"
+            },
+            {
+                "number": 35,
+                "name": "الشَّكُورُ",
+                "transliteration": "Eş-Şekûr",
+                "translation": "Şekûr",
+                "meaning": "Az amele, çok sevap veren.",
+                "audio": "/audio/asma-ul-husna/shakur.mp3"
+            },
+            {
+                "number": 36,
+                "name": "الْعَلِيُّ",
+                "transliteration": "El-Aliyy",
+                "translation": "Aliyy",
+                "meaning": "Yüceler yücesi, çok yüce.",
+                "audio": "/audio/asma-ul-husna/ali.mp3"
+            },
+            {
+                "number": 37,
+                "name": "الْكَبِيرُ",
+                "transliteration": "El-Kebîr",
+                "translation": "Kebîr",
+                "meaning": "Büyüklükte benzeri yok, pek büyük.",
+                "audio": "/audio/asma-ul-husna/kabir.mp3"
+            },
+            {
+                "number": 38,
+                "name": "الْحَفِيظُ",
+                "transliteration": "El-Hafîz",
+                "translation": "Hafîz",
+                "meaning": "Her şeyi koruyucu olan, muhafaza eden.",
+                "audio": "/audio/asma-ul-husna/hafiz.mp3"
+            },
+            {
+                "number": 39,
+                "name": "المُقيِت",
+                "transliteration": "El-Mukît",
+                "translation": "Mukît",
+                "meaning": "Rızıkları yaratan, bilen, tayin eden, her yaratılmışın rızkını veren.",
+                "audio": "/audio/asma-ul-husna/muqit.mp3"
+            },
+            {
+                "number": 40,
+                "name": "الْحسِيبُ",
+                "transliteration": "El-Hasîb",
+                "translation": "Hasîb",
+                "meaning": "Kulların hesabını en iyi gören.",
+                "audio": "/audio/asma-ul-husna/hasib.mp3"
+            },
+            {
+                "number": 41,
+                "name": "الْجَلِيلُ",
+                "transliteration": "El-Celîl",
+                "translation": "Celîl",
+                "meaning": "Celal ve azamet sahibi.",
+                "audio": "/audio/asma-ul-husna/jalil.mp3"
+            },
+            {
+                "number": 42,
+                "name": "الْكَرِيمُ",
+                "transliteration": "El-Kerîm",
+                "translation": "Kerîm",
+                "meaning": "Lütfu ve keremi bol, karşılıksız veren, çok ikram eden.",
+                "audio": "/audio/asma-ul-husna/karim.mp3"
+            },
+            {
+                "number": 43,
+                "name": "الرَّقِيبُ",
+                "transliteration": "Er-Rakîb",
+                "translation": "Rakîb",
+                "meaning": "Her varlığı, her işi her an görüp, gözeten, kontrolü altında tutan.",
+                "audio": "/audio/asma-ul-husna/raqib.mp3"
+            },
+            {
+                "number": 44,
+                "name": "الْمُجِيبُ",
+                "transliteration": "El-Mücîb",
+                "translation": "Mücîb",
+                "meaning": "Duaları, istekleri kabul eden.",
+                "audio": "/audio/asma-ul-husna/mujib.mp3"
+            },
+            {
+                "number": 45,
+                "name": "الْوَاسِعُ",
+                "transliteration": "El-Vâsi",
+                "translation": "Vâsi",
+                "meaning": "Rahmet, kudret ve ilmi ile her şeyi ihata eden.",
+                "audio": "/audio/asma-ul-husna/wasi.mp3"
+            },
+            {
+                "number": 46,
+                "name": "الْحَكِيمُ",
+                "transliteration": "El-Hakîm",
+                "translation": "Hakîm",
+                "meaning": "Her işi hikmetli, her şeyi hikmetle yaratan.",
+                "audio": "/audio/asma-ul-husna/hakim.mp3"
+            },
+            {
+                "number": 47,
+                "name": "الْوَدُودُ",
+                "transliteration": "El-Vedûd",
+                "translation": "Vedûd",
+                "meaning": "Kullarını en çok seven, sevilmeye en çok layık olan.",
+                "audio": "/audio/asma-ul-husna/wadud.mp3"
+            },
+            {
+                "number": 48,
+                "name": "الْمَجِيدُ",
+                "transliteration": "El-Mecîd",
+                "translation": "Mecîd",
+                "meaning": "Her türlü övgüye layık bulunan.",
+                "audio": "/audio/asma-ul-husna/majeed.mp3"
+            },
+            {
+                "number": 49,
+                "name": "الْبَاعِثُ",
+                "transliteration": "El-Bâis",
+                "translation": "Bâis",
+                "meaning": "Ölüleri dirilten, peygamberler gönderen.",
+                "audio": "/audio/asma-ul-husna/baith.mp3"
+            },
+            {
+                "number": 50,
+                "name": "الشَّهِيدُ",
+                "transliteration": "Eş-Şehîd",
+                "translation": "Şehîd",
+                "meaning": "Her zaman her yerde hazır ve nazır olan.",
+                "audio": "/audio/asma-ul-husna/shahid.mp3"
+            },
+            {
+                "number": 51,
+                "name": "الْحَقُّ",
+                "transliteration": "El-Hakk",
+                "translation": "Hakk",
+                "meaning": "Varlığı hiç değişmeden duran, var olan, hakkı ortaya çıkaran.",
+                "audio": "/audio/asma-ul-husna/haqq.mp3"
+            },
+            {
+                "number": 52,
+                "name": "الْوَكِيلُ",
+                "transliteration": "El-Vekîl",
+                "translation": "Vekîl",
+                "meaning": "Kendisine tevekkül edenlerin işlerini en iyi neticeye ulaştıran.",
+                "audio": "/audio/asma-ul-husna/wakil.mp3"
+            },
+            {
+                "number": 53,
+                "name": "الْقَوِيُّ",
+                "transliteration": "El-Kaviyy",
+                "translation": "Kaviyy",
+                "meaning": "Kudreti en üstün ve hiç azalmaz.",
+                "audio": "/audio/asma-ul-husna/qawi.mp3"
+            },
+            {
+                "number": 54,
+                "name": "الْمَتِينُ",
+                "transliteration": "El-Metîn",
+                "translation": "Metîn",
+                "meaning": "Kuvvet ve kudret kaynağı, pek güçlü.",
+                "audio": "/audio/asma-ul-husna/matin.mp3"
+            },
+            {
+                "number": 55,
+                "name": "الْوَلِيُّ",
+                "transliteration": "El-Veliyy",
+                "translation": "Veliyy",
+                "meaning": "İnananların dostu, onları sevip yardım eden.",
+                "audio": "/audio/asma-ul-husna/waliy.mp3"
+            },
+            {
+                "number": 56,
+                "name": "الْحَمِيدُ",
+                "transliteration": "El-Hamîd",
+                "translation": "Hamîd",
+                "meaning": "Her türlü hamd ve senaya layık olan.",
+                "audio": "/audio/asma-ul-husna/hamid.mp3"
+            },
+            {
+                "number": 57,
+                "name": "الْمُحْصِي",
+                "transliteration": "El-Muhsî",
+                "translation": "Muhsî",
+                "meaning": "Yarattığı ve yaratacağı bütün varlıkların sayısını bilen.",
+                "audio": "/audio/asma-ul-husna/muhsi.mp3"
+            },
+            {
+                "number": 58,
+                "name": "الْمُبْدِئُ",
+                "transliteration": "El-Mübdî",
+                "translation": "Mübdî",
+                "meaning": "Maddesiz, örneksiz yaratan.",
+                "audio": "/audio/asma-ul-husna/mubdi.mp3"
+            },
+            {
+                "number": 59,
+                "name": "الْمُعِيدُ",
+                "transliteration": "El-Muîd",
+                "translation": "Muîd",
+                "meaning": "Yarattıklarını yok edip, sonra tekrar diriltecek olan.",
+                "audio": "/audio/asma-ul-husna/muid.mp3"
+            },
+            {
+                "number": 60,
+                "name": "الْمُحْيِي",
+                "transliteration": "El-Muhyî",
+                "translation": "Muhyî",
+                "meaning": "İhya eden, dirilten, can veren.",
+                "audio": "/audio/asma-ul-husna/muhyi.mp3"
+            },
+            {
+                "number": 61,
+                "name": "اَلْمُمِيتُ",
+                "transliteration": "El-Mümît",
+                "translation": "Mümît",
+                "meaning": "Her canlıya ölümü tattıran.",
+                "audio": "/audio/asma-ul-husna/mumit.mp3"
+            },
+            {
+                "number": 62,
+                "name": "الْحَيُّ",
+                "transliteration": "El-Hayy",
+                "translation": "Hayy",
+                "meaning": "Ezeli ve ebedi hayatla diri olan.",
+                "audio": "/audio/asma-ul-husna/hayy.mp3"
+            },
+            {
+                "number": 63,
+                "name": "الْقَيُّومُ",
+                "transliteration": "El-Kayyûm",
+                "translation": "Kayyûm",
+                "meaning": "Mahlukları varlıkta durduran, zatı ile kaim olan.",
+                "audio": "/audio/asma-ul-husna/qayyum.mp3"
+            },
+            {
+                "number": 64,
+                "name": "الْوَاجِدُ",
+                "transliteration": "El-Vâcid",
+                "translation": "Vâcid",
+                "meaning": "Kendisine hiçbir şey gizli kalmayan, istediğini, istediği vakit bulan.",
+                "audio": "/audio/asma-ul-husna/wajid.mp3"
+            },
+            {
+                "number": 65,
+                "name": "الْمَاجِدُ",
+                "transliteration": "El-Mecîd",
+                "translation": "Mecîd",
+                "meaning": "Kadri ve şanı büyük, keremi, ihsanı bol.",
+                "audio": "/audio/asma-ul-husna/majid.mp3"
+            },
+            {
+                "number": 66,
+                "name": "الْواحِدُ",
+                "transliteration": "El-Vâhid",
+                "translation": "Vâhid",
+                "meaning": "Zat, sıfat ve fiillerinde benzeri ve ortağı olmayan, tek olan.",
+                "audio": "/audio/asma-ul-husna/wahid.mp3"
+            },
+            {
+                "number": 67,
+                "name": "اَلاَحَدُ",
+                "transliteration": "El-Ehad",
+                "translation": "Ehad",
+                "meaning": "Bir ve tek olan, şeriki ve naziri bulunmayan.",
+                "audio": "/audio/asma-ul-husna/ahad.mp3"
+            },
+            {
+                "number": 68,
+                "name": "الصَّمَدُ",
+                "transliteration": "Es-Samed",
+                "translation": "Samed",
+                "meaning": "Hiçbir şeye ihtiyacı olmayan, herkesin muhtaç olduğu.",
+                "audio": "/audio/asma-ul-husna/samad.mp3"
+            },
+            {
+                "number": 69,
+                "name": "الْقَادِرُ",
+                "transliteration": "El-Kâdir",
+                "translation": "Kâdir",
+                "meaning": "Dilediğini dilediği gibi yaratmaya muktedir olan.",
+                "audio": "/audio/asma-ul-husna/qadir.mp3"
+            },
+            {
+                "number": 70,
+                "name": "الْمُقْتَدِرُ",
+                "transliteration": "El-Muktedir",
+                "translation": "Muktedir",
+                "meaning": "Dilediği gibi tasarruf eden, her şeyi kolayca yaratan kudret sahibi.",
+                "audio": "/audio/asma-ul-husna/muqtadir.mp3"
+            },
+            {
+                "number": 71,
+                "name": "الْمُقَدِّمُ",
+                "transliteration": "El-Mukaddim",
+                "translation": "Mukaddim",
+                "meaning": "Dilediğini öne alan, yükselten.",
+                "audio": "/audio/asma-ul-husna/muqaddim.mp3"
+            },
+            {
+                "number": 72,
+                "name": "الْمُؤَخِّرُ",
+                "transliteration": "El-Muahhir",
+                "translation": "Muahhir",
+                "meaning": "Dilediğini sona bırakan, erteleyen, alçaltan.",
+                "audio": "/audio/asma-ul-husna/muakhkhir.mp3"
+            },
+            {
+                "number": 73,
+                "name": "الأوَّلُ",
+                "transliteration": "El-Evvel",
+                "translation": "Evvel",
+                "meaning": "Ezeli olan, varlığının başlangıcı olmayan.",
+                "audio": "/audio/asma-ul-husna/awwal.mp3"
+            },
+            {
+                "number": 74,
+                "name": "الآخِرُ",
+                "transliteration": "El-Âhir",
+                "translation": "Âhir",
+                "meaning": "Ebedi olan, varlığının sonu olmayan.",
+                "audio": "/audio/asma-ul-husna/akhir.mp3"
+            },
+            {
+                "number": 75,
+                "name": "الظَّاهِرُ",
+                "transliteration": "Ez-Zâhir",
+                "translation": "Zâhir",
+                "meaning": "Varlığı sayısız delillerle açık olan.",
+                "audio": "/audio/asma-ul-husna/zahir.mp3"
+            },
+            {
+                "number": 76,
+                "name": "الْبَاطِنُ",
+                "transliteration": "El-Bâtın",
+                "translation": "Bâtın",
+                "meaning": "Akılların idrak edemeyeceği, yüceliği gizli olan.",
+                "audio": "/audio/asma-ul-husna/batin.mp3"
+            },
+            {
+                "number": 77,
+                "name": "الْوَالِي",
+                "transliteration": "El-Vâlî",
+                "translation": "Vâlî",
+                "meaning": "Bütün kâinatı idare eden, onların işlerini yoluna koyan.",
+                "audio": "/audio/asma-ul-husna/wali.mp3"
+            },
+            {
+                "number": 78,
+                "name": "الْمُتَعَالِي",
+                "transliteration": "El-Müteâlî",
+                "translation": "Müteâlî",
+                "meaning": "Son derece yüce olan.",
+                "audio": "/audio/asma-ul-husna/muta_ali.mp3"
+            },
+            {
+                "number": 79,
+                "name": "الْبَرُّ",
+                "transliteration": "El-Berr",
+                "translation": "Berr",
+                "meaning": "İyilik ve ihsanı bol, iyilik ve güzellik sahibi.",
+                "audio": "/audio/asma-ul-husna/barr.mp3"
+            },
+            {
+                "number": 80,
+                "name": "التَّوَابُ",
+                "transliteration": "Et-Tevvâb",
+                "translation": "Tevvâb",
+                "meaning": "Tövbeleri kabul edip, günahları bağışlayan.",
+                "audio": "/audio/asma-ul-husna/tawwab.mp3"
+            },
+            {
+                "number": 81,
+                "name": "الْمُنْتَقِمُ",
+                "transliteration": "El-Müntakim",
+                "translation": "Müntakim",
+                "meaning": "Zalimlerin cezasını veren, intikam alan.",
+                "audio": "/audio/asma-ul-husna/muntaqim.mp3"
+            },
+            {
+                "number": 82,
+                "name": "العَفُوُّ",
+                "transliteration": "El-Afüvv",
+                "translation": "Afüvv",
+                "meaning": "Affı çok olan, günahları affetmeyi seven.",
+                "audio": "/audio/asma-ul-husna/afuw.mp3"
+            },
+            {
+                "number": 83,
+                "name": "الرَّؤُوفُ",
+                "transliteration": "Er-Raûf",
+                "translation": "Raûf",
+                "meaning": "Çok merhametli, pek şefkatli.",
+                "audio": "/audio/asma-ul-husna/rauf.mp3"
+            },
+            {
+                "number": 84,
+                "name": "مَالِكُ الْمُلْكِ",
+                "transliteration": "Mâlik-ül Mülk",
+                "translation": "Mâlik-ül Mülk",
+                "meaning": "Mülkün, her varlığın sahibi.",
+                "audio": "/audio/asma-ul-husna/malik_ul_mulk.mp3"
+            },
+            {
+                "number": 85,
+                "name": "ذُوالْجَلاَلِ وَالإكْرَامِ",
+                "transliteration": "Zül-Celâli vel-İkrâm",
+                "translation": "Zül-Celâli vel-İkrâm",
+                "meaning": "Celal, azamet ve pek büyük ikram sahibi.",
+                "audio": "/audio/asma-ul-husna/dhu_l_jalali_wal_ikram.mp3"
+            },
+            {
+                "number": 86,
+                "name": "الْمُقْسِطُ",
+                "transliteration": "El-Muksit",
+                "translation": "Muksit",
+                "meaning": "Her işi birbirine uygun yapan.",
+                "audio": "/audio/asma-ul-husna/muqsit.mp3"
+            },
+            {
+                "number": 87,
+                "name": "الْجَامِعُ",
+                "transliteration": "El-Câmi",
+                "translation": "Câmi",
+                "meaning": "Mahşerde her mahlûkatı bir araya toplayan.",
+                "audio": "/audio/asma-ul-husna/jami.mp3"
+            },
+            {
+                "number": 88,
+                "name": "الْغَنِيُّ",
+                "transliteration": "El-Ganiyy",
+                "translation": "Ganiyy",
+                "meaning": "Her türlü zenginlik sahibi, ihtiyacı olmayan.",
+                "audio": "/audio/asma-ul-husna/ghaniy.mp3"
+            },
+            {
+                "number": 89,
+                "name": "الْمُغْنِي",
+                "transliteration": "El-Muğnî",
+                "translation": "Muğnî",
+                "meaning": "Müstağni kılan, ihtiyaç gideren, zengin eden.",
+                "audio": "/audio/asma-ul-husna/mughni.mp3"
+            },
+            {
+                "number": 90,
+                "name": "اَلْمَانِعُ",
+                "transliteration": "El-Mâni",
+                "translation": "Mâni",
+                "meaning": "Bir şeyin meydana gelmesine izin vermeyen, engelleyen.",
+                "audio": "/audio/asma-ul-husna/mani.mp3"
+            },
+            {
+                "number": 91,
+                "name": "الضَّارَّ",
+                "transliteration": "Ed-Dârr",
+                "translation": "Dârr",
+                "meaning": "Elem, zarar verenleri yaratan.",
+                "audio": "/audio/asma-ul-husna/darr.mp3"
+            },
+            {
+                "number": 92,
+                "name": "النَّافِعُ",
+                "transliteration": "En-Nâfi",
+                "translation": "Nâfi",
+                "meaning": "Fayda veren şeyleri yaratan.",
+                "audio": "/audio/asma-ul-husna/nafi.mp3"
+            },
+            {
+                "number": 93,
+                "name": "النُّورُ",
+                "transliteration": "En-Nûr",
+                "translation": "Nûr",
+                "meaning": "Alemleri nurlandıran, dilediğine nur veren.",
+                "audio": "/audio/asma-ul-husna/nur.mp3"
+            },
+            {
+                "number": 94,
+                "name": "الْهَادِي",
+                "transliteration": "El-Hâdî",
+                "translation": "Hâdî",
+                "meaning": "Hidayet veren.",
+                "audio": "/audio/asma-ul-husna/hadi.mp3"
+            },
+            {
+                "number": 95,
+                "name": "الْبَدِيعُ",
+                "transliteration": "El-Bedî",
+                "translation": "Bedî",
+                "meaning": "Eşi ve benzeri olmayan güzellikler yaratan.",
+                "audio": "/audio/asma-ul-husna/badi.mp3"
+            },
+            {
+                "number": 96,
+                "name": "اَلْبَاقِي",
+                "transliteration": "El-Bâkî",
+                "translation": "Bâkî",
+                "meaning": "Varlığının sonu olmayan, ebedi olan.",
+                "audio": "/audio/asma-ul-husna/baqi.mp3"
+            },
+            {
+                "number": 97,
+                "name": "الْوَارِثُ",
+                "transliteration": "El-Vâris",
+                "translation": "Vâris",
+                "meaning": "Her şeyin asıl sahibi olan.",
+                "audio": "/audio/asma-ul-husna/warith.mp3"
+            },
+            {
+                "number": 98,
+                "name": "الرَّشِيدُ",
+                "transliteration": "Er-Reşîd",
+                "translation": "Reşîd",
+                "meaning": "İrşada muhtaç olmayan, doğru yolu gösteren.",
+                "audio": "/audio/asma-ul-husna/rashid.mp3"
+            },
+            {
+                "number": 99,
+                "name": "الصَّبُورُ",
+                "transliteration": "Es-Sabûr",
+                "translation": "Sabûr",
+                "meaning": "Ceza vermede acele etmeyen.",
+                "audio": "/audio/asma-ul-husna/sabur.mp3"
+            }
+        ],
+        "total": 99,
+        "language": "Turkish",
+        "language_code": "tr",
+        "title": "Esma-ül Hüsna",
+        "arabic_title": "أسماء الله الحسنى",
+        "description": "Allah'ın 99 güzel ismi (Esma-ül Hüsna) ve anlamları.",
+        "recitation_benefits": "Bu isimleri okumak ve anlamak, mümini Allah'a yaklaştırır ve bir ibadettir.",
+        "hadith": "Hz. Muhammed (S.A.V) şöyle buyurmuştur: \"Allah'ın doksan dokuz ismi vardır. Yüzden bir eksik. Kim bunları sayar (ezberler ve manasını anlarsa) cennete girer.\" (Buhari ve Müslim)"
+    }
+}
