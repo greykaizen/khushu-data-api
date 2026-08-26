@@ -1,0 +1,11 @@
+{"pack":"khushu-core-islamic-events","events":[{"id":"new_year","title":"Islamic New Year","hijriMonth":1,"hijriDay":1,"category":"HISTORICAL","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"tasua","title":"Tasu'a","hijriMonth":1,"hijriDay":9,"category":"FASTING","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"ashura","title":"Day of Ashura","hijriMonth":1,"hijriDay":10,"category":"FASTING","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"mawlid","title":"Mawlid an-Nabi","hijriMonth":3,"hijriDay":12,"category":"HISTORICAL","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"isra_miraj","title":"Isra and Mi'raj","hijriMonth":7,"hijriDay":27,"category":"HISTORICAL","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"mid_shaban","title":"Mid-Sha'ban","hijriMonth":8,"hijriDay":15,"category":"HISTORICAL","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"ramadan_begins","title":"Ramadan Begins","hijriMonth":9,"hijriDay":1,"category":"MONTH_START","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"eid_al_fitr","title":"Eid al-Fitr","hijriMonth":10,"hijriDay":1,"category":"EID","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"hajj_begins","title":"Hajj Begins","hijriMonth":12,"hijriDay":8,"category":"HAJJ","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"arafah","title":"Day of Arafah","hijriMonth":12,"hijriDay":9,"category":"HAJJ","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"},
+{"id":"eid_al_adha","title":"Eid al-Adha","hijriMonth":12,"hijriDay":10,"category":"EID","recurrence":"ANNUAL","source":"khushu-engine core","confidence":"ESTABLISHED"}]}
