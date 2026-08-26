@@ -7,3 +7,9 @@ api/build/
 *.db-wal
 *.db-shm
 local.properties
+inventory/fonts/qpc/qpc_v2_by_page.tar.gz
+inventory/fonts/qpc/qpc_v2_by_page.tar.zst
+inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
+inventory/fonts/qpc/qpc_v2_by_page.tar.gz
+inventory/fonts/qpc/qpc_v2_by_page.tar.zst
+inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
