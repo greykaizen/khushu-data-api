@@ -1,10 +1,26 @@
-# Khushu Quran Data
+# khushu-data-api
 
-This repository contains static assets and catalogs for translations, recitations, word-by-word (WBW) segments, custom page fonts, and updates. It serves as a content delivery network (CDN) / file host for the **Osprey / Khushu** app.
+Content distribution + retrieval API for Khushu-family apps.
+Formerly `khushu-quran-data`. Repo-based distribution: consume via
+`raw.githubusercontent.com/greykaizen/khushu-data-api/master/<path>` (online)
+or downloaded packs (offline).
 
-## Directory Structure
-- `inventory/translations/`: 48 translation books in 24 languages.
-- `inventory/tafsirs/`: Tafsir availability indexes.
-- `inventory/recitations/`: Reciters list and audio tracking indexes.
-- `inventory/wbw/`: Word-by-word indexes.
-- `inventory/fonts/`: Page-split font glyph files.
+## Layout
+- `api/` — Kotlin/JVM retrieval module (`com.khushu.data`) — typed models,
+  `ContentRepository` contracts, markup parser, Quran/Sunnah sources
+- `inventory/` — distribution tier (translations · tafsirs · wbw · hadiths ·
+  quran_scripts · fonts · recitations · atlas) + `MANIFEST.sha256`
+- `assets/` — small always-shipped content (dua/dhikr, asma-ul-husna,
+  islamic_calendar, adhan)
+- `docs/` — plans & format documentation (`quran-mod-plan.md`,
+  `sunnah-plan.md`, `formats.md`)
+
+## Quickstart
+```kotlin
+val root = "https://raw.githubusercontent.com/greykaizen/khushu-data-api/master/"
+val src = QuranScriptSource(fetcher = { path -> http.get(root + path).body() })
+val words = src.words("uthmani", surahNumber = 2)   // word-level ayahs
+```
+
+## Licenses
+Code: GPLv3. Content: per-pack terms in `LICENSE-CONTENT.md`.
