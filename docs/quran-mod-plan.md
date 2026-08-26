@@ -255,6 +255,18 @@ data class DownloadState(packId, version, localPath?, downloadedAt?, status)
 - [ ] README quickstart works copy-paste for a fresh consumer
 - [ ] Tagged `data-api-v0.1.0`
 
+## 7.5 Inline-markup handling (the Osprey rendering fix)
+
+Quran/Sunnah text carries a small, now-fully-enumerated markup vocabulary:
+`<br> <b> <i> <sup>` + custom `<qref>` (Quran refs) and `<ref>` (hadith refs).
+Tafsir content is HTML-page based (`tafsir_page.html` shells in QuranApp).
+
+Engine-side answer (in `/api`): `ContentMarkup.parse(text) → List<ContentSpan>`
+— typed inline spans (Text/Bold/Italic/Superscript/LineBreak/QuranRef/HadithRef),
+unknown tags pass through as literal text with warnings. Hosts render spans
+natively (AnnotatedString / SpannableString) — no HTML engine anywhere.
+Full spec: docs/sunnah-plan.md §1.2 + §4.
+
 ## 8. Explicitly deferred (Sunnah session + later)
 
 - Sunnah protobuf-vs-SQLite decision (locked: SQLite distribution, proto-shaped
