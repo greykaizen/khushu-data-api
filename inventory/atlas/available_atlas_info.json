@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "atlas": [
+    {
+      "id": "uthmani",
+      "display_name": "Uthmani (KFGQPC Hafs)",
+      "renders": "uthmani",
+      "sizes": [
+        {
+          "label": "6x",
+          "ppem": 192,
+          "url": "inventory/atlas/uthmani/6x.zip",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "dk_indopak",
+      "display_name": "Digital Khatt Indopak",
+      "renders": "dk_indopak",
+      "sizes": [
+        {
+          "label": "6x",
+          "ppem": 192,
+          "url": "inventory/atlas/dk_indopak/6x.zip",
+          "version": 1
+        }
+      ]
+    },
+    {
+      "id": "dk_indopak_v2",
+      "display_name": "Digital Khatt Indopak v2",
+      "renders": "dk_indopak",
+      "sizes": [
+        {
+          "label": "6x",
+          "ppem": 192,
+          "url": "inventory/atlas/dk_indopak_v2/6x.zip",
+          "version": 2
+        }
+      ]
+    }
+  ]
+}

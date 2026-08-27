@@ -5,7 +5,7 @@
       "reciter": "Abdul Basit 'Abd us-Samad",
       "style": "Mujawwad",
       "url_template": "https://download.quranicaudio.com/qdc/abdul_baset/mujawwad/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/abdul_basit.json.gz",
+      "timing_url": "inventory/recitations/timings/abdul_basit.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -40,7 +40,7 @@
       "reciter": "Abdur-Rahman as-Sudais",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/abdurrahmaan_as_sudais/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/as_sudais.json.gz",
+      "timing_url": "inventory/recitations/timings/as_sudais.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -74,7 +74,7 @@
       "reciter": "Abu Bakr al-Shatri",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/abu_bakr_shatri/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_shatri.json.gz",
+      "timing_url": "inventory/recitations/timings/al_shatri.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -108,7 +108,7 @@
       "reciter": "Ahmad bin Ali Al-Ajmi",
       "style": null,
       "url_template": "https://download.quranicaudio.com/quran/ahmed_ibn_3ali_al-3ajamy/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_ajmi.json.gz",
+      "timing_url": "inventory/recitations/timings/al_ajmi.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -142,7 +142,7 @@
       "reciter": "Ali ibn Abdur-Rahman al Hudhaify",
       "style": null,
       "url_template": "https://github.com/dabatase/al_hudhaify/releases/download/v1/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_hudhaify.json.gz",
+      "timing_url": "inventory/recitations/timings/al_hudhaify.json.gz",
       "timing_version": 2,
       "audio_version": 1,
       "translations": {
@@ -176,7 +176,7 @@
       "reciter": "Fares Abbad",
       "style": null,
       "url_template": "https://download.quranicaudio.com/quran/fares/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/fares_abbad.json.gz",
+      "timing_url": "inventory/recitations/timings/fares_abbad.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -210,7 +210,7 @@
       "reciter": "Hani ar-Rifai",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/hani_ar_rifai/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/ar_rifai.json.gz",
+      "timing_url": "inventory/recitations/timings/ar_rifai.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -244,7 +244,7 @@
       "reciter": "Khalifa Al Tunaiji",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/khalifah_taniji/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_tunaiji.json.gz",
+      "timing_url": "inventory/recitations/timings/al_tunaiji.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -278,7 +278,7 @@
       "reciter": "Mishari Rashid al-Afasy",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_afasy.json.gz",
+      "timing_url": "inventory/recitations/timings/al_afasy.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -312,7 +312,7 @@
       "reciter": "Nasser Al Qatami",
       "style": null,
       "url_template": "https://download.quranicaudio.com/quran/nasser_bin_ali_alqatami/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_qatami.json.gz",
+      "timing_url": "inventory/recitations/timings/al_qatami.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -346,7 +346,7 @@
       "reciter": "Saad Al-Ghamdi",
       "style": null,
       "url_template": "https://download.quranicaudio.com/quran/sa3d_al-ghaamidi/complete/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_ghamdi.json.gz",
+      "timing_url": "inventory/recitations/timings/al_ghamdi.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -380,7 +380,7 @@
       "reciter": "Sahl Yassin",
       "style": null,
       "url_template": "https://download.quranicaudio.com/quran/sahl_yaaseen/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/sahl_yassin.json.gz",
+      "timing_url": "inventory/recitations/timings/sahl_yassin.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -414,7 +414,7 @@
       "reciter": "Saud Al-Shuraim",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/saud_ash-shuraym/murattal/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/as_shuraym.json.gz",
+      "timing_url": "inventory/recitations/timings/as_shuraym.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -448,7 +448,7 @@
       "reciter": "Yasser ad-Dussary",
       "style": null,
       "url_template": "https://github.com/dabatase/ad_dussary/releases/download/v1/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/ad_dussary.json.gz",
+      "timing_url": "inventory/recitations/timings/ad_dussary.json.gz",
       "timing_version": 2,
       "audio_version": 1,
       "translations": {
@@ -482,7 +482,7 @@
       "reciter": "Muhammad Siddiq Al-Minshawi",
       "style": "Murattal",
       "url_template": "https://download.quranicaudio.com/qdc/siddiq_minshawi/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_minshawi.json.gz",
+      "timing_url": "inventory/recitations/timings/al_minshawi.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -516,7 +516,7 @@
       "reciter": "Mahmoud Khalil Al-Husary",
       "style": null,
       "url_template": "https://download.quranicaudio.com/qdc/khalil_al_husary/murattal/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_husary.json.gz",
+      "timing_url": "inventory/recitations/timings/al_husary.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -550,7 +550,7 @@
       "reciter": "Mahmoud Khalil Al-Husary",
       "style": "Muallim",
       "url_template": "https://download.quranicaudio.com/qdc/khalil_al_husary/muallim/{chapNo:%01d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/al_husary_muallim.json.gz",
+      "timing_url": "inventory/recitations/timings/al_husary_muallim.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {
@@ -584,7 +584,7 @@
       "reciter": "Muhammad Jibreel",
       "style": null,
       "url_template": "https://github.com/dabatase/muhammad_jibreel/releases/download/v1/{chapNo:%03d}.mp3",
-      "timing_url": "ghraw://AlfaazPlus/QuranAppInventory/master/audio_timings/muhammad_jibreel.json.gz",
+      "timing_url": "inventory/recitations/timings/muhammad_jibreel.json.gz",
       "timing_version": 1,
       "audio_version": 1,
       "translations": {

@@ -202,6 +202,10 @@ class LocalContentRepository(
 Two backend adapters in slice 1:
 1. `SqliteAyahSource` — for downloaded `quranapp.db`-shaped files (read-only,
    opened via `mode=ro`)
+   **SUPERSEDED (2026-08-28):** the donor `.db` files are no longer shipped;
+   all structural content was extracted into `inventory/quran_metadata/`
+   + `inventory/mushaf_layout/` JSONs, which `QuranMetadataSource` /
+   `MushafLayoutSource` parse instead. One backend, not two.
 2. `JsonScriptSource` — for `inventory/quran_scripts/{script}/{NNN}.json`
    (one file per surah; each is a list of verses:
    `[{chapter_number, verse_number, words:[{position, text, location:"2:1:1"}]}]`
@@ -244,16 +248,16 @@ data class DownloadState(packId, version, localPath?, downloadedAt?, status)
 
 ## 7. Definition of done (Quran slice)
 
-- [ ] Renamed on GitHub; local remotes updated; redirect verified with curl
-- [ ] LICENSE + LICENSE-CONTENT.md committed; cleanup items removed
-- [ ] Supply-chain mirrors committed + MANIFEST.sha256; catalogs rewritten;
+- [x] Renamed on GitHub; local remotes updated; redirect verified with curl
+- [x] LICENSE + LICENSE-CONTENT.md committed; cleanup items removed
+- [x] Supply-chain mirrors committed + MANIFEST.sha256; catalogs rewritten;
       grep proves zero `AlfaazPlus` references remain in catalog url fields
-- [ ] `/api` module compiles, tests green against real repo content
-- [ ] `docs/formats.md` documents: quran_scripts JSON shape, translation pack
+- [x] `/api` module compiles, tests green against real repo content
+- [x] `docs/formats.md` documents: quran_scripts JSON shape, translation pack
       layout, catalog manifests, hadith .db high-level schema (full Sunnah
       schema doc comes with slice 2), atlas meta/layout/placement JSON shapes
-- [ ] README quickstart works copy-paste for a fresh consumer
-- [ ] Tagged `data-api-v0.1.0`
+- [x] README quickstart works copy-paste for a fresh consumer
+- [x] Tagged `data-api-v0.3.0`
 
 ## 7.5 Inline-markup handling (the Osprey rendering fix)
 

@@ -7,20 +7,38 @@ or downloaded packs (offline).
 
 ## Layout
 - `api/` — Kotlin/JVM retrieval module (`com.khushu.data`) — typed models,
-  `ContentRepository` contracts, markup parser, Quran/Sunnah sources
-- `inventory/` — distribution tier (translations · tafsirs · wbw · hadiths ·
-  quran_scripts · fonts · recitations · atlas) + `MANIFEST.sha256`
+  `ContentRepository` contracts, markup parser, Quran/Sunnah/Atlas sources
+- `inventory/` — distribution tier (quran_metadata · quran_scripts ·
+  mushaf_layout · translations · tafsirs · wbw · hadiths · recitations ·
+  atlas · topics · similar · curated · quran_search · fonts) + `MANIFEST.sha256`
 - `assets/` — small always-shipped content (dua/dhikr, asma-ul-husna,
   islamic_calendar, adhan)
 - `docs/` — plans & format documentation (`quran-mod-plan.md`,
   `sunnah-plan.md`, `formats.md`)
+- `tools/` — one-off extraction/mirror scripts (`export_quran_structure.py`,
+  `mirror-alfaazplus.sh`)
 
 ## Quickstart
 ```kotlin
+import com.khushu.data.repo.KhushuContent
+import com.khushu.data.transport.ContentFetcher
+
+// Online transport (host-supplied HTTP) or offline LocalFetcher(checkoutRoot)
 val root = "https://raw.githubusercontent.com/greykaizen/khushu-data-api/master/"
-val src = QuranScriptSource(fetcher = { path -> http.get(root + path).body() })
-val words = src.words("uthmani", surahNumber = 2)   // word-level ayahs
+val fetcher = ContentFetcher { path -> http.get(root + path).body() }
+
+KhushuContent(fetcher).use { content ->
+    val words = content.quran.words(surahNo = 2, script = "uthmani")
+    val packs = content.quran.translationPacks("en")
+    val atlas = content.quran.atlas.placementsByWord("uthmani") // engine render spec
+
+    val sunnah = content.attachSunnah(corporaRoot = File("inventory/hadiths"))
+    val hadith = sunnah.hadith("bukhari_urn_100010", lang = "en")
+}
 ```
+
+See [docs/formats.md](docs/formats.md) for every pack format and the full
+API surface, and [LICENSE-CONTENT.md](LICENSE-CONTENT.md) for content terms.
 
 ## Licenses
 Code: GPLv3. Content: per-pack terms in `LICENSE-CONTENT.md`.

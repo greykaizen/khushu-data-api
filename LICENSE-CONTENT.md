@@ -9,14 +9,23 @@ will be rejected by the API's license-completeness check.
 | `assets/adhan/` | Adhan audio recordings | Various reciters | Per-reciter permission | ✅ With attribution |
 | `assets/dua_dhikr/` | Duas, dhikr, articles JSON + audio | khushu pipeline (scraped from public sources) | Public religious text; presentation © khushu | ✅ Free |
 | `assets/islamic_calendar/` | Islamic events JSON | Exported from khushu-engine core | Project-owned | ✅ Free |
-| `inventory/translations/*/` | Quran translations | Individual translators/publishers | **Per-pack copyright** — see each manifest.json `author` field | ⚠️ Verify per pack |
+| `inventory/translations/*/` | Quran translations (flat `{version, suras}` JSONs) | Individual translators/publishers | **Per-pack copyright** — see `available_translations_info.json` `author` field | ⚠️ Verify per pack |
 | `inventory/tafsirs/*/` | Tafsir books | Individual authors/publishers | **Per-book copyright** | ⚠️ Verify per book |
-| `inventory/hadiths/*.db` | Hadith corpora (ar+en) | sunnah.com-derived data | sunnah.com terms apply to derived data | ⚠️ Non-commercial |
-| `inventory/wbw/` | Word-by-word packs | AlfaazPlus/QuranAppInventory (GPLv3 family) | GPLv3 | ✅ Free |
+| `inventory/hadiths/*.db` | Hadith corpora (ar+en) + `scholars_info.db` | sunnah.com-derived data; schema mirrors SunnahApp `deliverable.proto` | sunnah.com terms apply to derived data | ⚠️ Non-commercial |
+| `inventory/wbw/` | Word-by-word packs (v1 packs/, v2 packs_v2/) + word audio timings | AlfaazPlus/QuranAppInventory (GPLv3 family) | GPLv3 | ✅ Free |
 | `inventory/quran_scripts/` | Quran script text JSONs | AlfaazPlus/QuranAppInventory (GPLv3 family); underlying text public domain | GPLv3 / public text | ✅ Free |
+| `inventory/quran_metadata/` | Surahs/ayahs/juz-hizb-rub/manzil/nav ranges/mushaf registry/names/aliases | Extracted from QuranApp `quranapp.db` (GPLv3 family); Quran text facts public domain | GPLv3 / public data | ✅ Free |
+| `inventory/mushaf_layout/` | Mushaf line layouts (`mushaf_map`, `page_info`) + per-script word registries | Extracted from QuranApp `quranapp.db` + `page_info.db` | GPLv3 | ✅ Free |
+| `inventory/atlas/` | Glyph texture atlases + glyph metrics | Mirrored from AlfaazPlus/QuranAppInventory; uthmani bundle = QuranApp shipped artifact | GPLv3 | ✅ Free |
+| `inventory/quran_search/` | Normalized Arabic text for on-device search index | Extracted from QuranApp `arabic_search` table | GPLv3 / public text | ✅ Free |
+| `inventory/similar/` | Similar verses + mutashabihat phrase data | Extracted from QuranApp `quranapp.db` | GPLv3 | ✅ Free |
+| `inventory/topics/` | Topic taxonomy, localizations, ayah links, topic images | Extracted from QuranApp `topics.db`; images mirrored from AlfaazPlus/QuranAppInventory | GPLv3 | ✅ Free |
+| `inventory/curated/verses/` | Curated verse sets (situational/major sins/recommended) — localized | QuranApp assets (GPLv3 family) | GPLv3 | ✅ Free |
+| `inventory/curated/science/` | Topical Quran-science webview packs | QuranApp assets (GPLv3 family) | GPLv3 | ✅ Free |
 | `inventory/fonts/` | Mushaf rendering fonts | KFQPC / AlfaazPlus | Per-font license (KFQPC: free for non-commercial) | ⚠️ Non-commercial |
-| `inventory/recitations/` | Recitation index metadata | Per-reciter | Index-only; audio hosted externally | ✅ Metadata only |
+| `inventory/recitations/` | Recitation index metadata + per-reciter ayah audio timings | Per-reciter; timings mirrored from AlfaazPlus/QuranAppInventory | Index + timings: GPLv3 family; audio hosted externally (verses.quran.com etc.) | ✅ Metadata/timings |
 | `inventory/chapters/` | Chapter metadata | AlfaazPlus/QuranAppInventory | GPLv3 | ✅ Free |
+| `inventory/other/` | Reference DB dumps (quranapp/page_info/topics + WBW/ayahsearch JSON exports) + rewritten CDN URL index | Extracted from QuranApp assets (GPLv3 family); urls.json rewrite project-owned | GPLv3 / project-owned | ✅ Free |
 
 ## Key notes
 

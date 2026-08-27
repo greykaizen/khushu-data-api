@@ -2,14 +2,15 @@
 build/
 /build/
 api/build/
-/build/
 *.db-journal
 *.db-wal
 *.db-shm
 local.properties
+
+# font tarballs: .tar.zst variants are the tracked canonical mirrors;
+# the bulkier .tar.gz duplicates stay local-only (same content)
 inventory/fonts/qpc/qpc_v2_by_page.tar.gz
-inventory/fonts/qpc/qpc_v2_by_page.tar.zst
 inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
-inventory/fonts/qpc/qpc_v2_by_page.tar.gz
-inventory/fonts/qpc/qpc_v2_by_page.tar.zst
-inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
+
+# regenerated on demand
+search_index.db

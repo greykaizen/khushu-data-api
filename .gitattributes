@@ -1,0 +1,25 @@
+# binary artifacts — no text diffing, LF normalization off
+*.db binary
+*.db-journal binary
+*.db-wal binary
+*.db-shm binary
+*.gz binary
+*.zst binary
+*.zip binary
+*.tar.gz binary
+*.tar.zst binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.opus binary
+*.mp3 binary
+*.TTF binary
+*.ttf binary
+
+# JSON stays text (large files included — CDN-friendly diffs)
+*.json text eol=lf
+*.md text eol=lf
+
+# Git LFS — binaries above GitHub's 100 MB object limit
+inventory/fonts/qpc/qpc_v2_by_page.tar.zst filter=lfs diff=lfs merge=lfs -text

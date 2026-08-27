@@ -57,8 +57,14 @@ SQLite `.db` = distribution format; models are proto-shaped
 (`CorpusBundle` schema v1, `deliverable.proto` committed at
 `reference/SunnahApp/app/src/main/proto/sunnahapp/deliverable/v1/`).
 The `.db` tables map 1:1 onto bundle messages (verified field-by-field).
-A protobuf decode adapter (`corpus.pb.gz` → models) ships as an optional
-importer so packs may later switch formats without API change.
+
+**2026-08-28 update — protobuf decode adapter RETIRED.** The upstream
+`.pb.gz` corpora were flattened into the `.db` files and no `.pb.gz`
+remains in the repo, so the planned optional importer has nothing to
+read. Each corpus instead carries `bundle_meta(schema_version,
+content_version)` stamped into the `.db` itself (§6), making the
+distribution format self-describing. A decode adapter will only be
+introduced if a new distribution format ever appears.
 
 ## 3. `/api` surface
 
@@ -116,7 +122,12 @@ with these rows, enabling tap-on-narrator → scholar bio.
 
 ## 6. Versioning & sync
 
-Every corpus carries `schema_version`/`content_version`; exposed on models;
+Every corpus carries `schema_version`/`content_version`, stored in a
+`bundle_meta(key, value)` table stamped into each `.db` at ingestion
+(schema_version = CorpusBundle schema generation, content_version =
+sha256 prefix of the ingested file — upstream version numbers were lost
+in the flatten, so content identity is content-addressed). Exposed on
+`HadithCollection.schemaVersion`/`.contentVersion`.
 `SyncRepository` (shared from Quran slice) tracks downloaded versions.
 
 ## 7. Testing anchors
