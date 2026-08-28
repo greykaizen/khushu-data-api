@@ -14,7 +14,7 @@ repositories {
     maven { url = uri("https://jitpack.io") }
 }
 dependencies {
-    implementation("com.github.greykaizen.khushu-data-api:api:1.0.0")
+    implementation("com.github.greykaizen.khushu-data-api:khushu-data-api:1.0.0")
 }
 ```
 
