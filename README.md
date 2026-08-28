@@ -1,9 +1,30 @@
 # khushu-data-api
 
 Content distribution + retrieval API for Khushu-family apps.
-Formerly `khushu-quran-data`. Repo-based distribution: consume via
+Formerly `khushu-quran-data`. Repo-based distribution: consume content via
 `raw.githubusercontent.com/greykaizen/khushu-data-api/master/<path>` (online)
 or downloaded packs (offline).
+
+## Adding it to your project
+
+### JitPack
+
+```kotlin
+repositories {
+    maven { url = uri("https://jitpack.io") }
+}
+dependencies {
+    implementation("com.github.greykaizen.khushu-data-api:api:1.0.0")
+}
+```
+
+### Maven Local (offline / machine-local)
+
+```bash
+./gradlew :api:publishToMavenLocal
+```
+coordinate: `com.khushu:api:1.0.0`.
+
 
 ## Layout
 - `api/` — Kotlin/JVM retrieval module (`com.khushu.data`) — typed models,
