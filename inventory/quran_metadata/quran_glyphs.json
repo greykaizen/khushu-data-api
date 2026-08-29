@@ -1,0 +1,611 @@
+{
+  "_meta": {
+    "exported_at": "2026-08-30",
+    "source": "QuranApp app/src/main/java/com/quranapp/android/utils/quran/QuranGlyphs.kt (hardcoded PUA tables), verbatim parse",
+    "extractor": "tools/export_quran_glyphs.py",
+    "note": "canonical khushu-data-api export; reference app no longer required at runtime. Fonts live in inventory/fonts/quran_icons/",
+    "notes": "chapter prefix is APPENDED after the number glyph in visual order (donor ChapterIcon.kt: base += prefix, RTL context); juz array is 0-indexed (donor JuzIcon.kt: get(juzNo - 1))"
+  },
+  "fonts": {
+    "surah_icon": "inventory/fonts/quran_icons/suracon.ttf",
+    "common": "inventory/fonts/quran_icons/quran_common.ttf"
+  },
+  "special": {
+    "bismillah": "﷽",
+    "bismillah_cp": "U+FDFD",
+    "meccan": "",
+    "meccan_cp": "U+E073",
+    "medinan": "",
+    "medinan_cp": "U+E075",
+    "sejda": "۩",
+    "sejda_cp": "U+06E9",
+    "title_frame": "",
+    "title_frame_cp": "U+E000"
+  },
+  "chapter_icon": {
+    "prefix": "",
+    "prefix_cp": "U+E903",
+    "by_surah": {
+      "1": {
+        "glyph": "",
+        "cp": "U+E904"
+      },
+      "2": {
+        "glyph": "",
+        "cp": "U+E905"
+      },
+      "3": {
+        "glyph": "",
+        "cp": "U+E906"
+      },
+      "4": {
+        "glyph": "",
+        "cp": "U+E907"
+      },
+      "5": {
+        "glyph": "",
+        "cp": "U+E908"
+      },
+      "6": {
+        "glyph": "",
+        "cp": "U+E90B"
+      },
+      "7": {
+        "glyph": "",
+        "cp": "U+E90C"
+      },
+      "8": {
+        "glyph": "",
+        "cp": "U+E90D"
+      },
+      "9": {
+        "glyph": "",
+        "cp": "U+E90E"
+      },
+      "10": {
+        "glyph": "",
+        "cp": "U+E90F"
+      },
+      "11": {
+        "glyph": "",
+        "cp": "U+E910"
+      },
+      "12": {
+        "glyph": "",
+        "cp": "U+E911"
+      },
+      "13": {
+        "glyph": "",
+        "cp": "U+E912"
+      },
+      "14": {
+        "glyph": "",
+        "cp": "U+E913"
+      },
+      "15": {
+        "glyph": "",
+        "cp": "U+E914"
+      },
+      "16": {
+        "glyph": "",
+        "cp": "U+E915"
+      },
+      "17": {
+        "glyph": "",
+        "cp": "U+E916"
+      },
+      "18": {
+        "glyph": "",
+        "cp": "U+E917"
+      },
+      "19": {
+        "glyph": "",
+        "cp": "U+E918"
+      },
+      "20": {
+        "glyph": "",
+        "cp": "U+E919"
+      },
+      "21": {
+        "glyph": "",
+        "cp": "U+E91A"
+      },
+      "22": {
+        "glyph": "",
+        "cp": "U+E91B"
+      },
+      "23": {
+        "glyph": "",
+        "cp": "U+E91C"
+      },
+      "24": {
+        "glyph": "",
+        "cp": "U+E91D"
+      },
+      "25": {
+        "glyph": "",
+        "cp": "U+E91E"
+      },
+      "26": {
+        "glyph": "",
+        "cp": "U+E91F"
+      },
+      "27": {
+        "glyph": "",
+        "cp": "U+E920"
+      },
+      "28": {
+        "glyph": "",
+        "cp": "U+E921"
+      },
+      "29": {
+        "glyph": "",
+        "cp": "U+E922"
+      },
+      "30": {
+        "glyph": "",
+        "cp": "U+E923"
+      },
+      "31": {
+        "glyph": "",
+        "cp": "U+E924"
+      },
+      "32": {
+        "glyph": "",
+        "cp": "U+E925"
+      },
+      "33": {
+        "glyph": "",
+        "cp": "U+E926"
+      },
+      "34": {
+        "glyph": "",
+        "cp": "U+E92E"
+      },
+      "35": {
+        "glyph": "",
+        "cp": "U+E92F"
+      },
+      "36": {
+        "glyph": "",
+        "cp": "U+E930"
+      },
+      "37": {
+        "glyph": "",
+        "cp": "U+E931"
+      },
+      "38": {
+        "glyph": "",
+        "cp": "U+E909"
+      },
+      "39": {
+        "glyph": "",
+        "cp": "U+E90A"
+      },
+      "40": {
+        "glyph": "",
+        "cp": "U+E927"
+      },
+      "41": {
+        "glyph": "",
+        "cp": "U+E928"
+      },
+      "42": {
+        "glyph": "",
+        "cp": "U+E929"
+      },
+      "43": {
+        "glyph": "",
+        "cp": "U+E92A"
+      },
+      "44": {
+        "glyph": "",
+        "cp": "U+E92B"
+      },
+      "45": {
+        "glyph": "",
+        "cp": "U+E92C"
+      },
+      "46": {
+        "glyph": "",
+        "cp": "U+E92D"
+      },
+      "47": {
+        "glyph": "",
+        "cp": "U+E932"
+      },
+      "48": {
+        "glyph": "",
+        "cp": "U+E902"
+      },
+      "49": {
+        "glyph": "",
+        "cp": "U+E933"
+      },
+      "50": {
+        "glyph": "",
+        "cp": "U+E934"
+      },
+      "51": {
+        "glyph": "",
+        "cp": "U+E935"
+      },
+      "52": {
+        "glyph": "",
+        "cp": "U+E936"
+      },
+      "53": {
+        "glyph": "",
+        "cp": "U+E937"
+      },
+      "54": {
+        "glyph": "",
+        "cp": "U+E938"
+      },
+      "55": {
+        "glyph": "",
+        "cp": "U+E939"
+      },
+      "56": {
+        "glyph": "",
+        "cp": "U+E93A"
+      },
+      "57": {
+        "glyph": "",
+        "cp": "U+E93B"
+      },
+      "58": {
+        "glyph": "",
+        "cp": "U+E93C"
+      },
+      "59": {
+        "glyph": "",
+        "cp": "U+E900"
+      },
+      "60": {
+        "glyph": "",
+        "cp": "U+E901"
+      },
+      "61": {
+        "glyph": "",
+        "cp": "U+E941"
+      },
+      "62": {
+        "glyph": "",
+        "cp": "U+E942"
+      },
+      "63": {
+        "glyph": "",
+        "cp": "U+E943"
+      },
+      "64": {
+        "glyph": "",
+        "cp": "U+E944"
+      },
+      "65": {
+        "glyph": "",
+        "cp": "U+E945"
+      },
+      "66": {
+        "glyph": "",
+        "cp": "U+E946"
+      },
+      "67": {
+        "glyph": "",
+        "cp": "U+E947"
+      },
+      "68": {
+        "glyph": "",
+        "cp": "U+E948"
+      },
+      "69": {
+        "glyph": "",
+        "cp": "U+E949"
+      },
+      "70": {
+        "glyph": "",
+        "cp": "U+E94A"
+      },
+      "71": {
+        "glyph": "",
+        "cp": "U+E94B"
+      },
+      "72": {
+        "glyph": "",
+        "cp": "U+E94C"
+      },
+      "73": {
+        "glyph": "",
+        "cp": "U+E94D"
+      },
+      "74": {
+        "glyph": "",
+        "cp": "U+E94E"
+      },
+      "75": {
+        "glyph": "",
+        "cp": "U+E94F"
+      },
+      "76": {
+        "glyph": "",
+        "cp": "U+E950"
+      },
+      "77": {
+        "glyph": "",
+        "cp": "U+E951"
+      },
+      "78": {
+        "glyph": "",
+        "cp": "U+E952"
+      },
+      "79": {
+        "glyph": "",
+        "cp": "U+E93D"
+      },
+      "80": {
+        "glyph": "",
+        "cp": "U+E93E"
+      },
+      "81": {
+        "glyph": "",
+        "cp": "U+E93F"
+      },
+      "82": {
+        "glyph": "",
+        "cp": "U+E940"
+      },
+      "83": {
+        "glyph": "",
+        "cp": "U+E953"
+      },
+      "84": {
+        "glyph": "",
+        "cp": "U+E954"
+      },
+      "85": {
+        "glyph": "",
+        "cp": "U+E955"
+      },
+      "86": {
+        "glyph": "",
+        "cp": "U+E956"
+      },
+      "87": {
+        "glyph": "",
+        "cp": "U+E957"
+      },
+      "88": {
+        "glyph": "",
+        "cp": "U+E958"
+      },
+      "89": {
+        "glyph": "",
+        "cp": "U+E959"
+      },
+      "90": {
+        "glyph": "",
+        "cp": "U+E95A"
+      },
+      "91": {
+        "glyph": "",
+        "cp": "U+E95B"
+      },
+      "92": {
+        "glyph": "",
+        "cp": "U+E95C"
+      },
+      "93": {
+        "glyph": "",
+        "cp": "U+E95D"
+      },
+      "94": {
+        "glyph": "",
+        "cp": "U+E95E"
+      },
+      "95": {
+        "glyph": "",
+        "cp": "U+E95F"
+      },
+      "96": {
+        "glyph": "",
+        "cp": "U+E960"
+      },
+      "97": {
+        "glyph": "",
+        "cp": "U+E961"
+      },
+      "98": {
+        "glyph": "",
+        "cp": "U+E962"
+      },
+      "99": {
+        "glyph": "",
+        "cp": "U+E963"
+      },
+      "100": {
+        "glyph": "",
+        "cp": "U+E964"
+      },
+      "101": {
+        "glyph": "",
+        "cp": "U+E965"
+      },
+      "102": {
+        "glyph": "",
+        "cp": "U+E966"
+      },
+      "103": {
+        "glyph": "",
+        "cp": "U+E967"
+      },
+      "104": {
+        "glyph": "",
+        "cp": "U+E968"
+      },
+      "105": {
+        "glyph": "",
+        "cp": "U+E969"
+      },
+      "106": {
+        "glyph": "",
+        "cp": "U+E96A"
+      },
+      "107": {
+        "glyph": "",
+        "cp": "U+E96B"
+      },
+      "108": {
+        "glyph": "",
+        "cp": "U+E96C"
+      },
+      "109": {
+        "glyph": "",
+        "cp": "U+E96D"
+      },
+      "110": {
+        "glyph": "",
+        "cp": "U+E96E"
+      },
+      "111": {
+        "glyph": "",
+        "cp": "U+E96F"
+      },
+      "112": {
+        "glyph": "",
+        "cp": "U+E970"
+      },
+      "113": {
+        "glyph": "",
+        "cp": "U+E971"
+      },
+      "114": {
+        "glyph": "",
+        "cp": "U+E972"
+      }
+    }
+  },
+  "juz_icon": {
+    "by_juz": {
+      "1": {
+        "glyph": "",
+        "cp": "U+E900"
+      },
+      "2": {
+        "glyph": "",
+        "cp": "U+E901"
+      },
+      "3": {
+        "glyph": "",
+        "cp": "U+E902"
+      },
+      "4": {
+        "glyph": "",
+        "cp": "U+E903"
+      },
+      "5": {
+        "glyph": "",
+        "cp": "U+E904"
+      },
+      "6": {
+        "glyph": "",
+        "cp": "U+E905"
+      },
+      "7": {
+        "glyph": "",
+        "cp": "U+E906"
+      },
+      "8": {
+        "glyph": "",
+        "cp": "U+E907"
+      },
+      "9": {
+        "glyph": "",
+        "cp": "U+E908"
+      },
+      "10": {
+        "glyph": "",
+        "cp": "U+E909"
+      },
+      "11": {
+        "glyph": "",
+        "cp": "U+E90A"
+      },
+      "12": {
+        "glyph": "",
+        "cp": "U+E90B"
+      },
+      "13": {
+        "glyph": "",
+        "cp": "U+E90C"
+      },
+      "14": {
+        "glyph": "",
+        "cp": "U+E90D"
+      },
+      "15": {
+        "glyph": "",
+        "cp": "U+E90E"
+      },
+      "16": {
+        "glyph": "",
+        "cp": "U+E90F"
+      },
+      "17": {
+        "glyph": "",
+        "cp": "U+E910"
+      },
+      "18": {
+        "glyph": "",
+        "cp": "U+E911"
+      },
+      "19": {
+        "glyph": "",
+        "cp": "U+E912"
+      },
+      "20": {
+        "glyph": "",
+        "cp": "U+E913"
+      },
+      "21": {
+        "glyph": "",
+        "cp": "U+E914"
+      },
+      "22": {
+        "glyph": "",
+        "cp": "U+E915"
+      },
+      "23": {
+        "glyph": "",
+        "cp": "U+E916"
+      },
+      "24": {
+        "glyph": "",
+        "cp": "U+E917"
+      },
+      "25": {
+        "glyph": "",
+        "cp": "U+E918"
+      },
+      "26": {
+        "glyph": "",
+        "cp": "U+E919"
+      },
+      "27": {
+        "glyph": "",
+        "cp": "U+E91A"
+      },
+      "28": {
+        "glyph": "",
+        "cp": "U+E91B"
+      },
+      "29": {
+        "glyph": "",
+        "cp": "U+E91C"
+      },
+      "30": {
+        "glyph": "",
+        "cp": "U+E91D"
+      }
+    }
+  }
+}

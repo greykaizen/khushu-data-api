@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "fonts": [
+    {
+      "id": "quran_icons",
+      "display_name": "Quran decorative glyphs (surah icons, bismillah, frames)",
+      "usage": "Surah header icons (PUA table in quran_metadata/quran_glyphs.json), bismillah, title frames, juz icons",
+      "files": [
+        {
+          "id": "suracon",
+          "display_name": "Suracon — surah icon glyphs",
+          "path": "inventory/fonts/quran_icons/suracon.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "QuranApp app/src/main/res/font/suracon.ttf"
+        },
+        {
+          "id": "quran_common",
+          "display_name": "Quran Common — bismillah, frames, juz glyphs",
+          "path": "inventory/fonts/quran_icons/quran_common.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "QuranApp app/src/main/res/font/quran_common.ttf"
+        }
+      ]
+    },
+    {
+      "id": "sunnah",
+      "display_name": "Sunnah (hadith) text fonts",
+      "usage": "Arabic hadith text (KFGQPC Uthman Taha Naskh), Urdu (Nastaliq), Bengali translations",
+      "files": [
+        {
+          "id": "kfgqpc_uthman_taha_naskh",
+          "display_name": "KFGQPC Uthman Taha Naskh",
+          "path": "inventory/fonts/sunnah/kfgqpc_uthman_taha_naskh.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "SunnahApp app/src/main/res/font/kfgqpc_uthman_taha_naskh.ttf"
+        },
+        {
+          "id": "kfgqpc_uthman_taha_naskh_bold",
+          "display_name": "KFGQPC Uthman Taha Naskh Bold",
+          "path": "inventory/fonts/sunnah/kfgqpc_uthman_taha_naskh_bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "provenance": "SunnahApp app/src/main/res/font/kfgqpc_uthman_taha_naskh_bold.ttf"
+        },
+        {
+          "id": "noto_nastaliq_urdu",
+          "display_name": "Noto Nastaliq Urdu",
+          "path": "inventory/fonts/sunnah/noto_nastaliq_urdu_regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "SunnahApp app/src/main/res/font/noto_nastaliq_urdu_regular.ttf"
+        },
+        {
+          "id": "noto_serif_bengali",
+          "display_name": "Noto Serif Bengali",
+          "path": "inventory/fonts/sunnah/noto_serif_bengali_regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "SunnahApp app/src/main/res/font/noto_serif_bengali_regular.ttf"
+        },
+        {
+          "id": "noto_serif_bengali_bold",
+          "display_name": "Noto Serif Bengali Bold",
+          "path": "inventory/fonts/sunnah/noto_serif_bengali_bold.ttf",
+          "format": "ttf",
+          "weight": 700,
+          "provenance": "SunnahApp app/src/main/res/font/noto_serif_bengali_bold.ttf"
+        }
+      ]
+    }
+  ]
+}

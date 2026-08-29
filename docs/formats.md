@@ -169,6 +169,30 @@ Discovery manifests: `translations/available_translations_info.json`,
 QPC/KFQPC TTF/WOFF binaries for non-atlas rendering paths (`fonts/qpc/`,
 including by-page tars). 660 MB — Git LFS recommended for clones.
 
+Icon/text font packs: catalog `fonts/available_fonts_info.json` →
+- `fonts/quran_icons/` — surah header icons (`suracon.ttf`), bismillah /
+  title frames / juz glyphs (`quran_common.ttf`). Pair with the PUA
+  codepoint table below.
+- `fonts/sunnah/` — hadith text fonts: KFGQPC Uthman Taha Naskh
+  (400 + 700), Noto Nastaliq Urdu, Noto Serif Bengali (400 + 700).
+
+## Quran glyph tables (`quran_metadata/quran_glyphs.json`)
+
+PUA codepoint tables for decorative Quran glyphs, exported verbatim from
+the donor's hardcoded `QuranGlyphs.kt` (parse, not transcription):
+
+- `special` — `bismillah` U+FDFD · `title_frame` U+E000 · `meccan` U+E073 ·
+  `medinan` U+E075 · `sejda` U+06E9 (each with a `*_cp` field).
+- `chapter_icon` — `prefix` (U+E903, APPENDED after the number glyph in
+  visual order — donor `ChapterIcon.kt` does `base += prefix` in RTL
+  context) and `by_surah` 1..114 (NOT sequential: e.g. surah 48 → U+E902).
+- `juz_icon` — `by_juz` 1..30, rendered with the `quran_common` font.
+
+Rendering: surah icon = `by_surah[N].glyph + prefix` in `suracon`; juz =
+`by_juz[N].glyph` in `quran_common`; bismillah/frame likewise in
+`quran_common`. Hosts load the two fonts from `fonts/quran_icons/` and
+look up codepoints here — no hardcoded tables left in app code.
+
 ## Hadith corpora (`hadiths/{collection}.db`)
 
 SQLite databases mirroring the CorpusBundle schema (flattened from the
