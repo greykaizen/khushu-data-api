@@ -170,11 +170,14 @@ QPC/KFQPC TTF/WOFF binaries for non-atlas rendering paths (`fonts/qpc/`,
 including by-page tars). 660 MB — Git LFS recommended for clones.
 
 Icon/text font packs: catalog `fonts/available_fonts_info.json` →
-- `fonts/quran_icons/` — surah header icons (`suracon.ttf`), bismillah /
-  title frames / juz glyphs (`quran_common.ttf`). Pair with the PUA
-  codepoint table below.
-- `fonts/sunnah/` — hadith text fonts: KFGQPC Uthman Taha Naskh
-  (400 + 700), Noto Nastaliq Urdu, Noto Serif Bengali (400 + 700).
+- `fonts/quran_icons/` — surah header icons (`suracon.ttf`, U+E900–E972),
+  bismillah / title frames / juz glyphs / meccan-medinan markers
+  (`quran_common.ttf`). Pair with the PUA codepoint table below.
+- `fonts/quran_text/` — non-atlas Quran text fallback (`uthmanic_hafs.ttf`).
+- `fonts/sunnah/` — hadith + tafsir prose fonts: KFGQPC Uthman Taha Naskh
+  (400 + 700; covers ﷺ U+FDFA — the only special glyph the hadith corpora
+  use — and ornate brackets ﴿﴾), Noto Nastaliq Urdu, Noto Serif Bengali
+  (400 + 700), Scheherazade New (tafsir prose).
 
 ## Quran glyph tables (`quran_metadata/quran_glyphs.json`)
 
@@ -183,6 +186,10 @@ the donor's hardcoded `QuranGlyphs.kt` (parse, not transcription):
 
 - `special` — `bismillah` U+FDFD · `title_frame` U+E000 · `meccan` U+E073 ·
   `medinan` U+E075 · `sejda` U+06E9 (each with a `*_cp` field).
+- `reference_decorations` — ornate parens `﴿` U+FD3F / `﴾` U+FD3E (inline
+  ayah references, donor `ReaderItemsBuilder.kt`), `salawat` ﷺ U+FDFA
+  (hadith corpora), and `rtl_mark`/`ltr_mark` control chars (U+200F/E,
+  embedded throughout donor text; no glyph needed).
 - `chapter_icon` — `prefix` (U+E903, APPENDED after the number glyph in
   visual order — donor `ChapterIcon.kt` does `base += prefix` in RTL
   context) and `by_surah` 1..114 (NOT sequential: e.g. surah 48 → U+E902).
@@ -190,8 +197,8 @@ the donor's hardcoded `QuranGlyphs.kt` (parse, not transcription):
 
 Rendering: surah icon = `by_surah[N].glyph + prefix` in `suracon`; juz =
 `by_juz[N].glyph` in `quran_common`; bismillah/frame likewise in
-`quran_common`. Hosts load the two fonts from `fonts/quran_icons/` and
-look up codepoints here — no hardcoded tables left in app code.
+`quran_common`. Hosts load the fonts from the `fonts/` packs and look up
+codepoints here — no hardcoded tables left in app code.
 
 ## Hadith corpora (`hadiths/{collection}.db`)
 

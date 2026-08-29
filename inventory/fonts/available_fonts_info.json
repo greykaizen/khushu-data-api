@@ -8,7 +8,7 @@
       "files": [
         {
           "id": "suracon",
-          "display_name": "Suracon — surah icon glyphs",
+          "display_name": "Suracon — surah icon glyphs (U+E900–E972)",
           "path": "inventory/fonts/quran_icons/suracon.ttf",
           "format": "ttf",
           "weight": 400,
@@ -16,7 +16,7 @@
         },
         {
           "id": "quran_common",
-          "display_name": "Quran Common — bismillah, frames, juz glyphs",
+          "display_name": "Quran Common — bismillah U+FDFD, title frames U+E000–E01E, juz glyphs U+E900–E91D, meccan/medinan markers U+E073–E076",
           "path": "inventory/fonts/quran_icons/quran_common.ttf",
           "format": "ttf",
           "weight": 400,
@@ -25,9 +25,24 @@
       ]
     },
     {
+      "id": "quran_text",
+      "display_name": "Quran text fonts (non-atlas rendering paths)",
+      "usage": "Fallback Quran text rendering when a script has no glyph atlas bundle; WebView @font-face for tafsir ayah headers",
+      "files": [
+        {
+          "id": "uthmanic_hafs",
+          "display_name": "Uthmanic Hafs (non-atlas fallback per QuranScriptUtils)",
+          "path": "inventory/fonts/quran_text/uthmanic_hafs.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "QuranApp app/src/main/res/font/uthmanic_hafs.ttf"
+        }
+      ]
+    },
+    {
       "id": "sunnah",
-      "display_name": "Sunnah (hadith) text fonts",
-      "usage": "Arabic hadith text (KFGQPC Uthman Taha Naskh), Urdu (Nastaliq), Bengali translations",
+      "display_name": "Sunnah (hadith + tafsir prose) text fonts",
+      "usage": "Arabic hadith text (KFGQPC Uthman Taha Naskh; covers SALAWAT U+FDFA and ornate brackets U+FD3E/FD3F used in the corpora), Urdu (Nastaliq), Bengali translations, Arabic tafsir prose (Scheherazade)",
       "files": [
         {
           "id": "kfgqpc_uthman_taha_naskh",
@@ -68,6 +83,14 @@
           "format": "ttf",
           "weight": 700,
           "provenance": "SunnahApp app/src/main/res/font/noto_serif_bengali_bold.ttf"
+        },
+        {
+          "id": "scheherazadenew",
+          "display_name": "Scheherazade New (Arabic tafsir prose; QuranApp WebView @font-face)",
+          "path": "inventory/fonts/sunnah/scheherazadenew_regular.ttf",
+          "format": "ttf",
+          "weight": 400,
+          "provenance": "QuranApp app/src/main/res/font/scheherazadenew_regular.ttf"
         }
       ]
     }

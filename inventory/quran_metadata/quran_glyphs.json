@@ -1,7 +1,7 @@
 {
   "_meta": {
     "exported_at": "2026-08-30",
-    "source": "QuranApp app/src/main/java/com/quranapp/android/utils/quran/QuranGlyphs.kt (hardcoded PUA tables), verbatim parse",
+    "source": "QuranApp app/src/main/java/com/quranapp/android/utils/quran/QuranGlyphs.kt (hardcoded PUA tables), verbatim parse; ornate brackets from ReaderItemsBuilder.kt (quran reference decorations); salawat from the SunnahApp corpora",
     "extractor": "tools/export_quran_glyphs.py",
     "note": "canonical khushu-data-api export; reference app no longer required at runtime. Fonts live in inventory/fonts/quran_icons/",
     "notes": "chapter prefix is APPENDED after the number glyph in visual order (donor ChapterIcon.kt: base += prefix, RTL context); juz array is 0-indexed (donor JuzIcon.kt: get(juzNo - 1))"
@@ -21,6 +21,30 @@
     "sejda_cp": "U+06E9",
     "title_frame": "",
     "title_frame_cp": "U+E000"
+  },
+  "reference_decorations": {
+    "ornate_paren_left": {
+      "glyph": "﴿",
+      "cp": "U+FD3F"
+    },
+    "ornate_paren_right": {
+      "glyph": "﴾",
+      "cp": "U+FD3E"
+    },
+    "salawat": {
+      "glyph": "ﷺ",
+      "cp": "U+FDFA"
+    },
+    "rtl_mark": {
+      "glyph": "‏",
+      "cp": "U+200F",
+      "control": true
+    },
+    "ltr_mark": {
+      "glyph": "‎",
+      "cp": "U+200E",
+      "control": true
+    }
   },
   "chapter_icon": {
     "prefix": "",

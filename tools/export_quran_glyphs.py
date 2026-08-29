@@ -74,7 +74,9 @@ data = {
         "exported_at": "2026-08-30",
         "source": (
             "QuranApp app/src/main/java/com/quranapp/android/utils/quran/"
-            "QuranGlyphs.kt (hardcoded PUA tables), verbatim parse"
+            "QuranGlyphs.kt (hardcoded PUA tables), verbatim parse; "
+            "ornate brackets from ReaderItemsBuilder.kt (quran reference "
+            "decorations); salawat from the SunnahApp corpora"
         ),
         "extractor": "tools/export_quran_glyphs.py",
         "note": (
@@ -92,6 +94,21 @@ data = {
         "common": "inventory/fonts/quran_icons/quran_common.ttf",
     },
     "special": special,
+    "reference_decorations": {
+        # Unicode standard chars used around inline ayah references in
+        # reader/tafsir UIs (donor ReaderItemsBuilder.kt:1004). Fonts:
+        # both icon-font Arabic stacks and the hadith Naskh cover them.
+        "ornate_paren_left": {"glyph": "\uFD3F", "cp": "U+FD3F"},
+        "ornate_paren_right": {"glyph": "\uFD3E", "cp": "U+FD3E"},
+        # SALAWAT ligature — the ONLY special glyph the hadith corpora use
+        # (verified across all 9 collections; e.g. bukhari x12636).
+        "salawat": {"glyph": "\uFDFA", "cp": "U+FDFA"},
+        # RLM/LRM direction marks embedded in donor text (U+200F x2566 in
+        # bukhari-ar alone) — control chars, no glyph needed, listed for
+        # parser awareness.
+        "rtl_mark": {"glyph": "\u200F", "cp": "U+200F", "control": True},
+        "ltr_mark": {"glyph": "\u200E", "cp": "U+200E", "control": True},
+    },
     "chapter_icon": {
         "prefix": chapter[0],
         "prefix_cp": cp(chapter[0]),
