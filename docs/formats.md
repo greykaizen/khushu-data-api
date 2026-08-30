@@ -157,6 +157,35 @@ file-backed FTS5 index on demand (`QuranApi.search(indexDb)`).
   recommendation rules
 - `science/index.json` + `*.html` — Quran-science topical pages
 
+## Dua & dhikr assets (`assets/dua_dhikr/`)
+
+The lifewithallah corpus — retrieval via `content.dua.*` (`DuaApi`):
+
+- `dua_data.json` — 491 duas: `{id, post_id, post_title, category,
+  subcategory, title, arabic, repetition, translation, transliteration,
+  virtue, explanation, audio_url, reference}`. Categories:
+  `main-adhkar` (12 subcategories) + `other-adhkar` (18). Pure structured
+  JSON — no HTML. Audio: 489 remote URLs + local mirrors `dua_{id}.opus`
+  (2 entries have no audio).
+- `articles_index.json` — 12 categories → **186 index entries = 169
+  unique articles + 17 double-indexed** (same article under two
+  categories — donor index property). Entry: `{id, title, slug, link,
+  file_path}`.
+- `articles/{cat}/{slug}.json` + `related-articles/{cat}/{slug}.json` —
+  `{id, title, slug, link, content}` where `content` is **raw HTML**
+  (standard tags: p/b/span/div/h2/blockquote/…; zero custom tags) —
+  passthrough contract: hosts render with their own markup stack.
+- `dhikr-dua/{main,other}-adhkar/{sub}.json` — same entries split per
+  subcategory (alternative access, + `local_id`).
+
+## Asma ul-husna assets (`assets/asma_ul_husna/`)
+
+`asma_data_{lang}.json` × 11 languages (ar,bn,de,en,es,fa,fr,id,ru,tr,ur):
+`{code, status, data: {title, description, hadith, recitation_benefits,
+total: 99, names: [{number, name, transliteration, translation, meaning,
+audio}]}}`. Pure JSON — retrieval via `content.dua.asmaPack(lang)` /
+`asmaName(lang, number)`.
+
 ## Catalogs
 
 Discovery manifests: `translations/available_translations_info.json`,
