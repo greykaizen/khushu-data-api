@@ -108,7 +108,9 @@ bundle, so word-text is the lookup key (donor `AtlasWordShapeEntity` scheme).
   `{translations: {lang: {packId: {langCode, book, author, displayName, langName, version, downloadPath}}}}`
 - Packs: flat files `{lang}/{lang}_{translator}.json` shaped
   `{version, suras:[{index, ayas:[{id, index, translation, footnotes?}]}]}`.
-  Footnote markers inline as `<sup foot_note=…>` in text.
+  Footnote markers inline as `<fn index=…>` in text; cross-references as
+  `<reference chapter=… verses=…>…</reference>`. Both pass through raw —
+  hosts resolve markers against each ayah's `footnotes` map.
 
 ## Tafsirs (`tafsirs/`)
 
