@@ -14,7 +14,7 @@ repositories {
     maven { url = uri("https://jitpack.io") }
 }
 dependencies {
-    implementation("com.github.greykaizen.khushu-data-api:khushu-data-api:1.0.0")
+    implementation("com.github.greykaizen.khushu-data-api:khushu-data-api:1.1.0")
 }
 ```
 
@@ -23,7 +23,7 @@ dependencies {
 ```bash
 ./gradlew :api:publishToMavenLocal
 ```
-coordinate: `com.khushu:api:1.0.0`.
+coordinate: `com.khushu:api:1.1.0`.
 
 
 ## Layout
