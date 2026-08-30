@@ -6,7 +6,7 @@ will be rejected by the API's license-completeness check.
 | Directory | Content | Source/Author | License/Terms | Redistribution |
 |---|---|---|---|---|
 | `assets/asma_ul_husna/` | Names of Allah JSON + audio | khushu project | Project-owned | ✅ Free |
-| `assets/adhan/` | Adhan audio recordings | Various reciters | Per-reciter permission | ✅ With attribution |
+| `assets/adhan/` | Adhan audio recordings (178 opus; catalog `adhan_index.json` with reciter/region/style/sha256) | Various reciters | Per-reciter permission | ✅ With attribution |
 | `assets/dua_dhikr/` | Duas, dhikr, articles JSON + audio | khushu pipeline (scraped from public sources) | Public religious text; presentation © khushu | ✅ Free |
 | `assets/islamic_calendar/` | Islamic events JSON | Exported from khushu-engine core | Project-owned | ✅ Free |
 | `inventory/translations/*/` | Quran translations (flat `{version, suras}` JSONs) | Individual translators/publishers | **Per-pack copyright** — see `available_translations_info.json` `author` field | ⚠️ Verify per pack |

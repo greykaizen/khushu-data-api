@@ -283,3 +283,84 @@ Joins to `hadith_narrators(narrator_id)` for narrator→bio lookup.
 `MANIFEST.sha256` — sha256 of every inventory file
 (`find . -type f ! -name MANIFEST.sha256 -exec sha256sum {} \;`,
 regenerate on any inventory change).
+
+## Adhan audio (`assets/adhan/`)
+
+178 donor-collected adhan recordings (mono Opus, mixed 16–48 kHz, per-reciter
+permissions in LICENSE-CONTENT.md). Catalog: `adhan_index.json` —
+`{id (hash-stripped filename stem), reciter, region, style ("Fajr"/"Eid
+Takbir"/null), file, format, sampleRateHz, channels, sizeBytes, sha256}`.
+Retrieval: `content.adhan.*` (`entries/reciters/byReciter/entry/audio(id)`).
+Audio stays byte-identical to donors (no re-encode). **Playback**: Android
+Media3/ExoPlayer decodes Opus on every API 21+ device (Khushu targets 12+);
+the legacy MediaPlayer's pre-Android-10 Opus gap does not apply.
+
+## Islamic events display data (`assets/islamic_calendar/`)
+
+`islamic_events.json` — the engine's event set exported with
+display/provenance fields (`title, hijriMonth, hijriDay, category,
+recurrence, source, confidence`). **Canonical computation stays in
+khushu-engine `calendar.events`** — this file is the localization/provenance
+companion hosts overlay on engine-computed dates. Retrieval:
+`content.islamicEvents.all()/forHijriMonth(month)`.
+
+## Dua local audio mirrors (`assets/dua_dhikr/dua_{id}.opus`)
+
+488 of the 491 duas carry local byte-identical opus mirrors. Retrieval:
+`content.dua.localAudioPath(id)` / `content.dua.audio(id)` (null for the 3
+mirrorless entries).
+
+## Download tracking & space management
+
+Wrap the transport to enable durable tracking + disk caching:
+
+```kotlin
+val caching = CachingFetcher(cacheDir, fetcher)   // cacheDir: host-provided
+val content = KhushuContent(caching)
+content.downloads.summary()        // items + totalBytes + bytesByCategory
+content.downloads.deleteWhere { it.category == "inventory/tafsirs" }
+content.downloads.clearAll()       // returns count removed
+content.downloads.reconcile()      // drops rows whose files vanished
+```
+
+- The manifest (`downloads_manifest.json`) lives inside the cache dir —
+  clearing the dir clears everything atomically.
+- Categories = first two path segments (`assets/adhan`, `inventory/fonts`,
+  …) — per-tier deletion is one filter.
+- Android dir guidance: `context.cacheDir` (OS-managed) or
+  `getExternalFilesDir` (user-visible); desktop suggestion
+  `~/.khushu/content-cache`. The API records/deletes; hosts own policy.
+- With a bare (non-caching) fetcher, `downloads` reports empty and deletes
+  nothing — no silent surprises.
+
+## Grouped composite (`quran.ayahBundle`)
+
+One call, every tier about one ayah — independent multi-selection:
+
+```kotlin
+content.quran.ayahBundle(
+    surahNo = 2, ayahNo = 255,
+    scripts = listOf("uthmani", "kfqpc_v1"),
+    translationPacks = listOf("en_pickthall", "en_yusuf-ali"),  // side-by-side
+    wbwLanguages = listOf("en"),
+    tafsirSlugs = listOf("en-tafisr-ibn-kathir"),
+    reciters = listOf("abdul_basit"),                            // word timings
+)
+// → AyahBundle(texts, translations, wbw, tafsirs, recitationTimings)
+```
+
+Composes the per-surah lazy sources — the same fetch granularity as
+individual calls, batched for the host.
+
+## Size tiers (download planning)
+
+| Tier | Size | Granularity |
+|---|---|---|
+| fonts (KFQPC per-page + tars) | 665 MB | per-script, on demand |
+| hadiths | 301 MB | per-collection .db |
+| adhan | 164 MB | per-reciter file (0.3–1.3 MB) |
+| dua_dhikr | 110 MB | corpus JSON ~1 MB + per-file audio |
+| tafsirs | 353 MB | **per-surah split** (lazy winner) |
+| translations | 102 MB | per-pack |
+| wbw | 21 MB | per-language gz |
+| everything else (metadata/scripts/atlas/recitations/…) | < 30 MB | load-once |

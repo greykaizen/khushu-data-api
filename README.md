@@ -53,8 +53,28 @@ KhushuContent(fetcher).use { content ->
     val packs = content.quran.translationPacks("en")
     val atlas = content.quran.atlas.placementsByWord("uthmani") // engine render spec
 
+    // Grouped: everything about one ayah — texts, side-by-side translations,
+    // word-by-word, tafsir segments, recitation word timings.
+    val bundle = content.quran.ayahBundle(
+        surahNo = 2, ayahNo = 255,
+        scripts = listOf("uthmani"),
+        translationPacks = listOf("en_pickthall", "en_yusuf-ali"),
+        tafsirSlugs = listOf("en-tafisr-ibn-kathir"),
+    )
+
+    val duas = content.dua.duas()                 // 491 duas + asma + articles
+    val adhan = content.adhan.reciters()          // 178 catalogued recordings
+    val audio = content.adhan.audio(adhan[0].entries[0].id) // opus bytes
+
     val sunnah = content.attachSunnah(corporaRoot = File("inventory/hadiths"))
     val hadith = sunnah.hadith("bukhari_urn_100010", lang = "en")
+}
+
+// Download tracking + space management (opt-in):
+val caching = CachingFetcher(File(context.cacheDir, "khushu"), fetcher)
+KhushuContent(caching).use { content ->
+    val used = content.downloads.summary()          // items + bytesByCategory
+    content.downloads.deleteWhere { it.category == "inventory/tafsirs" }
 }
 ```
 
