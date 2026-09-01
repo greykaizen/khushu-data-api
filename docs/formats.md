@@ -191,9 +191,12 @@ audio}]}}`. Pure JSON — retrieval via `content.dua.asmaPack(lang)` /
 Discovery manifests: `translations/available_translations_info.json`,
 `tafsirs/available_tafsirs_info.json`, `wbw/available_wbw_info*.json`,
 `recitations/available_recitations_info_v2.json`,
-`atlas/available_atlas_info.json`. Parsed by `CatalogParser` /
+`atlas/available_atlas_info.json`,
+`fonts/available_fonts_info.json`. Parsed by `CatalogParser` /
 `AtlasCatalogSource` → typed entries; download-state tracking via
-`SyncTracker` (`CatalogApi.pendingUpdates`).
+`SyncTracker` (`CatalogApi.pendingUpdates`). Project web links
+(`other/urls.json` — privacy-policy/about/help/donation URLs) via
+`content.catalogs.webLinks()`.
 
 ## Fonts (`fonts/`)
 
