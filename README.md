@@ -1,9 +1,28 @@
 # khushu-data-api
 
-Content distribution + retrieval API for Khushu-family apps.
-Formerly `khushu-quran-data`. Repo-based distribution: consume content via
-`raw.githubusercontent.com/greykaizen/khushu-data-api/master/<path>` (online)
-or downloaded packs (offline).
+[![Release](https://jitpack.io/v/greykaizen/khushu-data-api.svg)](https://jitpack.io/#greykaizen/khushu-data-api)
+[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+
+Content distribution + retrieval API for Khushu-family apps. Every byte of
+Quran text, hadith corpus, dua, adhan audio, bookmark, glyph atlas, and
+translation — retrievable by typed API, streamable from CDN, trackable and
+deletable by the host.
+
+Part of the [Khushu](https://github.com/greykaizen/khushu) project — see
+[the family](#the-khushu-project-family) below.
+
+## What it provides
+
+| Namespace | What it does | Key APIs |
+|---|---|---|
+| **quran** | Ayah texts (4 scripts), word registries, translations (48 packs), tafsirs (23 books × 13 languages), word-by-word (14 languages), chapter info, navigation, search, similar verses, topics, curated sets, recitation timings, glyph-atlas bundles, page layouts | `ayahTexts`, `words`, `ayahBundle`, `translationTexts`, `tafsirForSurah`, `wbwForSurah`, `atlas.placementsByWord`, `glyphTable` |
+| **sunnah** | 9 hadith collections (Bukhari, Muslim, Tirmidhi, …) with grades, narrators, references + FTS5 search with diacritic-insensitive Arabic | `attachSunnah`, `hadith`, `search` |
+| **dua** | 491 duas across 30 categories, 99 Names × 11 languages, 186 reading articles (raw HTML passthrough), local audio mirrors | `duas`, `categories`, `bySubcategory`, `articles`, `asmaPack`, `asmaName`, `localAudioPath` |
+| **adhan** | 178 catalogued adhan recordings (reciter/region/style parsed, sha256 per file), opus bytes on demand | `entries`, `reciters`, `byReciter`, `audio`, `standard` |
+| **catalogs** | Discovery for fonts, atlas bundles, translations, tafsirs, wbw packs, recitations + project web links | `translations`, `tafsirs`, `wbw`, `fonts`, `webLinks` |
+| **curated** | Curated verse sets (situational/major sins), recommended recitations, Quran-science topics | `exclusiveVerses`, `recommendedRules`, `scienceTopics` |
+| **islamicEvents** | Islamic event display data (title, category, source, confidence) — computation stays canonical in khushu-engine | `all`, `forHijriMonth` |
+| **downloads** | Persistent download tracking + space management — per-category byte totals, delete by filter, reconcile after manual clears | `summary`, `totalBytes`, `deleteWhere`, `clearAll`, `reconcile` |
 
 ## Adding it to your project
 
@@ -18,28 +37,15 @@ dependencies {
 }
 ```
 
-### Maven Local (offline / machine-local)
+### Maven Local (offline)
 
 ```bash
 ./gradlew :api:publishToMavenLocal
 ```
 coordinate: `com.khushu:api:1.1.0`.
 
-
-## Layout
-- `api/` — Kotlin/JVM retrieval module (`com.khushu.data`) — typed models,
-  `ContentRepository` contracts, markup parser, Quran/Sunnah/Atlas sources
-- `inventory/` — distribution tier (quran_metadata · quran_scripts ·
-  mushaf_layout · translations · tafsirs · wbw · hadiths · recitations ·
-  atlas · topics · similar · curated · quran_search · fonts) + `MANIFEST.sha256`
-- `assets/` — small always-shipped content (dua/dhikr, asma-ul-husna,
-  islamic_calendar, adhan)
-- `docs/` — plans & format documentation (`quran-mod-plan.md`,
-  `sunnah-plan.md`, `formats.md`)
-- `tools/` — one-off extraction/mirror scripts (`export_quran_structure.py`,
-  `mirror-alfaazplus.sh`)
-
 ## Quickstart
+
 ```kotlin
 import com.khushu.data.repo.KhushuContent
 import com.khushu.data.transport.ContentFetcher
@@ -49,22 +55,20 @@ val root = "https://raw.githubusercontent.com/greykaizen/khushu-data-api/master/
 val fetcher = ContentFetcher { path -> http.get(root + path).body() }
 
 KhushuContent(fetcher).use { content ->
+    // Individual retrievals
     val words = content.quran.words(surahNo = 2, script = "uthmani")
-    val packs = content.quran.translationPacks("en")
-    val atlas = content.quran.atlas.placementsByWord("uthmani") // engine render spec
+    val atlas = content.quran.atlas.placementsByWord("uthmani")
 
     // Grouped: everything about one ayah — texts, side-by-side translations,
     // word-by-word, tafsir segments, recitation word timings.
     val bundle = content.quran.ayahBundle(
         surahNo = 2, ayahNo = 255,
-        scripts = listOf("uthmani"),
         translationPacks = listOf("en_pickthall", "en_yusuf-ali"),
         tafsirSlugs = listOf("en-tafisr-ibn-kathir"),
     )
 
     val duas = content.dua.duas()                 // 491 duas + asma + articles
     val adhan = content.adhan.reciters()          // 178 catalogued recordings
-    val audio = content.adhan.audio(adhan[0].entries[0].id) // opus bytes
 
     val sunnah = content.attachSunnah(corporaRoot = File("inventory/hadiths"))
     val hadith = sunnah.hadith("bukhari_urn_100010", lang = "en")
@@ -81,5 +85,22 @@ KhushuContent(caching).use { content ->
 See [docs/formats.md](docs/formats.md) for every pack format and the full
 API surface, and [LICENSE-CONTENT.md](LICENSE-CONTENT.md) for content terms.
 
-## Licenses
-Code: GPLv3. Content: per-pack terms in `LICENSE-CONTENT.md`.
+## Layout
+
+- `api/` — Kotlin/JVM retrieval module (`com.khushu.data`)
+- `inventory/` — distribution tier (1.5 GB: quran_metadata, quran_scripts, mushaf_layout, atlas, fonts, translations, tafsirs, wbw, hadiths, recitations, topics, similar, curated, quran_search, chapters, other)
+- `assets/` — always-shipped content (276 MB: dua/dhikr, asma-ul-husna, adhan audio, islamic calendar)
+- `docs/` — format documentation
+- `tools/` — extraction/mirror scripts
+
+## The Khushu project family
+
+| Repo | Role |
+|---|---|
+| [khushu-engine](https://github.com/greykaizen/khushu-engine) | Computation — prayer times, astronomy, calendar, qibla, zakat, tasbih, observance, qada |
+| [khushu-data-api](https://github.com/greykaizen/khushu-data-api) | **You are here** — content: Quran text, hadith corpora, duas, adhan audio, bookmarks, download tracking |
+| [khushu](https://github.com/greykaizen/khushu) | The app — Android (Kotlin/Compose), consuming both libraries |
+
+## License
+
+Code: GPLv3. Content: per-pack terms in [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
