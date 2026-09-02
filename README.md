@@ -104,3 +104,8 @@ API surface, and [LICENSE-CONTENT.md](LICENSE-CONTENT.md) for content terms.
 ## License
 
 Code: GPLv3. Content: per-pack terms in [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
+
+
+## Role (2026-09): content store
+
+The retrieval API (api/, com.khushu.data.*) was absorbed into khushu-orchestrator v1.4.0 — that coordinate is retired. This repo is now the pure content store: inventory/, assets/, pipeline tools, and manifests. Runtime consumers fetch files over HTTP at these exact paths; nobody clones it for builds.
