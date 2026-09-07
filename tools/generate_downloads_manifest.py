@@ -29,7 +29,7 @@ OUT = REPO / "inventory" / "downloads_manifest.json"
 
 INCLUDE_DIRS = [
     "inventory/hadiths",
-    "inventory/asma_ul_husna",
+    "assets/asma_ul_husna",
     "inventory/translations",
     "inventory/tafsirs",
     "inventory/wbw",

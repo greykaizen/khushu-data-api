@@ -1,12 +1,20 @@
 # khushu-data-api
 
-[![Release](https://jitpack.io/v/greykaizen/khushu-data-api.svg)](https://jitpack.io/#greykaizen/khushu-data-api)
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
 
-Content distribution + retrieval API for Khushu-family apps. Every byte of
-Quran text, hadith corpus, dua, adhan audio, bookmark, glyph atlas, and
-translation — retrievable by typed API, streamable from CDN, trackable and
-deletable by the host.
+> ⚠️ **RETIRED AS A LIBRARY (v1.4.0).** This repo is now the family **content
+> store** — the corpus (`inventory/`, `assets/`) served over raw CDN, plus the
+> pipeline tools (`tools/`) that generate it. The retrieval API
+> (`com.khushu.data.*`) was absorbed into
+> [khushu-orchestrator](https://github.com/greykaizen/khushu-orchestrator);
+> hosts add ONE coordinate there and never depend on this repo as a library.
+> The JitPack badge/coordinates below are historical — do not add them to a
+> build.
+
+Content store for Khushu-family apps. Every byte of Quran text, hadith
+corpus, dua, adhan audio, bookmark, glyph atlas, and translation — served
+from this checkout, retrievable through the orchestrator's transport, and
+deletable by the host via its caching layer.
 
 Part of the [Khushu](https://github.com/greykaizen/khushu) project — see
 [the family](#the-khushu-project-family) below.
