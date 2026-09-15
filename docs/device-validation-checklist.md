@@ -1,5 +1,11 @@
 # Device-Validation Checklist — the gate before the orchestrator libSQL rewrite
 
+**Architecture (corrected 2026-09-15): there is NO database sync in the user path.**
+- **Admin (us) only:** build/update canonical DBs → `turso db import`/upload into Turso. Users never write to the canonical DBs.
+- **Users:** read-only. **Online** → remote libSQL query against Turso. **Offline** → open a downloaded prebuilt **pack-level SQLite file** locally.
+- **Turso Sync / Embedded Replicas / partial-sync are NOT part of the user architecture** (they're for local-first read/write replicas — not our case). Do not build `SqlBackend` around them. Adding sync later = a separate admin/ops concern behind the same download abstraction, only if it ever earns its keep.
+- So the *only* thing this gate must validate is: **Android's local SQLite/libSQL opens our packs + runs our FTS5** (and secondarily the read-only remote query). It does **not** gate on any sync feature.
+
 This is the single blocking step between "data layer done" and "app consumes it". Run on a **real
 Android 12+ device or API-31+ emulator** (not just the JVM unit tests) before rewriting any repo.
 
