@@ -1,0 +1,2204 @@
+{
+ "version": "v2026.09",
+ "user_version": 202609,
+ "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-v2026.09/{file}",
+ "total_packs": 104,
+ "total_bytes": 869826560,
+ "tier_bytes": {
+  "prebundle": 46530560,
+  "first_run": 8433664,
+  "on_demand": 814862336
+ },
+ "prebundle_ids": [
+  "content",
+  "audio",
+  "quran-core",
+  "translation-en_saheeh-international"
+ ],
+ "first_run_ids": [
+  "wbw-en"
+ ],
+ "packs": [
+  {
+   "id": "content",
+   "family": "content",
+   "origin_db": "khushu-content.db",
+   "tier": "prebundle",
+   "tables": [
+    "dua_items",
+    "dua_posts",
+    "dua_categories",
+    "article_categories",
+    "article_items",
+    "article_members",
+    "names_packs",
+    "names_names",
+    "calendar_packs",
+    "calendar_events",
+    "curated_sets",
+    "curated_refs",
+    "curated_science_topics",
+    "curated_science_topic_ayahs",
+    "assets",
+    "links"
+   ],
+   "fts": [
+    "dua_fts"
+   ],
+   "file": "content.db",
+   "bytes": 3514368,
+   "sha256": "06521c749ecb0b56f5bb6b796593bb2db3d7fb3e2797c06e2efb9591437debfa",
+   "version": "v2026.09"
+  },
+  {
+   "id": "audio",
+   "family": "audio",
+   "origin_db": "khushu-audio.db",
+   "tier": "prebundle",
+   "tables": [
+    "recitation_reciters",
+    "recitation_timings",
+    "adhans",
+    "assets"
+   ],
+   "fts": [],
+   "file": "audio.db",
+   "bytes": 8282112,
+   "sha256": "c6918555185264628fdc7a0583d2007e94b7767b3ee7d95da799035181b64c98",
+   "version": "v2026.09"
+  },
+  {
+   "id": "quran-core",
+   "family": "quran-core",
+   "origin_db": "khushu-quran.db",
+   "tier": "prebundle",
+   "tables": [
+    "quran_surahs",
+    "quran_ayahs",
+    "quran_surah_localizations",
+    "quran_ayah_words",
+    "quran_navigation_ranges",
+    "quran_mushafs",
+    "quran_mushaf_map",
+    "quran_surah_search_aliases",
+    "quran_scripts",
+    "quran_similar_verses",
+    "quran_mutashabihat_phrases",
+    "quran_mutashabihat_phrase_ayah",
+    "quran_mushaf_info",
+    "quran_mushaf_pages",
+    "quran_topics",
+    "quran_topic_localizations",
+    "quran_relationships",
+    "quran_topic_ayahs",
+    "quran_search_arabic",
+    "assets",
+    "quran_chapter_info"
+   ],
+   "fts": [
+    "quran_arabic_fts",
+    "quran_surah_alias_fts"
+   ],
+   "file": "quran-core.db",
+   "bytes": 32419840,
+   "sha256": "de7c5d11f15aafc8625b7c2be5c4cfec260ed98512911beca426c0ca532fdd5a",
+   "version": "v2026.09"
+  },
+  {
+   "id": "translation-bn_mujibur-rahman",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-bn_mujibur-rahman.db",
+   "bytes": 3514368,
+   "sha256": "ff9e6570507894c4f41e6e69a203efdc14c8b18257973652bcafea4ab2dac62f",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "bn_mujibur-rahman"
+   }
+  },
+  {
+   "id": "translation-de_abu-reda-muhammad",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-de_abu-reda-muhammad.db",
+   "bytes": 1974272,
+   "sha256": "abedcd6916542b0446ba27b0142e643e321de0fc0b2253739b20a4d486f076a6",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "de_abu-reda-muhammad"
+   }
+  },
+  {
+   "id": "translation-de_bubenheim",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-de_bubenheim.db",
+   "bytes": 1892352,
+   "sha256": "4330dc0fe4ae3ab817166f02de00749afc1443dd71e90a9f84a73fa7dab4747b",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "de_bubenheim"
+   }
+  },
+  {
+   "id": "translation-en_abdul-haleem",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_abdul-haleem.db",
+   "bytes": 1744896,
+   "sha256": "c902f1904a6bb21735d0ed9046447efacfd952c937027a64308660ca9e6b59b7",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_abdul-haleem"
+   }
+  },
+  {
+   "id": "translation-en_hilali-khan",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_hilali-khan.db",
+   "bytes": 2834432,
+   "sha256": "271187635c2a381e767b984579df7e7ca6545786d258b0709168adb2193bf993",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_hilali-khan"
+   }
+  },
+  {
+   "id": "translation-en_irving",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_irving.db",
+   "bytes": 1765376,
+   "sha256": "0faf0e70e5e25aa3337f7c0729475208edae7d7a7b1f3aefc260b2f6a372af4d",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_irving"
+   }
+  },
+  {
+   "id": "translation-en_mahmoud-ghali",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_mahmoud-ghali.db",
+   "bytes": 2080768,
+   "sha256": "b6208f54747cd24a3fff4a671a54dad1d008097b747631999f86b17b612efdb1",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_mahmoud-ghali"
+   }
+  },
+  {
+   "id": "translation-en_maududi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_maududi.db",
+   "bytes": 6914048,
+   "sha256": "74649574850a060c60be4e11e01eb347e94908523d714f754dbd5573286b5153",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_maududi"
+   }
+  },
+  {
+   "id": "translation-en_pickthall",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_pickthall.db",
+   "bytes": 1777664,
+   "sha256": "ddd642538877ce37a1ebeac91cf0b6a968f5d31ae70ad7a06cb5e4a20c26f398",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_pickthall"
+   }
+  },
+  {
+   "id": "translation-en_saheeh-international",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "prebundle",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_saheeh-international.db",
+   "bytes": 2314240,
+   "sha256": "437ca10094b2f0c1e7e4b180f28d229a83c2bac152f61cb84f5a5d483a5e6d45",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_saheeh-international"
+   }
+  },
+  {
+   "id": "translation-en_taqi-usmani",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_taqi-usmani.db",
+   "bytes": 1908736,
+   "sha256": "4f67b3271bed88ee149ba754b1b37eb4e9a41852fed7f337a62606d737f5473e",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_taqi-usmani"
+   }
+  },
+  {
+   "id": "translation-en_the-clear-quran",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_the-clear-quran.db",
+   "bytes": 2211840,
+   "sha256": "da20223d00794f3c24ddff778014b418796ced203751854d02912cecefaa4a65",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_the-clear-quran"
+   }
+  },
+  {
+   "id": "translation-en_transliteration",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_transliteration.db",
+   "bytes": 1626112,
+   "sha256": "eafdfc872682b124ce03bc1927d3e64385a0313e8d48d3c0bb8c5ee88e6c95bd",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_transliteration"
+   }
+  },
+  {
+   "id": "translation-en_yusuf-ali",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-en_yusuf-ali.db",
+   "bytes": 1888256,
+   "sha256": "6b08609d60efc310455032ffc6e298ecefdf5c0c0eeee253d993643beb95c22d",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "en_yusuf-ali"
+   }
+  },
+  {
+   "id": "translation-es_isa_garcia",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-es_isa_garcia.db",
+   "bytes": 2211840,
+   "sha256": "fc3f61ecba200636d95370287940df105a2b19890da3a5cbba63a464253b12c0",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "es_isa_garcia"
+   }
+  },
+  {
+   "id": "translation-es_noor_international",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-es_noor_international.db",
+   "bytes": 2686976,
+   "sha256": "9c34e8f419bdce404748cd46635c0a4a18bec70a078ac6037337b27cc56baa18",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "es_noor_international"
+   }
+  },
+  {
+   "id": "translation-fa_islamhouse",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-fa_islamhouse.db",
+   "bytes": 2727936,
+   "sha256": "0e7cf0b08b044716bf757583f7dbe2ed38961620ef16cbba1bf9820f3371cbbb",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "fa_islamhouse"
+   }
+  },
+  {
+   "id": "translation-fa_taji-kal-dari",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-fa_taji-kal-dari.db",
+   "bytes": 2572288,
+   "sha256": "3d5df8ab2d7bff920672fc2c62635cb633f7d4206bd6ac5a17715dd17844579a",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "fa_taji-kal-dari"
+   }
+  },
+  {
+   "id": "translation-fr_hamidullah",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-fr_hamidullah.db",
+   "bytes": 2207744,
+   "sha256": "cf9807b9a8ba03a96bae8245e905f0192db62a742c26ca67c29343ca9a074253",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "fr_hamidullah"
+   }
+  },
+  {
+   "id": "translation-fr_rashid",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-fr_rashid.db",
+   "bytes": 2289664,
+   "sha256": "2114f072bf2378735dd675ee320e2f59c1de4965b8164eceaee64a3b407c6abc",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "fr_rashid"
+   }
+  },
+  {
+   "id": "translation-gu_omari",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-gu_omari.db",
+   "bytes": 3559424,
+   "sha256": "0f8b487a2c4865b4efda33f081773fff22d2203f48b516d44fec3d6a15096ed6",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "gu_omari"
+   }
+  },
+  {
+   "id": "translation-ha_gummi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ha_gummi.db",
+   "bytes": 2281472,
+   "sha256": "143be07c52213c1338e056a61ac6232dbe8eb2623e5bbc7c3034c5d4892437e6",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ha_gummi"
+   }
+  },
+  {
+   "id": "translation-hi_azizul-haque",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-hi_azizul-haque.db",
+   "bytes": 4628480,
+   "sha256": "c52afd8d29794f495985b8ebb76821e600c6140167b776e5f5b53a3d87bece43",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "hi_azizul-haque"
+   }
+  },
+  {
+   "id": "translation-in_ministry",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-in_ministry.db",
+   "bytes": 2248704,
+   "sha256": "d8afd1d520c0204bf7e218a67942f2bbbb4321eedf660ef76de419ec3c02ee91",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "in_ministry"
+   }
+  },
+  {
+   "id": "translation-in_quran-complex",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-in_quran-complex.db",
+   "bytes": 2572288,
+   "sha256": "32970c9b3c27cd0000399f67183e02c85d70b9609a127ddbe76508e3ae2f580f",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "in_quran-complex"
+   }
+  },
+  {
+   "id": "translation-it_piccardo",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-it_piccardo.db",
+   "bytes": 4669440,
+   "sha256": "6be7c86c22b2f7b67cc7be24e79d55ae272782452c16137c41cd26ff713b508f",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "it_piccardo"
+   }
+  },
+  {
+   "id": "translation-it_rowwad",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-it_rowwad.db",
+   "bytes": 1720320,
+   "sha256": "35ddc3a550534ea802de26ee963b6ae588c96682892053323f9f2b9e36773918",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "it_rowwad"
+   }
+  },
+  {
+   "id": "translation-ku_bamoki",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ku_bamoki.db",
+   "bytes": 2920448,
+   "sha256": "482a0e96bcb81b30a619f098bfd9d15b73024e8f59d6567560fc9afbd8c3ad72",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ku_bamoki"
+   }
+  },
+  {
+   "id": "translation-ky_sadybakas_doolov",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ky_sadybakas_doolov.db",
+   "bytes": 3473408,
+   "sha256": "a87ad1f967cec8151a1a390056eb0bdf743468e58c462260eb280b412f818f62",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ky_sadybakas_doolov"
+   }
+  },
+  {
+   "id": "translation-ky_shamsudin-hakimov",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ky_shamsudin-hakimov.db",
+   "bytes": 3866624,
+   "sha256": "15e7d39d2dc5af240e3d70f73650643aabf1fb609f43fe701b5cb182a8a3ed2b",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ky_shamsudin-hakimov"
+   }
+  },
+  {
+   "id": "translation-ml_hamid-kanhi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ml_hamid-kanhi.db",
+   "bytes": 6086656,
+   "sha256": "bcbd75a9a6f0c98c7385d40887f87a14e1e8be011765be880f0119e6e6ae0405",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ml_hamid-kanhi"
+   }
+  },
+  {
+   "id": "translation-ml_karakunnu",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ml_karakunnu.db",
+   "bytes": 4304896,
+   "sha256": "f248f0061bb1528b860cbc5ef177c2e4348bfeadb3ee2500109311261a3d4c9b",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ml_karakunnu"
+   }
+  },
+  {
+   "id": "translation-pl_bielawski",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-pl_bielawski.db",
+   "bytes": 1835008,
+   "sha256": "b5fe905bf933835262447815b0c165bcce1db43b071d6e4202d8499a6d41dba1",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "pl_bielawski"
+   }
+  },
+  {
+   "id": "translation-ru_abu-adel",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ru_abu-adel.db",
+   "bytes": 3850240,
+   "sha256": "2e4d5241aaf1f1ec84712887e564a691b49789d74472d8691da94df2948d08ef",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ru_abu-adel"
+   }
+  },
+  {
+   "id": "translation-ru_elmir-kuliev",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ru_elmir-kuliev.db",
+   "bytes": 2510848,
+   "sha256": "011b84b73fda59c9f30ae17db9796c157be10ede02fc5920d16996042b15e278",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ru_elmir-kuliev"
+   }
+  },
+  {
+   "id": "translation-ru_ministry-of-awqaf",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ru_ministry-of-awqaf.db",
+   "bytes": 5255168,
+   "sha256": "f05923ff680107acd5e6e8ff83d18feedee7fce7c6e5c6fa83408b7acb3c442d",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ru_ministry-of-awqaf"
+   }
+  },
+  {
+   "id": "translation-sd_taj-mehmood-amroti",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-sd_taj-mehmood-amroti.db",
+   "bytes": 2510848,
+   "sha256": "293902a7b4a8da4b91b7efd7c5d959fc7c4db9b8ac89946f063a244df2e4a21c",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "sd_taj-mehmood-amroti"
+   }
+  },
+  {
+   "id": "translation-ta_baqavi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ta_baqavi.db",
+   "bytes": 5455872,
+   "sha256": "e0219d78b867849187873c8a9a13cec14e077042d7d2ee96e744ee46c2fe2704",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ta_baqavi"
+   }
+  },
+  {
+   "id": "translation-ta_omar-sharif",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ta_omar-sharif.db",
+   "bytes": 5304320,
+   "sha256": "ef742b5313f13b9e5d744870cb0dc538bcf72092ac61fd602cd4f5926b2df60b",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ta_omar-sharif"
+   }
+  },
+  {
+   "id": "translation-tg_khawaja",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-tg_khawaja.db",
+   "bytes": 3911680,
+   "sha256": "b1e5334da5523b6577c964bfb63273d93d9d5b321c3fff0bb802e4fdcb95a15b",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "tg_khawaja"
+   }
+  },
+  {
+   "id": "translation-tg_rowwad",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-tg_rowwad.db",
+   "bytes": 2940928,
+   "sha256": "aee18f3ebb09740d16331d866780fc9fac97644337fdda3fd6cae4ada1b1bb2f",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "tg_rowwad"
+   }
+  },
+  {
+   "id": "translation-tg_tajik",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-tg_tajik.db",
+   "bytes": 2314240,
+   "sha256": "32d315414eb9beedad80f775526d1f45ac4a8282c0d317b8f9fe2c8bc0d53343",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "tg_tajik"
+   }
+  },
+  {
+   "id": "translation-tr_diyanet",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-tr_diyanet.db",
+   "bytes": 1982464,
+   "sha256": "7dc7ae1bcc5fc4d33a5afe297bdb07ead97f39178af94261e93e9c486e87b517",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "tr_diyanet"
+   }
+  },
+  {
+   "id": "translation-tr_elmalili",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-tr_elmalili.db",
+   "bytes": 1925120,
+   "sha256": "d4f8e95d7ea6650466187c4decd7911e4b74b52f892bdfc19a71b9fdb1564b15",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "tr_elmalili"
+   }
+  },
+  {
+   "id": "translation-uk_mikhailo",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-uk_mikhailo.db",
+   "bytes": 2265088,
+   "sha256": "e506e996032f11a98326fe0b1c261a3f2f2b58b1ce9b9d28bd395013ce229ff3",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "uk_mikhailo"
+   }
+  },
+  {
+   "id": "translation-ur_israr-ahmad",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ur_israr-ahmad.db",
+   "bytes": 2678784,
+   "sha256": "87c3f9570f108b76c06067dada5f4d3bd12091ba8f03f6d4dd2332af15ca1099",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ur_israr-ahmad"
+   }
+  },
+  {
+   "id": "translation-ur_jalandhari",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ur_jalandhari.db",
+   "bytes": 2510848,
+   "sha256": "c2ed64a6946404af633ed0719d5410c85836786a8f7303ed08751bd3e961242a",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ur_jalandhari"
+   }
+  },
+  {
+   "id": "translation-ur_junagarhi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ur_junagarhi.db",
+   "bytes": 8097792,
+   "sha256": "8ebc8df98df2b7063ef6aee11e280c62203856f86f1678e7275c6939f4d251fd",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ur_junagarhi"
+   }
+  },
+  {
+   "id": "translation-ur_maududi",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-ur_maududi.db",
+   "bytes": 15216640,
+   "sha256": "35d1f56b68e6fcf037768dc8e9338a94cb0ab25cb53cb40d47a763b15fb78e61",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "ur_maududi"
+   }
+  },
+  {
+   "id": "translation-yo_mikail",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-yo_mikail.db",
+   "bytes": 2805760,
+   "sha256": "b307890ddce4f71574d883579c0f0b8404813aafd1877efaf488d8d35d71a5eb",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "yo_mikail"
+   }
+  },
+  {
+   "id": "translation-zh_majian",
+   "family": "translation",
+   "origin_db": "khushu-quran.db",
+   "tier": "on_demand",
+   "tables": [
+    "translation_packs",
+    "translation_ayahs",
+    "translation_footnotes"
+   ],
+   "fts": [
+    "translation_fts"
+   ],
+   "file": "translation-zh_majian.db",
+   "bytes": 1736704,
+   "sha256": "44125c94c92777fc651dc647395eabbee89971923eb80e56feacf3062da08575",
+   "version": "v2026.09",
+   "detail": {
+    "pack_id": "zh_majian"
+   }
+  },
+  {
+   "id": "wbw-bn",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-bn.db",
+   "bytes": 9248768,
+   "sha256": "5e75c539d00b7e68cbf373558649f8d8df25af9973dfc537b1077ec0cd5c04fc",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "bn"
+   }
+  },
+  {
+   "id": "wbw-de",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-de.db",
+   "bytes": 7847936,
+   "sha256": "cd6db1f7804a4ccca29502fd1b317c6e6ca7ae0d83ec53131670033669683c77",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "de"
+   }
+  },
+  {
+   "id": "wbw-en",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "first_run",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-en.db",
+   "bytes": 8433664,
+   "sha256": "ac819e37f13640b34a998d32938e80d41dd7aaba3e3f176e16401e638d5e4f33",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "en"
+   }
+  },
+  {
+   "id": "wbw-fa",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-fa.db",
+   "bytes": 8155136,
+   "sha256": "5347a7c284e8b9c64a42a22da3275c5ea903044d44f1517bd1478bb5ce381fca",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "fa"
+   }
+  },
+  {
+   "id": "wbw-fr",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-fr.db",
+   "bytes": 7708672,
+   "sha256": "b9290d2f3938bd03c04523d1c22f7fae85c12b874ac03e50b2197f1894e0ae6b",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "fr"
+   }
+  },
+  {
+   "id": "wbw-hi",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-hi.db",
+   "bytes": 8400896,
+   "sha256": "dec10be099974702572fecd74317ab27ea9281695a127f8d82a2fbf2cb8f4d60",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "hi"
+   }
+  },
+  {
+   "id": "wbw-id",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-id.db",
+   "bytes": 7983104,
+   "sha256": "6c1fa5c7c9d0f3f5731772d063c019e1666cc3a6e6685a1f445243f6213f2dd7",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "id"
+   }
+  },
+  {
+   "id": "wbw-ml",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-ml.db",
+   "bytes": 11104256,
+   "sha256": "1fb435182b125b72470a5974fbf7429a498530ed8bd3bcfd52429cffa224f8ca",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "ml"
+   }
+  },
+  {
+   "id": "wbw-ru",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-ru.db",
+   "bytes": 8392704,
+   "sha256": "6d6e763f05d2ab56ddead1b43e15dd36a0132b0cc9cf89520afa3801f3508d2c",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "ru"
+   }
+  },
+  {
+   "id": "wbw-sd",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-sd.db",
+   "bytes": 8458240,
+   "sha256": "39ea318859754ffeb065fd6c25ac8013fe30b38a51fbc1c0a10b552e63fa6112",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "sd"
+   }
+  },
+  {
+   "id": "wbw-ta",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-ta.db",
+   "bytes": 9859072,
+   "sha256": "95e5d8586bc5239bc6c55d2a215f97a3955a728fd8f3fbad378ba8abf4028af7",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "ta"
+   }
+  },
+  {
+   "id": "wbw-tr",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-tr.db",
+   "bytes": 7127040,
+   "sha256": "72712e357917d2c0ee94426ae531297159e55938916733ce3fba441aa4f08090",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "tr"
+   }
+  },
+  {
+   "id": "wbw-ur",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-ur.db",
+   "bytes": 8347648,
+   "sha256": "9d0a139f18f3174b624501d9337f5ca317de3548fa5ed8cecec683a6df0eaab7",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "ur"
+   }
+  },
+  {
+   "id": "wbw-zh",
+   "family": "wbw",
+   "origin_db": "khushu-wbw.db",
+   "tier": "on_demand",
+   "tables": [
+    "wbw_packs",
+    "wbw_words"
+   ],
+   "fts": [],
+   "file": "wbw-zh.db",
+   "bytes": 7757824,
+   "sha256": "ffbd01aa5c28eb8a78377169a14d1466798df8c9ee96138dc3bc9464efc43d0d",
+   "version": "v2026.09",
+   "detail": {
+    "lang": "zh"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafseer-al-qurtubi",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafseer-al-qurtubi.db",
+   "bytes": 23101440,
+   "sha256": "cdebf6e77483e982858bdfc721dbb4b1f36dbc7f35590192259165b7218f1832",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafseer-al-qurtubi"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafseer-al-saddi",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafseer-al-saddi.db",
+   "bytes": 9015296,
+   "sha256": "756ff7de79c124b1117f6fd10daa9a5032488e33c6480837d0286105c1cbc5b6",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafseer-al-saddi"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafsir-al-baghawi",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafsir-al-baghawi.db",
+   "bytes": 11776000,
+   "sha256": "af7af0d52933e70e2854fc1a826a832ee1658d89f20711877430ffaf65e6b85b",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafsir-al-baghawi"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafsir-al-tabari",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafsir-al-tabari.db",
+   "bytes": 50479104,
+   "sha256": "031934f6bcc9c56be9bf120b5d49a3372fa47d82f0a85c3c9527c6dac3d02a04",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafsir-al-tabari"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafsir-al-wasit",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafsir-al-wasit.db",
+   "bytes": 21454848,
+   "sha256": "6756e904e994ba3cd044b88f1baf350de7eeef2250ba4e30071257233e3b30df",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafsir-al-wasit"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafsir-ibn-kathir",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafsir-ibn-kathir.db",
+   "bytes": 21987328,
+   "sha256": "c86ae8292e06195b7ffe2eb045b15096c9d6f3d6f7a2d501246ea6552f8fed26",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafsir-ibn-kathir"
+   }
+  },
+  {
+   "id": "tafsir-ar-tafsir-muyassar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ar-tafsir-muyassar.db",
+   "bytes": 2797568,
+   "sha256": "6cb425b6029aa7b6c1fa32c8430fa413794c4a6ec809b1503d1bab9c90274302",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ar-tafsir-muyassar"
+   }
+  },
+  {
+   "id": "tafsir-bn-tafseer-ibn-e-kaseer",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-bn-tafseer-ibn-e-kaseer.db",
+   "bytes": 26484736,
+   "sha256": "29ee9a432894d3916c28fdc14100d697abc8448f6580201cf3b29f04825ae447",
+   "version": "v2026.09",
+   "detail": {
+    "book": "bn-tafseer-ibn-e-kaseer"
+   }
+  },
+  {
+   "id": "tafsir-bn-tafsir-abu-bakr-zakaria",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-bn-tafsir-abu-bakr-zakaria.db",
+   "bytes": 16617472,
+   "sha256": "eda390e3396056179853643d86077ae05dfb9306840752328af84ae7081c925f",
+   "version": "v2026.09",
+   "detail": {
+    "book": "bn-tafsir-abu-bakr-zakaria"
+   }
+  },
+  {
+   "id": "tafsir-bn-tafsir-ahsanul-bayaan",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-bn-tafsir-ahsanul-bayaan.db",
+   "bytes": 12279808,
+   "sha256": "b022d660bfb76646d60171995c9606f03ee7b24fb3020cf4f4adc35cc19a8acc",
+   "version": "v2026.09",
+   "detail": {
+    "book": "bn-tafsir-ahsanul-bayaan"
+   }
+  },
+  {
+   "id": "tafsir-en-tafisr-ibn-kathir",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-en-tafisr-ibn-kathir.db",
+   "bytes": 13078528,
+   "sha256": "16592ab43c4af014f2aec3643262dde5d98be609c7d189973da7fef5b24d4339",
+   "version": "v2026.09",
+   "detail": {
+    "book": "en-tafisr-ibn-kathir"
+   }
+  },
+  {
+   "id": "tafsir-en-tafsir-maarif-ul-quran",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-en-tafsir-maarif-ul-quran.db",
+   "bytes": 13963264,
+   "sha256": "70ecf33730beb273d346f35e563642694301c959ce4fa89161b1c6e4aee1dae5",
+   "version": "v2026.09",
+   "detail": {
+    "book": "en-tafsir-maarif-ul-quran"
+   }
+  },
+  {
+   "id": "tafsir-french-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-french-mokhtasar.db",
+   "bytes": 2641920,
+   "sha256": "de5bb17894a758cdca07d7546d42349b600b632a40ac3fa57b8bc31ccd3b3ef6",
+   "version": "v2026.09",
+   "detail": {
+    "book": "french-mokhtasar"
+   }
+  },
+  {
+   "id": "tafsir-hindi-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-hindi-mokhtasar.db",
+   "bytes": 5922816,
+   "sha256": "eb14d749a80d1e97006191bd5ab80fa13714c84628a7dbbd8dbe4117004663c8",
+   "version": "v2026.09",
+   "detail": {
+    "book": "hindi-mokhtasar"
+   }
+  },
+  {
+   "id": "tafsir-indonesian-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-indonesian-mokhtasar.db",
+   "bytes": 3026944,
+   "sha256": "7ebe43351b0e49bb54a7b3a71cae93ae31fa5ea72baf18104db3d408c80544b6",
+   "version": "v2026.09",
+   "detail": {
+    "book": "indonesian-mokhtasar"
+   }
+  },
+  {
+   "id": "tafsir-kurd-tafsir-rebar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-kurd-tafsir-rebar.db",
+   "bytes": 8798208,
+   "sha256": "ab1e77ab845d2af02975cb0e53ebff6511022aff022299b15f962ae86ada5940",
+   "version": "v2026.09",
+   "detail": {
+    "book": "kurd-tafsir-rebar"
+   }
+  },
+  {
+   "id": "tafsir-ru-tafseer-al-saddi",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-ru-tafseer-al-saddi.db",
+   "bytes": 11804672,
+   "sha256": "7829901a294e430594d5d0ba3862fb1b8936622c3a51e69bd318147811564d05",
+   "version": "v2026.09",
+   "detail": {
+    "book": "ru-tafseer-al-saddi"
+   }
+  },
+  {
+   "id": "tafsir-spanish-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-spanish-mokhtasar.db",
+   "bytes": 2445312,
+   "sha256": "c74d889c6fc09c4c401977abf0e9f04756c685c1863a9a7b4bb5712548b1340c",
+   "version": "v2026.09",
+   "detail": {
+    "book": "spanish-mokhtasar"
+   }
+  },
+  {
+   "id": "tafsir-tafisr-fathul-majid-bn",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tafisr-fathul-majid-bn.db",
+   "bytes": 13447168,
+   "sha256": "b8cf614501cbd7fc528ae766234ce4a73353eb0299711aeefadf73a6d5ad4ccd",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tafisr-fathul-majid-bn"
+   }
+  },
+  {
+   "id": "tafsir-tafseer-ibn-e-kaseer-urdu",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tafseer-ibn-e-kaseer-urdu.db",
+   "bytes": 20258816,
+   "sha256": "c2fb584337add3fe2adafb18c1178b2c815210e3731e6527404e8417f56c914f",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tafseer-ibn-e-kaseer-urdu"
+   }
+  },
+  {
+   "id": "tafsir-tafsir-bayan-ul-quran",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tafsir-bayan-ul-quran.db",
+   "bytes": 10477568,
+   "sha256": "25c3f5a7a78f80097cb7904ada4bf408ee03472e9d7f6fbaa0a20cfbc86f077c",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tafsir-bayan-ul-quran"
+   }
+  },
+  {
+   "id": "tafsir-tafsir-fe-zalul-quran-syed-qatab",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tafsir-fe-zalul-quran-syed-qatab.db",
+   "bytes": 25554944,
+   "sha256": "85169636b836544ea472c7b91a4a2f8f2d6be76770168991d1e6f14626366508",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tafsir-fe-zalul-quran-syed-qatab"
+   }
+  },
+  {
+   "id": "tafsir-tamil-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tamil-mokhtasar.db",
+   "bytes": 6848512,
+   "sha256": "809edf1e6e0e9101fccec2b406d4a94bac2e098fe0ea5f3471696dbfeb6fe271",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tamil-mokhtasar"
+   }
+  },
+  {
+   "id": "tafsir-tazkiru-quran-ur",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tazkiru-quran-ur.db",
+   "bytes": 4169728,
+   "sha256": "1c903f289a664d042a44c144d5ed42446a2b56b003550a1c41149bd07772fb77",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tazkiru-quran-ur"
+   }
+  },
+  {
+   "id": "tafsir-tazkirul-quran-en",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-tazkirul-quran-en.db",
+   "bytes": 2764800,
+   "sha256": "ecdea2b19d89278493bd2114d87f4136e2c4c6ef8cedd6f79719ab15fb4384ed",
+   "version": "v2026.09",
+   "detail": {
+    "book": "tazkirul-quran-en"
+   }
+  },
+  {
+   "id": "tafsir-turkish-mokhtasar",
+   "family": "tafsir",
+   "origin_db": "khushu-tafsir.db",
+   "tier": "on_demand",
+   "tables": [
+    "tafsir_books",
+    "tafsir_entries"
+   ],
+   "fts": [],
+   "file": "tafsir-turkish-mokhtasar.db",
+   "bytes": 2617344,
+   "sha256": "bd769483a1329ab735318f7dbc0d5fdcc4832966b7054703530a30143bbddccd",
+   "version": "v2026.09",
+   "detail": {
+    "book": "turkish-mokhtasar"
+   }
+  },
+  {
+   "id": "hadith-bukhari",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "bukhari_collections",
+    "bukhari_collection_translations",
+    "bukhari_books",
+    "bukhari_book_translations",
+    "bukhari_chapters",
+    "bukhari_chapter_translations",
+    "bukhari_hadiths",
+    "bukhari_hadith_contents",
+    "bukhari_hadith_references",
+    "bukhari_hadith_related",
+    "bukhari_hadith_grades",
+    "bukhari_hadith_narrators",
+    "bukhari_bundle_meta",
+    "bukhari_hadith_text"
+   ],
+   "fts": [
+    "bukhari_hadith_fts"
+   ],
+   "file": "hadith-bukhari.db",
+   "bytes": 41603072,
+   "sha256": "fa68bedf33d4ce96f6a2892569bf903e13c27b13dce1791e83b1ae8adf181fbe",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "bukhari"
+   }
+  },
+  {
+   "id": "hadith-muslim",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "muslim_collections",
+    "muslim_collection_translations",
+    "muslim_books",
+    "muslim_book_translations",
+    "muslim_chapters",
+    "muslim_chapter_translations",
+    "muslim_hadiths",
+    "muslim_hadith_contents",
+    "muslim_hadith_references",
+    "muslim_hadith_related",
+    "muslim_hadith_grades",
+    "muslim_hadith_narrators",
+    "muslim_bundle_meta",
+    "muslim_hadith_text"
+   ],
+   "fts": [
+    "muslim_hadith_fts"
+   ],
+   "file": "hadith-muslim.db",
+   "bytes": 35774464,
+   "sha256": "df9c4819ef3ff5928863f5665de1c20a6fff864e00c99f64cae37a141467f428",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "muslim"
+   }
+  },
+  {
+   "id": "hadith-abu_dawud",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "abu_dawud_collections",
+    "abu_dawud_collection_translations",
+    "abu_dawud_books",
+    "abu_dawud_book_translations",
+    "abu_dawud_chapters",
+    "abu_dawud_chapter_translations",
+    "abu_dawud_hadiths",
+    "abu_dawud_hadith_contents",
+    "abu_dawud_hadith_references",
+    "abu_dawud_hadith_related",
+    "abu_dawud_hadith_grades",
+    "abu_dawud_hadith_narrators",
+    "abu_dawud_bundle_meta",
+    "abu_dawud_hadith_text"
+   ],
+   "fts": [
+    "abu_dawud_hadith_fts"
+   ],
+   "file": "hadith-abu_dawud.db",
+   "bytes": 26185728,
+   "sha256": "b025f47f78c12f9a48080c96580f1305a78b827a915f098c3bf37a7ae9c3b7ea",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "abu_dawud"
+   }
+  },
+  {
+   "id": "hadith-tirmidhi",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "tirmidhi_collections",
+    "tirmidhi_collection_translations",
+    "tirmidhi_books",
+    "tirmidhi_book_translations",
+    "tirmidhi_chapters",
+    "tirmidhi_chapter_translations",
+    "tirmidhi_hadiths",
+    "tirmidhi_hadith_contents",
+    "tirmidhi_hadith_references",
+    "tirmidhi_hadith_related",
+    "tirmidhi_hadith_grades",
+    "tirmidhi_hadith_narrators",
+    "tirmidhi_bundle_meta",
+    "tirmidhi_hadith_text"
+   ],
+   "fts": [
+    "tirmidhi_hadith_fts"
+   ],
+   "file": "hadith-tirmidhi.db",
+   "bytes": 24027136,
+   "sha256": "b88fce74ff02d248bcc30129b57a38731edc523e6b73bc333eb4563bc9ba0d03",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "tirmidhi"
+   }
+  },
+  {
+   "id": "hadith-nasai",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "nasai_collections",
+    "nasai_collection_translations",
+    "nasai_books",
+    "nasai_book_translations",
+    "nasai_chapters",
+    "nasai_chapter_translations",
+    "nasai_hadiths",
+    "nasai_hadith_contents",
+    "nasai_hadith_references",
+    "nasai_hadith_related",
+    "nasai_hadith_grades",
+    "nasai_hadith_narrators",
+    "nasai_bundle_meta",
+    "nasai_hadith_text"
+   ],
+   "fts": [
+    "nasai_hadith_fts"
+   ],
+   "file": "hadith-nasai.db",
+   "bytes": 26746880,
+   "sha256": "5de0e93b5e77295bfab61fa379fab0f99876a5e0769d29292c23b9e9ac1649af",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "nasai"
+   }
+  },
+  {
+   "id": "hadith-ibn_majah",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "ibn_majah_collections",
+    "ibn_majah_collection_translations",
+    "ibn_majah_books",
+    "ibn_majah_book_translations",
+    "ibn_majah_chapters",
+    "ibn_majah_chapter_translations",
+    "ibn_majah_hadiths",
+    "ibn_majah_hadith_contents",
+    "ibn_majah_hadith_references",
+    "ibn_majah_hadith_related",
+    "ibn_majah_hadith_grades",
+    "ibn_majah_hadith_narrators",
+    "ibn_majah_bundle_meta",
+    "ibn_majah_hadith_text"
+   ],
+   "fts": [
+    "ibn_majah_hadith_fts"
+   ],
+   "file": "hadith-ibn_majah.db",
+   "bytes": 18862080,
+   "sha256": "6d510428e0e4ecc09d28f70eb73e8582e77a018c12e0626f9d3040ff3a321363",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "ibn_majah"
+   }
+  },
+  {
+   "id": "hadith-malik",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "malik_collections",
+    "malik_collection_translations",
+    "malik_books",
+    "malik_book_translations",
+    "malik_chapters",
+    "malik_chapter_translations",
+    "malik_hadiths",
+    "malik_hadith_contents",
+    "malik_hadith_references",
+    "malik_hadith_related",
+    "malik_hadith_grades",
+    "malik_hadith_narrators",
+    "malik_bundle_meta",
+    "malik_hadith_text"
+   ],
+   "fts": [
+    "malik_hadith_fts"
+   ],
+   "file": "hadith-malik.db",
+   "bytes": 9056256,
+   "sha256": "57e10194b119e857f9636f5fe5fecf98d67376c7340099448627aadb59480062",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "malik"
+   }
+  },
+  {
+   "id": "hadith-riyadussalihin",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "riyadussalihin_collections",
+    "riyadussalihin_collection_translations",
+    "riyadussalihin_books",
+    "riyadussalihin_book_translations",
+    "riyadussalihin_chapters",
+    "riyadussalihin_chapter_translations",
+    "riyadussalihin_hadiths",
+    "riyadussalihin_hadith_contents",
+    "riyadussalihin_hadith_references",
+    "riyadussalihin_hadith_related",
+    "riyadussalihin_hadith_grades",
+    "riyadussalihin_hadith_narrators",
+    "riyadussalihin_bundle_meta",
+    "riyadussalihin_hadith_text"
+   ],
+   "fts": [
+    "riyadussalihin_hadith_fts"
+   ],
+   "file": "hadith-riyadussalihin.db",
+   "bytes": 7708672,
+   "sha256": "a26f6410db0210aca39940817c0c141e737b181f1db24e855d5ac7a980e42dfe",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "riyadussalihin"
+   }
+  },
+  {
+   "id": "hadith-forty",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "forty_collections",
+    "forty_collection_translations",
+    "forty_books",
+    "forty_book_translations",
+    "forty_chapters",
+    "forty_chapter_translations",
+    "forty_hadiths",
+    "forty_hadith_contents",
+    "forty_hadith_references",
+    "forty_hadith_related",
+    "forty_hadith_grades",
+    "forty_hadith_narrators",
+    "forty_bundle_meta",
+    "forty_hadith_text"
+   ],
+   "fts": [
+    "forty_hadith_fts"
+   ],
+   "file": "hadith-forty.db",
+   "bytes": 704512,
+   "sha256": "869eb1771447aca030aa33a8de8bb06e9f54373f4d97f8e99d2c9aef3c58ce90",
+   "version": "v2026.09",
+   "detail": {
+    "collection": "forty"
+   }
+  },
+  {
+   "id": "hadith-scholars",
+   "family": "hadith",
+   "origin_db": "khushu-hadith.db",
+   "tier": "on_demand",
+   "tables": [
+    "scholars"
+   ],
+   "fts": [],
+   "file": "hadith-scholars.db",
+   "bytes": 5718016,
+   "sha256": "1744b31d0d76e4743d256e1c58cc8ae1017430d5cfc356efa7558b4c1c3fd073",
+   "version": "v2026.09",
+   "detail": {
+    "component": "scholars"
+   }
+  }
+ ]
+}

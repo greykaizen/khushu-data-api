@@ -26,3 +26,6 @@ data/assets/
 # generated databases (canonical home = Turso; free GPL copy = datasets release)
 data/db/
 data/build/
+data/packs/
+__pycache__/
+*.pyc

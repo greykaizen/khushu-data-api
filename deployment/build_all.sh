@@ -8,4 +8,5 @@ for b in build_assets build_quran build_sunnah build_translations build_tafsir b
 done
 echo ">> consolidate (21 -> 4)"; python3 deployment/consolidate.py >/dev/null
 echo ">> WAL + integrity (data/db)"; python3 deployment/builders/make_turso_ready.py
+echo ">> offline pack fragments (data/packs -> 104)"; python3 deployment/build_packs.py
 echo "Done: 6 production DBs in data/db/
