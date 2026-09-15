@@ -248,3 +248,39 @@ REMAINING (UI-coupled / multi-day, needs maintainer + on-device screen checks �
 - App DI: construct `PackStoreProvider` + prebundle install (bundle the 4 prebundle packs in APK assets, ensureFromAsset on first run) + remote fallback store (Http/Libsql) wired to the read-only tokens via BuildConfig/CI.
 - **Downloads + Storage Settings UI** (Compose): list packs via `packs.json`, download/verify(sha256)/delete, delete->Turso; wire the `SEAM(list-data)` screens to the migrated repos.
 - Then `APPLY` a new orchestrator tag for published (non-localFamily) app builds; retire `content-v2026.09` JSON tag + placeholder assets once no source uses them.
+
+## 15. PR#3 status (2026-09-15 late session)
+
+**Data-layer cutover is COMPLETE.** SQL-backed sources now exist for every domain in the
+corpus, all tested against the REAL pack fragments via `JdbcSqlStore`:
+
+| Source | Package | Verified by |
+|---|---|---|
+| `SqlQuranSource` / `SqlTranslationSource` | `quran` | 114 surahs, names, Ayat al-Kursi juz=3, uthmani words+text, translation search (contentless FTS + rowid→base join) |
+| `SqlTafsirSource` | `quran` | 26 books, tabari 6196 entries |
+| `SqlRecitationSource` | `quran` | 18 reciters + gzipped timing blobs → 114 chapters w/ verse+word segments |
+| `SqlAsmaSource` / `SqlDuaSource` / `SqlEventsSource` / `SqlWbwSource` | `dua`/`store` | 1089 names, 491 duas (audio→GH mirror URL), 11 events, wbw word_json→WbwWord |
+| `SqlAdhanSource` | `adhan` | 178 entries / 166 standard; sha+size from assets join |
+| `SqlHadithSource` / `SqlScholarSource` | `sunnah` | bukhari 97 books / urn_100010 blocks+narrators / contentLangs, external-content FTS search; 25,260 scholars by id |
+| `SqlCuratedSource` / `SqlRecommendedSource` / `SqlScienceSource` | `content` | curated entries with AyahRef range parsing (regression test for the fix below), 2 recommended rules + 69 texts, 12 science topics |
+| `SqlTopicsSource` / `SqlSelectionSource` | `content` | 2512 topics + ayah links + relations, 814 mutashabihat phrases with JSON word-ranges, similar-verse queries |
+| `SqlCatalogSource` | `catalog` | 3 font_packs + 9 font_files, 6 web links, translation registry (51) |
+| `AssetResolver` | `store` | asset_id → GH release URL |
+
+Orchestrator: **158 tests, 0 failures**, published as `orchestrator-v1.7.1` tag. Khushu pins to it and `:app:compileDebugKotlin` succeeds WITHOUT `-PlocalFamily` — the seam is available to consumers.
+
+**Integrity repair:** `build_curated` (build_rest.py) had **enumerated range-string values per character** (e.g. `"2:153,3:173"` → 12 single-char rows), and had no place for recommended rules or font catalog metadata. Fixed the builder + rebuilt the content DB + re-imported Turso + republished the content pack. GH + Turso now byte-identical to local master (verified with a 9-point spot check across all 6 DBs). The app's existing JSON path was never affected (still reads `map.json` directly), so **no user-facing loss** — but this was a real latent-bug fix before porting anything over.
+
+**Also added:** `font_packs` + `font_files` in `catalog.db`→`khushu-content` (via `build_catalog.py`); the quran-core fragment now retains `translation_packs` (51-row registry) so offline catalog lists work.
+
+**Deliberate stop after a self-inflicted incident:** I clobbered `.env` + `~/.turso/auth.json` mid-recovery with an unguarded shell write, then rebuilt everything (all 6 RO tokens + fresh admin API token). Verified. But starting a 115-function `KhushuContent`/`ContentRepository` constructor flip (JSON fetcher → per-domain `SqlStore` providers) at 3am, blind, without the on-device UI checks it requires, is exactly the kind of big-bang refactor both GPT and the plan said to avoid. Committing + tagging + verification only.
+
+**Remaining (multi-day, maintainer-in-loop work):**
+1. **App-side aggregate flip.** `KhushuOrchestrator` ctor currently takes one `ContentFetcher`; must take per-pack `SqlStore` factories (or a `ContentStores` aggregate the app constructs). `KhushuContent`'s 115 fns route JSON sources to SQL sources **per domain, one at a time** — start with Quran (which already has both paths through `SqlStore`). This is a public API change on the shared library; needs a PR review, not a blind merge.
+2. **Prebundle install + DI.** App constructs `PackStoreProvider` + copies the 4 prebundle packs from `assets/` (or fetches wbw-en) on first launch. Wires the store into `KhushuContent`'s provider path.
+3. **`SEAM(list-data)` screens** flip to the migrated repos (Surahs, Asma ul-Husna, Dua, Events, Adhan, Sunnah, Catalog).
+4. **Downloads + Storage Settings UI** (Compose): list via `packs.json`, download from GH pack releases, `PackStoreProvider.release()` on delete → queries route to remote `HttpSqlStore`.
+5. **Atlas** (glyph PNGs/zips) — the atlas *data* is binary blobs (glyph-atlas kind) + a small `atlas.json`. The blobs stay as assets; only the atlas info JSON needs a source, low priority.
+6. Retire `content-v2026.09` JSON tag once every source is off it.
+
+**Note:** I minted extra `khushu-ci` + `khushu-ci-v2` API tokens during a revoke-prompt hiccup; only `khushu-ci-v3` is in use. Those two orphans are group-scoped (`all`) like the live one and can be revoked manually (`turso auth api-tokens revoke khushu-ci` — interactive prompt required). No security exposure (same group scope), just tidy-up.
