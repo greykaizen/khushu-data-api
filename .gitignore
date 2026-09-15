@@ -21,6 +21,8 @@ search_index.db
 data/assets/
 .turso/
 .venv/
-data/db/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)
-data/build/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)
 .upload/
+
+# generated databases (canonical home = Turso; free GPL copy = datasets release)
+data/db/
+data/build/
