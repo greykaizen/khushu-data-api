@@ -233,3 +233,18 @@ Suite: `./gradlew --offline :orchestrator:test` → **138 tests, 0 failures**. T
 - Both app artifacts are androidTest-scoped: Khushu pins `orchestrator-v1.6.1` (predates `com.khushu.data.store`), so **main** can't reference the seam until a new orchestrator tag is published + pinned.
 
 **Publishing gate → your decision:** PR#2.3 (Quran repo → SqlStore), PR#2.4 (app DI), PR#2.5 (download→repo→UI) all need the store classes reachable from Khushu `main`. Path (AGENTS §11 workflow): tag khushu-orchestrator (e.g. `orchestrator-v1.7.0`) from the green master → JitPack builds → bump Khushu `khushuOrchestrator` pin → move `LibsqlSqlStore` to `core/data/store/` in main + add `AssetResolver`/`PackManager` → migrate Quran repo. Then downloads/settings + publish packs (APPLY=1).
+
+
+## 14. Execution status (2026-09-15, autonomous pass)
+
+DONE + verified:
+- Gate: orchestrator tagged `orchestrator-v1.7.0` (has store seam); Khushu pin bumped to it. (SqlQuranSource/ContentSqlSources are on master; next tag carries them.)
+- PR#2.1 positional Row (146 tests green now). PR#2.2/2.4 LibsqlSqlStore in app **main**. PR#2.3 SqlQuranSource+SqlTranslationSource (JVM-tested: 114 surahs, Ayat al-Kursi juz=3, Sahih + FTS search). PR#2.5 **end-to-end offline path proven on emulator**: pack -> PackStoreProvider -> LibsqlSqlStore -> orchestrator Sql sources -> typed models (QuranOfflinePathTest green).
+- PR#3 partial: SqlAsmaSource, SqlEventsSource, SqlWbwSource, AssetResolver (JVM-tested).
+- Packs **published to GitHub**: 7 releases `packs-<family>-v2026.09` (audio/content/quran-core/translation/wbw/tafsir/hadith = 104 files, 830 MB). Offline download units now actually downloadable.
+
+REMAINING (UI-coupled / multi-day, needs maintainer + on-device screen checks — deliberately NOT blind-cut):
+- Flip `KhushuContent`/`ContentRepository` (115 fns) + `KhushuOrchestrator` ctor from `ContentFetcher` to per-pack `SqlStore` providers; requires the remaining domain sources first: **Dua (incl adaptive), Adhan, Sunnah/Hadith search, Tafsir, Catalog/Curated/Topics/Similar, Atlas** — same pattern, each JVM+device tested.
+- App DI: construct `PackStoreProvider` + prebundle install (bundle the 4 prebundle packs in APK assets, ensureFromAsset on first run) + remote fallback store (Http/Libsql) wired to the read-only tokens via BuildConfig/CI.
+- **Downloads + Storage Settings UI** (Compose): list packs via `packs.json`, download/verify(sha256)/delete, delete->Turso; wire the `SEAM(list-data)` screens to the migrated repos.
+- Then `APPLY` a new orchestrator tag for published (non-localFamily) app builds; retire `content-v2026.09` JSON tag + placeholder assets once no source uses them.
