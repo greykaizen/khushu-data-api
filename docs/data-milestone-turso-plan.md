@@ -267,7 +267,7 @@ corpus, all tested against the REAL pack fragments via `JdbcSqlStore`:
 | `SqlCatalogSource` | `catalog` | 3 font_packs + 9 font_files, 6 web links, translation registry (51) |
 | `AssetResolver` | `store` | asset_id → GH release URL |
 
-Orchestrator: **158 tests, 0 failures**, published as `orchestrator-v1.7.1` tag. Khushu pins to it and `:app:compileDebugKotlin` succeeds WITHOUT `-PlocalFamily` — the seam is available to consumers.
+Orchestrator: **158 tests, 0 failures**, published as `orchestrator-v1.7.2` tag (v1.7.1 predated `SqlCatalogSource`; both tags immutable, latest wins). Khushu pins to v1.7.2 and `:app:compileDebugKotlin` succeeds WITHOUT `-PlocalFamily` — the seam is available to consumers.
 
 **Integrity repair:** `build_curated` (build_rest.py) had **enumerated range-string values per character** (e.g. `"2:153,3:173"` → 12 single-char rows), and had no place for recommended rules or font catalog metadata. Fixed the builder + rebuilt the content DB + re-imported Turso + republished the content pack. GH + Turso now byte-identical to local master (verified with a 9-point spot check across all 6 DBs). The app's existing JSON path was never affected (still reads `map.json` directly), so **no user-facing loss** — but this was a real latent-bug fix before porting anything over.
 
