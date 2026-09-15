@@ -58,6 +58,14 @@ archive/         historical source corpus + tools + docs (provenance only)
 .env.example     variable names/placeholders   .env  real creds (gitignored)
 ```
 
+## Free dataset copy (GPLv3)
+The six databases are generated (not committed to the tree) but published as a
+portable snapshot so the dataset is reusable under GPLv3:
+- **Databases:** release `khushu-data-v2026.09` (`khushu-{quran,tafsir,wbw,hadith,content,audio}.db`).
+- **Asset blobs:** the seven `assets-<kind>-v2026.09` releases (audio/fonts/atlas/images/curated-science).
+Live copies run in Turso (group `khushu`); the releases are the durable public snapshot.
+Rebuild anytime with `bash deployment/build_all.sh`.
+
 ## Local development
 Requires: `python3` (system sqlite ≥3.35 → FTS5 + `DROP COLUMN`; this repo uses 3.53),
 `gh` (authenticated), `turso` CLI (`curl -sSfL https://get.tur.so/install.sh | bash`).
