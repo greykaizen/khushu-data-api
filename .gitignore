@@ -9,8 +9,17 @@ local.properties
 
 # font tarballs: .tar.zst variants are the tracked canonical mirrors;
 # the bulkier .tar.gz duplicates stay local-only (same content)
-inventory/fonts/qpc/qpc_v2_by_page.tar.gz
-inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
+archive/inventory/fonts/qpc/qpc_v2_by_page.tar.gz
+archive/inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
 
 # regenerated on demand
 search_index.db
+
+# --- deployment/local (added at data-store reorg) ---
+.env
+# staging hardlink tree + downloaded tools
+data/assets/
+.turso/
+.venv/
+data/db/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)
+data/build/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)

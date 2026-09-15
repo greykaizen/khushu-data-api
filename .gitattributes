@@ -22,4 +22,4 @@
 *.md text eol=lf
 
 # Git LFS — binaries above GitHub's 100 MB object limit
-inventory/fonts/qpc/qpc_v2_by_page.tar.zst filter=lfs diff=lfs merge=lfs -text
+archive/inventory/fonts/qpc/qpc_v2_by_page.tar.zst filter=lfs diff=lfs merge=lfs -text
