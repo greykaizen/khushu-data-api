@@ -284,3 +284,43 @@ Orchestrator: **158 tests, 0 failures**, published as `orchestrator-v1.7.2` tag 
 6. Retire `content-v2026.09` JSON tag once every source is off it.
 
 **Note:** I minted extra `khushu-ci` + `khushu-ci-v2` API tokens during a revoke-prompt hiccup; only `khushu-ci-v3` is in use. Those two orphans are group-scoped (`all`) like the live one and can be revoked manually (`turso auth api-tokens revoke khushu-ci` — interactive prompt required). No security exposure (same group scope), just tidy-up.
+
+## 16. Offline-path CLOSED + pack infra in orchestrator (2026-09-15 late pass)
+
+**Question answered (host's own question about asset handling)**: the existing
+`CachingFetcher` (transport) + `DownloadsApi` (repo) + `CollectionPlan`/`PlanFactory`
++ `DownloadsNamespace` in **khushu-orchestrator** is the correct home and precedent —
+engine has none (pure computation, no filesystem). The pack-era equivalent lives in
+the same place: `com.khushu.data.pack.{PackManifest, PackStorage, PackApi, StoreRouter}`
+in orchestrator `177758a..56795ea` (tagged `orchestrator-v1.7.3`), same "host-injects
+storage; library owns tracking/verification" doctrine.
+
+**App-side (Khushu `2e5f52d`, local commit — no origin remote, you push from Studio)**:
+- `HttpPackStorage`: downloads pack files from the GH pack releases, streams to
+  `filesDir/packs/*.db.part`, verifies sha256, atomic-rename; `storeFor` opens via
+  `LibsqlSqlStore` (bundled FTS5 native, engine verified on API-37 earlier).
+- `KhushuCorpus`: DI singleton — loads `packs.json` from GitHub raw (24h disk cache),
+  exposes `packApi()` + `store(packId)` (local pack → family remote → null). BuildConfig
+  fields populated from `local.properties` (gitignored) or Gradle properties / env
+  (CI-injected). Only the 6 READ-ONLY per-DB tokens ship; the admin API token NEVER does.
+- `app/build.gradle.kts`: `buildConfig=true`, 14 secret fields with blank defaults ⇒
+  remote-Turso falls back to null cleanly (packs+JSON path still works).
+
+**End-to-end proof (emulator, real network, no fixtures)**: `OfflinePackDownloadTest`:
+init → install `translation-en_saheeh-international` from the GitHub `packs-translation-v2026.09`
+release → sha256 verified → `KhushuCorpus.store()` → `SqlTranslationSource.ayah(1,1)`
+returns real text containing "name", `search("merciful")` non-empty (contentless FTS5 on
+device engine), `delete()` works. `connectedDebugAndroidTest` GREEN. **This closes GPT's
+pending item #5** — the actual download → open → repository path (only Compose UI on top).
+
+**Remaining precise scope (multi-day UI work, per-domain flips are now mechanical):**
+1. Wire `KhushuCorpus.init()` into `KhushuApplication.onCreate` (or first ViewModel).
+2. Flip each domain in the app: Quran screen → `KhushuCorpus.store("quran-core")` +
+   `SqlQuranSource`; Asma/Dua/Adhan/Events/Wbw/Tafsir/Hadith/Recitation/Catalog → same
+   pattern. Each SEAM(list-data) placeholder becomes a real screen over the migrated
+   source (they're already written + JVM-tested against the packs).
+3. Downloads + Storage Settings UI (Compose) over `KhushuCorpus.packApi()`: list family,
+   show `installed` vs `plannedBytes`, download button → `install(id, onProgress)`,
+   delete → `delete(id)` (queries automatically route to the remote via StoreRouter).
+4. Retire `KhushuContent`'s JSON sources + `content-v2026.09` tag + placeholder JSON
+   assets once every screen is off them.
