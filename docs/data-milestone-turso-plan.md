@@ -189,7 +189,7 @@ Decision (b) locked. Destructive ops executed (backed up). Zero-data-loss audit 
 **Prebundle floor correction:** paper estimate said 37.6 MB; **real vacuumed floor = 44.4 MB** (quran-core is 30.9 MB once its 3-script `quran_ayah_words` + layout + FTS index/shadow pages are counted). Slimming lever (no data loss — dropped bits stay on Turso) deferred to APK-budget time.
 
 **Still gated / pending (needs Shah + a device — deliberately NOT done unattended):**
-- **Device-validation gate — largely cleared (2026-09-15):** A real device (CPH2691, API-37 emulator) had **no** CLI `sqlite3`, so validated our FTS5 through a *second independent SQLite engine* — **xerial sqlite-jdbc 3.46** (`deployment/FtsPackValidator.java`, ALL GREEN): external-content MATCH (arabic 45 / alias 17 / bukhari-prayer 1043), **contentless** MATCH (sahih-merciful 172 = base LIKE), contentless→base **rowid join** returns correct verse, base counts match. Android framework SQLite ships FTS5 (API 21+) and is the same SQLite lineage. **Remaining explicit step (needs a build+run, ideally with you watching):** one androidx.sqlite *instrumented* test on device to 100% confirm the framework loader; everything the packs must do is already proven. **No sync/replica to validate** (not in the user path).
+- **Device-validation gate — SQL/schema PROVEN, Android RUNTIME STILL OPEN (2026-09-15):** A real device (CPH2691, API-37 emulator) had **no** CLI `sqlite3`, so we validated our FTS5 through a *second independent SQLite engine* — **xerial sqlite-jdbc 3.46** (`deployment/FtsPackValidator.java`, ALL GREEN): external-content MATCH (arabic 45 / alias 17 / bukhari-prayer 1043), **contentless** MATCH (sahih-merciful 172 = base LIKE), contentless→base **rowid join** returns correct verse, base counts match. **IMPORTANT (per Shah/GPT): this proves the packs + SQL + FTS5 *schema* are correct; it does NOT prove the Android framework `androidx.sqlite` runtime** (different lib). Android framework SQLite ships FTS5 since API 21+, but the **local-pack Android path is NOT yet validated** — that needs a small `androidx.sqlite` instrumented test on device/emulator before it can be called done.
 - **Slice 3–4 orchestrator libSQL rewrite** + **Slice 7 app wiring**: large, changes the public repo API the app calls; **not** started blind (no-stub rule + validation gate). Next when you're up: run the device spike, then rewrite repos one domain at a time (quran first), then publish packs + wire downloads/settings.
 
 ## 12. First orchestrator PR — concrete design (needs Shah's eyes on the seam)
@@ -213,3 +213,15 @@ interface SqlStore {
 - **PR #1 (purely additive, zero app breakage):** `libsql` package + `JdbcSqlStore` + unit test over the real `quran-core.db` (surahs/ayahs/arabic-FTS MATCH) → proves the end-to-end contract. **PR #2:** migrate Quran repo. **App PR:** wire `AndroidSqlStore` + downloads/settings.
 
 **Why this is the stopping point, not "blocked":** local SQLite+FTS5 runtime + data are proven; the remaining choice (query-level `SqlStore`; remote via HTTP vs preview-SDK; the downloads/settings product surface) is a library-public-API + app-integration decision worth the maintainer in the loop, and androidx.sqlite needs the *app* build to instrument.
+
+## 13. PR#1 LANDED (2026-09-15, khushu-orchestrator)
+
+New `com.khushu.data.store` (transport-neutral; NOT named `libsql` since we chose HTTP over the preview libSQL client):
+- `SqlStore` (query-level: `query/queryOne/scalar`), `Row` (label+typed accessors) — never exposes `java.sql.Connection`.
+- `JdbcSqlStore(File)` — `sqlite-jdbc` `mode=ro&immutable=1`, `Dispatchers.IO`; JVM/test/local engine.
+- `HttpSqlStore(endpointUrl, json, post)` — remote READ via `/v2/pipeline` batch/execute (field `sql`, typed args), host-injected `post` (attaches the per-DB read-only bearer token); maps `cols/rows`, surfaces step/pipeline errors as `TursoQueryException` (a read-only token rejecting a write → thrown, never empty).
+- `SqlStoreTest` (5): **Jdbc over the real `quran-core.db`** (surah meta, ayah uthmani words, arabic FTS `الرحمن`=45, parameterized COUNT=86) + **contentless** `translation_fts` (`merciful`=172) + contentless→base **rowid join** (1:1); **Http** request-shape + read-parse + write-rejection — all hermetic, `assumeTrue` skips Jdbc if the sibling checkout is absent.
+
+Suite: `./gradlew --offline :orchestrator:test` → **138 tests, 0 failures**. This required **fixing a regression from my earlier `archive/` move**: 13 tests' sibling resolvers still pointed at top-level `inventory/`/`assets/` (128 failing) → repointed to `khushu-data-api/archive/…`.
+
+**Still NOT done:** migrate the Quran repo onto `SqlStore` (PR#2); Android `androidx.sqlite` impl + its device instrumented test; downloads/settings; publish packs to GH. The Android local-pack runtime remains the open validation item (§11).
