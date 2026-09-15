@@ -1,119 +1,90 @@
-# khushu-data-api
+# khushu-data
 
-[![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)](LICENSE)
+Khushu's content distribution. **Four** consolidated SQLite databases live in
+Turso; all audio/font/atlas/image blobs live on a configurable static host
+(GitHub Releases now, R2/CDN later); Quran recitation audio stays on its
+external CDN. Consumers resolve a file from a DB `asset_id` + one base URL —
+never a hardcoded URL.
 
-> ⚠️ **RETIRED AS A LIBRARY (v1.4.0).** This repo is now the family **content
-> store** — the corpus (`inventory/`, `assets/`) served over raw CDN, plus the
-> pipeline tools (`tools/`) that generate it. The retrieval API
-> (`com.khushu.data.*`) was absorbed into
-> [khushu-orchestrator](https://github.com/greykaizen/khushu-orchestrator);
-> hosts add ONE coordinate there and never depend on this repo as a library.
-> The JitPack badge/coordinates below are historical — do not add them to a
-> build.
+> Historical source corpus (`inventory/`, `assets/`, extraction `tools/`,
+> format `docs/`) is preserved under [`archive/`](archive/) for provenance only —
+> it is **not** the runtime source. The JitPack library was retired (absorbed
+> into [khushu-orchestrator](https://github.com/greykaizen/khushu-orchestrator)).
 
-Content store for Khushu-family apps. Every byte of Quran text, hadith
-corpus, dua, adhan audio, bookmark, glyph atlas, and translation — served
-from this checkout, retrievable through the orchestrator's transport, and
-deletable by the host via its caching layer.
+## Production topology — 6 databases
+```
+Khushu app
+  ├─ khushu-quran.db    Quran (text/words/layout/nav/topics/similar/search FTS5) +
+  │                     translations (markers preserved, FTS5) + `assets` registry. ~187 MB
+  ├─ khushu-tafsir.db   Tafsir (verbatim HTML, range-keyed). Loaded on the tafsir feature. ~328 MB
+  ├─ khushu-wbw.db      Word-by-word glosses + translit. Loaded on wbw/mushaf feature. ~118 MB
+  ├─ khushu-hadith.db   9 Sunnah collections (namespaced bukhari_*…) + scholars, per-collection FTS5. ~188 MB
+  ├─ khushu-content.db  dua (FTS5) + articles + 99 Names + events + curated/science + `assets`. ~3 MB
+  └─ khushu-audio.db    reciter metadata (external audio URLs) + timings + adhan metadata + `assets`. ~8 MB
+GitHub Release assets   audio/fonts/atlas/images  (asset_id → release_name → base URL)
+External CDN            Quran recitation audio (quranicaudio.com) — by design
+```
+Table inventory + FTS list per DB is generated in `data/manifest/dbs.json`.
 
-Part of the [Khushu](https://github.com/greykaizen/khushu) project — see
-[the family](#the-khushu-project-family) below.
+## Asset model (the contract)
+`asset_id` (canonical logical path, e.g. `names/muqaddim.opus`, `fonts/kfqpc/page_151.ttf`)
+→ stored in domain tables (e.g. `names_names.audio_asset_id`, `dua_items.audio_asset_id`,
+`adhans.asset_id`, `quran_topics.image_asset_id`) → resolved against the **`assets`**
+table (in `khushu-core`): `asset_id, release_name, relative_path, sha256, size, mime, version`.
+App resolves `https://github.com/<repo>/releases/download/assets-<kind>-<rev>/<release_name>`
+(assets ship as **7 per-kind releases** — GitHub caps 1000 assets/release and we
+have 1,489 files) and verifies `sha256`. `kind`/`release_name` come from the
+`assets` table; `release_name` is a flat path-encoded name generated at publish
+so `data/assets/` stays an organized canonical tree.
+Swapping GitHub → R2 is a **single base-URL change**. Intentional external URLs
+(recitation CDN, article source links) are stored as-is and documented, never
+routed through the asset host.
 
-## What it provides
-
-| Namespace | What it does | Key APIs |
-|---|---|---|
-| **quran** | Ayah texts (4 scripts), word registries, translations (48 packs), tafsirs (23 books × 13 languages), word-by-word (14 languages), chapter info, navigation, search, similar verses, topics, curated sets, recitation timings, glyph-atlas bundles, page layouts | `ayahTexts`, `words`, `ayahBundle`, `translationTexts`, `tafsirForSurah`, `wbwForSurah`, `atlas.placementsByWord`, `glyphTable` |
-| **sunnah** | 9 hadith collections (Bukhari, Muslim, Tirmidhi, …) with grades, narrators, references + FTS5 search with diacritic-insensitive Arabic | `attachSunnah`, `hadith`, `search` |
-| **dua** | 491 duas across 30 categories, 99 Names × 11 languages, 186 reading articles (raw HTML passthrough), local audio mirrors | `duas`, `categories`, `bySubcategory`, `articles`, `asmaPack`, `asmaName`, `localAudioPath` |
-| **adhan** | 178 catalogued adhan recordings (reciter/region/style parsed, sha256 per file), opus bytes on demand | `entries`, `reciters`, `byReciter`, `audio`, `standard` |
-| **catalogs** | Discovery for fonts, atlas bundles, translations, tafsirs, wbw packs, recitations + project web links | `translations`, `tafsirs`, `wbw`, `fonts`, `webLinks` |
-| **curated** | Curated verse sets (situational/major sins), recommended recitations, Quran-science topics | `exclusiveVerses`, `recommendedRules`, `scienceTopics` |
-| **islamicEvents** | Islamic event display data (title, category, source, confidence) — computation stays canonical in khushu-engine | `all`, `forHijriMonth` |
-| **downloads** | Persistent download tracking + space management — per-category byte totals, delete by filter, reconcile after manual clears | `summary`, `totalBytes`, `deleteWhere`, `clearAll`, `reconcile` |
-
-## Adding it to your project
-
-### JitPack
-
-```kotlin
-repositories {
-    maven { url = uri("https://jitpack.io") }
-}
-dependencies {
-    implementation("com.github.greykaizen.khushu-data-api:khushu-data-api:1.1.0")
-}
+## Repository layout
+```
+data/
+  db/            THE 4 production .db files (gitignored; rebuilt by build_all.sh)
+  build/         21 intermediate per-domain DBs (gitignored)
+  manifest/      dbs.json · assets.json · assets.csv · schema-plan.md
+  assets/        canonical organized staging tree (gitignored; hardlinks)
+deployment/
+  builders/      build_*.py (donor → per-domain DB, donor-first + verified)
+  consolidate.py builds the 4 from the 21 with namespacing + FTS rebuild (not file concat)
+  build_all.sh   source → data/build → data/db (4) → WAL; deterministic
+  build_release.py  asset manifest + collision-free release_name + staging
+  make_turso_ready.py  WAL + checkpoint so `turso db import` accepts them
+  publish_assets.sh / import_to_turso.sh / verify_deploy.py   (all DRY RUN unless APPLY=1)
+archive/         historical source corpus + tools + docs (provenance only)
+.env.example     variable names/placeholders   .env  real creds (gitignored)
 ```
 
-### Maven Local (offline)
-
+## Local development
+Requires: `python3` (system sqlite ≥3.35 → FTS5 + `DROP COLUMN`; this repo uses 3.53),
+`gh` (authenticated), `turso` CLI (`curl -sSfL https://get.tur.so/install.sh | bash`).
 ```bash
-./gradlew :api:publishToMavenLocal
+bash deployment/build_all.sh                       # rebuild the 4 DBs from source
+sqlite3 data/db/khushu-core.db "select count(*) from quran_surahs"      # 114
+sqlite3 data/db/khushu-hadith.db "select count(*) from bukhari_hadiths"  # 7277
 ```
-coordinate: `com.khushu:api:1.1.0`.
+Regenerate the asset manifest/staging: `python3 deployment/build_release.py`.
 
-## Quickstart
-
-```kotlin
-import com.khushu.data.repo.KhushuContent
-import com.khushu.data.transport.ContentFetcher
-
-// Online transport (host-supplied HTTP) or offline LocalFetcher(checkoutRoot)
-val root = "https://raw.githubusercontent.com/greykaizen/khushu-data-api/master/"
-val fetcher = ContentFetcher { path -> http.get(root + path).body() }
-
-KhushuContent(fetcher).use { content ->
-    // Individual retrievals
-    val words = content.quran.words(surahNo = 2, script = "uthmani")
-    val atlas = content.quran.atlas.placementsByWord("uthmani")
-
-    // Grouped: everything about one ayah — texts, side-by-side translations,
-    // word-by-word, tafsir segments, recitation word timings.
-    val bundle = content.quran.ayahBundle(
-        surahNo = 2, ayahNo = 255,
-        translationPacks = listOf("en_pickthall", "en_yusuf-ali"),
-        tafsirSlugs = listOf("en-tafisr-ibn-kathir"),
-    )
-
-    val duas = content.dua.duas()                 // 491 duas + asma + articles
-    val adhan = content.adhan.reciters()          // 178 catalogued recordings
-
-    val sunnah = content.attachSunnah(corporaRoot = File("inventory/hadiths"))
-    val hadith = sunnah.hadith("bukhari_urn_100010", lang = "en")
-}
-
-// Download tracking + space management (opt-in):
-val caching = CachingFetcher(File(context.cacheDir, "khushu"), fetcher)
-KhushuContent(caching).use { content ->
-    val used = content.downloads.summary()          // items + bytesByCategory
-    content.downloads.deleteWhere { it.category == "inventory/tafsirs" }
-}
+## Deployment (each script is DRY RUN unless `APPLY=1`)
+```bash
+bash deployment/publish_assets.sh            # report file count + bytes + plan
+APPLY=1 bash deployment/publish_assets.sh    # gh release create + upload assets
+bash deployment/import_to_turso.sh           # verify + plan (retires stale 'quran' test db)
+APPLY=1 bash deployment/import_to_turso.sh   # import the 4; destroy+replace, retire 'quran'
+python3 deployment/verify_deploy.py           # remote table/FTS checks after APPLY
 ```
+The asset release tag must match `KHUSHU_ASSET_RELEASE_TAG`, `assets.version`, and
+`asset_base_url` (one value; `assets.json` records it).
 
-See [docs/formats.md](docs/formats.md) for every pack format and the full
-API surface, and [LICENSE-CONTENT.md](LICENSE-CONTENT.md) for content terms.
+## App integration
+Host [Khushu](https://github.com/greykaizen/khushu) consumes exactly four logical
+DB endpoints (`core`/`hadith`/`content`/`audio`), configured centrally — never
+scattered per feature. Asset resolution: `db → asset_id → assets.release_name →
+ASSET_BASE_URL`. Recitation audio + article source links are external by design.
 
-## Layout
-
-- `api/` — Kotlin/JVM retrieval module (`com.khushu.data`)
-- `inventory/` — distribution tier (1.5 GB: quran_metadata, quran_scripts, mushaf_layout, atlas, fonts, translations, tafsirs, wbw, hadiths, recitations, topics, similar, curated, quran_search, chapters, other)
-- `assets/` — always-shipped content (276 MB: dua/dhikr, asma-ul-husna, adhan audio, islamic calendar)
-- `docs/` — format documentation
-- `tools/` — extraction/mirror scripts
-
-## The Khushu project family
-
-| Repo | Role |
-|---|---|
-| [khushu-engine](https://github.com/greykaizen/khushu-engine) | Computation — prayer times, astronomy, calendar, qibla, zakat, tasbih, observance, qada |
-| [khushu-data-api](https://github.com/greykaizen/khushu-data-api) | **You are here** — content: Quran text, hadith corpora, duas, adhan audio, bookmarks, download tracking |
-| [khushu](https://github.com/greykaizen/khushu) | The app — Android (Kotlin/Compose), consuming both libraries |
-
-## License
-
-Code: GPLv3. Content: per-pack terms in [LICENSE-CONTENT.md](LICENSE-CONTENT.md).
-
-
-## Role (2026-09): content store
-
-The retrieval API (api/, com.khushu.data.*) was absorbed into khushu-orchestrator v1.4.0 — that coordinate is retired. This repo is now the pure content store: inventory/, assets/, pipeline tools, and manifests. Runtime consumers fetch files over HTTP at these exact paths; nobody clones it for builds.
+## Content licensing
+Code GPLv3; per-pack content terms in [LICENSE-CONTENT.md](LICENSE-CONTENT.md)
+(translations/tafsir/hadith carry per-publisher non-commercial terms + attribution).
