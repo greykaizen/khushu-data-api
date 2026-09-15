@@ -78,31 +78,59 @@ def build_wbw():
     assert np==28 and nw>0
     c.execute("PRAGMA user_version=1");c.commit();c.close(); print(f"  wbw.db: {np} packs (14 lang×2) / {nw} word rows")
 
-# ---- curated.db (verse sets + science) ----
+# ---- curated.db (verse sets + recommended rules + science) ----
+# Source-of-truth fidelity: `map.json` values are RANGE STRINGS ("2:153,3:173"),
+# `recommended/lang_*.json` values are {title,description} dicts, `rules.json` has
+# {schema,defaults,rules:[{id,priority,when:{clauses},ref:{segments}}]}. Store each
+# VERBATIM (parse AyahRef / when / segments in the read layer) — never enumerate a
+# string/dict as if it were a list (the original bug that char-split refs).
 def build_curated():
-    c,db=fresh("curated.db","""CREATE TABLE curated_sets(id TEXT PRIMARY KEY, kind TEXT, title TEXT, n_refs INTEGER);
-      CREATE TABLE curated_refs(set_id TEXT, ordinal INTEGER, ref TEXT, PRIMARY KEY(set_id,ordinal));
-      CREATE TABLE science_topics(id TEXT PRIMARY KEY, title TEXT, references_count INTEGER, translations_json TEXT);
-      CREATE TABLE science_topic_ayahs(topic_id TEXT, ordinal INTEGER, ref TEXT, PRIMARY KEY(topic_id,ordinal));""")
-    sets=0; refs=0
-    for mf in glob.glob(f"{API}/inventory/curated/verses/*/map.json"):
+    c,db=fresh("curated.db","""
+      CREATE TABLE curated_sets(kind TEXT, entry_id TEXT, refs TEXT, PRIMARY KEY(kind,entry_id));
+      CREATE TABLE curated_titles(kind TEXT, entry_id TEXT, lang TEXT, title TEXT, PRIMARY KEY(kind,entry_id,lang));
+      CREATE TABLE recommended_rules(id TEXT PRIMARY KEY, priority INTEGER, when_json TEXT, segments_json TEXT);
+      CREATE TABLE recommended_defaults(key TEXT PRIMARY KEY, value TEXT);
+      CREATE TABLE recommended_texts(lang TEXT, id TEXT, title TEXT, description TEXT, PRIMARY KEY(lang,id));
+      CREATE TABLE science_topics(id TEXT PRIMARY KEY, title TEXT, references_count INTEGER, path TEXT, translations_json TEXT);""")
+    verses=f"{API}/inventory/curated/verses"
+    # curated verse sets: map.json (per-entry range string) + per-lang titles
+    nsets=0
+    for mf in glob.glob(f"{verses}/type*/map.json")+glob.glob(f"{verses}/major_sins/map.json"):
         kind=os.path.basename(os.path.dirname(mf)); mm=json.load(open(mf))
-        for sid,reflist in mm.items():
-            sid_full=f"{kind}/{sid}"
-            c.execute("INSERT INTO curated_sets VALUES(?,?,?,?)",(sid_full,kind,sid,len(reflist))); sets+=1
-            for i,rf in enumerate(reflist): c.execute("INSERT INTO curated_refs VALUES(?,?,?)",(sid_full,i,rf)); refs+=1
-    # recommended per-lang files
-    for lf in glob.glob(f"{API}/inventory/curated/verses/recommended/lang_*.json"):
+        for sid,ref in mm.items():
+            c.execute("INSERT INTO curated_sets VALUES(?,?,?)",(kind,sid,ref)); nsets+=1
+            for tf in glob.glob(f"{verses}/{kind}/*/*.json"):
+                lang=os.path.basename(os.path.dirname(tf))
+                try: td=json.load(open(tf))
+                except Exception: continue
+                if isinstance(td,dict) and sid in td:
+                    t=td[sid]; title=t if isinstance(t,str) else (t.get("title") if isinstance(t,dict) else str(t))
+                    if title: c.execute("INSERT OR REPLACE INTO curated_titles VALUES(?,?,?,?)",(kind,sid,lang,title))
+    # recommended: rules.json (verbatim when/segments) + defaults + lang texts
+    r=json.load(open(f"{verses}/recommended/rules.json"))
+    for k,v in (r.get("defaults") or {}).items():
+        c.execute("INSERT OR REPLACE INTO recommended_defaults VALUES(?,?)",(k,json.dumps(v,ensure_ascii=False)))
+    nrules=0
+    for rule in r.get("rules",[]):
+        c.execute("INSERT INTO recommended_rules VALUES(?,?,?,?)",(
+            rule["id"], rule.get("priority",0),
+            json.dumps(rule.get("when",{}),ensure_ascii=False),
+            json.dumps((rule.get("ref") or {}).get("segments",[]),ensure_ascii=False)))
+        nrules+=1
+    ntxt=0
+    for lf in glob.glob(f"{verses}/recommended/lang_*.json"):
         lang=os.path.basename(lf)[len('lang_'):-5]; d=json.load(open(lf))
-        for name,reflist in d.items():
-            sid_full=f"recommended:{lang}/{name}"
-            c.execute("INSERT OR REPLACE INTO curated_sets VALUES(?,?,?,?)",(sid_full,"recommended",name,len(reflist))); sets+=1
-            for i,rf in enumerate(reflist): c.execute("INSERT OR REPLACE INTO curated_refs VALUES(?,?,?)",(sid_full,i,rf)); refs+=1
+        for name,val in d.items():
+            title=(val.get("title") if isinstance(val,dict) else None) or ""
+            desc=(val.get("description") if isinstance(val,dict) else None)
+            c.execute("INSERT OR REPLACE INTO recommended_texts VALUES(?,?,?,?)",(lang,name,title,desc)); ntxt+=1
+    # science topics (index has path=html; the per-topic ayahs live in the html, no list table)
     si=json.load(open(f"{API}/inventory/curated/science/index.json"))
     for t in si:
-        c.execute("INSERT INTO science_topics VALUES(?,?,?,?)",(t["id"],t["title"],t.get("referencesCount"),json.dumps(t.get("translations",{}),ensure_ascii=False)))
+        c.execute("INSERT INTO science_topics VALUES(?,?,?,?,?)",(t["id"],t["title"],t.get("referencesCount"),t.get("path"),json.dumps(t.get("translations",{}),ensure_ascii=False)))
     st=c.execute("select count(*) from science_topics").fetchone()[0]
-    c.execute("PRAGMA user_version=1");c.commit();c.close(); print(f"  curated.db: {sets} sets / {refs} refs / {st} science topics")
+    c.execute("PRAGMA user_version=2");c.commit();c.close()
+    print(f"  curated.db: {nsets} verse-sets / {nrules} recommended rules / {ntxt} texts / {st} science topics")
 
 for f in (build_events,build_adhan,build_recitations,build_wbw,build_curated): f()
 print("OK")

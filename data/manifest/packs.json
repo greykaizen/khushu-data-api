@@ -3,9 +3,9 @@
  "user_version": 202609,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-v2026.09/{file}",
  "total_packs": 104,
- "total_bytes": 869826560,
+ "total_bytes": 870092800,
  "tier_bytes": {
-  "prebundle": 46530560,
+  "prebundle": 46796800,
   "first_run": 8433664,
   "on_demand": 814862336
  },
@@ -36,9 +36,11 @@
     "calendar_packs",
     "calendar_events",
     "curated_sets",
-    "curated_refs",
+    "curated_titles",
+    "recommended_rules",
+    "recommended_defaults",
+    "recommended_texts",
     "curated_science_topics",
-    "curated_science_topic_ayahs",
     "assets",
     "links"
    ],
@@ -46,8 +48,8 @@
     "dua_fts"
    ],
    "file": "content.db",
-   "bytes": 3514368,
-   "sha256": "06521c749ecb0b56f5bb6b796593bb2db3d7fb3e2797c06e2efb9591437debfa",
+   "bytes": 3780608,
+   "sha256": "19eb1b0ab08ee70de41b092e8b57c3e965c67aabc773221cb5515caf5596d5ac",
    "version": "v2026.09"
   },
   {

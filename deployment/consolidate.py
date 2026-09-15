@@ -98,7 +98,7 @@ def build():
     c=new_target("khushu-content"); attach(c,"dua.db",CONTENT_MAP,"content")
     for srcf,nm,tag in [("names.db",{"names":"names_names","asma_packs":"names_packs"},"names"),
                         ("events.db",{"events":"calendar_events","event_packs":"calendar_packs"},"cal"),
-                        ("curated.db",{"curated_sets":"curated_sets","curated_refs":"curated_refs","science_topics":"curated_science_topics","science_topic_ayahs":"curated_science_topic_ayahs"},"cur")]:
+                        ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics"},"cur")]:
         attach(c,srcf,nm,tag)
     attach(c,"assets.db",ASSETS_MAP,"assets")   # embedded registry for offline resolution
     c.execute("CREATE VIRTUAL TABLE main.dua_fts USING fts5(text, content='', tokenize='unicode61')")
