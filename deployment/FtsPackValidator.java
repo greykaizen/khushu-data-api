@@ -1,5 +1,5 @@
 import java.sql.*;
-public class FtsVal {
+public class FtsPackValidator {
   static int fails=0;
   static long one(String db,String sql){ try(Connection c=DriverManager.getConnection("jdbc:sqlite:"+db); Statement s=c.createStatement(); ResultSet r=s.executeQuery(sql)){return r.getLong(1);}catch(Exception e){System.out.println("  ERR "+sql+" -> "+e.getMessage());fails++;return -1;} }
   static void eq(String label,long got,long want){ boolean ok=got==want; if(!ok)fails++; System.out.printf("  %-46s got=%d want=%d %s%n",label,got,want,ok?"OK":"*** FAIL ***"); }

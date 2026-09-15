@@ -101,6 +101,7 @@ def build():
                         ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics"},"cur")]:
         attach(c,srcf,nm,tag)
     attach(c,"assets.db",ASSETS_MAP,"assets")   # embedded registry for offline resolution
+    attach(c,"catalog.db",{"font_packs":"font_packs","font_files":"font_files"},"fonts")   # font catalog metadata (blob registry lives in assets)
     c.execute("CREATE VIRTUAL TABLE main.dua_fts USING fts5(text, content='', tokenize='unicode61')")
     for rid,ti,tr,tx in c.execute("select id, title, translation, transliteration from dua_items"):
         c.execute("INSERT INTO main.dua_fts(rowid,text) VALUES(?,?)",(rid," ".join(x for x in [ti,tr,tx] if x)))

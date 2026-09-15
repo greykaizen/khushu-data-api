@@ -36,6 +36,10 @@ TAG = re.compile(r"<[^>]+>")
 COLLS = ["bukhari","muslim","abu_dawud","tirmidhi","nasai","ibn_majah","malik","riyadussalihin","forty"]
 # tables excluded from quran-core (the translation bulk, delivered as its own packs)
 QURAN_NON_CORE_PREFIX = ("translation_",)
+# translation_packs is the lightweight ~51-row REGISTRY (which packs exist); keep it in
+# quran-core so the catalog can list available translations offline. Only the heavy
+# per-verse tables + fts stay out (they ship as their own translation-<pack> fragments).
+QURAN_CORE_KEEP = {"translation_packs"}
 PREBUNDLE_PACKS = {"en_saheeh-international"}
 FIRST_RUN = {"wbw-en"}
 
@@ -127,7 +131,7 @@ def build_audio():
 
 def build_quran_core():
     MF="khushu-quran.db"; m=_connect(MF); pid="quran-core"
-    tables=[t for t in list_non_fts_tables(m) if not t.startswith(QURAN_NON_CORE_PREFIX)]
+    tables=[t for t in list_non_fts_tables(m) if not t.startswith(QURAN_NON_CORE_PREFIX) or t in QURAN_CORE_KEEP]
     path,f=_new_frag(pid,MF); _copy_tables_ddl(f,m,tables)
     for t in tables: _copy_rows(f,m,t)
     built=[]

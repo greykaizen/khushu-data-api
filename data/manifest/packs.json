@@ -3,9 +3,9 @@
  "user_version": 202609,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-v2026.09/{file}",
  "total_packs": 104,
- "total_bytes": 870092800,
+ "total_bytes": 870129664,
  "tier_bytes": {
-  "prebundle": 46796800,
+  "prebundle": 46833664,
   "first_run": 8433664,
   "on_demand": 814862336
  },
@@ -42,14 +42,16 @@
     "recommended_texts",
     "curated_science_topics",
     "assets",
+    "font_packs",
+    "font_files",
     "links"
    ],
    "fts": [
     "dua_fts"
    ],
    "file": "content.db",
-   "bytes": 3780608,
-   "sha256": "19eb1b0ab08ee70de41b092e8b57c3e965c67aabc773221cb5515caf5596d5ac",
+   "bytes": 3796992,
+   "sha256": "107b6a6cd26b966b48b3d5cc075cfc890ef7ded96d916d9a47396f99f80ed36d",
    "version": "v2026.09"
   },
   {
@@ -94,6 +96,7 @@
     "quran_relationships",
     "quran_topic_ayahs",
     "quran_search_arabic",
+    "translation_packs",
     "assets",
     "quran_chapter_info"
    ],
@@ -102,8 +105,8 @@
     "quran_surah_alias_fts"
    ],
    "file": "quran-core.db",
-   "bytes": 32419840,
-   "sha256": "de7c5d11f15aafc8625b7c2be5c4cfec260ed98512911beca426c0ca532fdd5a",
+   "bytes": 32440320,
+   "sha256": "2bc2386d7a5cbf4d8f7615058434cd2e1ef3f844824ffd08d39e892bebd57719",
    "version": "v2026.09"
   },
   {
