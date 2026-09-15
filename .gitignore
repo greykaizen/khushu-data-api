@@ -23,3 +23,4 @@ data/assets/
 .venv/
 data/db/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)
 data/build/  # generated (canonical home = Turso; rebuild: deployment/build_all.sh)
+.upload/
