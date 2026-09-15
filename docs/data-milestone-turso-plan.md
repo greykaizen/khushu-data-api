@@ -227,6 +227,9 @@ New `com.khushu.data.store` (transport-neutral; NOT named `libsql` since we chos
 
 Suite: `./gradlew --offline :orchestrator:test` → **138 tests, 0 failures**. This required **fixing a regression from my earlier `archive/` move**: 13 tests' sibling resolvers still pointed at top-level `inventory/`/`assets/` (128 failing) → repointed to `khushu-data-api/archive/…`.
 
-**Android validation gate CLOSED (2026-09-15, this pass):** `app/src/androidTest/java/com/kaizen/khushu/PackFtsValidationTest.kt` on API-37 emulator: **androidx.sqlite FAILS** (`no such module: fts5`), **libSQL Android PASSES** (bundled FTS5 native, 4/4 packs, all FTS shapes + rowid join). `tech.turso.libsql:libsql:0.1.0` is the app's Android local engine (see Khushu commit).
+**Android validation gate CLOSED + PR#2.1/2.2 DONE (2026-09-15):**
+- **PR#2.1** (orchestrator `49676c1`, 139 tests green): `Row` now has positional accessors (`At(index)`) as the mandatory contract (libSQL yields label-less rows); label access is a derived convenience. KDoc corrected re androidx vs libSQL.
+- **PR#2.2** (Khushu commit, emulator `BUILD SUCCESSFUL`): `LibsqlSqlStore` implements the `SqlStore` seam; the validation test now runs **through `SqlStore`** (pack→store→external-content MATCH, contentless MATCH, rowid→base JOIN, scalar) — all correct. androidx.sqlite cut fails `no such module: fts5`; libSQL (bundles FTS5) passes.
+- Both app artifacts are androidTest-scoped: Khushu pins `orchestrator-v1.6.1` (predates `com.khushu.data.store`), so **main** can't reference the seam until a new orchestrator tag is published + pinned.
 
-**Still NOT done:** PR#2 (`Row` gains positional access; `LibsqlSqlStore` in app; Quran repo migrated onto `SqlStore`); downloads/settings; publish packs to GH.
+**Publishing gate → your decision:** PR#2.3 (Quran repo → SqlStore), PR#2.4 (app DI), PR#2.5 (download→repo→UI) all need the store classes reachable from Khushu `main`. Path (AGENTS §11 workflow): tag khushu-orchestrator (e.g. `orchestrator-v1.7.0`) from the green master → JitPack builds → bump Khushu `khushuOrchestrator` pin → move `LibsqlSqlStore` to `core/data/store/` in main + add `AssetResolver`/`PackManager` → migrate Quran repo. Then downloads/settings + publish packs (APPLY=1).
