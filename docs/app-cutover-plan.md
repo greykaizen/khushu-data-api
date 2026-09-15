@@ -113,3 +113,18 @@ Once every screen is source-backed + instrumented green: delete `KhushuContent` 
   admin token never ships.
 - **No stub architecture**: a screen stays a fixture until its source is wired; settings sheets use the
   registry seam (empty state is honest).
+
+## Progress log
+- **Phase 0 DONE** — glyphs table (data-api `17ba9c9`, redeployed: Turso `khushu-quran` re-imported + `packs-quran-core` republished, all-6 spot check green, write DENIED). Orchestrator gap sources `SqlGlyphSource/SqlMushafLayoutSource/SqlChapterInfoSource/SqlSearchSource` + `SqlStoreResolver` (`2414b9a`, tag **v1.7.4**, 167 tests green).
+- **Phase 1 DONE** — `KhushuApplication` (manifest) boots `PackBootstrapper` (PrebundlePolicy + FirstRunPolicy) + `KhushuCorpus.init`; Gradle `fetchPacks` pulls the 4 prebundle packs → `assets/packs/` (gitignored; `KHUSHU_SKIP_PREBUNDLE` opt-out); Khushu pinned v1.7.4. Consumer build + APK asset layout verified on emulator.
+- **Phase 2a Asma DONE** (`7729968`) — `AsmaRepository`+`AsmaViewModel`+screen → 99 names, live search. Emulator green.
+- **Phase 2b Dua DONE** (`5c80801`) — `DuaRepository`+`DuaViewModel`+screen → 491 duas, subcategory chips, search. Emulator green.
+- **Phase 3 Downloads/Storage DONE** (`d53b803`) — `AppRoute.SettingsStorage` + `StorageViewModel`/`StorageScreen` over `PackApi` (all 104 packs, family-grouped, install/progress/delete, byte total; delete → remote fallback). Emulator green.
+- **Note:** Quran *browse* list already real (generated `QuranStatic.surahMetas`); `SEAM(list-data)` there is the **reader** (per-ayah mushaf/translation), not the list.
+
+## Remaining (unchanged from the phase list — deliberately NOT blind-merged)
+- **Phase 2c Quran reader** — `SurahDetail`/`Read` panes over `SqlQuranSource` (words/text) + `SqlTranslationSource` + `SqlMushafLayoutSource` + `SqlGlyphSource` (+ recitation timings). Design-heavy (mushaf pagination, glyph/atlas rendering, translation picker) → needs the running app + visual review.
+- **Phase 2d Sunnah** — collection/book/chapter + hadith content + FTS search over `SqlHadithSource`/`SqlScholarSource`.
+- **Phase 2b Events/Adhan** — 11 islamic events surfaced in the calendar + adhan picker in prayer settings (both are UX decisions, not pure data-mechanical).
+- **Atlas** source (glyph binary + catalog json) — low priority, reader-gated.
+- **Phase 4 JSON retirement** — only after every screen above is off `KhushuContent`'s JSON path; delete `content-v2026.09` tag refs + placeholder assets then.
