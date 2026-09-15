@@ -76,7 +76,7 @@ def new_target(name):
 def build():
     # 1) khushu-quran
     c=new_target("khushu-quran")
-    attach(c,"quran.db",QURAN_MAP,"quran"); attach(c,"translations.db",TRANS_MAP,"tr"); attach(c,"assets.db",ASSETS_MAP,"assets"); attach(c,"chapters.db",{"chapter_info":"quran_chapter_info"},"chap")
+    attach(c,"quran.db",QURAN_MAP,"quran"); attach(c,"translations.db",TRANS_MAP,"tr"); attach(c,"assets.db",ASSETS_MAP,"assets"); attach(c,"chapters.db",{"chapter_info":"quran_chapter_info","quran_config":"quran_config"},"chap")
     fts_external(c,"quran_arabic_fts","quran_search_arabic","ayah_id","text")
     fts_external(c,"quran_surah_alias_fts","quran_surah_search_aliases","id","alias")
     c.execute("CREATE VIRTUAL TABLE main.translation_fts USING fts5(plain, content='', tokenize='unicode61')")

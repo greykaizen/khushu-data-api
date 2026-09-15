@@ -3,9 +3,9 @@
  "user_version": 202609,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-v2026.09/{file}",
  "total_packs": 104,
- "total_bytes": 870129664,
+ "total_bytes": 870146048,
  "tier_bytes": {
-  "prebundle": 46833664,
+  "prebundle": 46850048,
   "first_run": 8433664,
   "on_demand": 814862336
  },
@@ -98,15 +98,16 @@
     "quran_search_arabic",
     "translation_packs",
     "assets",
-    "quran_chapter_info"
+    "quran_chapter_info",
+    "quran_config"
    ],
    "fts": [
     "quran_arabic_fts",
     "quran_surah_alias_fts"
    ],
    "file": "quran-core.db",
-   "bytes": 32440320,
-   "sha256": "2bc2386d7a5cbf4d8f7615058434cd2e1ef3f844824ffd08d39e892bebd57719",
+   "bytes": 32456704,
+   "sha256": "18f23f543180cda4934dcd1d275d0718ee09bdd6aaad3f2f3b5514a29af251e0",
    "version": "v2026.09"
   },
   {
