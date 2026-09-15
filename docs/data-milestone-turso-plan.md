@@ -191,3 +191,25 @@ Decision (b) locked. Destructive ops executed (backed up). Zero-data-loss audit 
 **Still gated / pending (needs Shah + a device — deliberately NOT done unattended):**
 - **Device-validation gate — largely cleared (2026-09-15):** A real device (CPH2691, API-37 emulator) had **no** CLI `sqlite3`, so validated our FTS5 through a *second independent SQLite engine* — **xerial sqlite-jdbc 3.46** (`deployment/FtsPackValidator.java`, ALL GREEN): external-content MATCH (arabic 45 / alias 17 / bukhari-prayer 1043), **contentless** MATCH (sahih-merciful 172 = base LIKE), contentless→base **rowid join** returns correct verse, base counts match. Android framework SQLite ships FTS5 (API 21+) and is the same SQLite lineage. **Remaining explicit step (needs a build+run, ideally with you watching):** one androidx.sqlite *instrumented* test on device to 100% confirm the framework loader; everything the packs must do is already proven. **No sync/replica to validate** (not in the user path).
 - **Slice 3–4 orchestrator libSQL rewrite** + **Slice 7 app wiring**: large, changes the public repo API the app calls; **not** started blind (no-stub rule + validation gate). Next when you're up: run the device spike, then rewrite repos one domain at a time (quran first), then publish packs + wire downloads/settings.
+
+## 12. First orchestrator PR — concrete design (needs Shah's eyes on the seam)
+
+Toolchain verified: `khushu-orchestrator` compiles + tests offline (`./gradlew --offline :orchestrator:compileTestKotlin` exit 0) and already `api`s `org.xerial:sqlite-jdbc:3.46.1.0` with a working read pattern in `LocalHadithRepository`.
+
+**The one architectural call:** the orchestrator is **JVM-only** and sqlite-jdbc bundles a *desktop* native lib that does NOT load on Android (exactly why `LocalHadithRepository` can't run in-app today). So the seam must abstract at the **query** level, never expose `java.sql.Connection`:
+```kotlin
+// NEW com.khushu.data.libsql (additive; no existing public API touched)
+interface SqlStore {
+  suspend fun query(pack: PackRef, sql: String, args: List<Any?> = emptyList()): List<Row>
+}
+// JVM/test impl: JdbcSqlStore (sqlite-jdbc, mode=ro&immutable=1) — reusable now
+// Android impl (in app): AndroidSqlStore over androidx.sqlite; OR inject Turso HTTP /v2/pipeline
+```
+- `LocalPackStore` opens `data/packs/<id>.db` via `SqlStore`.
+- `TursoStore` runs the SAME sql remotely — **prefer HTTP `/v2/pipeline`** (already validated; avoids the preview-SDK dependency), libSQL client optional/later.
+- `PackManager` = install/verify(sha256)/delete from `packs.json`; deleted pack → its queries route to `TursoStore`.
+- `AssetResolver` = `asset_id → release_name → KHUSHU_ASSET_URL_TEMPLATE`.
+- Migrate repos one domain at a time (quran first), **keeping** `model/plans/adaptive/markup` + public signatures; retire `data.transport` only after its repo is migrated.
+- **PR #1 (purely additive, zero app breakage):** `libsql` package + `JdbcSqlStore` + unit test over the real `quran-core.db` (surahs/ayahs/arabic-FTS MATCH) → proves the end-to-end contract. **PR #2:** migrate Quran repo. **App PR:** wire `AndroidSqlStore` + downloads/settings.
+
+**Why this is the stopping point, not "blocked":** local SQLite+FTS5 runtime + data are proven; the remaining choice (query-level `SqlStore`; remote via HTTP vs preview-SDK; the downloads/settings product surface) is a library-public-API + app-integration decision worth the maintainer in the loop, and androidx.sqlite needs the *app* build to instrument.
