@@ -3,7 +3,7 @@
 verification standard. Domain DBs store asset_id (= repo-relative path, the
 assets.db PK) instead of duplicating sha/size. External URLs (recitation audio,
 remote dua/name mp3) stay in the domain DB as refs; hosted files point at assets.db."""
-import sqlite3, os, glob, gzip, json, hashlib, sys
+import sqlite3, os, glob, gzip, json, hashlib, sys, re
 ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..",".."))
 API=os.path.join(ROOT,"archive")
 OUT=os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
@@ -97,8 +97,14 @@ def build_curated():
     # curated verse sets: map.json (per-entry range string) + per-lang titles
     nsets=0
     for mf in glob.glob(f"{verses}/type*/map.json")+glob.glob(f"{verses}/major_sins/map.json"):
-        kind=os.path.basename(os.path.dirname(mf)); mm=json.load(open(mf))
+        kind=os.path.basename(os.path.dirname(mf))
+        # `map2.json` is the same entry set with real refs for sentinel rows
+        # (e.g. type1/1 -> prayers_of_the_prophets) and finer word ranges
+        # (`2:127[7>9]`). Store the range only; the bracket is a display hint.
+        refined=os.path.join(os.path.dirname(mf),"map2.json")
+        mm=json.load(open(refined if os.path.exists(refined) else mf))
         for sid,ref in mm.items():
+            ref=re.sub(r"\[[^\]]*\]","",str(ref))
             c.execute("INSERT INTO curated_sets VALUES(?,?,?)",(kind,sid,ref)); nsets+=1
             for tf in glob.glob(f"{verses}/{kind}/*/*.json"):
                 lang=os.path.basename(os.path.dirname(tf))
