@@ -7,7 +7,7 @@ NOT, so we preserve it verbatim to keep the migration lossless. Donor:
 archive/inventory/fonts/available_fonts_info.json {fonts:[{id,display_name,usage,
 files:[{id,display_name,path,format,weight,provenance}]}]}."""
 import sqlite3, os, json, sys
-API="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive"
+API=os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","archive"))
 OUT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","data","build"))
 
 def main():

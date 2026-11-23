@@ -23,12 +23,18 @@ Verify: 491 duas, per-post counts sum 491 & match source recount, dhikr-dua
 reconciles to 491, 186 articles (bodies present), 2 cats / 12 article-cats,
 audio mirror tally vs files, sample text byte-equal (post-unescape).
 """
-import sqlite3, os, json, glob, sys, html, hashlib
+import sqlite3, os, json, glob, sys, html, hashlib, re
 
-SRC = "/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/assets/dua_dhikr"
-OUT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.insert(0, ROOT)
+from deployment.canon.articles import clean_html, clean_text
+SRC = os.path.join(ROOT, "archive", "assets", "dua_dhikr")
+OUT = os.path.join(ROOT, "data", "build")
+DUA_JSON = os.path.join(SRC, "dua_data.canonical.json")
+ORIGINAL_JSON = os.path.join(SRC, "dua_data.original.json")
 
 def u(s): return html.unescape(s or "")
+def compact(v): return json.dumps(v, ensure_ascii=False, separators=(",", ":"))
 
 def main():
     os.makedirs(OUT, exist_ok=True)
@@ -39,7 +45,7 @@ def main():
       CREATE TABLE duas(id INTEGER PRIMARY KEY, post_id INTEGER, category TEXT,
         subcategory TEXT, title TEXT, arabic TEXT, repetition TEXT, translation TEXT,
         transliteration TEXT, virtue TEXT, explanation TEXT, reference TEXT,
-        audio_asset_id TEXT);
+        audio_asset_id TEXT, blocks_json TEXT NOT NULL);
       CREATE INDEX ix_duas_sub ON duas(subcategory);
       CREATE INDEX ix_duas_cat ON duas(category);
       CREATE TABLE dua_posts(post_id INTEGER PRIMARY KEY, post_title TEXT,
@@ -53,18 +59,29 @@ def main():
         PRIMARY KEY(category_id, article_id));
     """)
 
-    duas = json.load(open(f"{SRC}/dua_data.json"))
-    local_audio = {os.path.basename(p)[len('dua_'):-len('.opus')] for p in glob.glob(f"{SRC}/dua_*.opus")}
+    if not os.path.exists(DUA_JSON):
+        sys.exit(
+            f"missing {DUA_JSON}\n"
+            "Run: python3 -m deployment.canon.cli freeze && "
+            "python3 -m deployment.canon.cli canonicalize"
+        )
+    duas = json.load(open(DUA_JSON, encoding="utf-8"))
+    local_audio = {os.path.basename(p)[len('dua_'):-len('.opus')] for p in glob.glob(os.path.join(SRC, "dua_*.opus"))}
     for x in duas:
         aid = str(x["id"]); asset = f"dua/dua_{aid}.opus" if aid in local_audio else None
-        c.execute("INSERT INTO duas VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                  (x["id"], x["post_id"], x["category"], x["subcategory"], u(x["title"]),
-                   x["arabic"], x["repetition"], u(x["translation"]), u(x["transliteration"]),
-                   u(x["virtue"]), u(x["explanation"]), u(x.get("reference") or "") or None, asset))
+        c.execute(
+            "INSERT INTO duas(id,post_id,category,subcategory,title,arabic,repetition,"
+            "translation,transliteration,virtue,explanation,reference,audio_asset_id,blocks_json) "
+            "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (x["id"], x["post_id"], x["category"], x["subcategory"], x["title"],
+             x["arabic"], x["repetition"], x["translation"], x["transliteration"],
+             x["virtue"], x["explanation"], x.get("reference") or None, asset,
+             compact(x["blocks"])),
+        )
 
     posts = {}
     for x in duas:
-        p = posts.setdefault(x["post_id"], dict(post_title=u(x["post_title"]), category=x["category"],
+        p = posts.setdefault(x["post_id"], dict(post_title=x["post_title"], category=x["category"],
                                                  subcategory=x["subcategory"], n=0))
         p["n"] += 1
     for pid, p in posts.items():
@@ -93,8 +110,9 @@ def main():
             if a["id"] not in seen:
                 seen.add(a["id"])
                 c.execute("INSERT INTO articles VALUES(?,?,?,?,?,?,?)",
-                          (a["id"], u(a["title"]), a["slug"], a.get("link"),
-                           body[0] if body else None, (body[1].get("content") or "") if body else None, has))
+                          (a["id"], clean_text(u(a["title"])), a["slug"], a.get("link"),
+                           body[0] if body else None,
+                           clean_html(body[1].get("content") or "") if body else None, has))
             c.execute("INSERT INTO article_members VALUES(?,?)", (cat["id"], a["id"]))
             art_cat[cat["id"]] = (cat["slug"], cat["name"], art_cat[cat["id"]][2]+1)
     for cid,(slug,name,n) in art_cat.items():
@@ -105,7 +123,7 @@ def main():
     c.executemany("INSERT INTO dua_fts(rowid, text) VALUES(?,?)",
         ((r[0], " ".join(filter(None,[r[1],r[2],r[3]]))) for r in
          c.execute("SELECT id, title, translation, transliteration FROM duas")))
-    c.execute("PRAGMA user_version=1"); c.commit()
+    c.execute("PRAGMA user_version=2"); c.commit()
     verify(c, duas, posts, ai, local_audio)
 
 def verify(c, duas, posts, ai, local_audio):
@@ -121,7 +139,7 @@ def verify(c, duas, posts, ai, local_audio):
           f"| post-sum={c.execute('select sum(dua_count) from dua_posts').fetchone()[0]}")
     # dhikr-dua regroup reconciliation
     dd=0
-    for f in glob.glob("/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/assets/dua_dhikr/dhikr-dua/*/*.json"):
+    for f in glob.glob(os.path.join(SRC, "dhikr-dua", "*", "*.json")):
         dd+=len(json.load(open(f)))
     print(f"  dhikr-dua regroup total={dd} (must==491) {'OK' if dd==491 else 'MISMATCH'}"); ok &= dd==491
     # articles
@@ -134,10 +152,28 @@ def verify(c, duas, posts, ai, local_audio):
     ok &= n_links==idx and n_art==169 and n_body==169
     # audio
     print(f"  audio: asset_refs={c.execute('select count(*) from duas where audio_asset_id is not null').fetchone()[0]}/488")
-    # text fidelity (post-unescape): compare a dua vs source unescaped
-    for x in duas[:3]:
-        g=c.execute("select translation from duas where id=?",(x['id'],)).fetchone()[0]
-        if g!=html.unescape(x['translation']): ok=False; print("  TEXT DIFF dua",x['id'])
+    # canonical blocks/plain parity
+    block_debris = re.compile(r"\*\*|`")
+    plain_debris = re.compile(r"</?(?:b|i|sup|br|qref|ref|hon)\b|\*\*|`|&#", re.IGNORECASE)
+    n_blocks = 0
+    for x in duas:
+        raw = c.execute("select blocks_json, title, translation, transliteration, virtue, explanation, reference from duas where id=?", (x["id"],)).fetchone()
+        try:
+            blocks = json.loads(raw[0])
+        except Exception as exc:
+            ok = False; print("  BLOCKS JSON ERROR dua", x["id"], exc); continue
+        expected_fields = {"arabic","translation","transliteration","virtue","explanation","reference"}
+        if blocks.get("schema") != 1 or set(blocks.get("fields", {})) != expected_fields:
+            ok = False; print("  BLOCKS SHAPE ERROR dua", x["id"])
+        for field in ("arabic","translation","transliteration","virtue","explanation","reference"):
+            for b in blocks.get("fields", {}).get(field, []):
+                if not isinstance(b.get("text"), str) or block_debris.search(b["text"]):
+                    ok = False; print("  BLOCK MARKUP ERROR dua", x["id"], field)
+                n_blocks += 1
+        for value in raw[1:]:
+            if value and plain_debris.search(value):
+                ok = False; print("  PLAIN MARKUP ERROR dua", x["id"])
+    print(f"  canonical blocks={n_blocks} plain clean={ok}")
     print(f"\nRESULT {'ALL VERIFIED' if ok else 'FAILURES'} | dua.db {os.path.getsize(OUT+'/dua.db')/1048576:.1f} MB")
     sys.exit(0 if ok else 1)
 

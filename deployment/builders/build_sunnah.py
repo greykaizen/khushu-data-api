@@ -12,7 +12,7 @@ DERIVED index over the matn text (ar+en), never canonical.
 """
 import sqlite3, os, json, sys
 
-SRC = "/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/inventory/hadiths"
+SRC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "archive", "inventory", "hadiths"))
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 COLLS = ["bukhari","muslim","abudawud","tirmidhi","nasai","ibnmajah","malik","riyadussalihin","forty"]
 

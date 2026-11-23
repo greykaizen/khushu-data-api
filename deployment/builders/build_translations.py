@@ -18,8 +18,10 @@ footnote counts vs the exact source, grand totals vs archive.
 """
 import sqlite3, os, json, re, sys
 
-API = "/home/kaizen/AndroidStudioProjects/khushu-data-api/archive"
-DONOR = "/home/kaizen/AndroidStudioProjects/Osprey/reference/QuranApp/app/src/main/assets/prebuilt_translations"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+API = os.path.join(ROOT, "archive")
+DONOR = os.environ.get("QURANAPP_TRANSLATIONS",
+    os.path.abspath(os.path.join(ROOT, "..", "QuranApp", "app", "src", "main", "assets", "prebuilt_translations")))
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 TAG = re.compile(r"<[^>]+>")
 

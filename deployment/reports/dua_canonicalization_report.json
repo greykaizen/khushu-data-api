@@ -1,0 +1,869 @@
+{
+  "schema": 1,
+  "source_sha256": "fea2dde2d77c798a1eda1fb9c8b9a93c71aadf8f487522873891516bc7eb4e19",
+  "canonical_sha256": "a529923f0999db8f43c75679d0bd8050ca7df41ad20d669e7b183ebb74fe0c5b",
+  "record_count": 491,
+  "issue_counts": {
+    "warning": 115
+  },
+  "issues": [
+    {
+      "id": 2,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Anas bin Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Prophet <hon kind=\"saw\">ﷺ</hon> tra"
+    },
+    {
+      "id": 14,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAlī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated that a slave who was buying his freedom came to him and said:"
+    },
+    {
+      "id": 20,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah<"
+    },
+    {
+      "id": 22,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Anas b. Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “The Prophet <hon kind=\"saw\">ﷺ</hon> perform"
+    },
+    {
+      "id": 31,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Al-Zuhrī (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>)</b> narrated: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> w"
+    },
+    {
+      "id": 32,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ubayy b. Kaʿb (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that he had a vessel in which he kept dates. "
+    },
+    {
+      "id": 33,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: "
+    },
+    {
+      "id": 34,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "Brief Commentary\n\n• We are asking the Almighty by His Greatest Name (according to many scholars): the name “Allah” itsel"
+    },
+    {
+      "id": 45,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 48,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "Brief Commentary\n\n• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere toleranc"
+    },
+    {
+      "id": 56,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ubayy b. Kaʿb (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that he had a vessel in which he kept dates. "
+    },
+    {
+      "id": 57,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: "
+    },
+    {
+      "id": 57,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "triple_asterisk_boundary",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrat"
+    },
+    {
+      "id": 57,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_bold_marker",
+      "excerpt": " Allah <hon kind=\"saw\">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل"
+    },
+    {
+      "id": 57,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_italic_marker",
+      "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
+    },
+    {
+      "id": 58,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”"
+    },
+    {
+      "id": 69,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 72,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**Brief Commentary**• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere tolera"
+    },
+    {
+      "id": 83,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "triple_asterisk_boundary",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrat"
+    },
+    {
+      "id": 83,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_bold_marker",
+      "excerpt": " Allah <hon kind=\"saw\">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل"
+    },
+    {
+      "id": 83,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_italic_marker",
+      "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
+    },
+    {
+      "id": 89,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Suhayl (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>)</b> reported that Abū Ṣālih (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>) us"
+    },
+    {
+      "id": 97,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdullāh b. ʿAbbās (radiy Allāhu ʿanhumā) narrated that he stayed overnight in the house of Maymūnah (<hon kind=\"ra\">رَ"
+    },
+    {
+      "id": 99,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdur Raḥmān b. ʿAwf (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘A’isha (<hon kind=\"ra\">رَضِيَ اللَ"
+    },
+    {
+      "id": 102,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah "
+    },
+    {
+      "id": 110,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind=\"saw\">ﷺ</ho"
+    },
+    {
+      "id": 112,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdullāh b. ʿUmar (radiy Allāhū ‘anhumā) narrated, “Once we were praying with the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 113,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdur Raḥmān b. ʿAwf (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘A’isha (<hon kind=\"ra\">رَضِيَ اللَ"
+    },
+    {
+      "id": 117,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah "
+    },
+    {
+      "id": 130,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ** (O Allah, there is none who can withhold what You give, "
+    },
+    {
+      "id": 139,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 141,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I heard the Messenger of Allah <hon kind=\"saw\">ﷺ</hon>"
+    },
+    {
+      "id": 143,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Hudhayfah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) saw the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> praying at "
+    },
+    {
+      "id": 145,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ibn Mas’ūd (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: “The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> tau"
+    },
+    {
+      "id": 145,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**اَلتَّحِيَّاتُ** [All royal greetings]: In different cultures, royalty are shown respect in different ways. Some stand"
+    },
+    {
+      "id": 146,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbd al-Raḥmān ibn Abī Laylā (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>) said: “Kaʿb ibn ʿUjrah (<hon kind=\"ra\">رَضِيَ اللَّ"
+    },
+    {
+      "id": 146,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "Next, after greeting and paying respect to the Lord of the worlds, you now move on to paying your respect to the best of"
+    },
+    {
+      "id": 146,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_italic_marker",
+      "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> said,"
+    },
+    {
+      "id": 146,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_italic_marker",
+      "excerpt": "(Nasā’ī).*"
+    },
+    {
+      "id": 150,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAlī b. Abū Tālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 151,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Muʿādh b. Jabal (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that the Messenger of Allah <hon kind=\"saw\""
+    },
+    {
+      "id": 153,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Sāliḥ</b> reported on the authority of some Companions (radiy Allāhū ‘anhum) that the Prophet <hon kind=\"saw\">ﷺ</"
+    },
+    {
+      "id": 164,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Mu’ādh b. Jabal (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that the Messenger of Allah <hon kind=\"saw\""
+    },
+    {
+      "id": 166,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 174,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “In Sūrah al-Baqarah, there is a verse which is the best ver"
+    },
+    {
+      "id": 176,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "triple_asterisk_boundary",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrat"
+    },
+    {
+      "id": 176,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_bold_marker",
+      "excerpt": " Allah <hon kind=\"saw\">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل"
+    },
+    {
+      "id": 176,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unmatched_italic_marker",
+      "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
+    },
+    {
+      "id": 188,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "‘Ā’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) reported that when the Messenger of Allah <hon kind=\"saw\">ﷺ</hon>"
+    },
+    {
+      "id": 198,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ibn Abbas (radiy Allāhū ‘anhumā)</b> narrates: “When the Prophet <hon kind=\"saw\">ﷺ</hon> would stand for the night (t"
+    },
+    {
+      "id": 202,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀ’isha (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrates: “The people complained to the Messenger of Allah <hon ki"
+    },
+    {
+      "id": 208,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "ِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> got up to pray at night (for tahajjud prayer) he uttered the takbīr (الله أكبر) and then said: “[the above]”. He then said: لَا إِلَهَ إِلَّا ٱللَّ"
+    },
+    {
+      "id": 213,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ibn ‘Umar (radiy Allāhū ‘anhumā)</b> narrates: “While we performing salah with the Messenger of Allah (<hon kind=\"saw"
+    },
+    {
+      "id": 217,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ali (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> sai"
+    },
+    {
+      "id": 223,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbd al-Raḥmān ibn Abī Laylā (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>) said: “Kaʿb ibn ʿUjrah (<hon kind=\"ra\">رَضِيَ اللَّ"
+    },
+    {
+      "id": 273,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”"
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 276,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀ’isha (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I said: ‘O Messenger of Allah <hon kind=\"saw\">ﷺ</hon>, "
+    },
+    {
+      "id": 278,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 281,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind=\"saw\">ﷺ</ho"
+    },
+    {
+      "id": 288,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abdullah b. Mas’ūd (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> says: “From the supplication of the Messenger of "
+    },
+    {
+      "id": 289,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀ’isha (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrates: “I said: ‘O Messenger of Allah <hon kind=\"saw\">ﷺ</hon>, "
+    },
+    {
+      "id": 290,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "ِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “When it was the day of (the battle of) Uhud and the polytheists retreated, the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> said: ‘Arrange yourselves (in rows) so I can praise my Lord.’ So the Companio"
+    },
+    {
+      "id": 291,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Sa’d (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that a man came for Salāh while Messenger of Allah <ho"
+    },
+    {
+      "id": 297,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Shahr bin Hawshab (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>)</b> said: “I said to Umm Salamah (<hon kind=\"ra\">رَضِيَ الل"
+    },
+    {
+      "id": 304,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Mu’ādh b. Jabal (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that the Messenger of Allah <hon kind=\"saw\""
+    },
+    {
+      "id": 310,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "Kurayb reported that ʿAbdullāh b. ʿAbbās (radiy Allāhū ‘anhumā) reported that he spent (one night) in the house of the M"
+    },
+    {
+      "id": 311,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “There is no one amongst you who, when he is stricken with g"
+    },
+    {
+      "id": 315,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdur Rahmān b. Awf (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘Ā’isha (<hon kind=\"ra\">رَضِيَ اللَّ"
+    },
+    {
+      "id": 320,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ibn ‘Abbās (radiy Allāhū ‘anhumā)</b> reported: “Once the Prophet (<hon kind=\"saw\">ﷺ</hon>) entered a lavatory and I "
+    },
+    {
+      "id": 326,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “O people, beware of this shirk, for it is more subtle than "
+    },
+    {
+      "id": 331,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Shakal b. Ḥumayd (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: I came to the Prophet <hon kind=\"saw\">ﷺ</hon>"
+    },
+    {
+      "id": 340,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Alī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that a Mukatib came to him and said: “Indeed I am not c"
+    },
+    {
+      "id": 347,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "Abū Umāmah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) addressed the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> saying:"
+    },
+    {
+      "id": 357,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”"
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 360,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀ’isha (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I said: ‘O Messenger of Allah <hon kind=\"saw\">ﷺ</hon>, "
+    },
+    {
+      "id": 362,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 365,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Hurayrah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind=\"saw\">ﷺ</ho"
+    },
+    {
+      "id": 371,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “There is no one amongst you who, when he is stricken with g"
+    },
+    {
+      "id": 374,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Ibn ʿAbbās (radiy Allāhū ‘anhumā)</b> narrated: “[the above] was said by Ibrāhīm (<hon kind=\"as\">عَلَيْهِ السَّلَام</"
+    },
+    {
+      "id": 376,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Anas b. Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that when the Messenger of Allah <hon kind=\"s"
+    },
+    {
+      "id": 384,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “The supplication of Dhun-Nūn (Prophet Yūnus) when he suppli"
+    },
+    {
+      "id": 388,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "‘Abdullāh b. ‘Umar (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُمَا</hon>) narrated that the Messenger of Allah <hon kind=\"saw\">"
+    },
+    {
+      "id": 390,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “Shaytān comes to one of you and says: ‘Who created you?’ He"
+    },
+    {
+      "id": 391,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "<b>Abu Zumayy</b> reported: “I asked Ibn Abbas (radiy Allāhū ‘anhumā): ‘What is this that I am experiencing?’ He answered: ‘What is it?’ I said: ‘By Allah, I cannot talk about it.’ He asked me: ‘Is it something to do with doubt?’ [When answ"
+    },
+    {
+      "id": 392,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “O people, beware of this shirk, for it is more subtle than "
+    },
+    {
+      "id": 396,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said, “If anyone of you sneezes, he should say ‘Al-ḥamdu li-llāh’ "
+    },
+    {
+      "id": 397,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "“The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> said, ” If anyone of you sneezes, he should say ‘Al-ḥamdu li-llāh’ (Prai"
+    },
+    {
+      "id": 398,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "else without greeting him. Ṭufayl said: “I came to Abdullāh b. ʿUmar one day and he followed me to the market. I asked him: ‘What do you do in the market, as you do not stop for any merchandise, or ask any price, or bargain, or sit in the g"
+    },
+    {
+      "id": 399,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Usāmah b. Zayd (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind=\"saw\">"
+    },
+    {
+      "id": 400,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "“Anas (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) said: “A man was with the Prophet <hon kind=\"saw\">ﷺ</hon> when anothe"
+    },
+    {
+      "id": 401,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "رَضِيَ اللَّهُ عَنْهَا</hon>) narrates: “Whenever the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> saw rain, he used to say [the above]. (Bukhārī 1032)\n\nAnas bin Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) reported: “It rained upon us "
+    },
+    {
+      "id": 403,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Jābir b. ʿAbdullāh (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “Some women came to the Messenger of Al"
+    },
+    {
+      "id": 404,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Jābir b. ʿAbdullāh (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “Some women came to the Messenger of Al"
+    },
+    {
+      "id": 405,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "“Anas (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: “A man came into the mosque on Friday while the Messenger o"
+    },
+    {
+      "id": 407,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Anas b. Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said, “A person entered the Mosque on a Friday through"
+    },
+    {
+      "id": 409,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀishā (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) reported: “Whenever the wind was stormy, the Messenger of Allah <ho"
+    },
+    {
+      "id": 416,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "“Abū Saʿīd al-Khuḍrī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) reported that the Messenger of Allah <hon kind=\"saw\">ﷺ"
+    },
+    {
+      "id": 419,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Umm Salamah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>)</b> reported: “The Messenger of Allah <hon kind=\"saw\">ﷺ</ho"
+    },
+    {
+      "id": 422,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "A daughter of the Prophet <hon kind=\"saw\">ﷺ</hon> sent word to him that her child was dying; he responded by conveying t"
+    },
+    {
+      "id": 423,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAwf b. Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) reported: “The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> per"
+    },
+    {
+      "id": 428,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": "ِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> used to teach them, when they went out to the graveyard, to say [the above]. (Ibn Mājah 1547)\n\nThe Messenger of Allah <hon kind=\"saw\">ﷺ</hon> said: “Vis"
+    },
+    {
+      "id": 432,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAlī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates that he saw the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> sa"
+    },
+    {
+      "id": 434,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Khawlah bint Ḥākim (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>)</b> reported: “I heard the Messenger of Allah <hon k"
+    },
+    {
+      "id": 437,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "nested_quote",
+      "excerpt": " say to a man if he intended to travel, “I bid you farewell as the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would bid farewell. The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would say [the above]. (Tirmidhī 3443)\n\nThe Messenger of Allah "
+    },
+    {
+      "id": 441,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿUmar b. Khaṭṭāb (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) reported: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</"
+    },
+    {
+      "id": 442,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Jarīr b. ʿAbdullāh al-Bajalī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “From the time I embraced Isl"
+    },
+    {
+      "id": 454,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “Whomsoever Allah gives milk to drink, then let him say [the"
+    },
+    {
+      "id": 464,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Jābir (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> used"
+    },
+    {
+      "id": 470,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Fātimah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) the daughter of the Messenger of Allah <hon kind=\"saw\">ﷺ</hon><"
+    },
+    {
+      "id": 474,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Umm Salamah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>)</b> said: “The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> n"
+    },
+    {
+      "id": 477,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿĀishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) narrates that when the Prophet <hon kind=\"saw\">ﷺ</hon> came out of"
+    },
+    {
+      "id": 490,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "<b>Abū Dharr (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: “When the Prophet <hon kind=\"saw\">ﷺ</hon> would lie "
+    },
+    {
+      "id": 491,
+      "field": "virtue",
+      "severity": "warning",
+      "reason": "unbalanced_double_quote",
+      "excerpt": "ʿAbdullāh b. ʿAbbās (radiy Allāhu ʿanhumā) narrated that he stayed overnight in the house of Maymūnah (<hon kind=\"ra\">رَ"
+    }
+  ],
+  "mismatches": [],
+  "blocks": {
+    "arabic": {
+      "records": 491,
+      "blocks": {
+        "arabic": 501,
+        "bismillah": 17
+      },
+      "heading_levels": {}
+    },
+    "explanation": {
+      "records": 469,
+      "blocks": {
+        "paragraph": 649,
+        "heading": 149,
+        "bullet": 921,
+        "quote": 24
+      },
+      "heading_levels": {
+        "1": 145,
+        "2": 4
+      }
+    },
+    "reference": {
+      "records": 405,
+      "blocks": {
+        "paragraph": 405
+      },
+      "heading_levels": {}
+    },
+    "translation": {
+      "records": 489,
+      "blocks": {
+        "paragraph": 519
+      },
+      "heading_levels": {}
+    },
+    "transliteration": {
+      "records": 488,
+      "blocks": {
+        "paragraph": 516
+      },
+      "heading_levels": {}
+    },
+    "virtue": {
+      "records": 430,
+      "blocks": {
+        "paragraph": 778,
+        "quote": 192
+      },
+      "heading_levels": {}
+    }
+  }
+}

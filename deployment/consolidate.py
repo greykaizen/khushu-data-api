@@ -41,6 +41,10 @@ def rewrite_names(ddl, name_map):
     return ddl
 
 def attach(dst, srcfile, name_map, tag):
+    srcpath = os.path.join(BUILD, srcfile)
+    if not os.path.exists(srcpath) or os.path.getsize(srcpath) == 0:
+        print(f"   skip {srcfile} (not built)")
+        return
     dst.execute(f"ATTACH DATABASE '{BUILD}/{srcfile}' AS s")
     fts=set(r[0] for r in dst.execute("select name from s.sqlite_master where sql like '%fts5%' and type='table'").fetchall())
     def shadow(n): return any(n==p or n.startswith(p+"_") for p in fts)
@@ -73,27 +77,44 @@ def new_target(name):
     if os.path.exists(out): os.remove(out)
     return sqlite3.connect(out)
 
+def _ready(name):
+    path = os.path.join(BUILD, name)
+    return os.path.exists(path) and os.path.getsize(path) > 0
+
+
 def build():
     # 1) khushu-quran
-    c=new_target("khushu-quran")
-    attach(c,"quran.db",QURAN_MAP,"quran"); attach(c,"translations.db",TRANS_MAP,"tr"); attach(c,"assets.db",ASSETS_MAP,"assets"); attach(c,"chapters.db",{"chapter_info":"quran_chapter_info","quran_config":"quran_config"},"chap")
-    fts_external(c,"quran_arabic_fts","quran_search_arabic","ayah_id","text")
-    fts_external(c,"quran_surah_alias_fts","quran_surah_search_aliases","id","alias")
-    c.execute("CREATE VIRTUAL TABLE main.translation_fts USING fts5(plain, content='', tokenize='unicode61')")
-    TAG=re.compile(r"<[^>]+>"); 
-    for rid,tr in c.execute("select rowid, translation from translation_ayahs"): c.execute("INSERT INTO main.translation_fts(rowid,plain) VALUES(?,?)",(rid,TAG.sub("",tr or "")))
-    c.commit(); c.close()
+    if _ready("quran.db") and _ready("translations.db"):
+        c=new_target("khushu-quran")
+        attach(c,"quran.db",QURAN_MAP,"quran"); attach(c,"translations.db",TRANS_MAP,"tr"); attach(c,"assets.db",ASSETS_MAP,"assets"); attach(c,"chapters.db",{"chapter_info":"quran_chapter_info","quran_config":"quran_config"},"chap")
+        fts_external(c,"quran_arabic_fts","quran_search_arabic","ayah_id","text")
+        fts_external(c,"quran_surah_alias_fts","quran_surah_search_aliases","id","alias")
+        c.execute("CREATE VIRTUAL TABLE main.translation_fts USING fts5(plain, content='', tokenize='unicode61')")
+        TAG=re.compile(r"<[^>]+>");
+        for rid,tr in c.execute("select rowid, translation from translation_ayahs"): c.execute("INSERT INTO main.translation_fts(rowid,plain) VALUES(?,?)",(rid,TAG.sub("",tr or "")))
+        c.commit(); c.close()
+    else:
+        print("   skip khushu-quran (source not built)")
     # 2) khushu-tafsir
-    c=new_target("khushu-tafsir"); attach(c,"tafsir.db",TAFSIR_MAP,"tafsir"); c.commit(); c.close()
+    if _ready("tafsir.db"):
+        c=new_target("khushu-tafsir"); attach(c,"tafsir.db",TAFSIR_MAP,"tafsir"); c.commit(); c.close()
+    else:
+        print("   skip khushu-tafsir (source not built)")
     # 3) khushu-wbw
-    c=new_target("khushu-wbw"); attach(c,"wbw.db",WBW_MAP,"wbw"); c.commit(); c.close()
+    if _ready("wbw.db"):
+        c=new_target("khushu-wbw"); attach(c,"wbw.db",WBW_MAP,"wbw"); c.commit(); c.close()
+    else:
+        print("   skip khushu-wbw (source not built)")
     # 4) khushu-hadith
-    c=new_target("khushu-hadith")
-    for coll in COLLS:
-        nm={t:f"{coll}_{t}" for t in HADITH_TABLES}
-        attach(c,f"{COLL_SRC[coll]}.db",nm,coll)
-        fts_external_plain(c,f"{coll}_hadith_fts",f"{coll}_hadith_text","matn")
-    attach(c,"scholars.db",{"scholars":"scholars"},"scholars"); c.commit(); c.close()
+    if any(_ready(f"{COLL_SRC[coll]}.db") for coll in COLLS):
+        c=new_target("khushu-hadith")
+        for coll in COLLS:
+            nm={t:f"{coll}_{t}" for t in HADITH_TABLES}
+            attach(c,f"{COLL_SRC[coll]}.db",nm,coll)
+            fts_external_plain(c,f"{coll}_hadith_fts",f"{coll}_hadith_text","matn")
+        attach(c,"scholars.db",{"scholars":"scholars"},"scholars"); c.commit(); c.close()
+    else:
+        print("   skip khushu-hadith (sources not built)")
     # 5) khushu-content
     c=new_target("khushu-content"); attach(c,"dua.db",CONTENT_MAP,"content")
     for srcf,nm,tag in [("names.db",{"names":"names_names","asma_packs":"names_packs"},"names"),
@@ -112,9 +133,12 @@ def build():
     c.executemany("INSERT INTO main.links VALUES(?,?)", list(u.items()))
     c.commit(); c.close()
     # 6) khushu-audio
-    c=new_target("khushu-audio"); attach(c,"recitations.db",{"reciters":"recitation_reciters","recitation_timings":"recitation_timings"},"rec")
-    attach(c,"adhan.db",{"adhan_audio":"adhans"},"adhan"); attach(c,"assets.db",ASSETS_MAP,"assets")
-    c.commit(); c.close()
+    if _ready("recitations.db") or _ready("adhan.db"):
+        c=new_target("khushu-audio"); attach(c,"recitations.db",{"reciters":"recitation_reciters","recitation_timings":"recitation_timings"},"rec")
+        attach(c,"adhan.db",{"adhan_audio":"adhans"},"adhan"); attach(c,"assets.db",ASSETS_MAP,"assets")
+        c.commit(); c.close()
+    else:
+        print("   skip khushu-audio (sources not built)")
 
 if __name__=="__main__":
     os.makedirs(OUT,exist_ok=True); build(); print("consolidated 6 into data/db/")

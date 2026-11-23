@@ -5,8 +5,9 @@ Verbatim HTML text preserved; resources[] kept as JSON. Also carries the PUA
 glyph table (quran_config) so the offline reader is fully SQL-backed. Merged
 into khushu-quran."""
 import sqlite3,os,glob,json
-SRC="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/inventory/chapters/info"
-GLYPHS="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/inventory/quran_metadata/quran_glyphs.json"
+ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..",".."))
+SRC=os.path.join(ROOT,"archive","inventory","chapters","info")
+GLYPHS=os.path.join(ROOT,"archive","inventory","quran_metadata","quran_glyphs.json")
 OUT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","data","build"))
 def main():
     os.makedirs(OUT,exist_ok=True); db=OUT+"/chapters.db"

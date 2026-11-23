@@ -8,7 +8,8 @@ qpc_v1_by_page.tar.zst ≡ kfqpc zips (604/604 hash-verified) → keep the pages
 drop the duplicate archives; keep the distinct tajweed bundle; drop tar.gz stubs.
 Recitation audio stays external (not here)."""
 import sqlite3, os, glob, hashlib, sys, json, re
-API="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive"
+ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..",".."))
+API=os.path.join(ROOT,"archive")
 OUT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","data","build"))
 VERSION=os.environ.get("KHUSHU_ASSETS_VERSION","assets-v2026.09")
 MIME={".opus":"audio/opus",".ttf":"font/ttf",".otf":"font/otf",".zip":"application/zip",

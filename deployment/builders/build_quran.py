@@ -14,7 +14,9 @@ Turso Cloud/embedded consume unchanged.
 """
 import sqlite3, sys, os
 
-REF = "/home/kaizen/AndroidStudioProjects/Osprey/reference/QuranApp/app/src/main/assets/db"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+REF = os.environ.get("QURANAPP_ASSETS_DB",
+    os.path.abspath(os.path.join(ROOT, "..", "QuranApp", "app", "src", "main", "assets", "db")))
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 DB = os.path.join(OUT, "quran.db")
 
@@ -72,9 +74,19 @@ def main():
         maps.update(tmap)
         sc.close()
 
-    # normalized Arabic search text from the donor FTS4 content table
+    # normalized Arabic search text from the donor FTS content table. Donor
+    # builds differ: older ones expose c0ayah_id/c1text aliases, newer ones
+    # only have c0/c1 columns. Read the real column names instead of assuming.
     dst.execute("CREATE TABLE search_arabic(ayah_id INTEGER PRIMARY KEY, text TEXT NOT NULL)")
-    dst.execute("INSERT INTO search_arabic SELECT c0ayah_id, c1text FROM q.arabic_search_content")
+    src_cols = [r[1] for r in dst.execute("pragma q.table_info('arabic_search_content')")]
+    def pick(*names):
+        for n in names:
+            if n in src_cols:
+                return n
+        raise SystemExit(f"arabic_search_content: none of {names} in {src_cols}")
+    ayah_col = pick("c0ayah_id", "ayah_id", "c0")
+    text_col = pick("c1text", "text", "c1")
+    dst.execute(f'INSERT INTO search_arabic SELECT "{ayah_col}", "{text_col}" FROM q.arabic_search_content')
 
     # external-content FTS5 (index only; content lives in the base tables)
     dst.execute("CREATE VIRTUAL TABLE arabic_fts USING fts5(text, "

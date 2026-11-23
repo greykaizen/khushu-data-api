@@ -4,7 +4,8 @@ verification standard. Domain DBs store asset_id (= repo-relative path, the
 assets.db PK) instead of duplicating sha/size. External URLs (recitation audio,
 remote dua/name mp3) stay in the domain DB as refs; hosted files point at assets.db."""
 import sqlite3, os, glob, gzip, json, hashlib, sys
-API="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive"
+ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),"..",".."))
+API=os.path.join(ROOT,"archive")
 OUT=os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 def sha(p):
     h=hashlib.sha256()

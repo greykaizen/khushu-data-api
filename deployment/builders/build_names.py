@@ -7,7 +7,7 @@ local .opus are named by that SAME slug basename -> join is exact (99/99 verifie
 so we link number -> local opus by basename(remote audio), not transliteration.
 No FTS5: 99 rows, linear filter is enough. Audio stays files (path+sha256)."""
 import sqlite3, os, json, glob, sys, hashlib
-SRC="/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/assets/asma_ul_husna"
+SRC=os.path.abspath(os.path.join(os.path.dirname(__file__),"..","..","archive","assets","asma_ul_husna"))
 OUT=os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 def main():
     if os.path.exists(OUT+"/names.db"): os.remove(OUT+"/names.db")

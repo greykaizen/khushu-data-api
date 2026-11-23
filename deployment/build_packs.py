@@ -22,15 +22,15 @@ Tiers (consumption contract for the app):
   first_run  -> fetched on first launch (wbw english)
   on_demand  -> user-initiated download from GH releases
 """
-import sqlite3, os, re, sys, json, hashlib, glob
+import sqlite3, os, re, sys, json, hashlib, glob, argparse
 from collections import OrderedDict
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DB   = os.path.join(ROOT, "data", "db")
 PACKS= os.path.join(ROOT, "data", "packs")
 MANIFEST = os.path.join(ROOT, "data", "manifest", "packs.json")
-VERSION = "v2026.09"
-USER_VERSION = 202609
+VERSION = "v2026.11"
+USER_VERSION = 202611
 TAG = re.compile(r"<[^>]+>")
 
 COLLS = ["bukhari","muslim","abu_dawud","tirmidhi","nasai","ibn_majah","malik","riyadussalihin","forty"]
@@ -220,14 +220,36 @@ def _pack(pid,family,origin,tables,fts,tier,path,ic,detail=None):
                        version=VERSION,**({"detail":detail} if detail else {}))
 
 def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--only", choices=["content","audio","quran-core","translations","wbw","tafsir","hadith"],
+                    help="build one family (useful when only some master DBs exist)")
+    ap.add_argument("--manifest", default=MANIFEST)
+    args = ap.parse_args()
+    only = args.only
     packs=[]
-    packs.append(build_content())
-    packs.append(build_audio())
-    packs.append(build_quran_core())
-    packs += build_translation_packs()
-    packs += build_wbw_packs()
-    packs += build_tafsir_packs()
-    packs += build_hadith_packs()
+    if only in (None, "content"):
+        packs.append(build_content())
+    if only in (None, "audio"):
+        packs.append(build_audio())
+    if only in (None, "quran-core"):
+        packs.append(build_quran_core())
+    if only in (None, "translations"):
+        packs += build_translation_packs()
+    if only in (None, "wbw"):
+        packs += build_wbw_packs()
+    if only in (None, "tafsir"):
+        packs += build_tafsir_packs()
+    if only in (None, "hadith"):
+        packs += build_hadith_packs()
+    # --only is an incremental build. Never replace the complete manifest with
+    # just the family we happened to rebuild: that silently drops every other
+    # pack and points the app at an incomplete catalog. Merge by family.
+    if only is not None and os.path.exists(args.manifest):
+        family = {"translations": "translation"}.get(only, only)
+        with open(args.manifest, encoding="utf-8") as fh:
+            previous = json.load(fh)
+        kept = [p for p in previous.get("packs", []) if p.get("family") != family]
+        packs = sorted(kept + packs, key=lambda p: p["id"])
     by_tier={"prebundle":0,"first_run":0,"on_demand":0}
     for p in packs: by_tier[p["tier"]]+=p["bytes"]
     man=OrderedDict(version=VERSION,user_version=USER_VERSION,
@@ -237,17 +259,19 @@ def main():
         prebundle_ids=[p["id"] for p in packs if p["tier"]=="prebundle"],
         first_run_ids=[p["id"] for p in packs if p["tier"]=="first_run"],
         packs=packs)
-    os.makedirs(os.path.dirname(MANIFEST),exist_ok=True)
-    json.dump(man,open(MANIFEST,"w"),indent=1,ensure_ascii=False)
+    os.makedirs(os.path.dirname(args.manifest),exist_ok=True)
+    json.dump(man,open(args.manifest,"w"),indent=1,ensure_ascii=False)
     MB=1048576
     print(f"built {len(packs)} packs -> {PACKS}")
     print(f"  prebundle = {by_tier['prebundle']/MB:.1f} MB  ({', '.join(man['prebundle_ids'])})")
     print(f"  first_run = {by_tier['first_run']/MB:.1f} MB  ({', '.join(man['first_run_ids'])})")
     print(f"  on_demand = {by_tier['on_demand']/MB:.1f} MB  across {sum(1 for p in packs if p['tier']=='on_demand')} packs")
     print(f"  total     = {man['total_bytes']/MB:.1f} MB")
-    floor=by_tier["prebundle"]/MB
-    assert 30 < floor < 45, f"prebundle floor off: {floor:.1f} MB (expected ~37.6)"
-    print(f"  prebundle floor check OK (~{floor:.1f} MB)")
+    if only is None:
+        floor=by_tier["prebundle"]/MB
+        assert 30 < floor < 45, f"prebundle floor off: {floor:.1f} MB (expected ~37.6)"
+        print(f"  prebundle floor check OK (~{floor:.1f} MB)")
+    print(f"  manifest -> {args.manifest}")
 
 if __name__=="__main__":
     main()

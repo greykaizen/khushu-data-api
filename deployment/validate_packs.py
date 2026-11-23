@@ -3,10 +3,14 @@
 Asserts: every pack row exists exactly once across packs; integrity ok; FTS
 rowids stable; per-DB empties vs donor. Exits non-zero on any LOSS.
 CI-able companion to build_packs.py."""
-import sqlite3, os, json, sys, re
+import sqlite3, os, json, sys, re, argparse
 ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
 DB=os.path.join(ROOT,"data","db"); PK=os.path.join(ROOT,"data","packs")
-m=json.load(open(os.path.join(ROOT,"data","manifest","packs.json")))
+ap=argparse.ArgumentParser(description=__doc__)
+ap.add_argument("--manifest", default=os.path.join(ROOT,"data","manifest","packs.json"))
+ap.add_argument("--only", choices=["content"], help="validate one family only (partial workspace)")
+ARGS=ap.parse_args()
+m=json.load(open(ARGS.manifest))
 def conn(d): return sqlite3.connect(d)
 def count(c,t,w=None,p=()): 
     try: return c.execute(f'SELECT COUNT(*) FROM "{t}"'+(f" WHERE {w}" if w else ""),p).fetchone()[0]
@@ -18,8 +22,30 @@ for p in m["packs"]:
     if c.execute("PRAGMA integrity_check").fetchone()[0]!="ok": fails.append(f"{p['file']} integrity")
     for t in p["tables"]:
         if str(count(c,t)).startswith("ERR"): fails.append(f"{p['file']} missing {t}")
+    if p["id"]=="content":
+        if "blocks_json" not in [r[1] for r in c.execute("PRAGMA table_info('dua_items')")]:
+            fails.append(f"{p['file']} dua_items.blocks_json missing")
+        else:
+            import re as _re
+            debris=_re.compile(r"</?(?:b|i|sup|br|qref|ref|hon)\b|\*\*|`|&#", _re.IGNORECASE)
+            for rid,bj,ti,ar,rep,tr,tl,vi,ex,rf in c.execute(
+                "SELECT id,blocks_json,title,arabic,repetition,translation,transliteration,virtue,explanation,reference FROM dua_items"):
+                try: blocks=json.loads(bj)
+                except Exception as e: fails.append(f"content id={rid} blocks_json: {e}"); continue
+                if blocks.get("schema")!=1:
+                    fails.append(f"content id={rid} blocks schema {blocks.get('schema')!r}")
+                if set(blocks.get("fields",{}))!={"arabic","translation","transliteration","virtue","explanation","reference"}:
+                    fails.append(f"content id={rid} block field set")
+                for value in (ti,ar,rep,tr,tl,vi,ex,rf):
+                    if value and debris.search(value):
+                        fails.append(f"content id={rid} plain markup: {value[:60]!r}")
+            nf=c.execute("SELECT COUNT(*) FROM dua_fts").fetchone()[0]
+            if nf!=491: fails.append(f"content dua_fts rows {nf} != 491")
     c.close()
 print(f"integrity+tables: {len(m['packs'])} packs, {len(fails)} issues")
+if ARGS.only == "content":
+    print(f"\nRESULT: {'content pack OK' if not fails else 'FAILURES: '+'; '.join(fails)}")
+    sys.exit(1 if fails else 0)
 # 2) global row coverage per master table that is sharded
 def sum_packs(t,fam):
     tot=0

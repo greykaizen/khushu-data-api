@@ -6,7 +6,7 @@ and hardlinks a flat staging tree data/assets/<release_name> -> archive file,
 so `gh release upload` gets deterministic, unique asset names. App resolves:
    url = ASSET_BASE_URL + release_name  (base_url swap = one value; no per-row URL)."""
 import sqlite3, os, json, csv, shutil
-REPO="/home/kaizen/AndroidStudioProjects/khushu-data-api"
+REPO=os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 API=REPO+"/archive"
 OUT=REPO+"/data"; MAN=OUT+"/manifest"; STAGE=OUT+"/assets"
 VERSION=os.environ.get("KHUSHU_ASSET_RELEASE_TAG","assets-v2026.09")

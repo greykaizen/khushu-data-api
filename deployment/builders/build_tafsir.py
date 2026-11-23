@@ -17,7 +17,7 @@ set matches the manifest.
 """
 import sqlite3, os, json, glob, sys
 
-SRC = "/home/kaizen/AndroidStudioProjects/khushu-data-api/archive/inventory/tafsirs"
+SRC = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "archive", "inventory", "tafsirs"))
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "data", "build")
 
 def main():
