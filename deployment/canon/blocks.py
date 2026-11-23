@@ -10,6 +10,7 @@ import html
 import re
 import unicodedata
 
+from .refs import type_references
 from .text import (
     SPEECH_VERBS_RE,
     TAG_RE,
@@ -313,6 +314,9 @@ def canonical_blocks(field: str, raw: str, issues: list) -> list[dict]:
     text = wrap_honorifics(text, field, issues)
     text = bold_narrator(text, field, issues)
     text = wrap_quotes(text, field, issues)
+    # Citations last: honorific/quote transforms may have rewritten the
+    # surrounding prose, and a citation must never be split by them.
+    text = type_references(text, field, issues)
 
     if field in {"virtue", "explanation"}:
         # Bullets are paragraph markers in this corpus, never inline glyphs.

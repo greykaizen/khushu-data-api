@@ -1,0 +1,135 @@
+"""Reference typing: turn bare Quran/hadith citations into typed spans.
+
+The corpus cites verses inline as plain text — `(2:255)`, `(2:285-6)`,
+`(See Qur'an 3:85)`, `(Quran: 3:190)` — and hadith as `(Muslim 899)`,
+`(Tirmidhī 3173)`. `<qref>` / `<ref>` already exist in the vocabulary and the
+orchestrator already parses them into typed spans, but nothing ever emitted
+them, so every citation rendered as dead text.
+
+Rules (deliberately conservative — never invent a reference):
+
+* Only a citation *context* matches: the number pair must be wrapped in
+  parentheses, optionally with a `Quran`/`Qur'an`/`See` prefix. A bare `3:190`
+  in prose is left alone.
+* Surah must be 1..114 and ayah >= 1, else the text is untouched.
+* The parenthesis stays outside the tag, so the plain projection still reads
+  `(2:255)` and copy/FTS are byte-identical.
+* Ranges keep their raw form: `<qref>2:285-6</qref>`.
+* Hadith collections become `<ref id="muslim">Muslim 899</ref>`.
+"""
+from __future__ import annotations
+
+import re
+
+# Surah:ayah, optionally a range (`2:285-6`, `23:1-10`).
+_QURAN_NUM = r"\d{1,3}\s*:\s*\d{1,3}(?:\s*[-–]\s*\d{1,3})?"
+
+# A citation context: parenthesised, with an optional Quran-ish prefix inside.
+#   (2:255)   (2:285-6)   (Quran: 3:190)   (See Qur'an 3:85)   (See 69:17)
+# The prefix is captured separately and kept OUTSIDE the tag: the plain
+# projection must stay byte-identical, so only the number pair is wrapped.
+_QURAN_CITE_RE = re.compile(
+    r"\(\s*"
+    r"(?P<prefix>"
+    r"(?:(?:see\s+|cf\.?\s+)?"
+    r"(?:(?:the\s+)?qur[’'ʿ]?[āa]n\s*[:,]?\s*)?)"
+    r")"
+    r"(?P<ref>" + _QURAN_NUM + r")"
+    r"\s*\)",
+    re.IGNORECASE,
+)
+
+# Hadith collections. The slug is what the host uses to open the right book.
+_HADITH_COLLECTIONS = {
+    "bukhari": "bukhari",
+    "muslim": "muslim",
+    "tirmidhi": "tirmidhi",
+    "tirmidhī": "tirmidhi",
+    "abu dawud": "abu-dawud",
+    "abu dāwūd": "abu-dawud",
+    "nasai": "nasai",
+    "nasā’ī": "nasai",
+    "nasā'ī": "nasai",
+    "ibn majah": "ibn-majah",
+    "ibn mājah": "ibn-majah",
+    "ahmad": "ahmad",
+    "malik": "malik",
+    "darimi": "darimi",
+    "nawawi": "nawawi",
+}
+
+_HADITH_CITE_RE = re.compile(
+    r"\(\s*(?P<coll>"
+    + "|".join(sorted((re.escape(k) for k in _HADITH_COLLECTIONS), key=len, reverse=True))
+    + r")\s+(?P<num>\d{1,5})\s*\)",
+    re.IGNORECASE,
+)
+
+# Fields that carry citations worth typing.
+REFERENCE_FIELDS = {"translation", "virtue", "explanation", "reference"}
+
+
+def _valid_quran_ref(ref: str) -> bool:
+    m = re.match(r"(\d{1,3})\s*:\s*(\d{1,3})", ref)
+    if not m:
+        return False
+    surah, ayah = int(m.group(1)), int(m.group(2))
+    return 1 <= surah <= 114 and ayah >= 1
+
+
+def type_references(text: str, field: str, issues: list | None = None) -> str:
+    """Wrap bare Quran/hadith citations in typed spans.
+
+    Idempotent: an already-tagged citation is skipped, so running the pipeline
+    twice cannot double-wrap.
+    """
+    if field not in REFERENCE_FIELDS or not text:
+        return text
+
+    def quran_sub(m: re.Match) -> str:
+        ref = m.group("ref")
+        prefix = m.group("prefix") or ""
+        if not _valid_quran_ref(ref):
+            if issues is not None:
+                issues.append(
+                    {
+                        "severity": "warning",
+                        "reason": "quran_ref_out_of_range",
+                        "excerpt": m.group(0)[:80],
+                    }
+                )
+            return m.group(0)
+        normalised = re.sub(r"\s+", "", ref)
+        # Keep any `See Qur'an` prefix as literal text outside the tag.
+        return f"({prefix}<qref>{normalised}</qref>)"
+
+    def hadith_sub(m: re.Match) -> str:
+        coll = m.group("coll").lower()
+        slug = _HADITH_COLLECTIONS.get(coll)
+        raw = f"{m.group('coll')} {m.group('num')}"
+        if slug:
+            return f'(<ref id="{slug}">{raw}</ref>)'
+        return f"(<ref>{raw}</ref>)"
+
+    # Skip anything already inside a tag so the transform is idempotent.
+    parts = re.split(r"(<[^>]+>)", text)
+    out: list[str] = []
+    for part in parts:
+        if part.startswith("<") and part.endswith(">"):
+            out.append(part)
+            continue
+        part = _QURAN_CITE_RE.sub(quran_sub, part)
+        part = _HADITH_CITE_RE.sub(hadith_sub, part)
+        out.append(part)
+    return "".join(out)
+
+
+def parse_quran_ref(raw: str) -> tuple[int, int] | None:
+    """`2:255` / `2:285-6` -> (2, 255). Used by tests and the verifier."""
+    m = re.match(r"\s*(\d{1,3})\s*:\s*(\d{1,3})", raw or "")
+    if not m:
+        return None
+    surah, ayah = int(m.group(1)), int(m.group(2))
+    if not (1 <= surah <= 114 and ayah >= 1):
+        return None
+    return surah, ayah

@@ -35,6 +35,9 @@ BLOCK_TYPES = {"paragraph", "heading", "bullet", "quote", "raw_html", "bismillah
 PLAIN_FIELDS = ("title", "arabic", "repetition", "translation",
                 "transliteration", "virtue", "explanation", "reference")
 PLAIN_DEBRIS = re.compile(r"</?(?:b|i|sup|br|qref|ref|hon)\b|\*\*|`|&#", re.IGNORECASE)
+# Typed Quran citations: a surah:ayah pair, optionally a range.
+QREF_RE = re.compile(r"<qref>([^<]*)</qref>")
+QREF_VALID_RE = re.compile(r"\d{1,3}:\d{1,3}(?:-\d{1,3})?")
 
 
 def _table(conn: sqlite3.Connection) -> str:
@@ -94,6 +97,15 @@ def verify_db(path: str, canonical: list[dict]) -> list[str]:
                     fails.append(f"{path}: id={rid} {field} bad heading level {b['level']!r}")
                 if not isinstance(b.get("text"), str):
                     fails.append(f"{path}: id={rid} {field} block text not a string")
+                # A typed Quran citation must resolve, or the host would link
+                # somewhere wrong. Malformed refs are a build error.
+                for qref in QREF_RE.findall(b.get("text") or ""):
+                    if not QREF_VALID_RE.fullmatch(qref):
+                        fails.append(f"{path}: id={rid} {field} malformed <qref>{qref}</qref>")
+                        continue
+                    surah = int(qref.split(":", 1)[0])
+                    if not (1 <= surah <= 114):
+                        fails.append(f"{path}: id={rid} {field} surah out of range in <qref>{qref}</qref>")
         for value in row[2:]:
             if value and PLAIN_DEBRIS.search(value):
                 fails.append(f"{path}: id={rid} plain column contains markup: {value[:80]!r}")
