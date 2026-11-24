@@ -14,6 +14,8 @@ archive/inventory/fonts/qpc/qpc_v4_tajweed_by_page.tar.gz
 
 # regenerated on demand
 search_index.db
+# transient single-pack manifest used to validate a content-only build
+data/manifest/packs.content-only.json
 
 # --- deployment/local (added at data-store reorg) ---
 .env
