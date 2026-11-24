@@ -35,6 +35,11 @@ import sys
 import unicodedata
 from pathlib import Path
 
+try:  # package import (tests / build_dua)
+    from .refs import type_references
+except ImportError:  # direct `python3 deployment/canon/articles.py`
+    from refs import type_references
+
 HONORIFICS: list[tuple[re.Pattern[str], str | callable]] = [
     (
         re.compile(
@@ -90,6 +95,8 @@ BULLET_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*[•–—]\s*(?:</b>|</stron
 NUMBER_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*\(?(\d{1,2})[.)]\)?\s*(?:</b>|</strong>)?\s*", re.IGNORECASE)
 BOLD_ONLY = re.compile(r"^\s*<(b|strong)>(.*?)</\1>\s*$", re.IGNORECASE | re.DOTALL)
 EMPTY_BLOCK = re.compile(r"<p\b[^>]*>\s*</p>|<div\b[^>]*>\s*</div>", re.IGNORECASE)
+EMBEDDED_QUOTE = re.compile(r"“[^“”]{180,}”", re.DOTALL)
+CITATION_ONLY = re.compile(r"^[\s).;,]*(?:\([^)]{1,60}\))?[\s.;,)]*$")
 ARABIC_LETTER = re.compile(r"[\u0600-\u06FF]")
 LATIN_LETTER = re.compile(r"[A-Za-z]")
 
@@ -192,13 +199,21 @@ def _list_paragraphs(value: str) -> str:
         kind = group[0][1]
         # Ordered runs that start mid-list (e.g. 4,5 after a different block)
         # cannot be renumbered safely; leave them as paragraphs.
-        if kind == "ol" and (len(group) < 2 or group[0][3] != 1):
+        if kind == "ol" and len(group) < 2:
             continue
+        start = group[0][3] or 1
+        start_attr = ' start="%d"' % start if kind == "ol" and start != 1 else ""
         items = "".join(
             "<li>%s</li>" % match.group(1)[mark:]
             for match, _, mark, _ in group
         )
-        edits.append((group[0][0].start(), group[-1][0].end(), "<%s>%s</%s>" % (kind, items, kind)))
+        edits.append(
+            (
+                group[0][0].start(),
+                group[-1][0].end(),
+                "<%s%s>%s</%s>" % (kind, start_attr, items, kind),
+            )
+        )
 
     for start, end, replacement in reversed(edits):
         value = value[:start] + replacement + value[end:]
@@ -206,22 +221,71 @@ def _list_paragraphs(value: str) -> str:
 
 
 def _quote_paragraphs(value: str) -> str:
-    """Make a paragraph that is one long quotation a block quote."""
+    """Make long quotations (standalone or embedded) block quotes.
 
-    def paragraph(match: re.Match[str]) -> str:
-        if _inside_blockquote(value, match.start()):
+    One paragraph can contain more than one quotation, so repeat until no
+    paragraph changes. A quotation that contains another ``“...”`` is left
+    inline: splitting at the first closing mark would tear the inner sentence
+    apart.
+    """
+
+    def paragraph(match: re.Match[str], source: str) -> str:
+        if _inside_blockquote(source, match.start()):
             return match.group(0)
         inner = match.group(1).strip()
         text = re.sub(r"<[^>]+>", "", inner)
         text = re.sub(r"\s+", " ", text).strip()
         if len(text) < 80:
             return match.group(0)
-        if not (text[:1] in "“\"" and text[-1:] in "”\""):
-            return match.group(0)
-        inner = BR.sub("<br>", inner).replace("\n", "<br>")
-        return "<blockquote><p>%s</p></blockquote>" % inner
+        if text[:1] in "“\"" and text[-1:] in "”\"":
+            inner = BR.sub("<br>", inner).replace("\n", "<br>")
+            return "<blockquote><p>%s</p></blockquote>" % inner
 
-    return PARAGRAPH.sub(paragraph, value)
+        # A long quotation embedded in a prose paragraph (usually a hadith or
+        # verse introduced by "The Prophet ﷺ said:") deserves the same quote
+        # surface as a standalone one. Split only when the quotation is long
+        # enough to read as a passage and both the lead-in and the tail are
+        # real text; a short trailing citation stays inside the quote.
+        quote = EMBEDDED_QUOTE.search(inner)
+        if quote is None:
+            return match.group(0)
+        quote_text = re.sub(r"<[^>]+>", "", quote.group(0))
+        quote_text = re.sub(r"\s+", " ", quote_text).strip()
+        if len(quote_text) < 180:
+            return match.group(0)
+        before = inner[:quote.start()].strip()
+        after = inner[quote.end():].strip()
+        after_text = re.sub(r"<[^>]+>", "", after).strip()
+        quote_block = "<blockquote><p>%s</p>" % BR.sub("<br>", quote.group(0))
+        if after and CITATION_ONLY.fullmatch(after_text):
+            quote_block += "<p>%s</p>" % after
+            after = ""
+        quote_block += "</blockquote>"
+        out = ("<p>%s</p>" % before if before else "") + quote_block
+        if after:
+            out += "<p>%s</p>" % after
+        return out
+
+    for _ in range(20):
+        edits: list[tuple[int, int, str]] = []
+        for match in PARAGRAPH.finditer(value):
+            replacement = paragraph(match, value)
+            if replacement != match.group(0):
+                edits.append((match.start(), match.end(), replacement))
+        if not edits:
+            break
+        for start, end, replacement in reversed(edits):
+            value = value[:start] + replacement + value[end:]
+    return value
+
+
+def _normalize_heading_levels(value: str) -> str:
+    """The source's h4-h6 headings are ordinary section headings, not footnotes.
+
+    The reader maps levels 4-6 to `titleSmall`, which is too small on a phone;
+    normalise them to h3 and keep the article's heading hierarchy legible.
+    """
+    return re.sub(r"<(/?)h[456]\b([^>]*)>", r"<\1h3\2>", value, flags=re.IGNORECASE)
 
 
 def _promote_headings(value: str) -> str:
@@ -284,6 +348,8 @@ def clean_html(value: str) -> str:
     out = normalize_text_nodes(out)
     out = _list_paragraphs(out)
     out = _promote_headings(out)
+    out = _normalize_heading_levels(out)
+    out = type_references(out, "explanation")
     out = EMPTY_BLOCK.sub("", out)
     return out.strip()
 

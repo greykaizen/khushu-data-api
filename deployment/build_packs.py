@@ -253,7 +253,9 @@ def main():
     by_tier={"prebundle":0,"first_run":0,"on_demand":0}
     for p in packs: by_tier[p["tier"]]+=p["bytes"]
     man=OrderedDict(version=VERSION,user_version=USER_VERSION,
-        pack_url_template="https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-"+VERSION+"/{file}",
+        # Per-pack revision: a content-only rebuild can publish v2026.11 while
+        # the unchanged hadith/tafsir packs still point at their v2026.09 files.
+        pack_url_template="https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
         total_packs=len(packs), total_bytes=sum(p["bytes"] for p in packs),
         tier_bytes={k:v for k,v in by_tier.items()},
         prebundle_ids=[p["id"] for p in packs if p["tier"]=="prebundle"],

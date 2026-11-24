@@ -78,6 +78,29 @@ class HadithCitationTest(unittest.TestCase):
             'ten verses (<qref>23:1-10</qref>).’”  (<ref id="tirmidhi">Tirmidhī 3173</ref>)',
         )
 
+    def test_slug_matches_the_host_collection_ids(self):
+        out = type_references("(Abū Dāwūd 5095) (Ibn Mājah 773) (Nasā’ī 2106)", "virtue")
+        self.assertIn('<ref id="abu_dawud">Abū Dāwūd 5095</ref>', out)
+        self.assertIn('<ref id="ibn_majah">Ibn Mājah 773</ref>', out)
+        self.assertIn('<ref id="nasai">Nasā’ī 2106</ref>', out)
+
+    def test_diacritic_bukhari(self):
+        self.assertEqual(
+            type_references("(Bukhārī 6306)", "virtue"),
+            '(<ref id="bukhari">Bukhārī 6306</ref>)',
+        )
+
+    def test_combined_citations_are_each_typed(self):
+        self.assertEqual(
+            type_references("(Bukhārī 6316, Muslim 763)", "virtue"),
+            '(<ref id="bukhari">Bukhārī 6316</ref>, <ref id="muslim">Muslim 763</ref>)',
+        )
+
+    def test_unsupported_collection_stays_text(self):
+        # Aḥmad is not a downloaded pack in this app; do not create a dead link.
+        text = "(Aḥmad 2155)"
+        self.assertEqual(type_references(text, "virtue"), text)
+
 
 class ParseQuranRefTest(unittest.TestCase):
     def test_single_ayah(self):
