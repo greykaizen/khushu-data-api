@@ -2,7 +2,7 @@
 
 - records: 491
 - source sha256: `fea2dde2d77c798a1eda1fb9c8b9a93c71aadf8f487522873891516bc7eb4e19`
-- canonical sha256: `893ce69af2b353b75a5eb0c1df5bb81417e7e0cd7acb01ff90b43a17e3cdb52e`
+- canonical sha256: `e2a79d4bf00cae370c800d38e223f9feb0ead76caa06c539299891bed114496e`
 - issues: {'warning': 119, 'info': 37}
 - semantic-key mismatches: 0
 

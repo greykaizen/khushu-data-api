@@ -47,7 +47,7 @@ HONORIFIC_RE = re.compile(
     r"|(?:raḍiyallāhu\s+[‘ʿ']anh(?:umā|um|u|ā|au))"
     r"|(?:ṣall[aā](?:[-‑]?llāhu|\s+Allāhu)\s+ʿalayhi\s+wa\s+sallam)"
     r"|(?:subḥānahū\s+wa\s+ta[‘ʿ']ālā)"
-    r"|(?:[‘ʿ']?azza\s+wa\s+jall)"
+    r"|(?:[‘ʿ']?azza\s+wa\s+jal{1,2})"
     r"|(?:raḥimahullāh)"
     r"|(?:[‘ʿ']alayhis-salām)"
     r"|رَضِيَ اللَّهُ عَنْهُمَا|رَضِيَ اللَّهُ عَنْهُمْ|رَضِيَ اللَّهُ عَنْهَا|رَضِيَ اللَّهُ عَنْهُ"
@@ -303,7 +303,9 @@ def _normalize_honorific_spelling(text: str) -> str:
         text,
     )
     text = re.sub(r"subḥānahū\s+wa\s+ta[‘ʿ']ālā", "subḥānahū wa taʿālā", text)
-    text = re.sub(r"[‘ʿ']?azza\s+wa\s+jall", "ʿazza wa jall", text)
+    # `jal` with a single l occurs once in the corpus (id 479); accept both
+    # spellings so the honorific is not left as English transliteration.
+    text = re.sub(r"[‘ʿ']?azza\s+wa\s+jal{1,2}\b", "ʿazza wa jall", text)
     text = re.sub(r"raḥimahullāh", "raḥimahullāh", text)
     text = re.sub(r"[‘ʿ']alayhis-salām", "ʿalayhis-salām", text)
     return text
