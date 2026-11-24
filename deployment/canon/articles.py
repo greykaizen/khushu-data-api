@@ -1,25 +1,38 @@
 #!/usr/bin/env python3
 """Canonical cleanup for the long-form reading corpus.
 
-The source pages were captured as rendered HTML. Two classes of defects matter
-for the app's native reader:
+The source pages were captured as rendered HTML. The app renders them with a
+native block reader (headings, paragraphs, lists, quotes, tables, inline
+emphasis and Arabic runs), so the only useful work here is to make the HTML
+express the structure the source actually has:
 
 * transliterated devotional formulas (``raḍiy Allāhu ʿanhu``, ``subḥānahū wa
   taʿālā``) read as untranslated English inside an otherwise Arabic-aware
-  article. They are replaced with their Arabic form;
-* some pages wrap their whole body in an invalid ``<p><div>…</div></p>``
-  shell. The native parser tolerates it, but it produces an artificial leading
-  paragraph and a stray trailing one. Remove only that outer wrapper.
+  article. NFC-compose the text first, then replace them with their Arabic form;
+* ``•`` / ``–`` / ``—`` paragraphs and numbered paragraph runs are lists that
+  lost their markup. Rebuild ``<ul>`` / ``<ol>`` so the app can hang-indent them;
+* a short bold-only paragraph is a heading (``<p><b>When Leaving the Home</b>
+  </p>``); promote it to ``<h3>`` instead of leaving it as body text;
+* a paragraph that is one long quotation becomes a ``<blockquote>`` so the
+  reader can style it as a quote;
+* ``<span>`` / ``<font>`` / ``<bdi>`` wrappers in this corpus carry no
+  attributes; unwrap them so inline text is not split into meaningless runs;
+* collapse source whitespace, NBSP, tabs and spaces around punctuation in text
+  nodes only (never in tags or attributes).
 
-The transformation is intentionally narrow: prose, quotations, links and all
-other markup are preserved verbatim.
+The transformation is intentionally formatting-only: prose, quotations, links
+and all content markup are preserved. ``article_semantic_key`` is the guard
+that proves it; ``freeze`` writes the keys before a run and ``main`` refuses to
+report success if any key changes.
 """
 from __future__ import annotations
 
+import html
 import glob
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 HONORIFICS: list[tuple[re.Pattern[str], str | callable]] = [
@@ -57,14 +70,38 @@ HONORIFICS: list[tuple[re.Pattern[str], str | callable]] = [
 ]
 
 
-HONORIFIC_WORDS = r"(?:رضي الله (?:عنه|عنها|عنهما|عنهم)|سبحانه وتعالى|رحمه الله|عليه السلام|عز وجل|ﷺ)"
+HONORIFIC_WORDS = r"(?:رضي الله (?:عنها|عنهما|عنهم|عنه)|سبحانه وتعالى|رحمه الله|عليه السلام|عز وجل|ﷺ)"
+HONORIFIC_FORM = re.compile(HONORIFIC_WORDS)
 HONORIFIC_PARENS = re.compile(r"\(\s*(%s)\s*\)" % HONORIFIC_WORDS)
 HONORIFIC_OPEN = re.compile(r"\(\s*(?=%s)" % HONORIFIC_WORDS)
 HONORIFIC_CLOSE = re.compile(r"(%s)\s*\)" % HONORIFIC_WORDS)
 
+COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
+SCRIPT_OR_STYLE = re.compile(
+    r"<(script|style)\b[^>]*>.*?</\1\s*>",
+    re.IGNORECASE | re.DOTALL,
+)
+TAG_SPLIT = re.compile(r"(<[^>]+>)")
+INLINE_WRAPPER = re.compile(r"</?(?:span|font|bdi)\b[^>]*>", re.IGNORECASE)
+BR = re.compile(r"<\s*br\s*/?\s*>", re.IGNORECASE)
+PARAGRAPH = re.compile(r"<p\b[^>]*>(.*?)</p>", re.IGNORECASE | re.DOTALL)
+LIST_ITEM = re.compile(r"<li\b[^>]*>(.*?)</li>", re.IGNORECASE | re.DOTALL)
+BULLET_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*[•–—]\s*(?:</b>|</strong>)?\s*", re.IGNORECASE)
+NUMBER_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*\(?(\d{1,2})[.)]\)?\s*(?:</b>|</strong>)?\s*", re.IGNORECASE)
+BOLD_ONLY = re.compile(r"^\s*<(b|strong)>(.*?)</\1>\s*$", re.IGNORECASE | re.DOTALL)
+EMPTY_BLOCK = re.compile(r"<p\b[^>]*>\s*</p>|<div\b[^>]*>\s*</div>", re.IGNORECASE)
+ARABIC_LETTER = re.compile(r"[\u0600-\u06FF]")
+LATIN_LETTER = re.compile(r"[A-Za-z]")
+
 
 def clean_text(value: str) -> str:
-    out = value or ""
+    """NFC-compose, then replace transliterated honorifics with Arabic.
+
+    NFC matters: several source spellings use a combining dot below the ``d``
+    (``raḍiy`` as d + U+0323), which the precomposed-character patterns below
+    did not match. Normalizing first is what makes those 47 occurrences convert.
+    """
+    out = unicodedata.normalize("NFC", value or "")
     for pattern, replacement in HONORIFICS:
         out = pattern.sub(replacement, out)
     out = HONORIFIC_PARENS.sub(r"\1", out)
@@ -72,9 +109,164 @@ def clean_text(value: str) -> str:
     return HONORIFIC_CLOSE.sub(r"\1", out)
 
 
+def _normalize_text_node(text: str) -> str:
+    if not text:
+        return text
+    text = unicodedata.normalize("NFC", text)
+    text = (
+        text.replace("\u00a0", " ")
+        .replace("\u2007", " ")
+        .replace("\u202f", " ")
+        .replace("\t", " ")
+        .replace("\r", " ")
+        .replace("\n", " ")
+    )
+    text = re.sub(r"\s+", " ", text)
+    # Typographic spacing: never a space before punctuation, always a space
+    # after a comma/semicolon/colon that is followed by a word. This fixes the
+    # source's ``says,“ Do`` / ``Paradise .`` artifacts without touching digits
+    # (citations like 2:255 stay intact).
+    text = re.sub(r"\s+([,.;:!?%])", r"\1", text)
+    text = re.sub(r"([,;:])(?=[A-Za-z“”‘’])", r"\1 ", text)
+    text = re.sub(r"([“‘(])\s+", r"\1", text)
+    text = re.sub(r"\s+([”’)\]])", r"\1", text)
+    return text
+
+
+def normalize_text_nodes(value: str) -> str:
+    """Normalize text between tags, leaving tags and attributes untouched."""
+    parts = TAG_SPLIT.split(value)
+    for index in range(0, len(parts), 2):
+        parts[index] = _normalize_text_node(parts[index])
+    return "".join(parts)
+
+
+def _inside_blockquote(value: str, position: int) -> bool:
+    before = value[:position].lower()
+    return before.count("<blockquote") > before.count("</blockquote")
+
+
+def _strip_list_markers(value: str) -> str:
+    def item(match: re.Match[str]) -> str:
+        inner = match.group(1)
+        inner = re.sub(r"</p>\s*<p\b[^>]*>", "<br>", inner, flags=re.IGNORECASE)
+        inner = re.sub(r"</?p\b[^>]*>", "", inner, flags=re.IGNORECASE)
+        prefix = BULLET_MARK.match(inner)
+        if prefix:
+            inner = inner[prefix.end():]
+        return "<li>%s</li>" % inner
+
+    return LIST_ITEM.sub(item, value)
+
+
+def _list_paragraphs(value: str) -> str:
+    """Turn bullet/numbered paragraph runs into real ``ul`` / ``ol`` lists."""
+    candidates: list[tuple[re.Match[str], str, int, int | None]] = []
+    for match in PARAGRAPH.finditer(value):
+        if _inside_blockquote(value, match.start()):
+            continue
+        inner = match.group(1)
+        bullet = BULLET_MARK.match(inner)
+        number = NUMBER_MARK.match(inner)
+        if bullet:
+            candidates.append((match, "ul", bullet.end(), None))
+        elif number:
+            candidates.append((match, "ol", number.end(), int(number.group(1))))
+
+    groups: list[list[tuple[re.Match[str], str, int, int | None]]] = []
+    for candidate in candidates:
+        match, kind, _, number = candidate
+        if groups:
+            previous = groups[-1][-1]
+            between = value[previous[0].end():match.start()]
+            same_kind = previous[1] == kind
+            adjacent = re.fullmatch(r"\s*", between) is not None
+            sequential = kind != "ol" or (previous[3] is not None and number == previous[3] + 1)
+            if same_kind and adjacent and sequential:
+                groups[-1].append(candidate)
+                continue
+        groups.append([candidate])
+
+    edits: list[tuple[int, int, str]] = []
+    for group in groups:
+        kind = group[0][1]
+        # Ordered runs that start mid-list (e.g. 4,5 after a different block)
+        # cannot be renumbered safely; leave them as paragraphs.
+        if kind == "ol" and (len(group) < 2 or group[0][3] != 1):
+            continue
+        items = "".join(
+            "<li>%s</li>" % match.group(1)[mark:]
+            for match, _, mark, _ in group
+        )
+        edits.append((group[0][0].start(), group[-1][0].end(), "<%s>%s</%s>" % (kind, items, kind)))
+
+    for start, end, replacement in reversed(edits):
+        value = value[:start] + replacement + value[end:]
+    return value
+
+
+def _quote_paragraphs(value: str) -> str:
+    """Make a paragraph that is one long quotation a block quote."""
+
+    def paragraph(match: re.Match[str]) -> str:
+        if _inside_blockquote(value, match.start()):
+            return match.group(0)
+        inner = match.group(1).strip()
+        text = re.sub(r"<[^>]+>", "", inner)
+        text = re.sub(r"\s+", " ", text).strip()
+        if len(text) < 80:
+            return match.group(0)
+        if not (text[:1] in "“\"" and text[-1:] in "”\""):
+            return match.group(0)
+        inner = BR.sub("<br>", inner).replace("\n", "<br>")
+        return "<blockquote><p>%s</p></blockquote>" % inner
+
+    return PARAGRAPH.sub(paragraph, value)
+
+
+def _promote_headings(value: str) -> str:
+    """Promote short bold-only paragraphs that are shaped like headings."""
+
+    def paragraph(match: re.Match[str]) -> str:
+        if _inside_blockquote(value, match.start()):
+            return match.group(0)
+        bold = BOLD_ONLY.match(match.group(1))
+        if not bold:
+            return match.group(0)
+        inner = bold.group(2).strip()
+        text = re.sub(r"<[^>]+>", "", inner)
+        text = re.sub(r"\s+", " ", text).strip()
+        if not (3 <= len(text) <= 80):
+            return match.group(0)
+        if text[-1:] in ".:;,”“’\"":
+            return match.group(0)
+        if text[:1] in "[•–—“\"":
+            return match.group(0)
+        # Callout labels and exclamatory sentences are body text, not headings.
+        lowered = text.lower()
+        if lowered.startswith(("read:", "next:", "previous")):
+            return match.group(0)
+        if "!" in text or "? " in text or ". " in text:
+            return match.group(0)
+        if re.match(r"^\d{1,2}[.)]\s", text) or re.match(r"^[a-z]\)\s", text, re.IGNORECASE):
+            return match.group(0)
+        arabic = len(ARABIC_LETTER.findall(text))
+        latin = len(LATIN_LETTER.findall(text))
+        if arabic and arabic >= latin:
+            return match.group(0)
+        if len(text.split()) == 1 and not text[:1].isupper():
+            return match.group(0)
+        return "<h3>%s</h3>" % inner
+
+    return PARAGRAPH.sub(paragraph, value)
+
+
 def clean_html(value: str) -> str:
-    out = clean_text(value or "")
-    out = re.sub(r"(?i)</?br\s*/?>", "<br>", out)
+    out = value or ""
+    out = COMMENT.sub("", out)
+    out = SCRIPT_OR_STYLE.sub("", out)
+    out = clean_text(out)
+    out = BR.sub("<br>", out)
     # Invalid outer paragraph around block content (47 source pages).
     stripped = out.strip()
     if stripped.lower().startswith("<p><div") and stripped.endswith("</p>"):
@@ -83,7 +275,50 @@ def clean_html(value: str) -> str:
             out = inner
     # A paragraph directly around a table is equally invalid.
     out = re.sub(r"(?is)<p>\s*(<table\b.*?</table>)\s*</p>", r"\1", out)
-    return out
+    # Unwrap before normalization: these wrappers split a word or a spacing
+    # boundary across two text nodes, and normalizing each node first leaves
+    # the joined result unnormalized (and NFC-composes Arabic too late).
+    out = INLINE_WRAPPER.sub("", out)
+    out = _quote_paragraphs(out)
+    out = _strip_list_markers(out)
+    out = normalize_text_nodes(out)
+    out = _list_paragraphs(out)
+    out = _promote_headings(out)
+    out = EMPTY_BLOCK.sub("", out)
+    return out.strip()
+
+
+def article_semantic_key(value: str) -> str:
+    """Formatting-only fingerprint: tags, list markers and spacing removed."""
+    text = value or ""
+    text = COMMENT.sub("", text)
+    text = SCRIPT_OR_STYLE.sub("", text)
+    # Block boundaries are word boundaries; inline tags are not (a word or even
+    # one Arabic grapheme can be split by <span> in this corpus, and the app
+    # joins it back). Strip tags BEFORE NFC so a split grapheme composes.
+    text = re.sub(
+        r"(?is)</?(?:p|div|h[1-6]|li|ul|ol|blockquote|table|thead|tbody|tr|td|th|br|hr)\b[^>]*>",
+        " ",
+        text,
+    )
+    text = re.sub(r"</?[a-zA-Z][^>]*>", "", text)
+    text = html.unescape(text)
+    text = unicodedata.normalize("NFC", text)
+    for pattern, replacement in HONORIFICS:
+        text = pattern.sub(" HONORIFIC ", text)
+    text = HONORIFIC_FORM.sub(" HONORIFIC ", text)
+    text = HONORIFIC_PARENS.sub(" HONORIFIC ", text)
+    text = HONORIFIC_OPEN.sub("", text)
+    text = HONORIFIC_CLOSE.sub(" HONORIFIC ", text)
+    text = re.sub(r"\(\s*HONORIFIC\s*\)", "HONORIFIC", text)
+    text = re.sub(r"\(\s*\d{1,2}\s*\)", " ", text)
+    text = re.sub(r"(?:^|\s)\d{1,2}[.)]\s+", " ", text)
+    text = re.sub(r"[•–—]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"\s*([,.;:!?])\s*", r"\1", text)
+    text = re.sub(r"([“‘(])\s*", r"\1", text)
+    text = re.sub(r"\s*([”’)\]])", r"\1", text)
+    return text.strip()
 
 
 def clean_article(path: Path) -> bool:
@@ -114,8 +349,28 @@ def _article_files(root: Path) -> list[Path]:
     ]
 
 
+def freeze_keys(root: Path, out: Path) -> dict[str, str]:
+    keys = {
+        path.relative_to(root).as_posix(): article_semantic_key(
+            json.loads(path.read_text(encoding="utf-8")).get("content") or ""
+        )
+        for path in _article_files(root)
+    }
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps({"schema": 1, "records": keys}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return keys
+
+
 def main(argv: list[str]) -> int:
-    roots = [Path(arg) for arg in argv[1:]]
+    args = argv[1:]
+    if args and args[0] == "--freeze":
+        root = Path(args[1]) if len(args) > 1 else Path(__file__).resolve().parents[2] / "archive" / "assets" / "dua_dhikr" / "articles"
+        out = Path(args[2]) if len(args) > 2 else Path(__file__).resolve().parents[2] / "deployment" / "goldens" / "article_semantic_keys.json"
+        keys = freeze_keys(root, out)
+        print(f"froze {len(keys)} article keys -> {out}")
+        return 0
+
+    roots = [Path(arg) for arg in args]
     if not roots:
         roots = [Path(__file__).resolve().parents[2] / "archive" / "assets" / "dua_dhikr"]
     changed = 0
