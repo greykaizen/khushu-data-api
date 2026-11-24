@@ -1630,7 +1630,7 @@
     "repetition": "(1x)",
     "translation": "There is no god worthy of worship except Allah. Allah is the Greatest. He is Alone and He has no partner whatsoever. To Him Alone belong all sovereignty and all praise. He is over all things All-Powerful. There is no god worthy of worship except Allah. He fulfilled His promise, granted victory to His servant, and He Alone defeated the coalition forces.",
     "transliteration": "Lā ilāha illā-llāh, Allāhu Akbar, lā ilāha illā-llāhu waḥdahū lā sharīka lah, lahu-l-mulku wa lahu-l-ḥamdu yuḥyī wa yumīt, wa Huwa ʿalā kulli shay’in Qadīr, lā ilāha illā-llāh, anjaza waʿdah, wa naṣara ʿabdah, wa hazama-l-aḥzāba waḥdah.",
-    "virtue": "Jābir (رَضِيَ اللَّهُ عَنْهُ) said: “The Messenger of Allah began with Ṣafā and climbed it until he could see the Kaʿbah. He then faced the qiblah, proclaimed the Oneness of Allah and glorified Him, and then said لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ، لَا إِلٰهَ إِلَّا اللّٰهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ. He then made duʿā’ in between (the takbīr and the dhikr), and repeated this three times…\n\nHe then made duʿā’ between three recitals of (the above)… He then did on Marwah what he did on Ṣafā.”(Muslim 1218)\n\nNote: The above Dhikr should be recited x3. Duʿā’ should be made after each recital.",
+    "virtue": "Jābir (رَضِيَ اللَّهُ عَنْهُ) said: “The Messenger of Allah began with Ṣafā and climbed it until he could see the Kaʿbah. He then faced the qiblah, proclaimed the Oneness of Allah and glorified Him, and then said\n\nلَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ، لَا إِلٰهَ إِلَّا اللّٰهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ.\n\nHe then made duʿā’ in between (the takbīr and the dhikr), and repeated this three times…\n\nHe then made duʿā’ between three recitals of (the above)… He then did on Marwah what he did on Ṣafā.”(Muslim 1218)\n\nNote: The above Dhikr should be recited x3. Duʿā’ should be made after each recital.",
     "explanation": "Explanation coming soon…",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/other/32-HajjandUmrah/486.mp3?_=7",
     "reference": "Muslim 1218",
@@ -1659,7 +1659,15 @@
         "virtue": [
           {
             "type": "paragraph",
-            "text": "<b>Jābir (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: “The Messenger of Allah began with Ṣafā and climbed it until he could see the Kaʿbah. He then faced the qiblah, proclaimed the Oneness of Allah and glorified Him, and then said لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ، لَا إِلٰهَ إِلَّا اللّٰهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ. He then made duʿā’ in between (the takbīr and the dhikr), and repeated this three times…"
+            "text": "<b>Jābir (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: “The Messenger of Allah began with Ṣafā and climbed it until he could see the Kaʿbah. He then faced the qiblah, proclaimed the Oneness of Allah and glorified Him, and then said"
+          },
+          {
+            "type": "arabic",
+            "text": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيْرٌ، لَا إِلٰهَ إِلَّا اللّٰهُ، أَنْجَزَ وَعْدَهُ، وَنَصَرَ عَبْدَهُ، وَهَزَمَ الْأَحْزَابَ وَحْدَهُ."
+          },
+          {
+            "type": "paragraph",
+            "text": "He then made duʿā’ in between (the takbīr and the dhikr), and repeated this three times…"
           },
           {
             "type": "paragraph",
@@ -4561,7 +4569,7 @@
     "repetition": "(100x)",
     "translation": "Allah is free from imperfection, and all praise is due to Him.",
     "transliteration": "Subḥāna-llāhi wa bi ḥamdih.",
-    "virtue": "Abū Hurayrah (رَضِيَ اللَّهُ عَنْهُ) narrates that the Messenger of Allah ﷺ said:\n\n“He who recites [the above] in the morning and in the evening 100 times, will not be surpassed on the Day of Judgement by anyone with better deeds except the one who says the same words or more.”\n\n(Muslim 2692)\n\nAbū Hurayrah (رَضِيَ اللَّهُ عَنْهُ) narrates that the Messenger of Allah ﷺ said:\n\n“Whoever says [the above] 100 times a day, all of his sins will be forgiven, even if they are as abundant as the foam of the sea.”\n\n(Bukhārī 6405)\n\nHe ﷺ also said: “Whoever says سُبْحَانَ اللهِ وَبِحَمْدِه, a palm-tree will be planted for him in Paradise.” (Tirmidhī 3464)",
+    "virtue": "Abū Hurayrah (رَضِيَ اللَّهُ عَنْهُ) narrates that the Messenger of Allah ﷺ said:\n\n“He who recites [the above] in the morning and in the evening 100 times, will not be surpassed on the Day of Judgement by anyone with better deeds except the one who says the same words or more.”\n\n(Muslim 2692)\n\nAbū Hurayrah (رَضِيَ اللَّهُ عَنْهُ) narrates that the Messenger of Allah ﷺ said:\n\n“Whoever says [the above] 100 times a day, all of his sins will be forgiven, even if they are as abundant as the foam of the sea.”\n\n(Bukhārī 6405)\n\nHe ﷺ also said: “Whoever says\n\nسُبْحَانَ اللهِ وَبِحَمْدِه\n\n, a palm-tree will be planted for him in Paradise.” (Tirmidhī 3464)",
     "explanation": "",
     "audio_url": "https:///static.lifewithallah.com/file/LifeWithAllah/main/7-Morning/19.mp3?_=19",
     "reference": "Muslim 2692; Bukhārī 6405; Tirmidhī 3464",
@@ -4614,7 +4622,15 @@
           },
           {
             "type": "paragraph",
-            "text": "He <hon kind=\"saw\">ﷺ</hon> also said: “Whoever says سُبْحَانَ اللهِ وَبِحَمْدِه, a palm-tree will be planted for him in Paradise.” (<ref id=\"tirmidhi\">Tirmidhī 3464</ref>)"
+            "text": "He <hon kind=\"saw\">ﷺ</hon> also said: “Whoever says"
+          },
+          {
+            "type": "arabic",
+            "text": "سُبْحَانَ اللهِ وَبِحَمْدِه"
+          },
+          {
+            "type": "paragraph",
+            "text": ", a palm-tree will be planted for him in Paradise.” (<ref id=\"tirmidhi\">Tirmidhī 3464</ref>)"
           }
         ],
         "explanation": [],
@@ -9879,7 +9895,7 @@
     "repetition": "(1x)",
     "translation": "I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.",
     "transliteration": "Aʿūdhu bi-llāhi-s-Samīʿi-l-ʿAlīm mina-sh-Shayṭāni-r-rajīm, min hamzihī wa nafkhihī wa nafthih.",
-    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:\n\nسُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ (How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.).\n\nHe then said: لاَ إِلٰهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللّٰهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said [the above], after which, He began His recitation. (Abū Dāwūd 775)",
+    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:\n\nسُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ\n\n(How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.).\n\nHe then said: لاَ إِلٰهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللّٰهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said [the above], after which, He began His recitation. (Abū Dāwūd 775)",
     "explanation": "أَعُوْذُ: I take refuge, safeguard myself, take precaution, and I am careful. عاذَ means to flee from that which you fear will harm you to that which will protect you from it.\n\nIstiʿādhah (seeking protection) is essentially an act of the heart. When seeking protection with Allah, you are: (1) throwing yourself in front of Him, displaying your need of Him, and (2) submitting and humbling yourself in front of Him.\n\nIstiʿādhah also acts as an acknowledgement of Allah’s ultimate power, and the human being’s weakness and inability to combat the unseen enemy, Shayṭān.\n\nṢalāh is the Shayṭān’s battlefield. No other situation enrages and annoys Shayṭān more than ṣalāh. First, Shayṭān will try to make you miss your ṣalāh. If he fails, he will try to make you delay it as much as possible. Again, if he fails, he will try to dissuade you from your sunnah and nafl prayers. If he still fails to deter you, he will come to you in your ṣalāh and try to ruin it with his constant whispers.\n\nBe vigilant and constantly guard your ṣalāh, for Shayṭān is a thief who wants to ‘steal’ from your ṣalāh until you have nothing left in it. Shayṭān is an evil enemy. His invisibility makes him even more deadly. Because we cannot see him, we forget about him. In an increasingly material world, when we have a problem, we tend to look for physical causes. It would not be considered ‘intellectual’ or ‘scientific’ to blame Shayṭān and his cronies. Although he is not always the culprit, Shayṭan is constantly inflicting his evil on the children of Ādam. He comes and goes. He is described in the Qur’ān as ‘khannās’: the one who retreats and comes back. He always lurks about to inflict maximum damage wherever possible.\n\nReflecting (tadabbur) on the Qur’ān gives life to the heart, and is the secret of worldly and heavenly bliss. Shayṭān however will try his best to prevent this and be a barrier between you and the Qur’ān.\n\nShayṭān rages with envy. The angels prostrated to Ādam in obedience to Allah’s command, whilst he refused and was thrown out of Paradise. Up until today, he tries his utmost to prevent the sons of Ādam from prostrating. When you understand his envy and his tenacity in pursuing you, remember that you cannot defeat him by yourself: you need his and your Master, Allah (عَزَّ وَجَلَّ), on your side.\n\nIt is for this reason that Ibn Taymiyyah (رَحِمَهُ اللَّهُ) once told his student, Ibn al-Qayyim (رَحِمَهُ اللَّهُ),\n\n“If a shepherd-dog attacks you, don’t bother fighting him back. Instead seek the help of the shepherd because he will push the dog away from you and will protect you from him.”\n\nThus, the protection of Allah (عَزَّ وَجَلَّ) – the All-Powerful (alQawiyy), the Guardian (al-Ḥafīẓ) – is our most effective weapon to defeat Shayṭān.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/76.mp3?_=7",
     "reference": "Abū Dāwūd 775",
@@ -9911,8 +9927,12 @@
             "text": "<b>Abū Sa’īd al-Khudrī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that when the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:"
           },
           {
+            "type": "arabic",
+            "text": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ"
+          },
+          {
             "type": "paragraph",
-            "text": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ (How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.)."
+            "text": "(How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.)."
           },
           {
             "type": "paragraph",
@@ -10321,7 +10341,7 @@
     "repetition": "(1x)",
     "translation": "How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.",
     "transliteration": "Subḥānaka Allāhumma wa bi-ḥamdika wa tabāraka-smuka wa taʿālā jadduka wa lā ilāha ghayruk.",
-    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said [the above].\n\nHe then said: لاَ إِلَهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللَّهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times.\n\nHe then said: أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ (I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.) (Abū Dāwūd 775)",
+    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said [the above].\n\nHe then said: لاَ إِلَهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللَّهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times.\n\nHe then said:\n\nأَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ\n\n(I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.) (Abū Dāwūd 775)",
     "explanation": "سُبْحَان: Negates all negative attributes from Him. Thus, Allah (عَزَّ وَجَلَّ) is Perfect; free from any weakness, defect and oppression. Allah (عَزَّ وَجَلَّ) does not bear resemblance to any of His Creation.\n\nحَمْدِ: Affirms all of His positive attributes. Ḥamd is to describe the praised one with perfection, love and utmost respect.\n\nتَبَارَكَ اسْمُكَ: Your Name is Perfect, Exalted, Holy and is the source of all good in the heavens and the earth.\n\nThe Name of Allah (عَزَّ وَجَلَّ) is full of blessing and good. Uttering His Name before eating prevents Shayṭān from sharing your meal. Similarly, if you slaughter an animal without uttering the Name of Allah, it remains unlawful for you to eat. Thus, all matters which are not preceded by the Name of Allah (عَزَّ وَجَلَّ) are deficient and defective.\n\nجَدُّكَ: This refers to Allah’s majesty, greatness and grandeur.\n\nوَلاَ إِلٰهَ غَيْرُكَ: This is the kalimah (utterance) of tawḥīd (oneness), which all Messengers were sent with. It means there is none worthy of worship except for Allah (عَزَّ وَجَلَّ).\n\nAll of the above naturally guides us to this ultimate word of truth. After affirming and uttering Allah’s absolute unique perfection, it only makes sense that He is the Only One who should be worshipped.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/66.mp3?_=1",
     "reference": "Abū Dāwūd 775",
@@ -10362,7 +10382,15 @@
           },
           {
             "type": "paragraph",
-            "text": "He then said: أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ (I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.) (Abū Dāwūd 775)"
+            "text": "He then said:"
+          },
+          {
+            "type": "arabic",
+            "text": "أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَمْزِهِ وَنَفْخِهِ وَنَفْثِهِ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.) (Abū Dāwūd 775)"
           }
         ],
         "explanation": [
@@ -10642,7 +10670,7 @@
     "repetition": "(1x)",
     "translation": "I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil is attributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.",
     "transliteration": "Wajjahtu wajhī lil-ladhī faṭara-s-samāwāti wal-arḍa ḥanīfan wa mā ana mina-l-mushrikīn, inna ṣalātī, wa nusukī, wa maḥyāya, wa mamātī lil-lāhi Rabbi-l-ʿĀlamīn, la sharīka lahu wa bi-dhālika umirtu wa ana mina-l-muslimīn. Allāhumma Antal-Maliku lā ilāha illā Ant, Anta Rabbī wa ana ʿabduk, ẓalamtu nafsī waʿtaraftu bi-dhambī, fa-ghfir lī dhunūbī jamīʿā, innahū lā yaghfiru-dh-dhunūba illā Ant, wa-hdinī li-aḥsani-l-akhlāqi lā yahdī li-aḥsanihā illā Ant, wa-ṣrif ʿannī sayyi’ahā lā yaṣrifu ʿannī sayyi’ahā illā Ant, labbayka wa saʿdayk, wal-khayru kulluhū fī yadayk, wa-sh-sharru laysa ilayk, ana bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
-    "virtue": "ʿAlī b. Abū Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say: [the above].\n\nWhen he would do rukū, he would say:اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:اَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:اَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(Muslim 771)”",
+    "virtue": "ʿAlī b. Abū Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say: [the above].\n\nWhen he would do rukū, he would say:\n\nاَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي\n\n(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:\n\nاَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n\n(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:\n\nاَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ\n\n(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:\n\nاَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ\n\n(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(Muslim 771)”",
     "explanation": "By saying this duʿā’, you remind yourself of what Ibrāhīm (عَلَيْهِ السَّلَام) said. You affirm the Oneness of Allah and disassociate yourself from shirk. The duʿā’ acts as a reminder of your purpose in life and that everything you do is for Him. You seek forgiveness and you ask Allah (عَزَّ وَجَلَّ) to grant you beautiful character. You praise Him and show your desperate need of Him.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/71.mp3?_=6",
     "reference": "Muslim 771",
@@ -10675,19 +10703,51 @@
           },
           {
             "type": "paragraph",
-            "text": "When he would do rukū, he would say:اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+            "text": "When he would do rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي"
           },
           {
             "type": "paragraph",
-            "text": "When he would raise his head from rukū, he would say:اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+            "text": "(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
           },
           {
             "type": "paragraph",
-            "text": "When he would do sajdah, he would say:اَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+            "text": "When he would raise his head from rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ"
           },
           {
             "type": "paragraph",
-            "text": "The last thing he would say after the tashahhud and the salām would be:اَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(<ref id=\"muslim\">Muslim 771</ref>)”"
+            "text": "(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would do sajdah, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "The last thing he would say after the tashahhud and the salām would be:"
+          },
+          {
+            "type": "arabic",
+            "text": "اَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(<ref id=\"muslim\">Muslim 771</ref>)”"
           }
         ],
         "explanation": [
@@ -10982,7 +11042,7 @@
     "repetition": "(1x)",
     "translation": "I seek protection in Allah, the All-Hearing and All-Knowing from the rejected Shaytān; from him inciting madness, pride and reprehensible poetry.",
     "transliteration": "Aʿūdhu bi-llāhi-s-Samīʿi-l-ʿAlīm mina-sh-Shayṭāni-r-rajīm, min hamzihī wa nafkhihī wa nafthih.",
-    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:\n\nسُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ (How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.).\n\nHe then said: لاَ إِلٰهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللّٰهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said [the above]. (Aḥmad 11260)",
+    "virtue": "Abū Sa’īd al-Khudrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messenger of Allah ﷺ got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:\n\nسُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ\n\n(How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.).\n\nHe then said: لاَ إِلٰهَ إِلاَّ اللَّهُ (There is no god but Allah) three times.\n\nHe then said: اللّٰهُ أَكْبَرُ كَبِيرًا (Allah is altogether great) three times. He then said [the above]. (Aḥmad 11260)",
     "explanation": "أَعُوْذُ: I take refuge, safeguard myself, take precaution, and I am careful. عاذَ means to flee from that which you fear will harm you to that which will protect you from it.\n\nIstiʿādhah (seeking protection) is essentially an act of the heart. When seeking protection with Allah, you are: (1) throwing yourself in front of Him, displaying your need of Him, and (2) submitting and humbling yourself in front of Him.\n\nIstiʿādhah also acts as an acknowledgement of Allah’s ultimate power, and the human being’s weakness and inability to combat the unseen enemy, Shayṭān.\n\nṢalāh is the Shayṭān’s battlefield. No other situation enrages and annoys Shayṭān more than ṣalāh. First, Shayṭān will try to make you miss your ṣalāh. If he fails, he will try to make you delay it as much as possible. Again, if he fails, he will try to dissuade you from your sunnah and nafl prayers. If he still fails to deter you, he will come to you in your ṣalāh and try to ruin it with his constant whispers.\n\nBe vigilant and constantly guard your ṣalāh, for Shayṭān is a thief who wants to ‘steal’ from your ṣalāh until you have nothing left in it. Shayṭān is an evil enemy. His invisibility makes him even more deadly. Because we cannot see him, we forget about him. In an increasingly material world, when we have a problem, we tend to look for physical causes. It would not be considered ‘intellectual’ or ‘scientific’ to blame Shayṭān and his cronies. Although he is not always the culprit, Shayṭan is constantly inflicting his evil on the children of Ādam. He comes and goes. He is described in the Qur’ān as ‘khannās’: the one who retreats and comes back. He always lurks about to inflict maximum damage wherever possible.\n\nReflecting (tadabbur) on the Qur’ān gives life to the heart, and is the secret of worldly and heavenly bliss. Shayṭān however will try his best to prevent this and be a barrier between you and the Qur’ān.\n\nShayṭān rages with envy. The angels prostrated to Ādam in obedience to Allah’s command, whilst he refused and was thrown out of Paradise. Up until today, he tries his utmost to prevent the sons of Ādam from prostrating. When you understand his envy and his tenacity in pursuing you, remember that you cannot defeat him by yourself: you need his and your Master, Allah (عَزَّ وَجَلَّ), on your side.\n\nIt is for this reason that Ibn Taymiyyah (رَحِمَهُ اللَّهُ) once told his student, Ibn al-Qayyim (رَحِمَهُ اللَّهُ),\n\n“If a shepherd-dog attacks you, don’t bother fighting him back. Instead seek the help of the shepherd because he will push the dog away from you and will protect you from him.”\n\nThus, the protection of Allah (عَزَّ وَجَلَّ) – the All-Powerful (alQawiyy), the Guardian (al-Ḥafīẓ) – is our most effective weapon to defeat Shayṭān.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/76.mp3?_=11",
     "reference": "Aḥmad 11260",
@@ -11014,8 +11074,12 @@
             "text": "<b>Abū Sa’īd al-Khudrī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that when the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:"
           },
           {
+            "type": "arabic",
+            "text": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ"
+          },
+          {
             "type": "paragraph",
-            "text": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ (How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.)."
+            "text": "(How Perfect are You O Allah, and all praise is Yours. Your Name is most blessed, Your majesty is exalted and there is no god worthy of worship except You.)."
           },
           {
             "type": "paragraph",
@@ -11119,7 +11183,7 @@
             "text": "<b>Abū Sa’īd al-Khudrī (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that when the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> got up to pray at night (for tahajjud prayer) he uttered the takbīr and then said:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلاَ إِلٰهَ غَيْرُكَ"
           },
           {
@@ -11210,7 +11274,7 @@
     "translation": "How perfect is my Lord, the Magnificent.",
     "transliteration": "Subḥāna Rabiyya-l-ʿAẓīm.",
     "virtue": "Ḥudhayfah (رَضِيَ اللَّهُ عَنْهُ) said, “I prayed with the Messenger of Allah ﷺ one night and he started reciting Sūrah al-Baqarah. I said to myself that he will do rukūʿ at the end of one hundred āyāt, but he carried on reciting. I then said to myself that he will perhaps recite the whole sūrah in a rakʿah, and he carried on reciting. (At the end of Sūrah al-Baqarah), I said to myself that he will (now) go into rukūʿ. However, he then started Sūrah al-Nisā’, and recited it. He then started Sūrah Āl ʿImrān and recited it slowly.\n\nWhen he recited the āyāt which entailed the glorification of Allah (tasbīḥ), he glorified Him. When he recited the āyāt which entailed asking (duʿā’), he would ask Allah. And when he recited the āyāt which entailed the protection of Allah, he sought His protection.\n\nHe ﷺ then went into rukūʿ and said, [the above]. His bowing lasted about the same length of time as his standing. He then said, ‘May Allah respond to the one who has praised Him’, and he then stood for a long time, about the same length of time as he had spent in bowing. He then performed sajdah and said, ‘How Perfect is my Lord, the Most Exalted’, and his prostration lasted nearly the same length of time as his standing” (Muslim 772).",
-    "explanation": "Rukūʿ is one of the most significant pillars of ṣalāh. Its position is one of the most intense symbols of servitude, submission and humility. In rukūʿ, not only do you glorify Allah (عَزَّ وَجَلَّ) but you also simultaneously humble: the heart, the tongue and the limbs. Feel your self-importance diminishing, whilst the awe and glory of Allah (عَزَّ وَجَلَّ) expand in your heart. The more your heart glorifies Allah(عَزَّ وَجَلَّ), the fear and awe of His creation will slowly vanish from your heart.\n\nEverything other than Allah (عَزَّ وَجَلَّ) will begin to appear small and insignificant.\n\nDo not rush this position. Take your time, prolong your rukūʿ whenever possible and inshā’Allah you will feel the sweetness and joy in this position.\n\nThe secret of rukūʿ\n\nThe adhkār (remembrances) of rukūʿ are the secret of this pillar. Make every effort to memorise them. They will help you in internalising the greatness and grandeur of Allah. The Prophet (ṣall Allāhu ʿalayhi wa sallam) would lengthen his rukūʿ to the same duration as his qiyām in his voluntary prayers, repeating the following adhkār with humility, devotion and reflection:سُبْحَانَ رَبِّـيَ الْعَظِيْمِ\n\nIn stating the word ‘subḥan’, you are declaring the perfection of Allah and negating all deficiencies. This is followed by the word ‘rabbī’ (my Lord). Note the use of the pronoun ‘my’. Saying ‘my’ should stir a sense of closeness, bonding and love. Allah is my Lord, the One who created me, nurtures me, feeds me, clothes me, heals me and manages all of my affairs. Next, you describe Him as ‘al-ʿAẓīm’: the Magnificent, the Great.\n\nسُبْحَانَ اللهِ means to glorify Allah  above any imperfection or deficiency i.e Allah is free from all defects. Allah is the Most Glorified who has no partner or rival, who possesses every aspect of perfection, and whose actions are pure and free from evil.",
+    "explanation": "Rukūʿ is one of the most significant pillars of ṣalāh. Its position is one of the most intense symbols of servitude, submission and humility. In rukūʿ, not only do you glorify Allah (عَزَّ وَجَلَّ) but you also simultaneously humble: the heart, the tongue and the limbs. Feel your self-importance diminishing, whilst the awe and glory of Allah (عَزَّ وَجَلَّ) expand in your heart. The more your heart glorifies Allah(عَزَّ وَجَلَّ), the fear and awe of His creation will slowly vanish from your heart.\n\nEverything other than Allah (عَزَّ وَجَلَّ) will begin to appear small and insignificant.\n\nDo not rush this position. Take your time, prolong your rukūʿ whenever possible and inshā’Allah you will feel the sweetness and joy in this position.\n\nThe secret of rukūʿ\n\nThe adhkār (remembrances) of rukūʿ are the secret of this pillar. Make every effort to memorise them. They will help you in internalising the greatness and grandeur of Allah. The Prophet (ṣall Allāhu ʿalayhi wa sallam) would lengthen his rukūʿ to the same duration as his qiyām in his voluntary prayers, repeating the following adhkār with humility, devotion and reflection:\n\nسُبْحَانَ رَبِّـيَ الْعَظِيْمِ\n\nIn stating the word ‘subḥan’, you are declaring the perfection of Allah and negating all deficiencies. This is followed by the word ‘rabbī’ (my Lord). Note the use of the pronoun ‘my’. Saying ‘my’ should stir a sense of closeness, bonding and love. Allah is my Lord, the One who created me, nurtures me, feeds me, clothes me, heals me and manages all of my affairs. Next, you describe Him as ‘al-ʿAẓīm’: the Magnificent, the Great.\n\nسُبْحَانَ اللهِ means to glorify Allah  above any imperfection or deficiency i.e Allah is free from all defects. Allah is the Most Glorified who has no partner or rival, who possesses every aspect of perfection, and whose actions are pure and free from evil.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/78.mp3?_=13",
     "reference": "Muslim 772",
     "id": 121,
@@ -11269,7 +11333,11 @@
           },
           {
             "type": "paragraph",
-            "text": "The adhkār (remembrances) of rukūʿ are the secret of this pillar. Make every effort to memorise them. They will help you in internalising the greatness and grandeur of Allah. The Prophet (ṣall Allāhu ʿalayhi wa sallam) would lengthen his rukūʿ to the same duration as his qiyām in his voluntary prayers, repeating the following adhkār with humility, devotion and reflection:سُبْحَانَ رَبِّـيَ الْعَظِيْمِ"
+            "text": "The adhkār (remembrances) of rukūʿ are the secret of this pillar. Make every effort to memorise them. They will help you in internalising the greatness and grandeur of Allah. The Prophet (ṣall Allāhu ʿalayhi wa sallam) would lengthen his rukūʿ to the same duration as his qiyām in his voluntary prayers, repeating the following adhkār with humility, devotion and reflection:"
+          },
+          {
+            "type": "arabic",
+            "text": "سُبْحَانَ رَبِّـيَ الْعَظِيْمِ"
           },
           {
             "type": "paragraph",
@@ -11713,7 +11781,7 @@
     "repetition": "(1x)",
     "translation": "Our Lord, to You Alone belongs all praise; abundant, pure and blessed praise.",
     "transliteration": "Rabbanā laka-l-ḥamdu, ḥamdan kathīran ṭayyiban mubārakan fīh.",
-    "virtue": "Rifāʿah b. Rāfiʿ (رَضِيَ اللَّهُ عَنْهُ) narrated, “One day we were praying behind the Messenger of Allah ﷺ. When he ﷺ raised his head from rukūʿ, he said, سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ\n\nA man behind him said, رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ\n\nWhen he ﷺ finished, he asked, ‘Who uttered those words?’ The man replied, ‘Me.’ The Prophet ﷺ said, ‘I saw some thirty-something angels racing to write it first.’” (Bukhārī 799).",
+    "virtue": "Rifāʿah b. Rāfiʿ (رَضِيَ اللَّهُ عَنْهُ) narrated, “One day we were praying behind the Messenger of Allah ﷺ. When he ﷺ raised his head from rukūʿ, he said,\n\nسَمِعَ اللَّهُ لِمَنْ حَمِدَهُ\n\nA man behind him said,\n\nرَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ\n\nWhen he ﷺ finished, he asked, ‘Who uttered those words?’ The man replied, ‘Me.’ The Prophet ﷺ said, ‘I saw some thirty-something angels racing to write it first.’” (Bukhārī 799).",
     "explanation": "Explanation coming soon…",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/85.mp3?_=20",
     "reference": "Bukhārī 799",
@@ -11742,11 +11810,19 @@
         "virtue": [
           {
             "type": "paragraph",
-            "text": "<b>Rifāʿah b. Rāfiʿ (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated, “One day we were praying behind the Messenger of Allah <hon kind=\"saw\">ﷺ</hon>. When he <hon kind=\"saw\">ﷺ</hon> raised his head from rukūʿ, he said, سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ"
+            "text": "<b>Rifāʿah b. Rāfiʿ (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated, “One day we were praying behind the Messenger of Allah <hon kind=\"saw\">ﷺ</hon>. When he <hon kind=\"saw\">ﷺ</hon> raised his head from rukūʿ, he said,"
+          },
+          {
+            "type": "arabic",
+            "text": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ"
           },
           {
             "type": "paragraph",
-            "text": "A man behind him said, رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ"
+            "text": "A man behind him said,"
+          },
+          {
+            "type": "arabic",
+            "text": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ"
           },
           {
             "type": "paragraph",
@@ -11831,7 +11907,7 @@
     "translation": "O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that. The greatest truth the slave can utter is – and we are all Your slaves - O Allah, there is none who can withhold what You give, and none can give what You withhold; and the wealth of the wealthy does not avail him from You",
     "transliteration": "Rabbanā laka-l-ḥamdu mil’a-s-samāwati wa-l-arḍ, wa mil’a mā shi’ta min shay’in baʿdu ahla-thanā’i wa-l-majd, aḥaqqu mā qāla-l-ʿabdu, wa kullunā laka ʿabdun: Allāhumma lā māniʿa li-mā aʿaṭayt, wa lā muʿṭiya li-mā manʿat, wa lā yanfaʿu dha-l-jaddi minka-l-jadd.",
     "virtue": "Abū Saʿīd al-Khuḍrī (رَضِيَ اللَّهُ عَنْهُ) narrated that when the Messeneger of Allah would raise his head after bowing, he would say [the above]. (Muslim 477)",
-    "explanation": "لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ (O Allah, there is none who can withhold what You give, and none can give what You withhold]: This is reminiscent of the Prophet’s advice to his cousin ʿAbdullāh b. ʿAbbās (رَضِيَ اللَّهُ عَنْهُ), who narrated, “One day I was behind the Messenger of Allah ﷺ (on a camel) and he said to me, ‘Son, Iwill teach you some words: Be mindful of Allah and He will be mindful of you. Be mindful of Allah and you will find Him in front of you. When you ask, then ask Allah. When you seek help, then seek help from Allah. Know that if the nation gathered together to benefit you with something, they would only benefit you with something that Allah has already written for you. If they gathered together to harm you with something, they would only harm you with something that Allah had already written against you. The pens have been lifted and the pages have dried’ (Tirmidhī).\n\nاَلْجَدُّ: Jadd means good fortune and includes: wealth, power, and fame. None of these can protect you from the punishment of Allah (عَزَّ وَجَلَّ).",
+    "explanation": "لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ\n\n(O Allah, there is none who can withhold what You give, and none can give what You withhold]: This is reminiscent of the Prophet’s advice to his cousin ʿAbdullāh b. ʿAbbās (رَضِيَ اللَّهُ عَنْهُ), who narrated, “One day I was behind the Messenger of Allah ﷺ (on a camel) and he said to me, ‘Son, Iwill teach you some words: Be mindful of Allah and He will be mindful of you. Be mindful of Allah and you will find Him in front of you. When you ask, then ask Allah. When you seek help, then seek help from Allah. Know that if the nation gathered together to benefit you with something, they would only benefit you with something that Allah has already written for you. If they gathered together to harm you with something, they would only harm you with something that Allah had already written against you. The pens have been lifted and the pages have dried’ (Tirmidhī).\n\nاَلْجَدُّ: Jadd means good fortune and includes: wealth, power, and fame. None of these can protect you from the punishment of Allah (عَزَّ وَجَلَّ).",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/87.mp3?_=22",
     "reference": "Muslim 477; Tirmidhī",
     "id": 130,
@@ -11865,7 +11941,15 @@
         "explanation": [
           {
             "type": "paragraph",
-            "text": "<b>لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ</b> (O Allah, there is none who can withhold what You give, and none can give what You withhold]: This is reminiscent of the Prophet’s advice to his cousin ʿAbdullāh b. ʿAbbās (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>), who narrated, “One day I was behind the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> (on a camel) and he said to me, ‘Son, Iwill teach you some words: Be mindful of Allah and He will be mindful of you. Be mindful of Allah and you will find Him in front of you. When you ask, then ask Allah. When you seek help, then seek help from Allah. Know that if the nation gathered together to benefit you with something, they would only benefit you with something that Allah has already written for you. If they gathered together to harm you with something, they would only harm you with something that Allah had already written against you. The pens have been lifted and the pages have dried’ (Tirmidhī)."
+            "text": "<b>"
+          },
+          {
+            "type": "arabic",
+            "text": "لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "</b> (O Allah, there is none who can withhold what You give, and none can give what You withhold]: This is reminiscent of the Prophet’s advice to his cousin ʿAbdullāh b. ʿAbbās (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>), who narrated, “One day I was behind the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> (on a camel) and he said to me, ‘Son, Iwill teach you some words: Be mindful of Allah and He will be mindful of you. Be mindful of Allah and you will find Him in front of you. When you ask, then ask Allah. When you seek help, then seek help from Allah. Know that if the nation gathered together to benefit you with something, they would only benefit you with something that Allah has already written for you. If they gathered together to harm you with something, they would only harm you with something that Allah had already written against you. The pens have been lifted and the pages have dried’ (Tirmidhī)."
           },
           {
             "type": "paragraph",
@@ -12249,7 +12333,7 @@
     "repetition": "(1x)",
     "translation": "O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.",
     "transliteration": "Allāhumma laka sajadtu, wa bika āmantu, wa laka aslamtu, sajada wajhī lil-ladhī kalaqahū, wa ṣawarrahū, wa shaqqa samʿahū wa baṣarahū, tabāraka-l-lāhu aḥsanu-l-khāliqīn.",
-    "virtue": "ʿAlī b. Abī Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمٰـوٰتِ وَالْأَرْضَ حَنِيْفًا وَّمَآ أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ، وَبِذَٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّٰهُمَّ أَنْتَ الْمَلِكُ لَا إِلٰهَ إِلَّا أَنْتَ، ‏أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ\n\n(I have turned my face towards the One who created the heavens andthe earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil is attributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)\n\nWhen he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say [the above].\n\nThe last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.) (Muslim 771)”",
+    "virtue": "ʿAlī b. Abī Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمٰـوٰتِ وَالْأَرْضَ حَنِيْفًا وَّمَآ أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ، وَبِذَٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّٰهُمَّ أَنْتَ الْمَلِكُ لَا إِلٰهَ إِلَّا أَنْتَ، ‏\n\nأَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ\n\n(I have turned my face towards the One who created the heavens andthe earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil is attributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)\n\nWhen he would do rukū, he would say:\n\nاللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي\n\n(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:\n\nاللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n\n(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say [the above].\n\nThe last thing he would say after the tashahhud and the salām would be:\n\nاللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ\n\n(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.) (Muslim 771)”",
     "explanation": "Whilst reading this duʿā’, feel a sense of shame and shyness from the One who granted you all of the aforementioned blessings; and yet you still disobey Him.\n\nImagine you were blind and Allah (عَزَّ وَجَلَّ) had not bestowed you with the gift of sight.\n\nImagine you were deaf and you could not hear your loved ones or the recitation of the Qur’ān.",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/94.mp3?_=29",
     "reference": "Muslim 771",
@@ -12282,7 +12366,11 @@
           },
           {
             "type": "paragraph",
-            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمٰـوٰتِ وَالْأَرْضَ حَنِيْفًا وَّمَآ أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ، وَبِذَٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّٰهُمَّ أَنْتَ الْمَلِكُ لَا إِلٰهَ إِلَّا أَنْتَ، ‏أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ"
+            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمٰـوٰتِ وَالْأَرْضَ حَنِيْفًا وَّمَآ أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ، وَبِذَٰلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّٰهُمَّ أَنْتَ الْمَلِكُ لَا إِلٰهَ إِلَّا أَنْتَ، ‏"
+          },
+          {
+            "type": "arabic",
+            "text": "أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ"
           },
           {
             "type": "paragraph",
@@ -12290,11 +12378,27 @@
           },
           {
             "type": "paragraph",
-            "text": "When he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+            "text": "When he would do rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي"
           },
           {
             "type": "paragraph",
-            "text": "When he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+            "text": "(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would raise his head from rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
           },
           {
             "type": "paragraph",
@@ -12302,7 +12406,15 @@
           },
           {
             "type": "paragraph",
-            "text": "The last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.) (<ref id=\"muslim\">Muslim 771</ref>)”"
+            "text": "The last thing he would say after the tashahhud and the salām would be:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.) (<ref id=\"muslim\">Muslim 771</ref>)”"
           }
         ],
         "explanation": [
@@ -12757,7 +12869,7 @@
     "translation": "All royal greetings belong to Allah, as do prayers and good (deeds and words). May peace, the mercy of Allah and His blessings be upon you O Prophet. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god except Allah and I bear witness that Muhammad is His slave and Messenger.",
     "transliteration": "At-taḥiyyātu lil-lāhi, wa-ṣalawātu, wa- ṭayyibātu, as-salāmu ʿalyaka ayyuha-n-nabiyyu wa raḥmatul-lāhi wa barakātuh, as-salāmu ʿalyanā wa ʿalā ʿibādillah-ṣ-ṣalihīn, ash-hadu an-lā ilāha illa-l-lāhu wa ashadu an-na Muḥammadan ʿabduhū wa rasūluh.",
     "virtue": "Ibn Mas’ūd (رَضِيَ اللَّهُ عَنْهُ) said: “The Messenger of Allah ﷺ taught me the Tashahhud as he taught me a sūrah from the Qur’an, while my hand was between his hands. (Bukhārī 6265)",
-    "explanation": "اَلتَّحِيَّاتُ [All royal greetings]: In different cultures, royalty are shown respect in different ways. Some stand upon their arrival and wait for them to be seated before they themselves sit down. Others bow and curtsy. Royalty are also addressed with specific terms of honour (‘Your Honour/Majesty, Your RoyalHighness’, etc.) and protocols usually dictate what can and cannot be uttered when greeting them.\n\nTaḥiyyāt is plural of the word taḥiyyah, and is derived from the word ‘ḥayāt’, meaning life in Arabic. It is a form of greeting similar to ‘Long live the King/ Queen…’ For Allah (عَزَّ وَجَلَّ), it means that everlasting kingship, ownership and sovereignty belong only to Him as He Alone is the Ever-Living, the only One whowill never die. Thus, He (عَزَّ وَجَلَّ) is most worthy of all praises and greetings. This is why we say the plural form at-Taḥiyyātu (all royal greetings) and not at-Taḥiyyatu (the singular form) to Allah.\n\nوَالصَّلَوَاتُ [All prayers]: All of the ṣalāh we pray and the supplications we make are only directed to Allah.\n\nوَالطَّيِّبَاتُ ]All good]: Ṭayyibāt refers to pure attributes, actions and words. Allah (عَزَّ وَجَلَّ) is Pure and only accepts the ‘pure’. All of His Actions and Attributes are Pure.\n\nHe is the Lord of the pure ones, and it is only the pure ones who will be granted closeness to Him in the Abode of eternal honour (Paradise). Only pure actions and words, which are carried out solely for His sake, ascend to Him.\n\nAn Alternative Meaning to the Tashahhud:\n\nTAḤIYYĀT : All verbal forms of worship.ṢALAWĀT: All physical forms of worship.ṬAYYIBĀT: All monetary forms of worship.\n\nاَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ: Along with the right Allah (عَزَّ وَجَلَّ), the Creator, has over you, His creation also has a right over you. They have a right to share a portion of your ṣalāh. Accordingly, you should begin with praying for the bestof creation, Muḥammad ﷺ, and then follow this by praying for the righteous servants of Allah.\n\nاَلسَّلاَمُ عَلَيْكَ May peace be upon you O Prophet]: al-Salām is one of the Perfect Names of Allah (عَزَّ وَجَلَّ). By stating ‘peace be upon you’, you are seeking the protection of Allah for the person you are greeting. You are asking Allah (عَزَّ وَجَلَّ) to take care of him and to keep him safe from all harm and evil.\n\nWhat you are saying is, “O Allah, protect Muḥammad ﷺ in his daʿwah and protect his ummah from every type of deficiency, so that his message reigns supreme, and the glory and honour of his ummah increase.\n\nرَحْمَةُ اللّٰهِ[The mercy of Allah]: You are asking Allah (عَزَّ وَجَلَّ) to give Muḥammad ﷺ every possible good, and to reward him for everything he did for us.\n\nIn offering our salām to Muḥammad ﷺ we are also benefitting, as he responds to our greetings. Allah b has greatly privileged us by making us the beneficiaries of the duʿā’ of the greatest man tohave walked on this earth. He ﷺ said, “There is no one who sendssalām upon me, except that Allah returns my soul to me so that I may respond to his salām” (Abū Dāwūd).\n\nوَبَرَكَاتُهُ [His blessings]: Barakāt is the plural of barakah which linguistically means growth and increase. You are asking Allah (عَزَّ وَجَلَّ) to bless the Prophet ﷺ and to bless him ﷺ in his followers by: (1) increasing their numbers and (2) by occupying them in worship as he will share in their reward.\n\nاَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ After this, you send greetings upon yourself and upon the chosen righteous servants of Allah (عَزَّ وَجَلَّ), in accordance with the command of Allah (عَزَّ وَجَلَّ) to His beloved ﷺ, “Say, all praise is for Allah, and may peace be upon His servants whom He has chosen” (27:59).\n\nThe caveat here of the ‘righteous’ shows you the importance of trying your best to be from them and to always keep their company.The Prophet ﷺ said that when one utters the above, the supplication “reaches every slave in the sky and the earth” (Bukhārī).\n\nأَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ Then attest to the Oneness of Allah (عَزَّ وَجَلَّ). Through this phrase you affirm that He is the only One worthy of being worshipped, loved and obeyed. Everything and anything other than Him (عَزَّ وَجَلَّ) that is worshipped is falsehood.\n\nأَشْهَدُ [I testify]: Ash-hadu means ‘I testify’. You ‘testify’ to something being true when you are certain of its authenticity. Accordingly, this word is befitting hereas you are certain that Allah (عَزَّ وَجَلَّ) is the only One worthy of being worshipped and Muḥammad ﷺ is the slave and Messenger of Allah.\n\nWhen uttering these words, re-affirm these words by simultaneously raising your index finger to indicate the Oneness of Allah (عَزَّ وَجَلَّ). When doing so, you must also strive to feel the impact of these words, feeling that you are strangling Shayṭān with this action. When ʿAbdullāh b. ʿUmar (radiy Allāhu ʿanhumā) would sit down in ṣalāh, he would place his hands on his knees and point with his finger and keep his eye focused on it. He said that the Messenger of Allah ﷺ said that the finger is “harder on Shayṭān than iron” (Aḥmad).",
+    "explanation": "اَلتَّحِيَّاتُ [All royal greetings]: In different cultures, royalty are shown respect in different ways. Some stand upon their arrival and wait for them to be seated before they themselves sit down. Others bow and curtsy. Royalty are also addressed with specific terms of honour (‘Your Honour/Majesty, Your RoyalHighness’, etc.) and protocols usually dictate what can and cannot be uttered when greeting them.\n\nTaḥiyyāt is plural of the word taḥiyyah, and is derived from the word ‘ḥayāt’, meaning life in Arabic. It is a form of greeting similar to ‘Long live the King/ Queen…’ For Allah (عَزَّ وَجَلَّ), it means that everlasting kingship, ownership and sovereignty belong only to Him as He Alone is the Ever-Living, the only One whowill never die. Thus, He (عَزَّ وَجَلَّ) is most worthy of all praises and greetings. This is why we say the plural form at-Taḥiyyātu (all royal greetings) and not at-Taḥiyyatu (the singular form) to Allah.\n\nوَالصَّلَوَاتُ [All prayers]: All of the ṣalāh we pray and the supplications we make are only directed to Allah.\n\nوَالطَّيِّبَاتُ ]All good]: Ṭayyibāt refers to pure attributes, actions and words. Allah (عَزَّ وَجَلَّ) is Pure and only accepts the ‘pure’. All of His Actions and Attributes are Pure.\n\nHe is the Lord of the pure ones, and it is only the pure ones who will be granted closeness to Him in the Abode of eternal honour (Paradise). Only pure actions and words, which are carried out solely for His sake, ascend to Him.\n\nAn Alternative Meaning to the Tashahhud:\n\nTAḤIYYĀT : All verbal forms of worship.ṢALAWĀT: All physical forms of worship.ṬAYYIBĀT: All monetary forms of worship.\n\nاَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ\n\n: Along with the right Allah (عَزَّ وَجَلَّ), the Creator, has over you, His creation also has a right over you. They have a right to share a portion of your ṣalāh. Accordingly, you should begin with praying for the bestof creation, Muḥammad ﷺ, and then follow this by praying for the righteous servants of Allah.\n\nاَلسَّلاَمُ عَلَيْكَ May peace be upon you O Prophet]: al-Salām is one of the Perfect Names of Allah (عَزَّ وَجَلَّ). By stating ‘peace be upon you’, you are seeking the protection of Allah for the person you are greeting. You are asking Allah (عَزَّ وَجَلَّ) to take care of him and to keep him safe from all harm and evil.\n\nWhat you are saying is, “O Allah, protect Muḥammad ﷺ in his daʿwah and protect his ummah from every type of deficiency, so that his message reigns supreme, and the glory and honour of his ummah increase.\n\nرَحْمَةُ اللّٰهِ[The mercy of Allah]: You are asking Allah (عَزَّ وَجَلَّ) to give Muḥammad ﷺ every possible good, and to reward him for everything he did for us.\n\nIn offering our salām to Muḥammad ﷺ we are also benefitting, as he responds to our greetings. Allah b has greatly privileged us by making us the beneficiaries of the duʿā’ of the greatest man tohave walked on this earth. He ﷺ said, “There is no one who sendssalām upon me, except that Allah returns my soul to me so that I may respond to his salām” (Abū Dāwūd).\n\nوَبَرَكَاتُهُ [His blessings]: Barakāt is the plural of barakah which linguistically means growth and increase. You are asking Allah (عَزَّ وَجَلَّ) to bless the Prophet ﷺ and to bless him ﷺ in his followers by: (1) increasing their numbers and (2) by occupying them in worship as he will share in their reward.\n\nاَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ\n\nAfter this, you send greetings upon yourself and upon the chosen righteous servants of Allah (عَزَّ وَجَلَّ), in accordance with the command of Allah (عَزَّ وَجَلَّ) to His beloved ﷺ, “Say, all praise is for Allah, and may peace be upon His servants whom He has chosen” (27:59).\n\nThe caveat here of the ‘righteous’ shows you the importance of trying your best to be from them and to always keep their company.The Prophet ﷺ said that when one utters the above, the supplication “reaches every slave in the sky and the earth” (Bukhārī).\n\nأَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ\n\nThen attest to the Oneness of Allah (عَزَّ وَجَلَّ). Through this phrase you affirm that He is the only One worthy of being worshipped, loved and obeyed. Everything and anything other than Him (عَزَّ وَجَلَّ) that is worshipped is falsehood.\n\nأَشْهَدُ [I testify]: Ash-hadu means ‘I testify’. You ‘testify’ to something being true when you are certain of its authenticity. Accordingly, this word is befitting hereas you are certain that Allah (عَزَّ وَجَلَّ) is the only One worthy of being worshipped and Muḥammad ﷺ is the slave and Messenger of Allah.\n\nWhen uttering these words, re-affirm these words by simultaneously raising your index finger to indicate the Oneness of Allah (عَزَّ وَجَلَّ). When doing so, you must also strive to feel the impact of these words, feeling that you are strangling Shayṭān with this action. When ʿAbdullāh b. ʿUmar (radiy Allāhu ʿanhumā) would sit down in ṣalāh, he would place his hands on his knees and point with his finger and keep his eye focused on it. He said that the Messenger of Allah ﷺ said that the finger is “harder on Shayṭān than iron” (Aḥmad).",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/102.mp3?_=37",
     "reference": "Bukhārī 6265; Abū Dāwūd; Bukhārī; Aḥmad",
     "id": 145,
@@ -12820,7 +12932,15 @@
           },
           {
             "type": "paragraph",
-            "text": "<b>اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ</b>: Along with the right Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>), the Creator, has over you, His creation also has a right over you. They have a right to share a portion of your ṣalāh. Accordingly, you should begin with praying for the bestof creation, Muḥammad <hon kind=\"saw\">ﷺ</hon>, and then follow this by praying for the righteous servants of Allah."
+            "text": "<b>"
+          },
+          {
+            "type": "arabic",
+            "text": "اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ"
+          },
+          {
+            "type": "paragraph",
+            "text": "</b>: Along with the right Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>), the Creator, has over you, His creation also has a right over you. They have a right to share a portion of your ṣalāh. Accordingly, you should begin with praying for the bestof creation, Muḥammad <hon kind=\"saw\">ﷺ</hon>, and then follow this by praying for the righteous servants of Allah."
           },
           {
             "type": "paragraph",
@@ -12844,7 +12964,15 @@
           },
           {
             "type": "paragraph",
-            "text": "<b>اَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ</b> After this, you send greetings upon yourself and upon the chosen righteous servants of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>), in accordance with the command of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>) to His beloved <hon kind=\"saw\">ﷺ</hon>, “Say, all praise is for Allah, and may peace be upon His servants whom He has chosen” (<qref>27:59</qref>)."
+            "text": "<b>"
+          },
+          {
+            "type": "arabic",
+            "text": "اَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "</b> After this, you send greetings upon yourself and upon the chosen righteous servants of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>), in accordance with the command of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>) to His beloved <hon kind=\"saw\">ﷺ</hon>, “Say, all praise is for Allah, and may peace be upon His servants whom He has chosen” (<qref>27:59</qref>)."
           },
           {
             "type": "paragraph",
@@ -12852,7 +12980,15 @@
           },
           {
             "type": "paragraph",
-            "text": "<b>أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ</b> Then attest to the Oneness of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>). Through this phrase you affirm that He is the only One worthy of being worshipped, loved and obeyed. Everything and anything other than Him (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>) that is worshipped is falsehood."
+            "text": "<b>"
+          },
+          {
+            "type": "arabic",
+            "text": "أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ"
+          },
+          {
+            "type": "paragraph",
+            "text": "</b> Then attest to the Oneness of Allah (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>). Through this phrase you affirm that He is the only One worthy of being worshipped, loved and obeyed. Everything and anything other than Him (<hon kind=\"awj\">عَزَّ وَجَلَّ</hon>) that is worshipped is falsehood."
           },
           {
             "type": "paragraph",
@@ -13220,7 +13356,7 @@
     "repetition": "(1x)",
     "translation": "O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.",
     "transliteration": "Allāhumma-ghfirlī mā qaddamtu wa mā akh-khart, wa mā asrartu wa mā aʿlant, wa mā asraftu wa mā Anta aʿlamu bihī minnī, Anta-l-Muqaddimu wa Anta-l-Muakh-khir, lā ilāha illā ant.",
-    "virtue": "ʿAlī b. Abū Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيْفًا وَّمَا أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّهُمَّ أَنْتَ الْمَلِكُ لَا إِلهَ إِلَّا أَنْتَ، ‏أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no oneguides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil isattributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)\n\nWhen he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be [the above]. (Muslim 771)",
+    "virtue": "ʿAlī b. Abū Tālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيْفًا وَّمَا أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّهُمَّ أَنْتَ الْمَلِكُ لَا إِلهَ إِلَّا أَنْتَ، ‏\n\nأَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ\n\n(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no oneguides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil isattributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)\n\nWhen he would do rukū, he would say:\n\nاللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي\n\n(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:\n\nاللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n\n(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:\n\nاللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ\n\n(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be [the above]. (Muslim 771)",
     "explanation": "",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/10-Salah/107.mp3?_=42",
     "reference": "Muslim 771",
@@ -13249,19 +13385,51 @@
         "virtue": [
           {
             "type": "paragraph",
-            "text": "ʿAlī b. Abū Tālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would stand for prayer, he would say:وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيْفًا وَّمَا أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّهُمَّ أَنْتَ الْمَلِكُ لَا إِلهَ إِلَّا أَنْتَ، ‏أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no oneguides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil isattributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)"
+            "text": "ʿAlī b. Abū Tālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would stand for prayer, he would say:وَجَّهْتُ وَجْهِيَ لِلَّذِيْ فَطَرَ السَّمَاوَاتِ وَالْأَرْضَ حَنِيْفًا وَّمَا أَنَا مِنَ الْمُشْرِكِيْنَ، إِنَّ صَلاَتِيْ وَنُسُكِيْ وَمَحْيَاىَ وَمَمَاتِيْ لِلّهِ رَبِّ الْعَالَمِيْنَ، لَا شَرِيْكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِيْنَ، اَللّهُمَّ أَنْتَ الْمَلِكُ لَا إِلهَ إِلَّا أَنْتَ، ‏"
+          },
+          {
+            "type": "arabic",
+            "text": "أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغْفِرْ لِيْ ذُنُوْبِيْ جَمِيْعًا، إِنَّهُ لَا يَغْفِرُ الذُّنُوْبَ إِلَّا أَنْتَ، وَاهْدِنِيْ لِأَحْسَنِ الْأَخْلَاقِ لَا يَهْدِيْ لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنِّيْ سَيِّئَهَا لَا يَصْرِفُ عَنِّيْ سَيِّئَهَا إِلَّا أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالْخَيْرُ كُلُّهُ فِيْ يَدَيْكَ، وَالشَّرُّ لَيْسَ إِلَيْكَ، أَنَا بِكَ وَإِلَيْكَ، تَبَارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوْبُ إِلَيْكَ"
           },
           {
             "type": "paragraph",
-            "text": "When he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+            "text": "(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit. O Allah, You are the King, there is no god worthy of being worshipped except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins, for no one forgives except You. Guide me to the best of character, for no oneguides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am, seeking Your pleasure and at Your service. All good is in Your hands and no evil isattributed to You. My (existence, protection and success) is from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.)"
           },
           {
             "type": "paragraph",
-            "text": "When he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+            "text": "When he would do rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي"
           },
           {
             "type": "paragraph",
-            "text": "When he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+            "text": "(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would raise his head from rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would do sajdah, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
           },
           {
             "type": "paragraph",
@@ -18994,7 +19162,7 @@
             "text": "Calling upon Allah through His Oneness is one of the most powerful ways to make du’ā. The grief-stricken Prophet Yunus (a.s.) cried out to his Lord:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "لا اله الا انت سبحانك اني كنت من الظالمين"
           },
           {
@@ -19539,7 +19707,7 @@
             "text": "This is why the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would recite the following du‘ā’ on the way to the Masjid:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِيْ نُوْرًا، وَعَنْ يَّمِيْنِيْ نُوْرًا، وَعَنْ يَّسَارِيْ نُوْرًا، وَفَوْقِيْ نُوْرًا، وَتَحْتِيْ نُوْرًا، وَأَمَامِيْ نُوْرًا، وَخَلْفِيْ نُوْرًا، وَاجْعَلْ لِيْ نُوْرًا"
           },
           {
@@ -21197,7 +21365,7 @@
     "repetition": "(1x)",
     "translation": "O Allah, You are the King, there is no god worthy of worship except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins; indeed no one forgives sins except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am at Your service, seeking Your pleasure; all good is in Your hands and no evil is attributed to You. I am from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.",
     "transliteration": "Allāhumma Antal-Maliku lā ilāha illā Ant, Anta Rabbī wa ana ʿabduk, ẓalamtu nafsī waʿtaraftu bi-dhambī, fa-ghfir lī dhunūbī jamīʿā, innahū lā yaghfiru-dh-dhunūba illā Ant, wa-hdinī li-aḥsani-l-akhlāqi lā yahdī li-aḥsanihā illā Ant, wa-ṣrif ʿannī sayyi’ahā lā yaṣrifu ʿannī sayyi’ahā illā Ant, labbayka wa saʿdayk, wal-khayru kulluhū fī yadayk, wa-sh-sharru laysa ilayk, ana bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
-    "virtue": "ʿAlī b. Abī Ṭālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)\n\nHe would then say [the above].\n\nWhen he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)\n\n(Muslim 771)",
+    "virtue": "ʿAlī b. Abī Ṭālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ\n\n(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)\n\nHe would then say [the above].\n\nWhen he would do rukū, he would say:\n\nاللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي\n\n(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:\n\nاللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n\n(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:\n\nاللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ\n\n(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:\n\nاللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ\n\n(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)\n\n(Muslim 771)",
     "explanation": "Explanation coming soon…",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/6-SunnahDuas/235.mp3?_=2",
     "reference": "Muslim 771",
@@ -21229,8 +21397,12 @@
             "text": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would stand for prayer, he would say:"
           },
           {
+            "type": "arabic",
+            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ"
+          },
+          {
             "type": "paragraph",
-            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)"
+            "text": "(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)"
           },
           {
             "type": "paragraph",
@@ -21238,19 +21410,51 @@
           },
           {
             "type": "paragraph",
-            "text": "When he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+            "text": "When he would do rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي"
           },
           {
             "type": "paragraph",
-            "text": "When he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+            "text": "(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
           },
           {
             "type": "paragraph",
-            "text": "When he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+            "text": "When he would raise his head from rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ"
           },
           {
             "type": "paragraph",
-            "text": "The last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)"
+            "text": "(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would do sajdah, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "The last thing he would say after the tashahhud and the salām would be:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)"
           },
           {
             "type": "paragraph",
@@ -25887,7 +26091,7 @@
             "text": "Calling upon Allah through His Oneness is one of the most powerful ways to make du’ā. The grief-stricken Prophet Yunus (a.s.) cried out to his Lord:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "لا اله الا انت سبحانك اني كنت من الظالمين"
           },
           {
@@ -26368,7 +26572,7 @@
             "text": "This is why the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would recite the following du‘ā’ on the way to the Masjid:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِيْ نُوْرًا، وَعَنْ يَّمِيْنِيْ نُوْرًا، وَعَنْ يَّسَارِيْ نُوْرًا، وَفَوْقِيْ نُوْرًا، وَتَحْتِيْ نُوْرًا، وَأَمَامِيْ نُوْرًا، وَخَلْفِيْ نُوْرًا، وَاجْعَلْ لِيْ نُوْرًا"
           },
           {
@@ -26546,7 +26750,7 @@
     "repetition": "(1x)",
     "translation": "O Allah, You are the King, there is no god worthy of worship except You. You are my Lord and I am Your slave. I have wronged myself and I confess my sins. Forgive all of my sins; indeed no one forgives sins except You. Guide me to the best of character, for no one guides to the best of it except You; and turn the evil of it away from me, for no one turns it away except You. Here I am at Your service, seeking Your pleasure; all good is in Your hands and no evil is attributed to You. I am from You and I am returning to You. You are Most Blessed and You are Most Exalted. I seek Your forgiveness and repent to You.",
     "transliteration": "Allāhumma Antal-Maliku lā ilāha illā Ant, Anta Rabbī wa ana ʿabduk, ẓalamtu nafsī waʿtaraftu bi-dhambī, fa-ghfir lī dhunūbī jamīʿā, innahū lā yaghfiru-dh-dhunūba illā Ant, wa-hdinī li-aḥsani-l-akhlāqi lā yahdī li-aḥsanihā illā Ant, wa-ṣrif ʿannī sayyi’ahā lā yaṣrifu ʿannī sayyi’ahā illā Ant, labbayka wa saʿdayk, wal-khayru kulluhū fī yadayk, wa-sh-sharru laysa ilayk, ana bika wa ilayk, tabārakta wa taʿālayt, astaghfiruka wa atūbu ilayk.",
-    "virtue": "ʿAlī b. Abī Ṭālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)\n\nHe would then say [the above].\n\nWhen he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(Muslim 771)",
+    "virtue": "ʿAlī b. Abī Ṭālib (رَضِيَ اللَّهُ عَنْهُ) narrates: “When the Messenger of Allah ﷺ would stand for prayer, he would say:\n\nوَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ\n\n(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)\n\nHe would then say [the above].\n\nWhen he would do rukū, he would say:\n\nاللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي\n\n(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)\n\nWhen he would raise his head from rukū, he would say:\n\nاللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ\n\n(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)\n\nWhen he would do sajdah, he would say:\n\nاللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ\n\n(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)\n\nThe last thing he would say after the tashahhud and the salām would be:\n\nاللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ\n\n(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(Muslim 771)",
     "explanation": "",
     "audio_url": "https://static.lifewithallah.com/file/LifeWithAllah/main/39-Istighfar/568.mp3?_=11",
     "reference": "Muslim 771",
@@ -26578,8 +26782,12 @@
             "text": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> would stand for prayer, he would say:"
           },
           {
+            "type": "arabic",
+            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ"
+          },
+          {
             "type": "paragraph",
-            "text": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا مِنَ الْمُشْرِكِينَ إِنَّ صَلاَتِي وَنُسُكِي وَمَحْيَاىَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)"
+            "text": "(I have turned my face towards the One who created the heavens and the earth, turned away from all that is false having surrendered to Allah, and I am not of the polytheists. My ṣalāh, my sacrifice, my life and my death are all for Allah, Lord of the worlds, who has no partners. I have been commanded of this, and I am of those who submit.)"
           },
           {
             "type": "paragraph",
@@ -26587,19 +26795,51 @@
           },
           {
             "type": "paragraph",
-            "text": "When he would do rukū, he would say:اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
+            "text": "When he would do rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَبَصَرِي وَمُخِّي وَعَظْمِي وَعَصَبِي"
           },
           {
             "type": "paragraph",
-            "text": "When he would raise his head from rukū, he would say:اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+            "text": "(O Allah, for You Alone I have bowed in prayer, in You Alone I have believed, and to You Alone I have submitted. My hearing, sight, mind, bones and nerves are humble to You.)"
           },
           {
             "type": "paragraph",
-            "text": "When he would do sajdah, he would say:اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+            "text": "When he would raise his head from rukū, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا وَمِلْءَ مَا شِئْتَ مِنْ شَىْءٍ بَعْدُ"
           },
           {
             "type": "paragraph",
-            "text": "The last thing he would say after the tashahhud and the salām would be:اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(<ref id=\"muslim\">Muslim 771</ref>)"
+            "text": "(O Allah, Our Lord, for You Alone is all praise; praise which fills the heavens, which fills the earth, which fills whatever is in between them, and which fills whatever You wish after that.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "When he would do sajdah, he would say:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمْعَهُ وَبَصَرَهُ تَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, for You Alone I have prostrated, in You Alone I have believed, and to You Alone I have submitted. My face has prostrated to the One who created and fashioned it, and who formed its hearing and sight. Blessed is Allah, the Best of Creators.)"
+          },
+          {
+            "type": "paragraph",
+            "text": "The last thing he would say after the tashahhud and the salām would be:"
+          },
+          {
+            "type": "arabic",
+            "text": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ وَمَا أَسْرَفْتُ وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ لاَ إِلَهَ إِلاَّ أَنْتَ"
+          },
+          {
+            "type": "paragraph",
+            "text": "(O Allah, forgive me for what I have done in the past and for what I am yet to do, for what I have done privately and for what I have done publicly, for my excesses and for that which You know more than me. You are the One who brings forward and the One who puts behind, and there is no god worthy of worship except You.)(<ref id=\"muslim\">Muslim 771</ref>)"
           }
         ],
         "explanation": [],
@@ -28100,7 +28340,7 @@
             "text": "Calling upon Allah through His Oneness is one of the most powerful ways to make du’ā. The grief-stricken Prophet Yunus (a.s.) cried out to his Lord:"
           },
           {
-            "type": "paragraph",
+            "type": "arabic",
             "text": "لا اله الا انت سبحانك اني كنت من الظالمين"
           },
           {

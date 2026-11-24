@@ -523,6 +523,21 @@ def semantic_key(text: str) -> str:
     # Spacing around punctuation is formatting.
     text = re.sub(r"\s+([,.;:!?،؛])", r"\1", text)
     text = re.sub(r"([“‘\(\[\{])\s+", r"\1", text)
+    # A script boundary is formatting, not content. The source runs an Arabic
+    # duʿāʾ straight into the English around it (`وَعَصَبِي(O Allah…`,
+    # `said:اَللّٰهُمَّ`); splitting the run into its own block necessarily
+    # inserts whitespace there. Collapse whitespace at every script boundary
+    # on BOTH sides of the comparison, so the gate measures words, not
+    # spacing. (Zero-or-more, not one-or-more: the source sometimes already
+    # has a space, and both sides must normalise to the same thing.)
+    text = re.sub(r"(?<=[\u0600-\u06FF])\s*(?=[(\[]?[A-Za-z])", "", text)
+    text = re.sub(r"(?<=[A-Za-z:;,.!?])\s*(?=[\u0600-\u06FF])", "", text)
+    # Bidi control marks (LRM/RLM) are invisible formatting by definition, so
+    # whitespace next to a SINGLE mark is presentation too. The source writes
+    # `،‏أنت` (comma, RLM, word); a block split may render it `، ‏أنت`.
+    # A run of marks is left alone: `، ‏‏‏‏ولا` carries a real space that the
+    # source intended, and collapsing it would change the text.
+    text = re.sub(r"\s*([\u200E\u200F])(?![\u200E\u200F])\s*", r"\1", text)
     # The 3 Quls source runs a surah straight into the next basmala
     # (`أَحَدٌ.بِسْمِ`). Splitting it into blocks inserts whitespace; remove
     # only that boundary so the source key still matches (other Arabic

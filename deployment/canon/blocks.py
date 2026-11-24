@@ -11,6 +11,7 @@ import re
 import unicodedata
 
 from .refs import type_references
+from .script_split import split_arabic_runs
 from .text import (
     SPEECH_VERBS_RE,
     TAG_RE,
@@ -375,7 +376,9 @@ def canonical_blocks(field: str, raw: str, issues: list) -> list[dict]:
         # Inline pass on the extracted text (headings keep their tags).
         for b in blocks:
             b["text"] = inline_markup(b["text"], True, issues)
-        return blocks
+        # An Arabic duʿāʾ embedded mid-sentence becomes its own block so the
+        # host can right-align it instead of letting bidi push it left.
+        return split_arabic_runs(blocks, field, issues)
 
     # translation / transliteration / reference: paragraphs on blank lines,
     # single LF preserved as a line break inside the paragraph.
@@ -392,7 +395,9 @@ def canonical_blocks(field: str, raw: str, issues: list) -> list[dict]:
                 ),
             }
         )
-    return blocks
+    # An Arabic duʿāʾ embedded mid-sentence becomes its own block so the host
+    # can right-align it instead of letting bidi push it to the left edge.
+    return split_arabic_runs(blocks, field, issues)
 
 
 def plain_projection(blocks: list[dict]) -> str:

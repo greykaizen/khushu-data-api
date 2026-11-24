@@ -2,8 +2,8 @@
 
 - records: 491
 - source sha256: `fea2dde2d77c798a1eda1fb9c8b9a93c71aadf8f487522873891516bc7eb4e19`
-- canonical sha256: `c9910f201ff4b48e7744e3f24793bfce8a02101ebdd86e6c453348a6608b1f70`
-- issues: {'warning': 115}
+- canonical sha256: `dcda3a1b5d7c31d48808777b98af4296dcda2653f381597cc71076c4dab4c92e`
+- issues: {'warning': 119, 'info': 40}
 - semantic-key mismatches: 0
 
 ## Block structure
@@ -11,11 +11,11 @@
 | field | records | blocks | headings |
 | --- | ---: | --- | --- |
 | arabic | 491 | arabic=501, bismillah=17 |  |
-| explanation | 469 | bullet=921, heading=149, paragraph=649, quote=24 | h1=145, h2=4 |
+| explanation | 469 | arabic=10, bullet=921, heading=149, paragraph=648, quote=24 | h1=145, h2=4 |
 | reference | 405 | paragraph=405 |  |
 | translation | 489 | paragraph=519 |  |
 | transliteration | 488 | paragraph=516 |  |
-| virtue | 430 | paragraph=778, quote=192 |  |
+| virtue | 430 | arabic=30, paragraph=799, quote=192 |  |
 
 ## Issues
 
@@ -23,42 +23,70 @@
 - **warning** id=14 `virtue` unbalanced_double_quote: 'ʿAlī (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated that a slave who was buying his freedom came to him and said:'
 - **warning** id=20 `virtue` unbalanced_double_quote: 'ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah<'
 - **warning** id=22 `virtue` unbalanced_double_quote: '<b>Anas b. Mālik (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “The Prophet <hon kind="saw">ﷺ</hon> perform'
+- **info** id=28 `virtue` arabic_run_split: 'لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْح'
 - **warning** id=31 `virtue` unbalanced_double_quote: '<b>Al-Zuhrī (<hon kind="rh">رَحِمَهُ اللَّهُ</hon>)</b> narrated: “When the Messenger of Allah <hon kind="saw">ﷺ</hon> w'
 - **warning** id=32 `virtue` unbalanced_double_quote: '<b>Ubayy b. Kaʿb (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that he had a vessel in which he kept dates. '
 - **warning** id=33 `virtue` unbalanced_double_quote: '<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: '
+- **warning** id=33 `explanation` arabic_run_in_bullet: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=34 `explanation` unbalanced_double_quote: 'Brief Commentary\n\n• We are asking the Almighty by His Greatest Name (according to many scholars): the name “Allah” itsel'
 - **warning** id=45 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=48 `explanation` unbalanced_double_quote: 'Brief Commentary\n\n• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere toleranc'
+- **info** id=50 `virtue` arabic_run_split: 'سُبْحَانَ اللهِ وَبِحَمْدِه'
 - **warning** id=56 `virtue` unbalanced_double_quote: '<b>Ubayy b. Kaʿb (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that he had a vessel in which he kept dates. '
 - **warning** id=57 `virtue` unbalanced_double_quote: '<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: '
 - **warning** id=57 `explanation` triple_asterisk_boundary: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=57 `explanation` unmatched_bold_marker: ' Allah <hon kind="saw">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل'
 - **warning** id=57 `explanation` unmatched_italic_marker: '*The Messenger of Allah <hon kind="saw">ﷺ</hon> remarked: <i>“By the O'
+- **warning** id=57 `explanation` arabic_run_in_bullet: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=58 `explanation` unbalanced_double_quote: '**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”'
 - **warning** id=69 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=72 `explanation` unbalanced_double_quote: '**Brief Commentary**• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere tolera'
 - **warning** id=83 `explanation` triple_asterisk_boundary: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=83 `explanation` unmatched_bold_marker: ' Allah <hon kind="saw">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل'
 - **warning** id=83 `explanation` unmatched_italic_marker: '*The Messenger of Allah <hon kind="saw">ﷺ</hon> remarked: <i>“By the O'
+- **warning** id=83 `explanation` arabic_run_in_bullet: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=89 `virtue` unbalanced_double_quote: '<b>Suhayl (<hon kind="rh">رَحِمَهُ اللَّهُ</hon>)</b> reported that Abū Ṣālih (<hon kind="rh">رَحِمَهُ اللَّهُ</hon>) us'
 - **warning** id=97 `virtue` unbalanced_double_quote: 'ʿAbdullāh b. ʿAbbās (radiy Allāhu ʿanhumā) narrated that he stayed overnight in the house of Maymūnah (<hon kind="ra">رَ'
 - **warning** id=99 `virtue` unbalanced_double_quote: 'ʿAbdur Raḥmān b. ʿAwf (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘A’isha (<hon kind="ra">رَضِيَ اللَ'
 - **warning** id=102 `virtue` unbalanced_double_quote: 'ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah '
+- **info** id=103 `virtue` arabic_run_split: 'سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، '
+- **info** id=109 `virtue` arabic_run_split: 'أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَ'
 - **warning** id=110 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind="saw">ﷺ</ho'
 - **warning** id=112 `virtue` unbalanced_double_quote: 'ʿAbdullāh b. ʿUmar (radiy Allāhū ‘anhumā) narrated, “Once we were praying with the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=113 `virtue` unbalanced_double_quote: 'ʿAbdur Raḥmān b. ʿAwf (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘A’isha (<hon kind="ra">رَضِيَ اللَ'
+- **info** id=114 `virtue` arabic_run_split: 'اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي '
+- **info** id=114 `virtue` arabic_run_split: 'اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْ'
+- **info** id=114 `virtue` arabic_run_split: 'اَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّ'
+- **info** id=114 `virtue` arabic_run_split: 'اَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَع'
 - **warning** id=117 `virtue` unbalanced_double_quote: 'ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah '
+- **info** id=119 `virtue` arabic_run_split: 'سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، '
+- **info** id=120 `virtue` arabic_run_split: 'سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، و'
+- **info** id=121 `explanation` arabic_run_split: 'سُبْحَانَ رَبِّـيَ الْعَظِيْمِ'
+- **info** id=128 `virtue` arabic_run_split: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ'
+- **info** id=128 `virtue` arabic_run_split: 'رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ'
 - **warning** id=130 `explanation` unbalanced_double_quote: '**لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ** (O Allah, there is none who can withhold what You give, '
+- **info** id=130 `explanation` arabic_run_split: 'لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ'
+- **info** id=137 `virtue` arabic_run_split: 'أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغ'
+- **info** id=137 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ'
+- **info** id=137 `virtue` arabic_run_split: 'اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء'
+- **info** id=137 `virtue` arabic_run_split: 'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ'
 - **warning** id=139 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=141 `virtue` unbalanced_double_quote: 'ʿĀ’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I heard the Messenger of Allah <hon kind="saw">ﷺ</hon>'
 - **warning** id=143 `virtue` unbalanced_double_quote: '<b>Hudhayfah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) saw the Messenger of Allah <hon kind="saw">ﷺ</hon> praying at '
 - **warning** id=145 `virtue` unbalanced_double_quote: '<b>Ibn Mas’ūd (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: “The Messenger of Allah <hon kind="saw">ﷺ</hon> tau'
 - **warning** id=145 `explanation` unbalanced_double_quote: '**اَلتَّحِيَّاتُ** [All royal greetings]: In different cultures, royalty are shown respect in different ways. Some stand'
+- **info** id=145 `explanation` arabic_run_split: 'اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ'
+- **info** id=145 `explanation` arabic_run_split: 'اَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ'
+- **info** id=145 `explanation` arabic_run_split: 'أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ و'
 - **warning** id=146 `virtue` unbalanced_double_quote: 'ʿAbd al-Raḥmān ibn Abī Laylā (<hon kind="rh">رَحِمَهُ اللَّهُ</hon>) said: “Kaʿb ibn ʿUjrah (<hon kind="ra">رَضِيَ اللَّ'
 - **warning** id=146 `explanation` unbalanced_double_quote: 'Next, after greeting and paying respect to the Lord of the worlds, you now move on to paying your respect to the best of'
 - **warning** id=146 `explanation` unmatched_italic_marker: '*The Messenger of Allah <hon kind="saw">ﷺ</hon> said,'
 - **warning** id=146 `explanation` unmatched_italic_marker: '(Nasā’ī).*'
 - **warning** id=150 `virtue` unbalanced_double_quote: 'ʿAlī b. Abū Tālib (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind="saw">ﷺ<'
+- **info** id=150 `virtue` arabic_run_split: 'أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغ'
+- **info** id=150 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ'
+- **info** id=150 `virtue` arabic_run_split: 'اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء'
+- **info** id=150 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ'
 - **warning** id=151 `virtue` unbalanced_double_quote: '<b>Muʿādh b. Jabal (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that the Messenger of Allah <hon kind="saw"'
 - **warning** id=153 `virtue` unbalanced_double_quote: '<b>Abū Sāliḥ</b> reported on the authority of some Companions (radiy Allāhū ‘anhum) that the Prophet <hon kind="saw">ﷺ</'
 - **warning** id=164 `virtue` unbalanced_double_quote: '<b>Mu’ādh b. Jabal (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that the Messenger of Allah <hon kind="saw"'
@@ -67,6 +95,7 @@
 - **warning** id=176 `explanation` triple_asterisk_boundary: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=176 `explanation` unmatched_bold_marker: ' Allah <hon kind="saw">ﷺ</hon> heard a man saying:**اَللّٰهُمَّ إِنِّيْ أَسْأَلُكَ بِأَنِّيْ أَشْهَدُ أَنَّكَ أَنْتَ الل'
 - **warning** id=176 `explanation` unmatched_italic_marker: '*The Messenger of Allah <hon kind="saw">ﷺ</hon> remarked: <i>“By the O'
+- **warning** id=176 `explanation` arabic_run_in_bullet: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
 - **warning** id=188 `virtue` unbalanced_double_quote: '‘Ā’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) reported that when the Messenger of Allah <hon kind="saw">ﷺ</hon>'
 - **warning** id=198 `virtue` unbalanced_double_quote: '<b>Ibn Abbas (radiy Allāhū ‘anhumā)</b> narrates: “When the Prophet <hon kind="saw">ﷺ</hon> would stand for the night (t'
 - **warning** id=202 `virtue` unbalanced_double_quote: 'ʿĀ’isha (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) narrates: “The people complained to the Messenger of Allah <hon ki'
@@ -74,8 +103,15 @@
 - **warning** id=213 `virtue` unbalanced_double_quote: '<b>Ibn ‘Umar (radiy Allāhū ‘anhumā)</b> narrates: “While we performing salah with the Messenger of Allah (<hon kind="saw'
 - **warning** id=217 `virtue` unbalanced_double_quote: '<b>Ali (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind="saw">ﷺ</hon> sai'
 - **warning** id=223 `virtue` unbalanced_double_quote: 'ʿAbd al-Raḥmān ibn Abī Laylā (<hon kind="rh">رَحِمَهُ اللَّهُ</hon>) said: “Kaʿb ibn ʿUjrah (<hon kind="ra">رَضِيَ اللَّ'
+- **info** id=233 `explanation` arabic_run_split: 'لا اله الا انت سبحانك اني كنت من الظالمين'
+- **info** id=242 `explanation` arabic_run_split: 'اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِ'
 - **warning** id=273 `explanation` unbalanced_double_quote: '**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”'
 - **warning** id=274 `virtue` unbalanced_double_quote: 'ʿAlī b. Abī Ṭālib (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind="saw">ﷺ<'
+- **info** id=274 `virtue` arabic_run_split: 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا '
+- **info** id=274 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ'
+- **info** id=274 `virtue` arabic_run_split: 'اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء'
+- **info** id=274 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ'
+- **info** id=274 `virtue` arabic_run_split: 'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ'
 - **warning** id=276 `virtue` unbalanced_double_quote: 'ʿĀ’isha (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I said: ‘O Messenger of Allah <hon kind="saw">ﷺ</hon>, '
 - **warning** id=278 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=281 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind="saw">ﷺ</ho'
@@ -93,8 +129,15 @@
 - **warning** id=331 `virtue` unbalanced_double_quote: '<b>Shakal b. Ḥumayd (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> said: I came to the Prophet <hon kind="saw">ﷺ</hon>'
 - **warning** id=340 `virtue` unbalanced_double_quote: '<b>Alī (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that a Mukatib came to him and said: “Indeed I am not c'
 - **warning** id=347 `virtue` unbalanced_double_quote: 'Abū Umāmah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) addressed the Messenger of Allah <hon kind="saw">ﷺ</hon> saying:'
+- **info** id=348 `explanation` arabic_run_split: 'لا اله الا انت سبحانك اني كنت من الظالمين'
+- **info** id=356 `explanation` arabic_run_split: 'اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِ'
 - **warning** id=357 `explanation` unbalanced_double_quote: '**Brief Commentary**• We are asking the Almighty by His Greatest Name (according to many scholars): the name “**Allah**”'
 - **warning** id=358 `virtue` unbalanced_double_quote: 'ʿAlī b. Abī Ṭālib (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind="saw">ﷺ<'
+- **info** id=358 `virtue` arabic_run_split: 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا '
+- **info** id=358 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ'
+- **info** id=358 `virtue` arabic_run_split: 'اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء'
+- **info** id=358 `virtue` arabic_run_split: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ'
+- **info** id=358 `virtue` arabic_run_split: 'اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ'
 - **warning** id=360 `virtue` unbalanced_double_quote: 'ʿĀ’isha (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) narrated: “I said: ‘O Messenger of Allah <hon kind="saw">ﷺ</hon>, '
 - **warning** id=362 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=365 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrates: “The Messenger of Allah <hon kind="saw">ﷺ</ho'
@@ -102,6 +145,7 @@
 - **warning** id=374 `virtue` unbalanced_double_quote: '<b>Ibn ʿAbbās (radiy Allāhū ‘anhumā)</b> narrated: “[the above] was said by Ibrāhīm (<hon kind="as">عَلَيْهِ السَّلَام</'
 - **warning** id=376 `virtue` unbalanced_double_quote: '<b>Anas b. Mālik (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that when the Messenger of Allah <hon kind="s'
 - **warning** id=384 `virtue` unbalanced_double_quote: '<b>The Messenger of Allah <hon kind="saw">ﷺ</hon></b> said: “The supplication of Dhun-Nūn (Prophet Yūnus) when he suppli'
+- **info** id=384 `explanation` arabic_run_split: 'لا اله الا انت سبحانك اني كنت من الظالمين'
 - **warning** id=388 `virtue` unbalanced_double_quote: '‘Abdullāh b. ‘Umar (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُمَا</hon>) narrated that the Messenger of Allah <hon kind="saw">'
 - **warning** id=390 `virtue` unbalanced_double_quote: '<b>The Messenger of Allah <hon kind="saw">ﷺ</hon></b> said: “Shaytān comes to one of you and says: ‘Who created you?’ He'
 - **warning** id=391 `virtue` nested_quote: '<b>Abu Zumayy</b> reported: “I asked Ibn Abbas (radiy Allāhū ‘anhumā): ‘What is this that I am experiencing?’ He answere'

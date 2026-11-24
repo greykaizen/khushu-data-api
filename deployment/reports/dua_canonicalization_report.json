@@ -1,10 +1,11 @@
 {
   "schema": 1,
   "source_sha256": "fea2dde2d77c798a1eda1fb9c8b9a93c71aadf8f487522873891516bc7eb4e19",
-  "canonical_sha256": "c9910f201ff4b48e7744e3f24793bfce8a02101ebdd86e6c453348a6608b1f70",
+  "canonical_sha256": "dcda3a1b5d7c31d48808777b98af4296dcda2653f381597cc71076c4dab4c92e",
   "record_count": 491,
   "issue_counts": {
-    "warning": 115
+    "warning": 119,
+    "info": 40
   },
   "issues": [
     {
@@ -36,6 +37,13 @@
       "excerpt": "<b>Anas b. Mālik (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated: “The Prophet <hon kind=\"saw\">ﷺ</hon> perform"
     },
     {
+      "id": 28,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "لَا إِلٰهَ إِلَّا اللّٰهُ وَحْدَهُ لَا شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْح"
+    },
+    {
       "id": 31,
       "field": "virtue",
       "severity": "warning",
@@ -57,6 +65,13 @@
       "excerpt": "<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: "
     },
     {
+      "id": 33,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "arabic_run_in_bullet",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ "
+    },
+    {
       "id": 34,
       "field": "explanation",
       "severity": "warning",
@@ -76,6 +91,13 @@
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "Brief Commentary\n\n• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere toleranc"
+    },
+    {
+      "id": 50,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سُبْحَانَ اللهِ وَبِحَمْدِه"
     },
     {
       "id": 56,
@@ -111,6 +133,13 @@
       "severity": "warning",
       "reason": "unmatched_italic_marker",
       "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
+    },
+    {
+      "id": 57,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "arabic_run_in_bullet",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ "
     },
     {
       "id": 58,
@@ -155,6 +184,13 @@
       "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
     },
     {
+      "id": 83,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "arabic_run_in_bullet",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ "
+    },
+    {
       "id": 89,
       "field": "virtue",
       "severity": "warning",
@@ -183,6 +219,20 @@
       "excerpt": "ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah "
     },
     {
+      "id": 103,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، "
+    },
+    {
+      "id": 109,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "أَعُوْذُ بِاللّهِ السَّمِيْعِ الْعَلِيْمِ مِنَ الشَّيْطَانِ الرَّجِيْمِ، مِنْ هَ"
+    },
+    {
       "id": 110,
       "field": "virtue",
       "severity": "warning",
@@ -204,6 +254,34 @@
       "excerpt": "ʿAbdur Raḥmān b. ʿAwf (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrated: I asked ‘A’isha (<hon kind=\"ra\">رَضِيَ اللَ"
     },
     {
+      "id": 114,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّٰهُمَّ لَكَ رَكَعْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي "
+    },
+    {
+      "id": 114,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّٰهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْ"
+    },
+    {
+      "id": 114,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّٰهُمَّ لَكَ سَجَدْتُ وَبِكَ اٰمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّ"
+    },
+    {
+      "id": 114,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّٰهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَع"
+    },
+    {
       "id": 117,
       "field": "virtue",
       "severity": "warning",
@@ -211,11 +289,81 @@
       "excerpt": "ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah "
     },
     {
+      "id": 119,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، "
+    },
+    {
+      "id": 120,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، و"
+    },
+    {
+      "id": 121,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سُبْحَانَ رَبِّـيَ الْعَظِيْمِ"
+    },
+    {
+      "id": 128,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ"
+    },
+    {
+      "id": 128,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ"
+    },
+    {
       "id": 130,
       "field": "explanation",
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "**لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ** (O Allah, there is none who can withhold what You give, "
+    },
+    {
+      "id": 130,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ"
+    },
+    {
+      "id": 137,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغ"
+    },
+    {
+      "id": 137,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ"
+    },
+    {
+      "id": 137,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء"
+    },
+    {
+      "id": 137,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ"
     },
     {
       "id": 139,
@@ -253,6 +401,27 @@
       "excerpt": "**اَلتَّحِيَّاتُ** [All royal greetings]: In different cultures, royalty are shown respect in different ways. Some stand"
     },
     {
+      "id": 145,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَلسَّلاَمُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللّٰهِ وَبَرَكَاتُهُ"
+    },
+    {
+      "id": 145,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَلسَّلاَمُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللّٰهِ الصَّالِحِيْنَ"
+    },
+    {
+      "id": 145,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "أَشْهَدُ أَنْ لَّا إِلٰهَ إِلَّا اللّٰهُ، وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ و"
+    },
+    {
       "id": 146,
       "field": "virtue",
       "severity": "warning",
@@ -286,6 +455,34 @@
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "ʿAlī b. Abū Tālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 150,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "أَنْتَ رَبِّيْ وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِيْ وَاعْتَرَفْتُ بِذَنْبِيْ فَاغ"
+    },
+    {
+      "id": 150,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ"
+    },
+    {
+      "id": 150,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء"
+    },
+    {
+      "id": 150,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ"
     },
     {
       "id": 151,
@@ -344,6 +541,13 @@
       "excerpt": "*The Messenger of Allah <hon kind=\"saw\">ﷺ</hon> remarked: <i>“By the O"
     },
     {
+      "id": 176,
+      "field": "explanation",
+      "severity": "warning",
+      "reason": "arabic_run_in_bullet",
+      "excerpt": "Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind=\"ra\">رَضِيَ اللَّهُ "
+    },
+    {
       "id": 188,
       "field": "virtue",
       "severity": "warning",
@@ -393,6 +597,20 @@
       "excerpt": "ʿAbd al-Raḥmān ibn Abī Laylā (<hon kind=\"rh\">رَحِمَهُ اللَّهُ</hon>) said: “Kaʿb ibn ʿUjrah (<hon kind=\"ra\">رَضِيَ اللَّ"
     },
     {
+      "id": 233,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "لا اله الا انت سبحانك اني كنت من الظالمين"
+    },
+    {
+      "id": 242,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِ"
+    },
+    {
       "id": 273,
       "field": "explanation",
       "severity": "warning",
@@ -405,6 +623,41 @@
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا "
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ"
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء"
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ"
+    },
+    {
+      "id": 274,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ"
     },
     {
       "id": 276,
@@ -526,6 +779,20 @@
       "excerpt": "Abū Umāmah (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) addressed the Messenger of Allah <hon kind=\"saw\">ﷺ</hon> saying:"
     },
     {
+      "id": 348,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "لا اله الا انت سبحانك اني كنت من الظالمين"
+    },
+    {
+      "id": 356,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اَللّهُمَّ اجْعَلْ فِيْ قَلْبِيْ نُوْرًا، وَفِيْ بَصَرِيْ نُوْرًا، وَفِيْ سَمْعِ"
+    },
+    {
       "id": 357,
       "field": "explanation",
       "severity": "warning",
@@ -538,6 +805,41 @@
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "ʿAlī b. Abī Ṭālib (<hon kind=\"ra\">رَضِيَ اللَّهُ عَنْهُ</hon>) narrates: “When the Messenger of Allah <hon kind=\"saw\">ﷺ<"
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفًا وَمَا أَنَا "
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ رَكَعْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي وَ"
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ رَبَّنَا لَكَ الْحَمْدُ مِلْءَ السَّمَوَاتِ وَمِلْءَ الأَرْضِ وَمِلْء"
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ وَلَكَ أَسْلَمْتُ سَجَدَ وَجْهِي لِلَّذِ"
+    },
+    {
+      "id": 358,
+      "field": "virtue",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ وَمَا أَسْرَرْتُ وَمَا أَعْ"
     },
     {
       "id": 360,
@@ -587,6 +889,13 @@
       "severity": "warning",
       "reason": "unbalanced_double_quote",
       "excerpt": "<b>The Messenger of Allah <hon kind=\"saw\">ﷺ</hon></b> said: “The supplication of Dhun-Nūn (Prophet Yūnus) when he suppli"
+    },
+    {
+      "id": 384,
+      "field": "explanation",
+      "severity": "info",
+      "reason": "arabic_run_split",
+      "excerpt": "لا اله الا انت سبحانك اني كنت من الظالمين"
     },
     {
       "id": 388,
@@ -826,10 +1135,11 @@
     "explanation": {
       "records": 469,
       "blocks": {
-        "paragraph": 649,
+        "paragraph": 648,
         "heading": 149,
         "bullet": 921,
-        "quote": 24
+        "quote": 24,
+        "arabic": 10
       },
       "heading_levels": {
         "1": 145,
@@ -860,8 +1170,9 @@
     "virtue": {
       "records": 430,
       "blocks": {
-        "paragraph": 778,
-        "quote": 192
+        "paragraph": 799,
+        "quote": 192,
+        "arabic": 30
       },
       "heading_levels": {}
     }
