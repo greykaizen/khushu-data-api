@@ -99,8 +99,9 @@ class DestinationTests(unittest.TestCase):
             "is like the distance between the sky and the earth.”"
         )
         out = clean_html("<p>The Prophet ﷺ said, %s (Bukhārī).</p>" % quote)
-        self.assertIn("<blockquote><p>%s</p><p>(Bukhārī).</p></blockquote>" % quote, out)
+        self.assertIn("<blockquote><p>%s</p></blockquote>" % quote, out)
         self.assertTrue(out.startswith("<p>The Prophet ﷺ said,</p>"))
+        self.assertTrue(out.endswith("<p>(Bukhārī).</p>"))
 
     def test_nested_quote_is_left_inline(self) -> None:
         source = (

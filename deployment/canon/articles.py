@@ -96,7 +96,6 @@ NUMBER_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*\(?(\d{1,2})[.)]\)?\s*(?:</b>
 BOLD_ONLY = re.compile(r"^\s*<(b|strong)>(.*?)</\1>\s*$", re.IGNORECASE | re.DOTALL)
 EMPTY_BLOCK = re.compile(r"<p\b[^>]*>\s*</p>|<div\b[^>]*>\s*</div>", re.IGNORECASE)
 EMBEDDED_QUOTE = re.compile(r"“[^“”]{180,}”", re.DOTALL)
-CITATION_ONLY = re.compile(r"^[\s).;,]*(?:\([^)]{1,60}\))?[\s.;,)]*$")
 ARABIC_LETTER = re.compile(r"[\u0600-\u06FF]")
 LATIN_LETTER = re.compile(r"[A-Za-z]")
 
@@ -255,12 +254,7 @@ def _quote_paragraphs(value: str) -> str:
             return match.group(0)
         before = inner[:quote.start()].strip()
         after = inner[quote.end():].strip()
-        after_text = re.sub(r"<[^>]+>", "", after).strip()
-        quote_block = "<blockquote><p>%s</p>" % BR.sub("<br>", quote.group(0))
-        if after and CITATION_ONLY.fullmatch(after_text):
-            quote_block += "<p>%s</p>" % after
-            after = ""
-        quote_block += "</blockquote>"
+        quote_block = "<blockquote><p>%s</p></blockquote>" % BR.sub("<br>", quote.group(0))
         out = ("<p>%s</p>" % before if before else "") + quote_block
         if after:
             out += "<p>%s</p>" % after
