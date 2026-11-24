@@ -103,12 +103,15 @@ class DestinationTests(unittest.TestCase):
         self.assertTrue(out.startswith("<p>The Prophet ﷺ said,</p>"))
         self.assertTrue(out.endswith("<p>(Bukhārī).</p>"))
 
-    def test_nested_quote_is_left_inline(self) -> None:
-        source = (
-            "<p>He said, “The man asked, “Why?” And the answer was long enough to "
-            "read as a quotation but the inner sentence must stay intact.”</p>"
+    def test_nested_quote_keeps_the_inner_sentence_intact(self) -> None:
+        quote = (
+            "“The man asked, “Why did you come?” And the answer was long enough to "
+            "read as a full quotation, so the outer passage should get its own "
+            "quote surface without cutting the inner question.”"
         )
-        self.assertEqual(source, clean_html(source))
+        out = clean_html("<p>He said, %s</p>" % quote)
+        self.assertIn("<blockquote><p>%s</p></blockquote>" % quote, out)
+        self.assertIn("“Why did you come?”", out)
 
     def test_deep_heading_levels_are_normalised(self) -> None:
         self.assertEqual("<h3>Section</h3>", clean_html("<h4>Section</h4>"))

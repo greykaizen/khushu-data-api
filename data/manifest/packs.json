@@ -3,9 +3,9 @@
  "user_version": 202611,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
  "total_packs": 104,
- "total_bytes": 871481344,
+ "total_bytes": 871575552,
  "tier_bytes": {
-  "prebundle": 48185344,
+  "prebundle": 48279552,
   "first_run": 8433664,
   "on_demand": 814862336
  },
@@ -67,8 +67,8 @@
     "dua_fts"
    ],
    "file": "content.db",
-   "bytes": 5132288,
-   "sha256": "17a45a1b87bbc4b3fe053f40edf54f636df61ed4ff5db01340584dc5a9842ac4",
+   "bytes": 5226496,
+   "sha256": "11a1a632008691887df6af6f3cf7bffed2cbfd1c95faba008878685a853e63ce",
    "version": "v2026.11"
   },
   {

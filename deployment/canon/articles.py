@@ -95,7 +95,6 @@ BULLET_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*[•–—]\s*(?:</b>|</stron
 NUMBER_MARK = re.compile(r"^\s*(?:<b>|<strong>)?\s*\(?(\d{1,2})[.)]\)?\s*(?:</b>|</strong>)?\s*", re.IGNORECASE)
 BOLD_ONLY = re.compile(r"^\s*<(b|strong)>(.*?)</\1>\s*$", re.IGNORECASE | re.DOTALL)
 EMPTY_BLOCK = re.compile(r"<p\b[^>]*>\s*</p>|<div\b[^>]*>\s*</div>", re.IGNORECASE)
-EMBEDDED_QUOTE = re.compile(r"“[^“”]{180,}”", re.DOTALL)
 ARABIC_LETTER = re.compile(r"[\u0600-\u06FF]")
 LATIN_LETTER = re.compile(r"[A-Za-z]")
 
@@ -219,6 +218,31 @@ def _list_paragraphs(value: str) -> str:
     return value
 
 
+def _find_long_quote(inner: str) -> tuple[int, int, str] | None:
+    """First outer curly quotation of 180+ plain characters.
+
+    Tracking nesting means an inner ``“...”`` does not end the quotation early;
+    the previous non-greedy regex could tear a nested sentence in half.
+    """
+    start: int | None = None
+    depth = 0
+    for index, char in enumerate(inner):
+        if char == "“":
+            if depth == 0:
+                start = index
+            depth += 1
+        elif char == "”" and depth > 0:
+            depth -= 1
+            if depth == 0 and start is not None:
+                segment = inner[start:index + 1]
+                text = re.sub(r"<[^>]+>", "", segment)
+                text = re.sub(r"\s+", " ", text).strip()
+                if len(text) >= 180:
+                    return start, index + 1, segment
+                start = None
+    return None
+
+
 def _quote_paragraphs(value: str) -> str:
     """Make long quotations (standalone or embedded) block quotes.
 
@@ -245,16 +269,13 @@ def _quote_paragraphs(value: str) -> str:
         # surface as a standalone one. Split only when the quotation is long
         # enough to read as a passage and both the lead-in and the tail are
         # real text; a short trailing citation stays inside the quote.
-        quote = EMBEDDED_QUOTE.search(inner)
+        quote = _find_long_quote(inner)
         if quote is None:
             return match.group(0)
-        quote_text = re.sub(r"<[^>]+>", "", quote.group(0))
-        quote_text = re.sub(r"\s+", " ", quote_text).strip()
-        if len(quote_text) < 180:
-            return match.group(0)
-        before = inner[:quote.start()].strip()
-        after = inner[quote.end():].strip()
-        quote_block = "<blockquote><p>%s</p></blockquote>" % BR.sub("<br>", quote.group(0))
+        quote_start, quote_end, quote_html = quote
+        before = inner[:quote_start].strip()
+        after = inner[quote_end:].strip()
+        quote_block = "<blockquote><p>%s</p></blockquote>" % BR.sub("<br>", quote_html)
         out = ("<p>%s</p>" % before if before else "") + quote_block
         if after:
             out += "<p>%s</p>" % after

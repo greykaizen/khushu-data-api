@@ -4,7 +4,7 @@
 DHINK/DUA (short supplications)      : 491 duas → `duas` + `dua_posts` (30
                                          subcategory groups) + `dua_categories`
                                          (2 top categories). Audio = file refs.
-READING ARTICLES (long-form)         : 186 articles → `article_categories` (12) +
+READING ARTICLES (long-form)         : 185 articles → `article_categories` (13) +
                                          `articles` (raw HTML body preserved —
                                          passthrough contract, not parsed).
 
@@ -93,6 +93,26 @@ def main():
         c.execute("INSERT INTO dua_categories VALUES(?,?,?)", (cat, len(v["posts"]), v["n"]))
 
     ai = json.load(open(f"{SRC}/articles_index.json"))["categories"]
+    # The related-articles/ tree is real long-form content that the source only
+    # links contextually. It has no category in articles_index.json, so expose
+    # it as one pack category rather than leaving 16 bodies stranded.
+    known_slugs = {a.get("slug") for cat in ai for a in cat.get("articles", [])}
+    related = []
+    for f in glob.glob(f"{SRC}/related-articles/*/*.json"):
+        try: b = json.load(open(f))
+        except Exception: continue
+        if not isinstance(b, dict) or not b.get("content") or b.get("slug") in known_slugs:
+            continue
+        related.append({
+            "id": b.get("id"), "title": b.get("title"), "slug": b.get("slug"),
+            "link": b.get("link"), "file_path": f[len(SRC)+1:],
+        })
+    if related:
+        ai.append({
+            "id": max(cat["id"] for cat in ai) + 1,
+            "name": "Related Readings", "slug": "related", "count": len(related),
+            "articles": sorted(related, key=lambda a: a["title"] or ""),
+        })
     # body index by article id/slug from both articles/ and related-articles/
     bodies = {}
     for f in glob.glob(f"{SRC}/articles/**/*.json", recursive=True) + glob.glob(f"{SRC}/related-articles/*/*.json", recursive=True):
@@ -147,9 +167,9 @@ def verify(c, duas, posts, ai, local_audio):
     n_links=c.execute("select count(*) from article_members").fetchone()[0]
     n_body=c.execute("select count(*) from articles where has_body=1").fetchone()[0]
     idx=sum(len(cat.get('articles',[])) for cat in ai)
-    print(f"  article_cats={c.execute('select count(*) from article_categories').fetchone()[0]}/12 "
+    print(f"  article_cats={c.execute('select count(*) from article_categories').fetchone()[0]}/13 "
           f"articles={n_art}(uniq) links={n_links}(idx={idx}) with_body={n_body} no_body={n_art-n_body}")
-    ok &= n_links==idx and n_art==169 and n_body==169
+    ok &= n_links==idx and n_art==185 and n_body==185
     # audio
     print(f"  audio: asset_refs={c.execute('select count(*) from duas where audio_asset_id is not null').fetchone()[0]}/488")
     # canonical blocks/plain parity
