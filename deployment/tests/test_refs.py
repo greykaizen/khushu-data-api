@@ -101,5 +101,45 @@ class SemanticKeyTest(unittest.TestCase):
         self.assertEqual(plain, typed)
 
 
+class ReferenceListTest(unittest.TestCase):
+    def test_splits_on_semicolon(self):
+        from deployment.canon.refs import split_reference_list
+
+        self.assertEqual(
+            split_reference_list("Bukhārī 3371; Bukhārī 3280"),
+            ["Bukhārī 3371;", "Bukhārī 3280"],
+        )
+
+    def test_single_citation_untouched(self):
+        from deployment.canon.refs import split_reference_list
+
+        self.assertEqual(split_reference_list("Muslim 899"), ["Muslim 899"])
+
+    def test_empty_pieces_dropped(self):
+        from deployment.canon.refs import split_reference_list
+
+        self.assertEqual(split_reference_list("A; ; B"), ["A;", "B"])
+
+    def test_reference_field_becomes_bullets(self):
+        from deployment.canon.blocks import canonical_blocks
+
+        blocks = canonical_blocks("reference", "Bukhārī 3371; Bukhārī 3280", [])
+        self.assertEqual([b["type"] for b in blocks], ["bullet", "bullet"])
+
+    def test_single_reference_stays_paragraph(self):
+        from deployment.canon.blocks import canonical_blocks
+
+        blocks = canonical_blocks("reference", "Muslim 899", [])
+        self.assertEqual([b["type"] for b in blocks], ["paragraph"])
+
+    def test_plain_projection_keeps_the_semicolon(self):
+        from deployment.canon.blocks import canonical_blocks, plain_projection
+
+        blocks = canonical_blocks("reference", "Bukhārī 3371; Bukhārī 3280", [])
+        plain = plain_projection(blocks)
+        self.assertIn("3371;", plain)
+        self.assertIn("3280", plain)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -10,7 +10,7 @@ import html
 import re
 import unicodedata
 
-from .refs import type_references
+from .refs import split_reference_list, type_references
 from .script_split import split_arabic_runs
 from .text import (
     SPEECH_VERBS_RE,
@@ -387,14 +387,18 @@ def canonical_blocks(field: str, raw: str, issues: list) -> list[dict]:
         part = part.strip()
         if not part:
             continue
-        blocks.append(
-            {
-                "type": "paragraph",
-                "text": inline_markup(
-                    part, True, issues, literal_asterisk=(field == "translation")
-                ),
-            }
-        )
+        # A citation list (`Bukhārī 3371; Bukhārī 3280`) is one source per
+        # bullet, not a run-on line. Only the reference field is a list.
+        entries = split_reference_list(part) if field == "reference" else [part]
+        for entry in entries:
+            blocks.append(
+                {
+                    "type": "bullet" if field == "reference" and len(entries) > 1 else "paragraph",
+                    "text": inline_markup(
+                        entry, True, issues, literal_asterisk=(field == "translation")
+                    ),
+                }
+            )
     # An Arabic duʿāʾ embedded mid-sentence becomes its own block so the host
     # can right-align it instead of letting bidi push it to the left edge.
     return split_arabic_runs(blocks, field, issues)

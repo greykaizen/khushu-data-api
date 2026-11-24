@@ -133,3 +133,22 @@ def parse_quran_ref(raw: str) -> tuple[int, int] | None:
     if not (1 <= surah <= 114 and ayah >= 1):
         return None
     return surah, ayah
+
+
+def split_reference_list(text: str) -> list[str]:
+    """Split a `;`-joined citation list into one entry per source.
+
+    `Bukhārī 3371; Bukhārī 3280` is two citations rendered as one run-on line.
+    Each becomes its own entry so the reference sheet is scannable.
+
+    The separator stays attached to the entry before it. Dropping it would
+    change the plain projection (`A; B` -> `A B`) and the semantic-key gate
+    would correctly reject that as a content change; a trailing `;` on a
+    bullet is the honest rendering of a continued list.
+    """
+    if ";" not in text:
+        return [text]
+    parts = [p.strip() for p in re.split(r"(?<=;)\s*", text)]
+    # A piece that is only a separator (`A; ; B`) is not a citation.
+    parts = [p for p in parts if p and p.strip(";").strip()]
+    return parts or [text]

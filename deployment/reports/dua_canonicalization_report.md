@@ -2,8 +2,8 @@
 
 - records: 491
 - source sha256: `fea2dde2d77c798a1eda1fb9c8b9a93c71aadf8f487522873891516bc7eb4e19`
-- canonical sha256: `dcda3a1b5d7c31d48808777b98af4296dcda2653f381597cc71076c4dab4c92e`
-- issues: {'warning': 119, 'info': 40}
+- canonical sha256: `893ce69af2b353b75a5eb0c1df5bb81417e7e0cd7acb01ff90b43a17e3cdb52e`
+- issues: {'warning': 119, 'info': 37}
 - semantic-key mismatches: 0
 
 ## Block structure
@@ -11,11 +11,11 @@
 | field | records | blocks | headings |
 | --- | ---: | --- | --- |
 | arabic | 491 | arabic=501, bismillah=17 |  |
-| explanation | 469 | arabic=10, bullet=921, heading=149, paragraph=648, quote=24 | h1=145, h2=4 |
-| reference | 405 | paragraph=405 |  |
+| explanation | 469 | arabic=9, bullet=921, heading=149, paragraph=648, quote=24 | h1=145, h2=4 |
+| reference | 405 | bullet=266, paragraph=317 |  |
 | translation | 489 | paragraph=519 |  |
 | transliteration | 488 | paragraph=516 |  |
-| virtue | 430 | arabic=30, paragraph=799, quote=192 |  |
+| virtue | 430 | arabic=28, paragraph=798, quote=192 |  |
 
 ## Issues
 
@@ -31,7 +31,6 @@
 - **warning** id=34 `explanation` unbalanced_double_quote: 'Brief Commentary\n\n• We are asking the Almighty by His Greatest Name (according to many scholars): the name “Allah” itsel'
 - **warning** id=45 `virtue` unbalanced_double_quote: '<b>Abū Hurayrah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> narrated that the Messenger of Allah <hon kind="saw">ﷺ<'
 - **warning** id=48 `explanation` unbalanced_double_quote: 'Brief Commentary\n\n• This dhikr emphasises the state of contentment and pleasure, which is far greater than mere toleranc'
-- **info** id=50 `virtue` arabic_run_split: 'سُبْحَانَ اللهِ وَبِحَمْدِه'
 - **warning** id=56 `virtue` unbalanced_double_quote: '<b>Ubayy b. Kaʿb (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>)</b> reported that he had a vessel in which he kept dates. '
 - **warning** id=57 `virtue` unbalanced_double_quote: '<b>Muʿādh b. ʿAbdullāh b. Khubaib</b>, narrated from his father (<hon kind="ra">رَضِيَ اللَّهُ عَنْهُ</hon>), who said: '
 - **warning** id=57 `explanation` triple_asterisk_boundary: 'Sūrah al-Ikhlāṣ also contains the Greatest Names of Allah (ism Allah al-Aʿẓam). Buraydah (<hon kind="ra">رَضِيَ اللَّهُ '
@@ -61,8 +60,6 @@
 - **warning** id=117 `virtue` unbalanced_double_quote: 'ʿĀsim b. Ḥumayd said, “I asked ʿĀ’ishah (<hon kind="ra">رَضِيَ اللَّهُ عَنْهَا</hon>) about what the Messenger of Allah '
 - **info** id=119 `virtue` arabic_run_split: 'سُبْحَانَكَ اَللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، '
 - **info** id=120 `virtue` arabic_run_split: 'سُبْحَانَكَ اللّٰهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، و'
-- **info** id=121 `explanation` arabic_run_split: 'سُبْحَانَ رَبِّـيَ الْعَظِيْمِ'
-- **info** id=128 `virtue` arabic_run_split: 'سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ'
 - **info** id=128 `virtue` arabic_run_split: 'رَبَّنَا وَلَكَ الْحَمْدُ، حَمْدًا كَثِيْرًا طَيِّبًا مُبَارَكًا فِيْهِ'
 - **warning** id=130 `explanation` unbalanced_double_quote: '**لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ** (O Allah, there is none who can withhold what You give, '
 - **info** id=130 `explanation` arabic_run_split: 'لَا مَانِعَ لِمَا أَعْطَيْتَ، وَلَا مُعْطِيَ لِمَا مَنَعْتَ'
