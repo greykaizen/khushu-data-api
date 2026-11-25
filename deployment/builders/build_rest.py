@@ -92,7 +92,9 @@ def build_curated():
       CREATE TABLE recommended_rules(id TEXT PRIMARY KEY, priority INTEGER, when_json TEXT, segments_json TEXT);
       CREATE TABLE recommended_defaults(key TEXT PRIMARY KEY, value TEXT);
       CREATE TABLE recommended_texts(lang TEXT, id TEXT, title TEXT, description TEXT, PRIMARY KEY(lang,id));
-      CREATE TABLE science_topics(id TEXT PRIMARY KEY, title TEXT, references_count INTEGER, path TEXT, translations_json TEXT);""")
+      CREATE TABLE science_topics(id TEXT PRIMARY KEY, title TEXT, references_count INTEGER, path TEXT, translations_json TEXT);
+      CREATE TABLE science_pages(topic_id TEXT, lang TEXT, html TEXT, PRIMARY KEY(topic_id,lang));
+      CREATE TABLE science_images(path TEXT PRIMARY KEY, bytes BLOB);""")
     verses=f"{API}/inventory/curated/verses"
     # curated verse sets: map.json (per-entry range string) + per-lang titles
     nsets=0
@@ -143,8 +145,24 @@ def build_curated():
     for t in si:
         c.execute("INSERT INTO science_topics VALUES(?,?,?,?,?)",(t["id"],t["title"],t.get("referencesCount"),t.get("path"),json.dumps(t.get("translations",{}),ensure_ascii=False)))
     st=c.execute("select count(*) from science_topics").fetchone()[0]
-    c.execute("PRAGMA user_version=2");c.commit();c.close()
-    print(f"  curated.db: {nsets} verse-sets / {nrules} recommended rules / {ntxt} texts / {st} science topics")
+    # science PAGE BODIES + illustrations: the index only names `path`, so the
+    # reading surface had to reach the asset mirror for every open. Ship the
+    # pages (and their small webp figures) inside the pack instead: reading is
+    # offline and one indexed row, no second transport.
+    npages=0
+    for t in si:
+        for page in glob.glob(f"{API}/inventory/curated/science/topics/*/{t.get('path')}"):
+            lang=os.path.basename(os.path.dirname(page))
+            with open(page,encoding="utf-8") as fh: body=fh.read()
+            c.execute("INSERT OR REPLACE INTO science_pages VALUES(?,?,?)",(t["id"],lang,body)); npages+=1
+    nimg=0
+    for img in glob.glob(f"{API}/inventory/curated/science/img/*"):
+        if os.path.isfile(img):
+            with open(img,"rb") as fh: blob=fh.read()
+            c.execute("INSERT OR REPLACE INTO science_images VALUES(?,?)",(os.path.basename(img),blob)); nimg+=1
+    c.execute("PRAGMA user_version=3");c.commit();c.close()
+    print(f"  curated.db: {nsets} verse-sets / {nrules} recommended rules / {ntxt} texts / "
+          f"{st} science topics / {npages} science pages / {nimg} science images")
 
 for f in (build_events,build_adhan,build_recitations,build_wbw,build_curated): f()
 print("OK")

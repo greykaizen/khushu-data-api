@@ -28,6 +28,7 @@ CONTENT_MAP={"duas":"dua_items","dua_posts":"dua_posts","dua_categories":"dua_ca
   "articles":"article_items","article_categories":"article_categories","article_members":"article_members",
   "names":"names_names","asma_packs":"names_packs","events":"calendar_events","event_packs":"calendar_packs",
   "curated_sets":"curated_sets","curated_refs":"curated_refs","science_topics":"curated_science_topics",
+  "science_pages":"curated_science_pages","science_images":"curated_science_images",
   "science_topic_ayahs":"curated_science_topic_ayahs"}
 AUDIO_MAP={"reciters":"recitation_reciters","recitation_timings":"recitation_timings","adhan_audio":"adhans"}
 HADITH_TABLES=["collections","collection_translations","books","book_translations","chapters",
@@ -119,7 +120,7 @@ def build():
     c=new_target("khushu-content"); attach(c,"dua.db",CONTENT_MAP,"content")
     for srcf,nm,tag in [("names.db",{"names":"names_names","asma_packs":"names_packs"},"names"),
                         ("events.db",{"events":"calendar_events","event_packs":"calendar_packs"},"cal"),
-                        ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics"},"cur")]:
+                        ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics","science_pages":"curated_science_pages","science_images":"curated_science_images"},"cur")]:
         attach(c,srcf,nm,tag)
     attach(c,"assets.db",ASSETS_MAP,"assets")   # embedded registry for offline resolution
     attach(c,"catalog.db",{"font_packs":"font_packs","font_files":"font_files"},"fonts")   # font catalog metadata (blob registry lives in assets)
