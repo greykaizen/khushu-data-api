@@ -98,11 +98,18 @@ def build_curated():
     nsets=0
     for mf in glob.glob(f"{verses}/type*/map.json")+glob.glob(f"{verses}/major_sins/map.json"):
         kind=os.path.basename(os.path.dirname(mf))
-        # `map2.json` is the same entry set with real refs for sentinel rows
-        # (e.g. type1/1 -> prayers_of_the_prophets) and finer word ranges
-        # (`2:127[7>9]`). Store the range only; the bracket is a display hint.
+        # `map.json` is the entry set (per-entry range string). `map2.json` is a
+        # refined copy with real refs for sentinel/slug rows and finer word
+        # ranges (`2:127[7>9]`), but its keys are shifted for type1 (entry N
+        # carries entry N+1's refs) — so only borrow a map2 value for rows whose
+        # map.json value is NOT itself a range string. Store the range only; the
+        # bracket is a display hint.
         refined=os.path.join(os.path.dirname(mf),"map2.json")
-        mm=json.load(open(refined if os.path.exists(refined) else mf))
+        mm=json.load(open(mf))
+        if os.path.exists(refined):
+            for sid,ref in json.load(open(refined)).items():
+                if not re.match(r"^\s*\d+:\d+", str(mm.get(sid,""))):
+                    mm[sid]=ref
         for sid,ref in mm.items():
             ref=re.sub(r"\[[^\]]*\]","",str(ref))
             c.execute("INSERT INTO curated_sets VALUES(?,?,?)",(kind,sid,ref)); nsets+=1
