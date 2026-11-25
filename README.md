@@ -87,6 +87,19 @@ python3 deployment/verify_deploy.py           # remote table/FTS checks after AP
 The asset release tag must match `KHUSHU_ASSET_RELEASE_TAG`, `assets.version`, and
 `asset_base_url` (one value; `assets.json` records it).
 
+### Pack revisions are immutable
+Every host keys off the `packs-<family>-<REV>` tag: the prebundle stamp, the
+manifest, and cached downloaded packs. Republishing a REV with different bytes
+leaves installed copies silently stale while reporting the same version, so
+**changed pack bytes always ship a new `KHUSHU_ASSET_REV`**:
+
+```bash
+APPLY=1 KHUSHU_ASSET_REV=v2026.12 bash deployment/publish_packs.sh   # new rev
+python3 deployment/audit_release.py                                  # sizes + SHA-256
+```
+`publish_packs.sh` refuses to overwrite an existing release tag; `FORCE=1`
+exists only to repair a broken upload of the *same* bytes.
+
 ## App integration
 Host [Khushu](https://github.com/greykaizen/khushu) consumes exactly four logical
 DB endpoints (`core`/`hadith`/`content`/`audio`), configured centrally — never

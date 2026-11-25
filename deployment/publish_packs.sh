@@ -35,8 +35,18 @@ while IFS=$'\t' read -r fam n size files; do
   tag="packs-$fam-$REV"
   printf "  %-12s %3d files  %6.1f MB  -> release %s\n" "$fam" "$n" "$(awk -v s="$size" 'BEGIN{print s/1048576}')" "$tag"
   if [ "$APPLY" = "1" ]; then
-    # idempotent: delete+recreate so re-running updates cleanly
-    gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
+    # Published revisions are immutable: hosts and prebundle stamps key off the
+    # tag, so overwriting one leaves every installed copy silently stale while
+    # reporting the "same" version. New bytes need a new REV.
+    if gh release view "$tag" >/dev/null 2>&1; then
+      if [ "${FORCE:-0}" != "1" ]; then
+        echo "ERROR: release $tag already exists." >&2
+        echo "       Bump KHUSHU_ASSET_REV (e.g. v2026.12) for changed pack bytes." >&2
+        echo "       FORCE=1 is only for repairing a broken upload of the same bytes." >&2
+        exit 1
+      fi
+      gh release delete "$tag" --yes --cleanup-tag 2>/dev/null || true
+    fi
     # shellcheck disable=SC2086
     gh release create "$tag" $files --title "Khushu offline packs ($fam) $REV" \
       --notes "Prebuilt pack-level SQLite fragments ($fam). GPLv3 corpus. Open with libSQL/SQLite; FTS5 included where applicable. See data/manifest/packs.json."
