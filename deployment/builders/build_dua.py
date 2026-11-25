@@ -113,13 +113,15 @@ def main():
             "name": "Related Readings", "slug": "related", "count": len(related),
             "articles": sorted(related, key=lambda a: a["title"] or ""),
         })
-    # body index by article id/slug from both articles/ and related-articles/
+    # body index by article id/slug from both articles/ and related-articles/.
+    # Canonical `articles/` wins when the same body is also mirrored under
+    # related-articles/ (id 3736): the donor category links the canonical path.
     bodies = {}
     for f in glob.glob(f"{SRC}/articles/**/*.json", recursive=True) + glob.glob(f"{SRC}/related-articles/*/*.json", recursive=True):
         try: b = json.load(open(f))
         except Exception: continue
         if isinstance(b, dict) and "content" in b:
-            bodies[b.get("id")] = (f[len(SRC)+1:], b)
+            bodies.setdefault(b.get("id"), (f[len(SRC)+1:], b))
     art_cat = {}
     seen = set(); n_links = 0
     for cat in ai:
@@ -167,9 +169,19 @@ def verify(c, duas, posts, ai, local_audio):
     n_links=c.execute("select count(*) from article_members").fetchone()[0]
     n_body=c.execute("select count(*) from articles where has_body=1").fetchone()[0]
     idx=sum(len(cat.get('articles',[])) for cat in ai)
+    # A mirrored body (id 3736 exists under articles/ and related-articles/)
+    # must keep the path the donor index links, not whichever glob ran last.
+    path_bad = [
+        (a["id"], a.get("file_path"))
+        for cat in ai for a in cat.get("articles", [])
+        if a.get("file_path") and c.execute(
+            "select body_path from articles where id=?", (a["id"],)
+        ).fetchone()[0] != a["file_path"]
+    ]
     print(f"  article_cats={c.execute('select count(*) from article_categories').fetchone()[0]}/13 "
-          f"articles={n_art}(uniq) links={n_links}(idx={idx}) with_body={n_body} no_body={n_art-n_body}")
-    ok &= n_links==idx and n_art==185 and n_body==185
+          f"articles={n_art}(uniq) links={n_links}(idx={idx}) with_body={n_body} no_body={n_art-n_body}"
+          f" path_mismatch={len(path_bad)}")
+    ok &= n_links==idx and n_art==185 and n_body==185 and not path_bad
     # audio
     print(f"  audio: asset_refs={c.execute('select count(*) from duas where audio_asset_id is not null').fetchone()[0]}/488")
     # canonical blocks/plain parity

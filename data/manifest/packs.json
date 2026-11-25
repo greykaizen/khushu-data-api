@@ -3,11 +3,11 @@
  "user_version": 202611,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
  "total_packs": 104,
- "total_bytes": 871575552,
+ "total_bytes": 872370176,
  "tier_bytes": {
-  "prebundle": 48279552,
-  "first_run": 8433664,
-  "on_demand": 814862336
+  "prebundle": 49094656,
+  "first_run": 8343552,
+  "on_demand": 814931968
  },
  "prebundle_ids": [
   "audio",
@@ -33,8 +33,8 @@
    "fts": [],
    "file": "audio.db",
    "bytes": 8282112,
-   "sha256": "c6918555185264628fdc7a0583d2007e94b7767b3ee7d95da799035181b64c98",
-   "version": "v2026.09"
+   "sha256": "c7e319e692a2e90fb775865d991fcb9f59958fc444c3d36c73a9d39f966145f6",
+   "version": "v2026.11"
   },
   {
    "id": "content",
@@ -58,6 +58,8 @@
     "recommended_defaults",
     "recommended_texts",
     "curated_science_topics",
+    "curated_science_pages",
+    "curated_science_images",
     "assets",
     "font_packs",
     "font_files",
@@ -67,8 +69,8 @@
     "dua_fts"
    ],
    "file": "content.db",
-   "bytes": 5226496,
-   "sha256": "11a1a632008691887df6af6f3cf7bffed2cbfd1c95faba008878685a853e63ce",
+   "bytes": 6025216,
+   "sha256": "5b38c51b188c853e570576cc91a954130e8492bb4788b96b1299f11e705011f5",
    "version": "v2026.11"
   },
   {
@@ -97,8 +99,8 @@
    ],
    "file": "hadith-abu_dawud.db",
    "bytes": 26185728,
-   "sha256": "b025f47f78c12f9a48080c96580f1305a78b827a915f098c3bf37a7ae9c3b7ea",
-   "version": "v2026.09",
+   "sha256": "f6fb0ef28d013d5ddebafa843f98f20c8d798432177d18a2d94c6fb3ec772def",
+   "version": "v2026.11",
    "detail": {
     "collection": "abu_dawud"
    }
@@ -129,8 +131,8 @@
    ],
    "file": "hadith-bukhari.db",
    "bytes": 41603072,
-   "sha256": "fa68bedf33d4ce96f6a2892569bf903e13c27b13dce1791e83b1ae8adf181fbe",
-   "version": "v2026.09",
+   "sha256": "805db6fddcaa918643a36b4da48c29d35578ef953bb1d542819a76ffe519fe4a",
+   "version": "v2026.11",
    "detail": {
     "collection": "bukhari"
    }
@@ -161,8 +163,8 @@
    ],
    "file": "hadith-forty.db",
    "bytes": 704512,
-   "sha256": "869eb1771447aca030aa33a8de8bb06e9f54373f4d97f8e99d2c9aef3c58ce90",
-   "version": "v2026.09",
+   "sha256": "d6add44b0c06fbd4dcbbb68909171872b7702ee7cfaa71753bcfdb8cb8e6c778",
+   "version": "v2026.11",
    "detail": {
     "collection": "forty"
    }
@@ -193,8 +195,8 @@
    ],
    "file": "hadith-ibn_majah.db",
    "bytes": 18862080,
-   "sha256": "6d510428e0e4ecc09d28f70eb73e8582e77a018c12e0626f9d3040ff3a321363",
-   "version": "v2026.09",
+   "sha256": "dfe11ba94c8d93a652deabbd0188a940028dcf0decd2d68d97a406f9be2b85e9",
+   "version": "v2026.11",
    "detail": {
     "collection": "ibn_majah"
    }
@@ -225,8 +227,8 @@
    ],
    "file": "hadith-malik.db",
    "bytes": 9056256,
-   "sha256": "57e10194b119e857f9636f5fe5fecf98d67376c7340099448627aadb59480062",
-   "version": "v2026.09",
+   "sha256": "3dc8b5c038d32745c2d25159c9a49c5d2ba461c01c45532b8d24ad423f3c6a52",
+   "version": "v2026.11",
    "detail": {
     "collection": "malik"
    }
@@ -257,8 +259,8 @@
    ],
    "file": "hadith-muslim.db",
    "bytes": 35774464,
-   "sha256": "df9c4819ef3ff5928863f5665de1c20a6fff864e00c99f64cae37a141467f428",
-   "version": "v2026.09",
+   "sha256": "6e5cd0a9e00f655c1975f06d71b193aace8de22030659ab59e213adafab6a478",
+   "version": "v2026.11",
    "detail": {
     "collection": "muslim"
    }
@@ -289,8 +291,8 @@
    ],
    "file": "hadith-nasai.db",
    "bytes": 26746880,
-   "sha256": "5de0e93b5e77295bfab61fa379fab0f99876a5e0769d29292c23b9e9ac1649af",
-   "version": "v2026.09",
+   "sha256": "c18ab4f5d27c028c342ca0f89c96c5e09d2d5bb8a91440cb25d4d91596ee36fc",
+   "version": "v2026.11",
    "detail": {
     "collection": "nasai"
    }
@@ -321,8 +323,8 @@
    ],
    "file": "hadith-riyadussalihin.db",
    "bytes": 7708672,
-   "sha256": "a26f6410db0210aca39940817c0c141e737b181f1db24e855d5ac7a980e42dfe",
-   "version": "v2026.09",
+   "sha256": "5bbc4f9c14c8fee9feea21f1e2c8cb85fa8d6355341f608a4f9fb264589570f1",
+   "version": "v2026.11",
    "detail": {
     "collection": "riyadussalihin"
    }
@@ -338,8 +340,8 @@
    "fts": [],
    "file": "hadith-scholars.db",
    "bytes": 5718016,
-   "sha256": "1744b31d0d76e4743d256e1c58cc8ae1017430d5cfc356efa7558b4c1c3fd073",
-   "version": "v2026.09",
+   "sha256": "0c32594b228968eb62bb41468bf93d1e433319051f77dd4b5ed91966e50acd72",
+   "version": "v2026.11",
    "detail": {
     "component": "scholars"
    }
@@ -370,8 +372,8 @@
    ],
    "file": "hadith-tirmidhi.db",
    "bytes": 24027136,
-   "sha256": "b88fce74ff02d248bcc30129b57a38731edc523e6b73bc333eb4563bc9ba0d03",
-   "version": "v2026.09",
+   "sha256": "ee74c94ef0aad33ae67a23598d7d932680e28edc7b451d862267148ecb9a512f",
+   "version": "v2026.11",
    "detail": {
     "collection": "tirmidhi"
    }
@@ -411,9 +413,9 @@
     "quran_surah_alias_fts"
    ],
    "file": "quran-core.db",
-   "bytes": 32456704,
-   "sha256": "18f23f543180cda4934dcd1d275d0718ee09bdd6aaad3f2f3b5514a29af251e0",
-   "version": "v2026.09"
+   "bytes": 32473088,
+   "sha256": "86e715ef5683671e8637171ab103796043990bd619588a02bd974ca495aeb378",
+   "version": "v2026.11"
   },
   {
    "id": "tafsir-ar-tafseer-al-qurtubi",
@@ -427,8 +429,8 @@
    "fts": [],
    "file": "tafsir-ar-tafseer-al-qurtubi.db",
    "bytes": 23101440,
-   "sha256": "cdebf6e77483e982858bdfc721dbb4b1f36dbc7f35590192259165b7218f1832",
-   "version": "v2026.09",
+   "sha256": "b87071e16fa1c9b5e004aac9d0c25c7a983a14346dda102850ba35f06e81f106",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafseer-al-qurtubi"
    }
@@ -445,8 +447,8 @@
    "fts": [],
    "file": "tafsir-ar-tafseer-al-saddi.db",
    "bytes": 9015296,
-   "sha256": "756ff7de79c124b1117f6fd10daa9a5032488e33c6480837d0286105c1cbc5b6",
-   "version": "v2026.09",
+   "sha256": "e7a635703767fdd92de189e462601ec51101332e6928caa4424cee0e6949c14a",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafseer-al-saddi"
    }
@@ -463,8 +465,8 @@
    "fts": [],
    "file": "tafsir-ar-tafsir-al-baghawi.db",
    "bytes": 11776000,
-   "sha256": "af7af0d52933e70e2854fc1a826a832ee1658d89f20711877430ffaf65e6b85b",
-   "version": "v2026.09",
+   "sha256": "58c7c4470935a81030b69c5ec9c4b388b1e084c98120f61a197c03f1c87409cf",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafsir-al-baghawi"
    }
@@ -481,8 +483,8 @@
    "fts": [],
    "file": "tafsir-ar-tafsir-al-tabari.db",
    "bytes": 50479104,
-   "sha256": "031934f6bcc9c56be9bf120b5d49a3372fa47d82f0a85c3c9527c6dac3d02a04",
-   "version": "v2026.09",
+   "sha256": "bfb5d8433d84634b47ae6b8b265b46f5e3086e213c93bd9f9fef342b89c56bff",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafsir-al-tabari"
    }
@@ -499,8 +501,8 @@
    "fts": [],
    "file": "tafsir-ar-tafsir-al-wasit.db",
    "bytes": 21454848,
-   "sha256": "6756e904e994ba3cd044b88f1baf350de7eeef2250ba4e30071257233e3b30df",
-   "version": "v2026.09",
+   "sha256": "de559901742f433098725f5e99fc93c1a074d1866eaff02bc12db6c3098626e4",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafsir-al-wasit"
    }
@@ -517,8 +519,8 @@
    "fts": [],
    "file": "tafsir-ar-tafsir-ibn-kathir.db",
    "bytes": 21987328,
-   "sha256": "c86ae8292e06195b7ffe2eb045b15096c9d6f3d6f7a2d501246ea6552f8fed26",
-   "version": "v2026.09",
+   "sha256": "a646c3b9b2b0bc458866b22e5f2b4f36aadde9e77a0c8f05bd27b6bdfaff6221",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafsir-ibn-kathir"
    }
@@ -535,8 +537,8 @@
    "fts": [],
    "file": "tafsir-ar-tafsir-muyassar.db",
    "bytes": 2797568,
-   "sha256": "6cb425b6029aa7b6c1fa32c8430fa413794c4a6ec809b1503d1bab9c90274302",
-   "version": "v2026.09",
+   "sha256": "88c74371e043bdb0769e0d044824516bd71ddd6ec88730b59f9a4a2444c97ef4",
+   "version": "v2026.11",
    "detail": {
     "book": "ar-tafsir-muyassar"
    }
@@ -553,8 +555,8 @@
    "fts": [],
    "file": "tafsir-bn-tafseer-ibn-e-kaseer.db",
    "bytes": 26484736,
-   "sha256": "29ee9a432894d3916c28fdc14100d697abc8448f6580201cf3b29f04825ae447",
-   "version": "v2026.09",
+   "sha256": "c4159152674facfce71c952e6288791762c7d5cf6ade4dfbb78751af1bcbb6ed",
+   "version": "v2026.11",
    "detail": {
     "book": "bn-tafseer-ibn-e-kaseer"
    }
@@ -571,8 +573,8 @@
    "fts": [],
    "file": "tafsir-bn-tafsir-abu-bakr-zakaria.db",
    "bytes": 16617472,
-   "sha256": "eda390e3396056179853643d86077ae05dfb9306840752328af84ae7081c925f",
-   "version": "v2026.09",
+   "sha256": "ca92d8ba64b4df85b707239cba674cf9e230e73b9760d84336514f0b0da470c3",
+   "version": "v2026.11",
    "detail": {
     "book": "bn-tafsir-abu-bakr-zakaria"
    }
@@ -589,8 +591,8 @@
    "fts": [],
    "file": "tafsir-bn-tafsir-ahsanul-bayaan.db",
    "bytes": 12279808,
-   "sha256": "b022d660bfb76646d60171995c9606f03ee7b24fb3020cf4f4adc35cc19a8acc",
-   "version": "v2026.09",
+   "sha256": "2a3f7c3f745b76a2325b36de57d4b6931e37a3fbd6687c0b68f84d4955a4d3d1",
+   "version": "v2026.11",
    "detail": {
     "book": "bn-tafsir-ahsanul-bayaan"
    }
@@ -607,8 +609,8 @@
    "fts": [],
    "file": "tafsir-en-tafisr-ibn-kathir.db",
    "bytes": 13078528,
-   "sha256": "16592ab43c4af014f2aec3643262dde5d98be609c7d189973da7fef5b24d4339",
-   "version": "v2026.09",
+   "sha256": "fc10cfd775b48d967b7663f4bef99bf978a2956f7822c8c6727860e4a93bf426",
+   "version": "v2026.11",
    "detail": {
     "book": "en-tafisr-ibn-kathir"
    }
@@ -625,8 +627,8 @@
    "fts": [],
    "file": "tafsir-en-tafsir-maarif-ul-quran.db",
    "bytes": 13963264,
-   "sha256": "70ecf33730beb273d346f35e563642694301c959ce4fa89161b1c6e4aee1dae5",
-   "version": "v2026.09",
+   "sha256": "4f10899cfab2cd526c188d2c6171a2faf42aee63193bec162061d3d053830333",
+   "version": "v2026.11",
    "detail": {
     "book": "en-tafsir-maarif-ul-quran"
    }
@@ -643,8 +645,8 @@
    "fts": [],
    "file": "tafsir-french-mokhtasar.db",
    "bytes": 2641920,
-   "sha256": "de5bb17894a758cdca07d7546d42349b600b632a40ac3fa57b8bc31ccd3b3ef6",
-   "version": "v2026.09",
+   "sha256": "64c31ed391719914e1b5294972b6fbe3d6974afccb600869ff6421e0007412ec",
+   "version": "v2026.11",
    "detail": {
     "book": "french-mokhtasar"
    }
@@ -661,8 +663,8 @@
    "fts": [],
    "file": "tafsir-hindi-mokhtasar.db",
    "bytes": 5922816,
-   "sha256": "eb14d749a80d1e97006191bd5ab80fa13714c84628a7dbbd8dbe4117004663c8",
-   "version": "v2026.09",
+   "sha256": "4f8c59dd1035a4c0ddb730afbb76d583e1a2a71525af76e4f52473f561e4a36b",
+   "version": "v2026.11",
    "detail": {
     "book": "hindi-mokhtasar"
    }
@@ -679,8 +681,8 @@
    "fts": [],
    "file": "tafsir-indonesian-mokhtasar.db",
    "bytes": 3026944,
-   "sha256": "7ebe43351b0e49bb54a7b3a71cae93ae31fa5ea72baf18104db3d408c80544b6",
-   "version": "v2026.09",
+   "sha256": "3e89dd98633f1edea6726bc0dc5d210f7c348d199690436e7c7461d5409f250b",
+   "version": "v2026.11",
    "detail": {
     "book": "indonesian-mokhtasar"
    }
@@ -697,8 +699,8 @@
    "fts": [],
    "file": "tafsir-kurd-tafsir-rebar.db",
    "bytes": 8798208,
-   "sha256": "ab1e77ab845d2af02975cb0e53ebff6511022aff022299b15f962ae86ada5940",
-   "version": "v2026.09",
+   "sha256": "c4fca152e4c386ca6646df956c7abdc11258932ba848197e604160112118b0a1",
+   "version": "v2026.11",
    "detail": {
     "book": "kurd-tafsir-rebar"
    }
@@ -715,8 +717,8 @@
    "fts": [],
    "file": "tafsir-ru-tafseer-al-saddi.db",
    "bytes": 11804672,
-   "sha256": "7829901a294e430594d5d0ba3862fb1b8936622c3a51e69bd318147811564d05",
-   "version": "v2026.09",
+   "sha256": "ae0b8e0f8683b1ec01fe1bf9f16664da97c602b2f06ebb21dcd6cdfe50a0dc67",
+   "version": "v2026.11",
    "detail": {
     "book": "ru-tafseer-al-saddi"
    }
@@ -733,8 +735,8 @@
    "fts": [],
    "file": "tafsir-spanish-mokhtasar.db",
    "bytes": 2445312,
-   "sha256": "c74d889c6fc09c4c401977abf0e9f04756c685c1863a9a7b4bb5712548b1340c",
-   "version": "v2026.09",
+   "sha256": "9fe6427f33a1727cc33f80ce3407241d05fc82e826fc35145e3a682113fe5b34",
+   "version": "v2026.11",
    "detail": {
     "book": "spanish-mokhtasar"
    }
@@ -751,8 +753,8 @@
    "fts": [],
    "file": "tafsir-tafisr-fathul-majid-bn.db",
    "bytes": 13447168,
-   "sha256": "b8cf614501cbd7fc528ae766234ce4a73353eb0299711aeefadf73a6d5ad4ccd",
-   "version": "v2026.09",
+   "sha256": "6c7eb51e92b695989652ed45a9e9373d469bdf01e4801af704f8d15af2217235",
+   "version": "v2026.11",
    "detail": {
     "book": "tafisr-fathul-majid-bn"
    }
@@ -769,8 +771,8 @@
    "fts": [],
    "file": "tafsir-tafseer-ibn-e-kaseer-urdu.db",
    "bytes": 20258816,
-   "sha256": "c2fb584337add3fe2adafb18c1178b2c815210e3731e6527404e8417f56c914f",
-   "version": "v2026.09",
+   "sha256": "b73128a26b111e172e39fd29f82fada606fa17fb1cb9b46597152f487282e868",
+   "version": "v2026.11",
    "detail": {
     "book": "tafseer-ibn-e-kaseer-urdu"
    }
@@ -787,8 +789,8 @@
    "fts": [],
    "file": "tafsir-tafsir-bayan-ul-quran.db",
    "bytes": 10477568,
-   "sha256": "25c3f5a7a78f80097cb7904ada4bf408ee03472e9d7f6fbaa0a20cfbc86f077c",
-   "version": "v2026.09",
+   "sha256": "b5029556883fb454e08cee1fd43aa0c6c42a79d73c471bea200c5d3f7111c12a",
+   "version": "v2026.11",
    "detail": {
     "book": "tafsir-bayan-ul-quran"
    }
@@ -805,8 +807,8 @@
    "fts": [],
    "file": "tafsir-tafsir-fe-zalul-quran-syed-qatab.db",
    "bytes": 25554944,
-   "sha256": "85169636b836544ea472c7b91a4a2f8f2d6be76770168991d1e6f14626366508",
-   "version": "v2026.09",
+   "sha256": "67f84c4643956c55badd2ad3ac9985367e517c7ff4a63569193a3b8cf57a971b",
+   "version": "v2026.11",
    "detail": {
     "book": "tafsir-fe-zalul-quran-syed-qatab"
    }
@@ -823,8 +825,8 @@
    "fts": [],
    "file": "tafsir-tamil-mokhtasar.db",
    "bytes": 6848512,
-   "sha256": "809edf1e6e0e9101fccec2b406d4a94bac2e098fe0ea5f3471696dbfeb6fe271",
-   "version": "v2026.09",
+   "sha256": "8cae6fb56e107fb3817987cb6f858bfbe7cdb16e0e20e6d1f894ea52eddd6d42",
+   "version": "v2026.11",
    "detail": {
     "book": "tamil-mokhtasar"
    }
@@ -841,8 +843,8 @@
    "fts": [],
    "file": "tafsir-tazkiru-quran-ur.db",
    "bytes": 4169728,
-   "sha256": "1c903f289a664d042a44c144d5ed42446a2b56b003550a1c41149bd07772fb77",
-   "version": "v2026.09",
+   "sha256": "c716ee3f039d96ef83d0e89272c6289a3659f63b78efae036be4896ce778042d",
+   "version": "v2026.11",
    "detail": {
     "book": "tazkiru-quran-ur"
    }
@@ -859,8 +861,8 @@
    "fts": [],
    "file": "tafsir-tazkirul-quran-en.db",
    "bytes": 2764800,
-   "sha256": "ecdea2b19d89278493bd2114d87f4136e2c4c6ef8cedd6f79719ab15fb4384ed",
-   "version": "v2026.09",
+   "sha256": "094882dc13db19bebf8dfded93c8d51a943976bbde5b81d4630b84daf3329ab0",
+   "version": "v2026.11",
    "detail": {
     "book": "tazkirul-quran-en"
    }
@@ -877,8 +879,8 @@
    "fts": [],
    "file": "tafsir-turkish-mokhtasar.db",
    "bytes": 2617344,
-   "sha256": "bd769483a1329ab735318f7dbc0d5fdcc4832966b7054703530a30143bbddccd",
-   "version": "v2026.09",
+   "sha256": "6583cbc4b9bd118203e0f7beac9cc2ee2c6d3ab9de831316b6721e0c22c2451c",
+   "version": "v2026.11",
    "detail": {
     "book": "turkish-mokhtasar"
    }
@@ -898,8 +900,8 @@
    ],
    "file": "translation-bn_mujibur-rahman.db",
    "bytes": 3514368,
-   "sha256": "ff9e6570507894c4f41e6e69a203efdc14c8b18257973652bcafea4ab2dac62f",
-   "version": "v2026.09",
+   "sha256": "d06d15ecfdd5b54ac322b34e2f9a81cb11a8468d5cc75a3889353fe44b1dc88f",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "bn_mujibur-rahman"
    }
@@ -919,8 +921,8 @@
    ],
    "file": "translation-de_abu-reda-muhammad.db",
    "bytes": 1974272,
-   "sha256": "abedcd6916542b0446ba27b0142e643e321de0fc0b2253739b20a4d486f076a6",
-   "version": "v2026.09",
+   "sha256": "b9a698ed61e80a075d8e560b43b61ecb94ef49fade738d986f6a77dbf708816b",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "de_abu-reda-muhammad"
    }
@@ -940,8 +942,8 @@
    ],
    "file": "translation-de_bubenheim.db",
    "bytes": 1892352,
-   "sha256": "4330dc0fe4ae3ab817166f02de00749afc1443dd71e90a9f84a73fa7dab4747b",
-   "version": "v2026.09",
+   "sha256": "1c065ba0f5074627de09d2510ab928db9512bd5e47ebb22c3460da9d69c16e52",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "de_bubenheim"
    }
@@ -961,8 +963,8 @@
    ],
    "file": "translation-en_abdul-haleem.db",
    "bytes": 1744896,
-   "sha256": "c902f1904a6bb21735d0ed9046447efacfd952c937027a64308660ca9e6b59b7",
-   "version": "v2026.09",
+   "sha256": "545410bf87d8ee6190ebc1042b485c892003a8bea5713a637b99ba2302cd4e61",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_abdul-haleem"
    }
@@ -982,8 +984,8 @@
    ],
    "file": "translation-en_hilali-khan.db",
    "bytes": 2834432,
-   "sha256": "271187635c2a381e767b984579df7e7ca6545786d258b0709168adb2193bf993",
-   "version": "v2026.09",
+   "sha256": "efc9bc57a9175b397807548193e11979f552e2a4db41a5d5e27ef540e274f635",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_hilali-khan"
    }
@@ -1003,8 +1005,8 @@
    ],
    "file": "translation-en_irving.db",
    "bytes": 1765376,
-   "sha256": "0faf0e70e5e25aa3337f7c0729475208edae7d7a7b1f3aefc260b2f6a372af4d",
-   "version": "v2026.09",
+   "sha256": "a1c3faa42a3cb3603afd8b502332c3c109e1240cc41f8b0fbb19b5b00cf68da4",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_irving"
    }
@@ -1024,8 +1026,8 @@
    ],
    "file": "translation-en_mahmoud-ghali.db",
    "bytes": 2080768,
-   "sha256": "b6208f54747cd24a3fff4a671a54dad1d008097b747631999f86b17b612efdb1",
-   "version": "v2026.09",
+   "sha256": "1fa22a5da1c3466bc58d8776ba8993382991c20842e00cd18a9e5ebafbf74a95",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_mahmoud-ghali"
    }
@@ -1045,8 +1047,8 @@
    ],
    "file": "translation-en_maududi.db",
    "bytes": 6914048,
-   "sha256": "74649574850a060c60be4e11e01eb347e94908523d714f754dbd5573286b5153",
-   "version": "v2026.09",
+   "sha256": "c2d9ebb48a0b138bdf50f61447b89c148e3b1d5b680d8820ab547f864983d401",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_maududi"
    }
@@ -1066,8 +1068,8 @@
    ],
    "file": "translation-en_pickthall.db",
    "bytes": 1777664,
-   "sha256": "ddd642538877ce37a1ebeac91cf0b6a968f5d31ae70ad7a06cb5e4a20c26f398",
-   "version": "v2026.09",
+   "sha256": "6ee3987ae5b2164ccd94a28deddda7b04dae2c5ab7086e473183d270f4630f25",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_pickthall"
    }
@@ -1087,8 +1089,8 @@
    ],
    "file": "translation-en_saheeh-international.db",
    "bytes": 2314240,
-   "sha256": "437ca10094b2f0c1e7e4b180f28d229a83c2bac152f61cb84f5a5d483a5e6d45",
-   "version": "v2026.09",
+   "sha256": "53b6206b14fbee1a63eb986480428d72041ef503713f06cd20d0a4eebf1e6554",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_saheeh-international"
    }
@@ -1108,8 +1110,8 @@
    ],
    "file": "translation-en_taqi-usmani.db",
    "bytes": 1908736,
-   "sha256": "4f67b3271bed88ee149ba754b1b37eb4e9a41852fed7f337a62606d737f5473e",
-   "version": "v2026.09",
+   "sha256": "aa0e1d0b25a447f4143d5925c6066b4d9aa66c286347412c1396c497ee4295ec",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_taqi-usmani"
    }
@@ -1129,8 +1131,8 @@
    ],
    "file": "translation-en_the-clear-quran.db",
    "bytes": 2211840,
-   "sha256": "da20223d00794f3c24ddff778014b418796ced203751854d02912cecefaa4a65",
-   "version": "v2026.09",
+   "sha256": "538c6dc165adaee7e40f50d55292eeb94aca4a8282a0aec3bcba0a14046d36f5",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_the-clear-quran"
    }
@@ -1150,8 +1152,8 @@
    ],
    "file": "translation-en_transliteration.db",
    "bytes": 1626112,
-   "sha256": "eafdfc872682b124ce03bc1927d3e64385a0313e8d48d3c0bb8c5ee88e6c95bd",
-   "version": "v2026.09",
+   "sha256": "9fad87806def945351084462e98c642baf03aaa6ecec6ed1a26fa3890bedca1e",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_transliteration"
    }
@@ -1171,8 +1173,8 @@
    ],
    "file": "translation-en_yusuf-ali.db",
    "bytes": 1888256,
-   "sha256": "6b08609d60efc310455032ffc6e298ecefdf5c0c0eeee253d993643beb95c22d",
-   "version": "v2026.09",
+   "sha256": "d4c69151cb18f7669bb472399ac61832922d3e05c1e94e7b33ab5fcee54f7b72",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "en_yusuf-ali"
    }
@@ -1192,8 +1194,8 @@
    ],
    "file": "translation-es_isa_garcia.db",
    "bytes": 2211840,
-   "sha256": "fc3f61ecba200636d95370287940df105a2b19890da3a5cbba63a464253b12c0",
-   "version": "v2026.09",
+   "sha256": "1c03c59164b7dbcbfa31f908fe688793fda4bdefba889d73b10dfb46f9484295",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "es_isa_garcia"
    }
@@ -1213,8 +1215,8 @@
    ],
    "file": "translation-es_noor_international.db",
    "bytes": 2686976,
-   "sha256": "9c34e8f419bdce404748cd46635c0a4a18bec70a078ac6037337b27cc56baa18",
-   "version": "v2026.09",
+   "sha256": "2f11079da330634307c3807772995bd842c8d44632889ff9056bbf9146a75ecc",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "es_noor_international"
    }
@@ -1234,8 +1236,8 @@
    ],
    "file": "translation-fa_islamhouse.db",
    "bytes": 2727936,
-   "sha256": "0e7cf0b08b044716bf757583f7dbe2ed38961620ef16cbba1bf9820f3371cbbb",
-   "version": "v2026.09",
+   "sha256": "7c3875d488ef7cd49ecbce7a10c8dc4d0a3bf3c9d7bfe8d73ea8434a133d8e59",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "fa_islamhouse"
    }
@@ -1255,8 +1257,8 @@
    ],
    "file": "translation-fa_taji-kal-dari.db",
    "bytes": 2572288,
-   "sha256": "3d5df8ab2d7bff920672fc2c62635cb633f7d4206bd6ac5a17715dd17844579a",
-   "version": "v2026.09",
+   "sha256": "5a36c542c4d0770fdf7d05fdbb8e6b7b2002d985a977cfa46c094dcdace07090",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "fa_taji-kal-dari"
    }
@@ -1276,8 +1278,8 @@
    ],
    "file": "translation-fr_hamidullah.db",
    "bytes": 2207744,
-   "sha256": "cf9807b9a8ba03a96bae8245e905f0192db62a742c26ca67c29343ca9a074253",
-   "version": "v2026.09",
+   "sha256": "a70646892a32c7a1d5d44ad9627fa286ac5cbbfea0e035561f5d5c74fedc5f1e",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "fr_hamidullah"
    }
@@ -1297,8 +1299,8 @@
    ],
    "file": "translation-fr_rashid.db",
    "bytes": 2289664,
-   "sha256": "2114f072bf2378735dd675ee320e2f59c1de4965b8164eceaee64a3b407c6abc",
-   "version": "v2026.09",
+   "sha256": "c79d5ff4174ad1ab9d45494903b16797314d3bb9f600d2efa54d87bfd8e2b7df",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "fr_rashid"
    }
@@ -1318,8 +1320,8 @@
    ],
    "file": "translation-gu_omari.db",
    "bytes": 3559424,
-   "sha256": "0f8b487a2c4865b4efda33f081773fff22d2203f48b516d44fec3d6a15096ed6",
-   "version": "v2026.09",
+   "sha256": "a0f7ce49cdef96a25bab90d07ef92d4156ace7c14396b33eb44efeda7c7258e9",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "gu_omari"
    }
@@ -1339,8 +1341,8 @@
    ],
    "file": "translation-ha_gummi.db",
    "bytes": 2281472,
-   "sha256": "143be07c52213c1338e056a61ac6232dbe8eb2623e5bbc7c3034c5d4892437e6",
-   "version": "v2026.09",
+   "sha256": "813b1f6b6d26f3ab4b6cf7b14f444b133f3cfeb8a33e631b4dd7ae44566475ad",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ha_gummi"
    }
@@ -1360,8 +1362,8 @@
    ],
    "file": "translation-hi_azizul-haque.db",
    "bytes": 4628480,
-   "sha256": "c52afd8d29794f495985b8ebb76821e600c6140167b776e5f5b53a3d87bece43",
-   "version": "v2026.09",
+   "sha256": "a12cc4252fdc2d1cb54458348c14987d67cc86cb1c77016410491e7efe2ca817",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "hi_azizul-haque"
    }
@@ -1381,8 +1383,8 @@
    ],
    "file": "translation-in_ministry.db",
    "bytes": 2248704,
-   "sha256": "d8afd1d520c0204bf7e218a67942f2bbbb4321eedf660ef76de419ec3c02ee91",
-   "version": "v2026.09",
+   "sha256": "2aa40462f7a947a840a5ece0d68a9eaa5f1ed27a2f41ed2ed1cfd77e81bf94be",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "in_ministry"
    }
@@ -1402,8 +1404,8 @@
    ],
    "file": "translation-in_quran-complex.db",
    "bytes": 2572288,
-   "sha256": "32970c9b3c27cd0000399f67183e02c85d70b9609a127ddbe76508e3ae2f580f",
-   "version": "v2026.09",
+   "sha256": "ab31839d379c060ea888048e3032148b80fd18843544d4fb69fa1e101f1406e7",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "in_quran-complex"
    }
@@ -1423,8 +1425,8 @@
    ],
    "file": "translation-it_piccardo.db",
    "bytes": 4669440,
-   "sha256": "6be7c86c22b2f7b67cc7be24e79d55ae272782452c16137c41cd26ff713b508f",
-   "version": "v2026.09",
+   "sha256": "5c84d9363c1999812a5c4d8dbc2692d064f995c088cb152772371a75156d096e",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "it_piccardo"
    }
@@ -1444,8 +1446,8 @@
    ],
    "file": "translation-it_rowwad.db",
    "bytes": 1720320,
-   "sha256": "35ddc3a550534ea802de26ee963b6ae588c96682892053323f9f2b9e36773918",
-   "version": "v2026.09",
+   "sha256": "35847696e2e9cc5c3dc38b0ec4526314f692f32344b564cdfd77a01be0d2286c",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "it_rowwad"
    }
@@ -1465,8 +1467,8 @@
    ],
    "file": "translation-ku_bamoki.db",
    "bytes": 2920448,
-   "sha256": "482a0e96bcb81b30a619f098bfd9d15b73024e8f59d6567560fc9afbd8c3ad72",
-   "version": "v2026.09",
+   "sha256": "7a09c75184856f7a5c9052b0b6b3f2e79823de9790b5666ba4366d0b6a9a9be7",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ku_bamoki"
    }
@@ -1486,8 +1488,8 @@
    ],
    "file": "translation-ky_sadybakas_doolov.db",
    "bytes": 3473408,
-   "sha256": "a87ad1f967cec8151a1a390056eb0bdf743468e58c462260eb280b412f818f62",
-   "version": "v2026.09",
+   "sha256": "312b0395c665c8dbd0c998dfb6b757762cc936c568da627bb6d1237329453bb8",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ky_sadybakas_doolov"
    }
@@ -1507,8 +1509,8 @@
    ],
    "file": "translation-ky_shamsudin-hakimov.db",
    "bytes": 3866624,
-   "sha256": "15e7d39d2dc5af240e3d70f73650643aabf1fb609f43fe701b5cb182a8a3ed2b",
-   "version": "v2026.09",
+   "sha256": "9b3494839e2e99167684b7b7b0c830e40ec8185748097abdb8d874514d2e0c93",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ky_shamsudin-hakimov"
    }
@@ -1528,8 +1530,8 @@
    ],
    "file": "translation-ml_hamid-kanhi.db",
    "bytes": 6086656,
-   "sha256": "bcbd75a9a6f0c98c7385d40887f87a14e1e8be011765be880f0119e6e6ae0405",
-   "version": "v2026.09",
+   "sha256": "c817257481b6b05117cc5af3731a4687924724ba36280691522f5e6d553a63b5",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ml_hamid-kanhi"
    }
@@ -1549,8 +1551,8 @@
    ],
    "file": "translation-ml_karakunnu.db",
    "bytes": 4304896,
-   "sha256": "f248f0061bb1528b860cbc5ef177c2e4348bfeadb3ee2500109311261a3d4c9b",
-   "version": "v2026.09",
+   "sha256": "20097f2ff84dd204d9c7a053f504dbfd9183f09b2440a6180b1e89041c5e8fc8",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ml_karakunnu"
    }
@@ -1570,8 +1572,8 @@
    ],
    "file": "translation-pl_bielawski.db",
    "bytes": 1835008,
-   "sha256": "b5fe905bf933835262447815b0c165bcce1db43b071d6e4202d8499a6d41dba1",
-   "version": "v2026.09",
+   "sha256": "d4871a3977c8f518667cd14bbcfa1227eddd4252228ee923c35f01d21b5660b7",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "pl_bielawski"
    }
@@ -1591,8 +1593,8 @@
    ],
    "file": "translation-ru_abu-adel.db",
    "bytes": 3850240,
-   "sha256": "2e4d5241aaf1f1ec84712887e564a691b49789d74472d8691da94df2948d08ef",
-   "version": "v2026.09",
+   "sha256": "ef3179f077b026e12ef0be5d8f1bbdf760ca1fe5cea6ceac4c416a22bbb31796",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ru_abu-adel"
    }
@@ -1612,8 +1614,8 @@
    ],
    "file": "translation-ru_elmir-kuliev.db",
    "bytes": 2510848,
-   "sha256": "011b84b73fda59c9f30ae17db9796c157be10ede02fc5920d16996042b15e278",
-   "version": "v2026.09",
+   "sha256": "ba51adec06ef0ffe36a14249d130a11e0694d81fd4e65c147ebeed6eb1d0daf1",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ru_elmir-kuliev"
    }
@@ -1633,8 +1635,8 @@
    ],
    "file": "translation-ru_ministry-of-awqaf.db",
    "bytes": 5255168,
-   "sha256": "f05923ff680107acd5e6e8ff83d18feedee7fce7c6e5c6fa83408b7acb3c442d",
-   "version": "v2026.09",
+   "sha256": "33c29d6e94077b9567f4f67ae4644cb309e2a9d621f1a3bff407847e50c61328",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ru_ministry-of-awqaf"
    }
@@ -1654,8 +1656,8 @@
    ],
    "file": "translation-sd_taj-mehmood-amroti.db",
    "bytes": 2510848,
-   "sha256": "293902a7b4a8da4b91b7efd7c5d959fc7c4db9b8ac89946f063a244df2e4a21c",
-   "version": "v2026.09",
+   "sha256": "48548217280d8c1f092cc452dd4e2ea5fe3df26b6886bcfc4379041e3f4f371b",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "sd_taj-mehmood-amroti"
    }
@@ -1675,8 +1677,8 @@
    ],
    "file": "translation-ta_baqavi.db",
    "bytes": 5455872,
-   "sha256": "e0219d78b867849187873c8a9a13cec14e077042d7d2ee96e744ee46c2fe2704",
-   "version": "v2026.09",
+   "sha256": "79e2e0ef63eb53e9158bda4e45d72659b60a5c64ca6159b14ddd1e293366431d",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ta_baqavi"
    }
@@ -1696,8 +1698,8 @@
    ],
    "file": "translation-ta_omar-sharif.db",
    "bytes": 5304320,
-   "sha256": "ef742b5313f13b9e5d744870cb0dc538bcf72092ac61fd602cd4f5926b2df60b",
-   "version": "v2026.09",
+   "sha256": "dcdb378b59b8bac3225c63179937793ab126ffcd6cba4a53b7afcc7a41bbfb10",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ta_omar-sharif"
    }
@@ -1717,8 +1719,8 @@
    ],
    "file": "translation-tg_khawaja.db",
    "bytes": 3911680,
-   "sha256": "b1e5334da5523b6577c964bfb63273d93d9d5b321c3fff0bb802e4fdcb95a15b",
-   "version": "v2026.09",
+   "sha256": "cf7a20fe444779cd4b503725f51a78d50c039d3f13b9e9330c106b93148739af",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "tg_khawaja"
    }
@@ -1738,8 +1740,8 @@
    ],
    "file": "translation-tg_rowwad.db",
    "bytes": 2940928,
-   "sha256": "aee18f3ebb09740d16331d866780fc9fac97644337fdda3fd6cae4ada1b1bb2f",
-   "version": "v2026.09",
+   "sha256": "475ce1592ba6a67690a7e92422437987a77be94a0c7785459b6ca9dcb8afe25f",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "tg_rowwad"
    }
@@ -1759,8 +1761,8 @@
    ],
    "file": "translation-tg_tajik.db",
    "bytes": 2314240,
-   "sha256": "32d315414eb9beedad80f775526d1f45ac4a8282c0d317b8f9fe2c8bc0d53343",
-   "version": "v2026.09",
+   "sha256": "965a402d2d09993d410eeee700916f7ff317210260075c90f29325cec37c64b0",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "tg_tajik"
    }
@@ -1780,8 +1782,8 @@
    ],
    "file": "translation-tr_diyanet.db",
    "bytes": 1982464,
-   "sha256": "7dc7ae1bcc5fc4d33a5afe297bdb07ead97f39178af94261e93e9c486e87b517",
-   "version": "v2026.09",
+   "sha256": "42c8558bbaa9bdbdbe9cada8e95440f1eece3e59b1f1b99e5e0867823b54c19f",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "tr_diyanet"
    }
@@ -1801,8 +1803,8 @@
    ],
    "file": "translation-tr_elmalili.db",
    "bytes": 1925120,
-   "sha256": "d4f8e95d7ea6650466187c4decd7911e4b74b52f892bdfc19a71b9fdb1564b15",
-   "version": "v2026.09",
+   "sha256": "2e77f75276370bf1b7392b24c016b03470c27daac3751216d33d5fae7fca04b4",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "tr_elmalili"
    }
@@ -1822,8 +1824,8 @@
    ],
    "file": "translation-uk_mikhailo.db",
    "bytes": 2265088,
-   "sha256": "e506e996032f11a98326fe0b1c261a3f2f2b58b1ce9b9d28bd395013ce229ff3",
-   "version": "v2026.09",
+   "sha256": "0ff1f06fe0c9559fc67983ff16781a32a870cb8842a3d14b088ee708efba2ef4",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "uk_mikhailo"
    }
@@ -1843,8 +1845,8 @@
    ],
    "file": "translation-ur_israr-ahmad.db",
    "bytes": 2678784,
-   "sha256": "87c3f9570f108b76c06067dada5f4d3bd12091ba8f03f6d4dd2332af15ca1099",
-   "version": "v2026.09",
+   "sha256": "ac4225ec093f3966276c5c514333995e446ba274b5a2c97f4e99f1d6cb822ed8",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ur_israr-ahmad"
    }
@@ -1864,8 +1866,8 @@
    ],
    "file": "translation-ur_jalandhari.db",
    "bytes": 2510848,
-   "sha256": "c2ed64a6946404af633ed0719d5410c85836786a8f7303ed08751bd3e961242a",
-   "version": "v2026.09",
+   "sha256": "2410c9e323710a27cd70726515a851f892496350c0c428308be48aec2d28a9e5",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ur_jalandhari"
    }
@@ -1884,9 +1886,9 @@
     "translation_fts"
    ],
    "file": "translation-ur_junagarhi.db",
-   "bytes": 8097792,
-   "sha256": "8ebc8df98df2b7063ef6aee11e280c62203856f86f1678e7275c6939f4d251fd",
-   "version": "v2026.09",
+   "bytes": 8073216,
+   "sha256": "f14219702f74544c42b1c998cbd9957db576f449771e1781544adba6f9ed5da2",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ur_junagarhi"
    }
@@ -1906,8 +1908,8 @@
    ],
    "file": "translation-ur_maududi.db",
    "bytes": 15216640,
-   "sha256": "35d1f56b68e6fcf037768dc8e9338a94cb0ab25cb53cb40d47a763b15fb78e61",
-   "version": "v2026.09",
+   "sha256": "409337dcc8d79f12f313c1398ad201959b868e05b7e5c83c3c81425b310195b8",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "ur_maududi"
    }
@@ -1927,8 +1929,8 @@
    ],
    "file": "translation-yo_mikail.db",
    "bytes": 2805760,
-   "sha256": "b307890ddce4f71574d883579c0f0b8404813aafd1877efaf488d8d35d71a5eb",
-   "version": "v2026.09",
+   "sha256": "efb88831573f638a0168da6845d45489c8fe2bd69189c898934da41bb57b68cd",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "yo_mikail"
    }
@@ -1948,8 +1950,8 @@
    ],
    "file": "translation-zh_majian.db",
    "bytes": 1736704,
-   "sha256": "44125c94c92777fc651dc647395eabbee89971923eb80e56feacf3062da08575",
-   "version": "v2026.09",
+   "sha256": "0d4d06e0c7870e3ed79a9cdf0408b4982db7bc4d2000f00892bc885949f6d21b",
+   "version": "v2026.11",
    "detail": {
     "pack_id": "zh_majian"
    }
@@ -1966,8 +1968,8 @@
    "fts": [],
    "file": "wbw-bn.db",
    "bytes": 9248768,
-   "sha256": "5e75c539d00b7e68cbf373558649f8d8df25af9973dfc537b1077ec0cd5c04fc",
-   "version": "v2026.09",
+   "sha256": "58a487e476aabdb4ee66b9a0de24d12b8165eaf9f5d80babae61d4ee35eb8474",
+   "version": "v2026.11",
    "detail": {
     "lang": "bn"
    }
@@ -1984,8 +1986,8 @@
    "fts": [],
    "file": "wbw-de.db",
    "bytes": 7847936,
-   "sha256": "cd6db1f7804a4ccca29502fd1b317c6e6ca7ae0d83ec53131670033669683c77",
-   "version": "v2026.09",
+   "sha256": "a85dc7a63e977975022ac5c6993e1cbc1a5a034d4db99f540de84a3030fc1018",
+   "version": "v2026.11",
    "detail": {
     "lang": "de"
    }
@@ -2001,9 +2003,9 @@
    ],
    "fts": [],
    "file": "wbw-en.db",
-   "bytes": 8433664,
-   "sha256": "ac819e37f13640b34a998d32938e80d41dd7aaba3e3f176e16401e638d5e4f33",
-   "version": "v2026.09",
+   "bytes": 8343552,
+   "sha256": "bc1248b6165f2527b5237c0e2e7512e6578116067b4b707ac44de622ca05e76f",
+   "version": "v2026.11",
    "detail": {
     "lang": "en"
    }
@@ -2020,8 +2022,8 @@
    "fts": [],
    "file": "wbw-fa.db",
    "bytes": 8155136,
-   "sha256": "5347a7c284e8b9c64a42a22da3275c5ea903044d44f1517bd1478bb5ce381fca",
-   "version": "v2026.09",
+   "sha256": "4c9edcc24be0f021b170d45bafad72e6dff1d2680c7e217e6f103ce2f3a7a38a",
+   "version": "v2026.11",
    "detail": {
     "lang": "fa"
    }
@@ -2038,8 +2040,8 @@
    "fts": [],
    "file": "wbw-fr.db",
    "bytes": 7708672,
-   "sha256": "b9290d2f3938bd03c04523d1c22f7fae85c12b874ac03e50b2197f1894e0ae6b",
-   "version": "v2026.09",
+   "sha256": "666cbeef1b77ee506f7acf4eea414123fcf0c829f37e124fa629f0026b18760e",
+   "version": "v2026.11",
    "detail": {
     "lang": "fr"
    }
@@ -2056,8 +2058,8 @@
    "fts": [],
    "file": "wbw-hi.db",
    "bytes": 8400896,
-   "sha256": "dec10be099974702572fecd74317ab27ea9281695a127f8d82a2fbf2cb8f4d60",
-   "version": "v2026.09",
+   "sha256": "5b844131d6def447a69a372b867e0f4c525325f9a429c79d1918e4f8532f5d36",
+   "version": "v2026.11",
    "detail": {
     "lang": "hi"
    }
@@ -2073,9 +2075,9 @@
    ],
    "fts": [],
    "file": "wbw-id.db",
-   "bytes": 7983104,
-   "sha256": "6c1fa5c7c9d0f3f5731772d063c019e1666cc3a6e6685a1f445243f6213f2dd7",
-   "version": "v2026.09",
+   "bytes": 7901184,
+   "sha256": "f8e5738cf744065d193929349bc6c1a9377a8f31debb8a7e3b147d6c68af8dfb",
+   "version": "v2026.11",
    "detail": {
     "lang": "id"
    }
@@ -2092,8 +2094,8 @@
    "fts": [],
    "file": "wbw-ml.db",
    "bytes": 11104256,
-   "sha256": "1fb435182b125b72470a5974fbf7429a498530ed8bd3bcfd52429cffa224f8ca",
-   "version": "v2026.09",
+   "sha256": "9871c1f2296951ea5f27ea5608947f9656346767cbb82037714e3e2bedbdb235",
+   "version": "v2026.11",
    "detail": {
     "lang": "ml"
    }
@@ -2110,8 +2112,8 @@
    "fts": [],
    "file": "wbw-ru.db",
    "bytes": 8392704,
-   "sha256": "6d6e763f05d2ab56ddead1b43e15dd36a0132b0cc9cf89520afa3801f3508d2c",
-   "version": "v2026.09",
+   "sha256": "f6c8507c3e94169e4530d861a27129c6e9c94d4ad6c9e3916688af635c1825b2",
+   "version": "v2026.11",
    "detail": {
     "lang": "ru"
    }
@@ -2128,8 +2130,8 @@
    "fts": [],
    "file": "wbw-sd.db",
    "bytes": 8458240,
-   "sha256": "39ea318859754ffeb065fd6c25ac8013fe30b38a51fbc1c0a10b552e63fa6112",
-   "version": "v2026.09",
+   "sha256": "33839cf4d14ab495ad88c8ffe8527604fdf270c67f1951c773ec44b71093073c",
+   "version": "v2026.11",
    "detail": {
     "lang": "sd"
    }
@@ -2146,8 +2148,8 @@
    "fts": [],
    "file": "wbw-ta.db",
    "bytes": 9859072,
-   "sha256": "95e5d8586bc5239bc6c55d2a215f97a3955a728fd8f3fbad378ba8abf4028af7",
-   "version": "v2026.09",
+   "sha256": "94cb9185879172cdf632f7d2a2c4dd92397c1ad35d6ed896d6b229c6181ac1ba",
+   "version": "v2026.11",
    "detail": {
     "lang": "ta"
    }
@@ -2163,9 +2165,9 @@
    ],
    "fts": [],
    "file": "wbw-tr.db",
-   "bytes": 7127040,
-   "sha256": "72712e357917d2c0ee94426ae531297159e55938916733ce3fba441aa4f08090",
-   "version": "v2026.09",
+   "bytes": 7172096,
+   "sha256": "fa0a5f2f5183a7acbae0de29472badbb88f0a68447bc0ceb38f51340994b3bfd",
+   "version": "v2026.11",
    "detail": {
     "lang": "tr"
    }
@@ -2181,9 +2183,9 @@
    ],
    "fts": [],
    "file": "wbw-ur.db",
-   "bytes": 8347648,
-   "sha256": "9d0a139f18f3174b624501d9337f5ca317de3548fa5ed8cecec683a6df0eaab7",
-   "version": "v2026.09",
+   "bytes": 8437760,
+   "sha256": "fa2927bf216b2db456e86f3de3f9db8d1917e67bc6ca817838f7b83fad0b717a",
+   "version": "v2026.11",
    "detail": {
     "lang": "ur"
    }
@@ -2199,9 +2201,9 @@
    ],
    "fts": [],
    "file": "wbw-zh.db",
-   "bytes": 7757824,
-   "sha256": "ffbd01aa5c28eb8a78377169a14d1466798df8c9ee96138dc3bc9464efc43d0d",
-   "version": "v2026.09",
+   "bytes": 7798784,
+   "sha256": "4b30ef5a32f4d338c7bbe3ed0a37306a2670d31251d4a6a16218ef7dcb1e33ed",
+   "version": "v2026.11",
    "detail": {
     "lang": "zh"
    }

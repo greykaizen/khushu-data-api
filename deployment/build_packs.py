@@ -271,7 +271,10 @@ def main():
     print(f"  total     = {man['total_bytes']/MB:.1f} MB")
     if only is None:
         floor=by_tier["prebundle"]/MB
-        assert 30 < floor < 45, f"prebundle floor off: {floor:.1f} MB (expected ~37.6)"
+        # quran-core grew to ~32.5 MB once the full Qur'an pack landed; with
+        # content/audio/en translation the base tier is ~46.1 MB. Keep a band
+        # tight enough to catch a dropped or duplicated base pack.
+        assert 44 < floor < 48, f"prebundle floor off: {floor:.1f} MB (expected ~46.1)"
         print(f"  prebundle floor check OK (~{floor:.1f} MB)")
     print(f"  manifest -> {args.manifest}")
 
