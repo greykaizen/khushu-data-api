@@ -44,4 +44,4 @@ while IFS=$'\t' read -r fam n size files; do
   fi
 done < /tmp/packfams.$$
 rm -f /tmp/packfams.$$
-[ "$APPLY" = "1" ] && echo "DONE — all pack releases live." || echo "DRY RUN — re-run with APPLY=1 to publish (after device validation)."
+[ "$APPLY" = "1" ] && echo "DONE — all pack releases live. Verify with: python3 deployment/audit_release.py" || echo "DRY RUN — re-run with APPLY=1 to publish (after device validation)."
