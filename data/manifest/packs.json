@@ -3,9 +3,9 @@
  "user_version": 202611,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
  "total_packs": 104,
- "total_bytes": 872370176,
+ "total_bytes": 873734144,
  "tier_bytes": {
-  "prebundle": 49094656,
+  "prebundle": 50458624,
   "first_run": 8343552,
   "on_demand": 814931968
  },
@@ -63,14 +63,23 @@
     "assets",
     "font_packs",
     "font_files",
-    "links"
+    "links",
+    "reading_extra_categories",
+    "reading_extra_articles",
+    "dua_extra_collections",
+    "dua_extra_items",
+    "category_domains",
+    "content_tags",
+    "item_tags",
+    "reading_search_docs"
    ],
    "fts": [
-    "dua_fts"
+    "dua_fts",
+    "reading_fts"
    ],
    "file": "content.db",
-   "bytes": 6025216,
-   "sha256": "5b38c51b188c853e570576cc91a954130e8492bb4788b96b1299f11e705011f5",
+   "bytes": 7389184,
+   "sha256": "6e91f3a02d3a6fb0df28ac55000210d784a8182185ad4d0159a54e8aa5d47579",
    "version": "v2026.11"
   },
   {

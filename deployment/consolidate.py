@@ -83,9 +83,9 @@ def _ready(name):
     return os.path.exists(path) and os.path.getsize(path) > 0
 
 
-def build():
+def build(only: str | None = None):
     # 1) khushu-quran
-    if _ready("quran.db") and _ready("translations.db"):
+    if only in (None, "quran") and _ready("quran.db") and _ready("translations.db"):
         c=new_target("khushu-quran")
         attach(c,"quran.db",QURAN_MAP,"quran"); attach(c,"translations.db",TRANS_MAP,"tr"); attach(c,"assets.db",ASSETS_MAP,"assets"); attach(c,"chapters.db",{"chapter_info":"quran_chapter_info","quran_config":"quran_config"},"chap")
         fts_external(c,"quran_arabic_fts","quran_search_arabic","ayah_id","text")
@@ -94,52 +94,58 @@ def build():
         TAG=re.compile(r"<[^>]+>");
         for rid,tr in c.execute("select rowid, translation from translation_ayahs"): c.execute("INSERT INTO main.translation_fts(rowid,plain) VALUES(?,?)",(rid,TAG.sub("",tr or "")))
         c.commit(); c.close()
-    else:
+    elif only in (None, "quran"):
         print("   skip khushu-quran (source not built)")
     # 2) khushu-tafsir
-    if _ready("tafsir.db"):
+    if only in (None, "tafsir") and _ready("tafsir.db"):
         c=new_target("khushu-tafsir"); attach(c,"tafsir.db",TAFSIR_MAP,"tafsir"); c.commit(); c.close()
-    else:
+    elif only in (None, "tafsir"):
         print("   skip khushu-tafsir (source not built)")
     # 3) khushu-wbw
-    if _ready("wbw.db"):
+    if only in (None, "wbw") and _ready("wbw.db"):
         c=new_target("khushu-wbw"); attach(c,"wbw.db",WBW_MAP,"wbw"); c.commit(); c.close()
-    else:
+    elif only in (None, "wbw"):
         print("   skip khushu-wbw (source not built)")
     # 4) khushu-hadith
-    if any(_ready(f"{COLL_SRC[coll]}.db") for coll in COLLS):
+    if only in (None, "hadith") and any(_ready(f"{COLL_SRC[coll]}.db") for coll in COLLS):
         c=new_target("khushu-hadith")
         for coll in COLLS:
             nm={t:f"{coll}_{t}" for t in HADITH_TABLES}
             attach(c,f"{COLL_SRC[coll]}.db",nm,coll)
             fts_external_plain(c,f"{coll}_hadith_fts",f"{coll}_hadith_text","matn")
         attach(c,"scholars.db",{"scholars":"scholars"},"scholars"); c.commit(); c.close()
-    else:
+    elif only in (None, "hadith"):
         print("   skip khushu-hadith (sources not built)")
     # 5) khushu-content
-    c=new_target("khushu-content"); attach(c,"dua.db",CONTENT_MAP,"content")
-    for srcf,nm,tag in [("names.db",{"names":"names_names","asma_packs":"names_packs"},"names"),
-                        ("events.db",{"events":"calendar_events","event_packs":"calendar_packs"},"cal"),
-                        ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics","science_pages":"curated_science_pages","science_images":"curated_science_images"},"cur")]:
-        attach(c,srcf,nm,tag)
-    attach(c,"assets.db",ASSETS_MAP,"assets")   # embedded registry for offline resolution
-    attach(c,"catalog.db",{"font_packs":"font_packs","font_files":"font_files"},"fonts")   # font catalog metadata (blob registry lives in assets)
-    c.execute("CREATE VIRTUAL TABLE main.dua_fts USING fts5(text, content='', tokenize='unicode61')")
-    for rid,ti,tr,tx in c.execute("select id, title, translation, transliteration from dua_items"):
-        c.execute("INSERT INTO main.dua_fts(rowid,text) VALUES(?,?)",(rid," ".join(x for x in [ti,tr,tx] if x)))
-    # web links (from archive/inventory/other/urls.json) -> small config table
-    import json as _json
-    u=_json.load(open("archive/inventory/other/urls.json"))
-    c.execute("CREATE TABLE main.links(key TEXT PRIMARY KEY, url TEXT)")
-    c.executemany("INSERT INTO main.links VALUES(?,?)", list(u.items()))
-    c.commit(); c.close()
+    if only in (None, "content"):
+        c=new_target("khushu-content"); attach(c,"dua.db",CONTENT_MAP,"content")
+        for srcf,nm,tag in [("names.db",{"names":"names_names","asma_packs":"names_packs"},"names"),
+                            ("events.db",{"events":"calendar_events","event_packs":"calendar_packs"},"cal"),
+                            ("curated.db",{"curated_sets":"curated_sets","curated_titles":"curated_titles","recommended_rules":"recommended_rules","recommended_defaults":"recommended_defaults","recommended_texts":"recommended_texts","science_topics":"curated_science_topics","science_pages":"curated_science_pages","science_images":"curated_science_images"},"cur")]:
+            attach(c,srcf,nm,tag)
+        attach(c,"assets.db",ASSETS_MAP,"assets")   # embedded registry for offline resolution
+        attach(c,"catalog.db",{"font_packs":"font_packs","font_files":"font_files"},"fonts")   # font catalog metadata (blob registry lives in assets)
+        c.execute("CREATE VIRTUAL TABLE main.dua_fts USING fts5(text, content='', tokenize='unicode61')")
+        for rid,ti,tr,tx in c.execute("select id, title, translation, transliteration from dua_items"):
+            c.execute("INSERT INTO main.dua_fts(rowid,text) VALUES(?,?)",(rid," ".join(x for x in [ti,tr,tx] if x)))
+        # web links (from archive/inventory/other/urls.json) -> small config table
+        import json as _json
+        u=_json.load(open("archive/inventory/other/urls.json"))
+        c.execute("CREATE TABLE main.links(key TEXT PRIMARY KEY, url TEXT)")
+        c.executemany("INSERT INTO main.links VALUES(?,?)", list(u.items()))
+        from builders.build_taxonomy import populate_content_db
+        populate_content_db(c, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+        c.commit(); c.close()
     # 6) khushu-audio
-    if _ready("recitations.db") or _ready("adhan.db"):
+    if only in (None, "audio") and (_ready("recitations.db") or _ready("adhan.db")):
         c=new_target("khushu-audio"); attach(c,"recitations.db",{"reciters":"recitation_reciters","recitation_timings":"recitation_timings"},"rec")
         attach(c,"adhan.db",{"adhan_audio":"adhans"},"adhan"); attach(c,"assets.db",ASSETS_MAP,"assets")
         c.commit(); c.close()
-    else:
+    elif only in (None, "audio"):
         print("   skip khushu-audio (sources not built)")
 
 if __name__=="__main__":
-    os.makedirs(OUT,exist_ok=True); build(); print("consolidated 6 into data/db/")
+    import argparse as _ap
+    _p=_ap.ArgumentParser(); _p.add_argument("--only", choices=["quran","tafsir","wbw","hadith","content","audio"])
+    _a=_p.parse_args()
+    os.makedirs(OUT,exist_ok=True); build(_a.only); print(f"consolidated {_a.only or '6'} into data/db/")

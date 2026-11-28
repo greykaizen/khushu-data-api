@@ -120,6 +120,9 @@ def build_content():
         if ft=="dua_fts":
             for rid,ti,tr,tx in f.execute("SELECT id,title,translation,transliteration FROM dua_items"):
                 f.execute("INSERT INTO dua_fts(rowid,text) VALUES(?,?)",(rid," ".join(x for x in (ti,tr,tx) if x)))
+        elif ft=="reading_fts":
+            from builders.build_taxonomy import populate_reading_fts
+            populate_reading_fts(f)
     ic,tb,fb=_finish(path,f,tables,built); return _pack(pid,"content","khushu-content.db",tb,fb,"prebundle",path,ic)
 
 def build_audio():
@@ -271,10 +274,9 @@ def main():
     print(f"  total     = {man['total_bytes']/MB:.1f} MB")
     if only is None:
         floor=by_tier["prebundle"]/MB
-        # quran-core grew to ~32.5 MB once the full Qur'an pack landed; with
-        # content/audio/en translation the base tier is ~46.1 MB. Keep a band
-        # tight enough to catch a dropped or duplicated base pack.
-        assert 44 < floor < 48, f"prebundle floor off: {floor:.1f} MB (expected ~46.1)"
+        # quran-core is ~32 MB; with content (canonical + MPREA + reading_fts) /
+        # audio / en translation the base tier is ~48 MB.
+        assert 44 < floor < 50, f"prebundle floor off: {floor:.1f} MB (expected ~46-48)"
         print(f"  prebundle floor check OK (~{floor:.1f} MB)")
     print(f"  manifest -> {args.manifest}")
 

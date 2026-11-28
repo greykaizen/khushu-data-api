@@ -116,7 +116,7 @@ def verify_db(path: str, canonical: list[dict]) -> list[str]:
     fts_tables = [
         r[0]
         for r in conn.execute(
-            "SELECT name FROM sqlite_master WHERE type='table' AND sql LIKE '%fts5%' AND name NOT LIKE 'sqlite_%'"
+            "SELECT name FROM sqlite_master WHERE type='table' AND sql LIKE '%fts5%' AND name='dua_fts'"
         )
     ]
     for fts in fts_tables:
