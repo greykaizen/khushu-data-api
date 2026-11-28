@@ -187,6 +187,9 @@ def _clean_mprea_prose(raw: str) -> str:
             continue
         lines.append(s)
     text = "\n".join(lines).strip()
+    # Fix duplicated preposition and typo in upstream MPREA Hajj Meeqat prose.
+    text = re.sub(r"\bpeople of from\b", "people from", text, flags=re.IGNORECASE)
+    text = re.sub(r"\bSyriya\b", "Syria", text)
     return re.sub(r"\n{3,}", "\n\n", text)
 
 
