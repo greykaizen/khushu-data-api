@@ -706,17 +706,89 @@ def populate_content_db(conn: sqlite3.Connection, data_api_root: str) -> None:
     mprea_root = os.path.abspath(os.path.join(data_api_root, "..", "mprea"))
     hajj_n = 0
     coll_n, dua_n = 0, 0
+    names_n = 0
     if os.path.isdir(mprea_root):
         hajj_n = _ingest_hajj_guides(conn, mprea_root)
         coll_n, dua_n = _ingest_extra_duas(conn, mprea_root)
+        names_n = _ingest_names99_mprea(conn, mprea_root)
     else:
         _ensure_empty_extra_duas(conn)
+        _ensure_empty_names99_meta(conn)
     fts_n, tag_n = _build_taxonomy_and_search(conn)
     conn.commit()
     print(
         f"  taxonomy+mprea: hajj_articles={hajj_n} extra_dua_colls={coll_n} "
-        f"extra_duas={dua_n} reading_fts={fts_n} item_tags={tag_n}"
+        f"extra_duas={dua_n} names_glyphs={names_n} reading_fts={fts_n} item_tags={tag_n}"
     )
+
+
+def _norm_gloss(text: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", " ", (text or "").lower()).strip()
+    if s.startswith("the "):
+        s = s[4:].strip()
+    return s
+
+
+def _ensure_empty_names99_meta(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS names_mprea_meta(
+            number INTEGER PRIMARY KEY,
+            translit_diacritic TEXT NOT NULL,
+            alt_meanings_en TEXT,
+            glyph_vw REAL NOT NULL,
+            glyph_vh REAL NOT NULL,
+            glyph_paths_json TEXT NOT NULL
+        )"""
+    )
+
+
+def _ingest_names99_mprea(conn: sqlite3.Connection, mprea_root: str) -> int:
+    src = os.path.join(mprea_root, "data", "names99_recovered", "muslimpro_names99.json")
+    conn.execute("DROP TABLE IF EXISTS names_mprea_meta")
+    _ensure_empty_names99_meta(conn)
+    if not os.path.isfile(src):
+        return 0
+
+    payload = json.load(open(src, encoding="utf-8"))
+    db_translations = {
+        row[0]: (row[1] or "")
+        for row in conn.execute("SELECT number, translation FROM names_names WHERE lang_code='en'")
+    }
+    rows = []
+    for entry in payload.get("names", []):
+        num = int(entry["index"])
+        translit = (entry.get("transliteration") or "").strip()
+        glyph = entry.get("glyph") or {}
+        vw = float(glyph.get("viewportWidth") or 0.0)
+        vh = float(glyph.get("viewportHeight") or 0.0)
+        paths = [
+            p["pathData"].strip()
+            for p in glyph.get("paths", [])
+            if p.get("pathData") and p["pathData"].strip()
+        ]
+        if not paths or vw <= 0 or vh <= 0:
+            continue
+
+        db_norm = _norm_gloss(db_translations.get(num, ""))
+        seen = {db_norm} if db_norm else set()
+        novel: list[str] = []
+        raw_meaning = (entry.get("meaning_en") or "").strip()
+        for part in re.split(r"\s*(?:,|/)\s*", raw_meaning):
+            clean = part.strip()
+            norm = _norm_gloss(clean)
+            if not clean or not norm or norm in seen:
+                continue
+            seen.add(norm)
+            novel.append(clean)
+
+        alt_json = json.dumps(novel, ensure_ascii=False) if novel else None
+        rows.append((num, translit, alt_json, vw, vh, json.dumps(paths, ensure_ascii=False)))
+
+    conn.executemany(
+        "INSERT INTO names_mprea_meta VALUES(?,?,?,?,?,?)",
+        rows,
+    )
+    return len(rows)
 
 
 def _ensure_empty_extra_duas(conn: sqlite3.Connection) -> None:

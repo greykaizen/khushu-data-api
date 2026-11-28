@@ -1,11 +1,11 @@
 {
- "version": "v2026.11",
- "user_version": 202611,
+ "version": "v2026.12",
+ "user_version": 202612,
  "pack_url_template": "https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
  "total_packs": 104,
- "total_bytes": 873734144,
+ "total_bytes": 874512384,
  "tier_bytes": {
-  "prebundle": 50458624,
+  "prebundle": 51236864,
   "first_run": 8343552,
   "on_demand": 814931968
  },
@@ -68,6 +68,7 @@
     "reading_extra_articles",
     "dua_extra_collections",
     "dua_extra_items",
+    "names_mprea_meta",
     "category_domains",
     "content_tags",
     "item_tags",
@@ -78,9 +79,9 @@
     "reading_fts"
    ],
    "file": "content.db",
-   "bytes": 7389184,
-   "sha256": "7aea77155805f0110af7852d19758860ada7c781616621708580d4e524c94fc0",
-   "version": "v2026.11"
+   "bytes": 8167424,
+   "sha256": "9d9ef6da6181175361dfbae63c70ff74e85a9520803c92e0491aaa4c93188214",
+   "version": "v2026.12"
   },
   {
    "id": "hadith-abu_dawud",

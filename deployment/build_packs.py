@@ -30,6 +30,7 @@ DB   = os.path.join(ROOT, "data", "db")
 PACKS= os.path.join(ROOT, "data", "packs")
 MANIFEST = os.path.join(ROOT, "data", "manifest", "packs.json")
 VERSION = "v2026.11"
+CONTENT_VERSION = "v2026.12"
 USER_VERSION = 202611
 TAG = re.compile(r"<[^>]+>")
 
@@ -123,7 +124,7 @@ def build_content():
         elif ft=="reading_fts":
             from builders.build_taxonomy import populate_reading_fts
             populate_reading_fts(f)
-    ic,tb,fb=_finish(path,f,tables,built); return _pack(pid,"content","khushu-content.db",tb,fb,"prebundle",path,ic)
+    ic,tb,fb=_finish(path,f,tables,built); return _pack(pid,"content","khushu-content.db",tb,fb,"prebundle",path,ic,version=CONTENT_VERSION)
 
 def build_audio():
     MF="khushu-audio.db"; m=_connect(MF); pid="audio"
@@ -215,19 +216,33 @@ def build_hadith_packs():
     out.append(_pack(pid,"hadith","khushu-hadith.db",tb,fb,"on_demand",path,ic,detail={"component":"scholars"}))
     return out
 
-def _pack(pid,family,origin,tables,fts,tier,path,ic,detail=None):
+def _pack(pid,family,origin,tables,fts,tier,path,ic,detail=None,version=VERSION):
     st=os.stat(path); 
     assert ic=="ok", f"{pid} integrity={ic}"
     return OrderedDict(id=pid,family=family,origin_db=origin,tier=tier,tables=tables,fts=fts,
                        file=os.path.basename(path),bytes=st.st_size,sha256=_sha(path),
-                       version=VERSION,**({"detail":detail} if detail else {}))
+                       version=version,**({"detail":detail} if detail else {}))
+
+
+def _ver_key(ver: str) -> tuple[int, ...]:
+    nums = [int(x) for x in re.findall(r"\d+", ver or "")]
+    return tuple(nums) if nums else (0,)
+
+
+def _user_version(ver: str) -> int:
+    parts = _ver_key(ver)
+    return parts[0] * 100 + parts[1] if len(parts) >= 2 else USER_VERSION
 
 def main():
+    global CONTENT_VERSION
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--only", choices=["content","audio","quran-core","translations","wbw","tafsir","hadith"],
                     help="build one family (useful when only some master DBs exist)")
+    ap.add_argument("--version", help="override pack version for --only content (default CONTENT_VERSION)")
     ap.add_argument("--manifest", default=MANIFEST)
     args = ap.parse_args()
+    if args.version:
+        CONTENT_VERSION = args.version
     only = args.only
     packs=[]
     if only in (None, "content"):
@@ -255,9 +270,10 @@ def main():
         packs = sorted(kept + packs, key=lambda p: p["id"])
     by_tier={"prebundle":0,"first_run":0,"on_demand":0}
     for p in packs: by_tier[p["tier"]]+=p["bytes"]
-    man=OrderedDict(version=VERSION,user_version=USER_VERSION,
-        # Per-pack revision: a content-only rebuild can publish v2026.11 while
-        # the unchanged hadith/tafsir packs still point at their v2026.09 files.
+    top_version = max((p.get("version", VERSION) for p in packs), key=_ver_key, default=VERSION)
+    man=OrderedDict(version=top_version,user_version=_user_version(top_version),
+        # Per-pack revision: a content-only rebuild can publish v2026.12 while
+        # the unchanged hadith/tafsir packs still point at their v2026.11 files.
         pack_url_template="https://github.com/greykaizen/khushu-data-api/releases/download/packs-{family}-{version}/{file}",
         total_packs=len(packs), total_bytes=sum(p["bytes"] for p in packs),
         tier_bytes={k:v for k,v in by_tier.items()},
